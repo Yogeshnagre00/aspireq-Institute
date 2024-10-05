@@ -1,0 +1,80 @@
+/* CSS Variables for colors */
+:root {
+  --primary-color: #1b7ce3;
+  --active-dot-color: #1e90ff;
+  --image-width: 90%;
+  --max-image-width: 1300px;
+}
+
+/* Image Slider Styles */
+.image-slider {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slider-item {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.image-slider img {
+  width: var(--image-width);
+  height: 400px;
+  max-width: var(--max-image-width);
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: border-radius 0.3s ease;
+}
+
+.slick-slide {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.slick-center img {
+  transform: scale(1);
+  border-radius: 20px;
+  filter: blur(0);
+}
+
+.slick-slide:not(.slick-center) img {
+  filter: blur(5px);
+  transform: scale(0.8);
+}
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-slider img {
+    border-radius: 10px;
+  }
+
+  .slick-center img {
+    border-radius: 10px;
+  }
+}
+
+/* Customize Dots */
+.slick-dots li button:before {
+  margin-top: 9px;
+  font-size: 11px;
+  color: var(--primary-color);
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--active-dot-color);
+}
+
+/* Optional: Customize Navigation Arrows */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}

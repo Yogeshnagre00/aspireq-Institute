@@ -1,0 +1,91 @@
+/* Contact Section Styling */
+.contact-section {
+  padding: 40px 30px;
+  display: flex;
+  max-width: 80%;
+  min-width: none;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #28739f 0%, #0684f2 100%);
+}
+
+.contact-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Input and Button Styling */
+.inputWithButton {
+  display: flex;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  overflow: hidden;
+}
+
+.inputWithButton input {
+  flex: 1;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  font-size: 1rem;
+  outline: none;
+  color: #333;
+  background: none;
+}
+
+.inputWithButton input::placeholder {
+  color: #aaa;
+}
+
+.inputWithButton button {
+  background: linear-gradient(135deg, #1e90ff 0%, #007bff 100%);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.inputWithButton button:hover {
+  background: linear-gradient(135deg, #007bff 0%, #1e90ff 100%);
+}
+
+.inputWithButton button span {
+  margin-left: 10px;
+}
+
+/* Adjust input and button for mobile */
+@media (max-width: 600px) {
+  .inputWithButton {
+    flex-direction: column;
+    border-radius: 50px;
+  }
+
+  .inputWithButton input,
+  .inputWithButton button {
+    width: 100%;
+    border-radius: 50px;
+    margin: 5px 0;
+  }
+}

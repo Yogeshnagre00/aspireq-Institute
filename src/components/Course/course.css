@@ -1,0 +1,125 @@
+.course-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.course-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 70px;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgb(19, 122, 226),
+    transparent
+  );
+  background-position: bottom;
+  background-size: 60% 2px;
+  background-repeat: no-repeat;
+  width: 30%;
+}
+.course-section h2:hover {
+  text-decoration: underline;
+  text-decoration-color: #007bff;
+  cursor: pointer;
+}
+
+.course-cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.course-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+}
+
+.course-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-label {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #333;
+  clip-path: polygon(100% 0, 94% 50%, 100% 100%, 1% 99%, 0 51%, 0 1%);
+}
+
+.label-bestseller {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.label-discount {
+  margin-left: 8px;
+  padding: 3px 6px;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  color: #333;
+}
+
+.course-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.course-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.course-content p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.course-rating {
+  font-size: 1rem;
+  color: #f1c40f;
+}
+
+.explore-more-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.explore-more-button:hover {
+  background: #0056b3;
+}
