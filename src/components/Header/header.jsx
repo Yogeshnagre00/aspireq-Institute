@@ -2,8 +2,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./header.css";
 
 const Navbar = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
+  const location = useLocation(); // Get the current location
+  const navigate = useNavigate(); // Hook for programmatic navigation
 
   const handleLetsTalkClick = () => {
     // Redirect to "/contactUs" when the button is clicked
@@ -22,12 +22,13 @@ const Navbar = () => {
           <li>
             <Link to="/">HOME</Link>
           </li>
-          <li className="dropdown">
-            <a href="#">COURSES</a>
-          </li>
+
+          <li><a href="#courses">COURSES</a></li>
+
           <li>
-            <Link to="/BlogsCaseStudies">BLOGS & CASE STUDIES</Link>
+            <Link to="/blogscasestudies">BLOGS & CASE STUDIES</Link>
           </li>
+          {/* Dropdown for ABOUT US */}
           <li className="dropdown">
             <a href="#">ABOUT US</a>
           </li>
@@ -49,3 +50,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

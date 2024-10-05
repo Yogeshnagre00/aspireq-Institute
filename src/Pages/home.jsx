@@ -1,5 +1,5 @@
 import ContactSection from "../components/ContactSection/contact";
-import CourseCards from "../components/Course/course";
+import CourseCards from "../components/Courses/course";
 import FAQSection from "../components/FAQSection/faqSection";
 import { Footer } from "../components/Footer/footer";
 import Navbar from "../components/Header/header";
