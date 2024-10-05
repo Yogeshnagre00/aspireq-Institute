@@ -41,7 +41,7 @@ const Navbar = () => {
           className={`btn ${location.pathname === "/" ? "" : "hidden"}`}
           onClick={handleLetsTalkClick}
         >
-          Let&apos;s Talk &rarr;
+          Let&apos;s Connect
         </a>
       </nav>
     </header>

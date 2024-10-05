@@ -27,7 +27,7 @@ export const HeroSection = () => {
           Get Started &rarr;
         </button>
         <button className="btn-secondary" onClick={handleWatchDemoClick}>
-          Watch Demo &rarr;
+          Watch Demo
         </button>
       </div>
     </div>
