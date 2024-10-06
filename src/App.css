@@ -5,8 +5,8 @@ body {
   font-display: swap;
 }
 
-/* p {
+p {
   font-size: 1rem;
   color: #666;
-  margin-bottom: 30px;
-} */
+  margin: 20px 0;
+}

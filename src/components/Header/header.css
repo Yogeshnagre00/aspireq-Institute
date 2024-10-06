@@ -1,9 +1,4 @@
-/* Base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +10,6 @@ body {
   padding-top: 20px;
 }
 
-/* CSS Variables */
 :root {
   --header-bg-color: white;
   --header-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -88,46 +82,7 @@ header {
 
 /* Hidden Class to Maintain Layout */
 .hidden {
-  visibility: hidden; /* Keeps the element in the flow and preserves its layout space */
-}
-
-/* Dropdown */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: var(--dropdown-bg-color);
-  box-shadow: var(--dropdown-box-shadow);
-  list-style: none;
-  padding: 10px 0;
-  margin: 0;
-  min-width: 150px;
-  z-index: 999;
-}
-
-.dropdown-menu li {
-  padding: 10px 20px;
-}
-
-.dropdown-menu li a {
-  text-decoration: none;
-  color: var(--nav-link-color);
-  display: block;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.dropdown-menu li a:hover {
-  background-color: var(--dropdown-link-hover-bg-color);
-  color: var(--dropdown-link-hover-color);
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
+  visibility: hidden; 
 }
 
 /* Responsive styles */
@@ -166,18 +121,8 @@ header {
   .logo img {
     margin-right: 0;
   }
-
-  .dropdown-menu {
-    position: static;
-    box-shadow: none;
-    width: 100%;
-  }
-
-  .dropdown-menu li {
-    padding: 10px;
-  }
 }
-
+ 
 @media (max-width: 480px) {
   .nav-links a {
     font-size: 16px;

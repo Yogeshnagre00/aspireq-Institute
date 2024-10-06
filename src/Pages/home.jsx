@@ -1,25 +1,39 @@
-import ContactSection from "../components/ContactSection/contact";
-import CourseCards from "../components/Courses/course";
-import FAQSection from "../components/FAQSection/faqSection";
-import { Footer } from "../components/Footer/footer";
+import React, { Suspense } from "react";
 import Navbar from "../components/Header/header";
 import HeroSection from "../components/HeroSection/heroSection";
-import ImageSlider from "../components/Imageslider/imageslider";
-import ServicesSection from "../components/ServicesSection/servicesSection";
+import { Footer } from "../components/Footer/footer";
+
+// Lazy load other components
+const ImageSlider = React.lazy(() => import("../components/Imageslider/imageslider"));
+const ServicesSection = React.lazy(() => import("../components/ServicesSection/servicesSection"));
+const CourseCards = React.lazy(() => import("../components/Courses/course"));
+const FAQSection = React.lazy(() => import("../components/FAQSection/faqSection"));
+const ContactSection = React.lazy(() => import("../components/ContactSection/contact"));
 
 function Home() {
   return (
     <div className="App">
-      <Navbar />
-      <HeroSection />
-      <ImageSlider />
-      <ServicesSection />
-      <CourseCards />
-      <FAQSection />
-      <ContactSection />
-      <Footer />
+      <header>
+        <Navbar />
+      </header>
+
+      <main>
+        <HeroSection />
+        <Suspense fallback={<div>Loading...</div>}>
+          <ImageSlider />
+          <ServicesSection />
+          <CourseCards />
+          <FAQSection />
+          <ContactSection />
+        </Suspense>
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
 
 export default Home;
+

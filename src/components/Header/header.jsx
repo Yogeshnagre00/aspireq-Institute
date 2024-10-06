@@ -38,12 +38,12 @@ const Navbar = () => {
         </ul>
         {/* Conditionally apply a class to the button based on the current path */}
         <a
-          href="#"
-          className={`btn ${location.pathname === "/" ? "" : "hidden"}`}
-          onClick={handleLetsTalkClick}
-        >
-          Let&apos;s Connect
-        </a>
+  href="#"
+  className={`btn ${location.pathname === "/contactUs" ? "hidden" : ""}`}
+  onClick={handleLetsTalkClick}
+>
+  Let&apos;s Connect
+</a>
       </nav>
     </header>
   );
