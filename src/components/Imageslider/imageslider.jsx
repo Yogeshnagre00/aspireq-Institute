@@ -17,9 +17,11 @@ const ImageSlider = () => {
   };
 
   const images = [
-    "./Images/image 1 (1).png",
-    "./Images/testing.jpg",
-    "./Images/software resting.jpg",
+    "./Images/1.jpg",
+    "./Images/2.jpg",
+    "./Images/3.jpg",
+    "./Images/4.jpg",
+    "./Images/5.jpg",
   ];
 
   return (
@@ -31,7 +33,9 @@ const ImageSlider = () => {
           </div>
         ))}
       </Slider>
+      
     </div>
+    
   );
 };
 

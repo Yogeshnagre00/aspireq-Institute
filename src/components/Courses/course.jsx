@@ -2,25 +2,42 @@ import "./course.css";
 
 const courses = [
   {
-    title: "Manual Testing",
+    title: "Scrum Master",
     description: "Learn the essentials of manual software testing.",
-    image: "./Images/manual testing.jpg",
+    image: "./Images/Scrum master.jpg",
     bestseller: true,
     discount: "15% Off",
     rating: 4.7,
   },
   {
-    title: "Software Testing",
+    title: "Business Analyst(BA)",
     description: "Master software testing techniques and tools.",
-    image: "./Images/software resting.jpg",
+    image: "./Images/Business analyst.jpg",
     bestseller: true,
     discount: "20% Off",
     rating: 4.8,
   },
+  
   {
-    title: "Automated Testing",
+    title: "full Stack devloper",
     description: "Automate your testing process with the latest tools.",
-    image: "./Images/testing.jpg",
+    image: "./Images/Full stack developer.jpg",
+    bestseller: true,
+    discount: "25% Off",
+    rating: 4.9,
+  },
+  {
+    title: "Software Development Engineer in Testing (SDET)",
+    description: "Automate your testing process with the latest tools.",
+    image: "./Images/SDET.jpg",
+    bestseller: true,
+    discount: "25% Off",
+    rating: 4.9,
+  },
+  {
+    title: "Devops Engineer",
+    description: "Automate your testing process with the latest tools.",
+    image: "./Images/Devops engineer.jpg",
     bestseller: true,
     discount: "25% Off",
     rating: 4.9,

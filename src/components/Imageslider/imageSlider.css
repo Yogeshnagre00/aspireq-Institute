@@ -2,7 +2,8 @@
 :root {
   --primary-color: #1b7ce3;
   --active-dot-color: #1e90ff;
-  --image-width: 90%;
+  --border-radius-large: 30px;
+  --image-width: 100%;
   --max-image-width: 1300px;
 }
 
@@ -18,18 +19,18 @@
 .slider-item {
   transition: transform 0.3s ease, filter 0.3s ease;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: var(--border-radius-large); 
 }
 
 .image-slider img {
-  width: var(--image-width);
-  height: 400px;
-  max-width: var(--max-image-width);
+  width: 90%; 
+  max-width: var(--max-image-width); 
+  height: 380px; 
   margin: 0 auto;
   display: block;
-  object-fit: cover;
+  object-fit: contain; 
   object-position: center;
-  transition: border-radius 0.3s ease;
+  border-radius: var(--border-radius-large); 
 }
 
 .slick-slide {
@@ -37,8 +38,8 @@
 }
 
 .slick-center img {
-  transform: scale(1);
-  border-radius: 20px;
+  transform: scale(1.2);
+  border-radius: var(--border-radius-large);
   filter: blur(0);
 }
 
@@ -46,6 +47,7 @@
   filter: blur(5px);
   transform: scale(0.8);
 }
+
 .slick-prev,
 .slick-next {
   z-index: 1;
@@ -54,11 +56,11 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .image-slider img {
-    border-radius: 10px;
+    border-radius: 15px; 
   }
 
   .slick-center img {
-    border-radius: 10px;
+    border-radius: 15px; 
   }
 }
 
@@ -77,4 +79,10 @@
 .slick-prev,
 .slick-next {
   z-index: 1;
+}
+.slick-prev {
+  left: 25px;
+}
+.slick-next{
+  right: 25px;
 }
