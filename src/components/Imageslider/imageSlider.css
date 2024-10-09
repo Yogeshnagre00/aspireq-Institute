@@ -30,7 +30,6 @@
   display: block;
   object-fit: contain; 
   object-position: center;
-  border-radius: var(--border-radius-large); 
 }
 
 .slick-slide {
