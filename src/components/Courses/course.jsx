@@ -26,22 +26,22 @@ const courses = [
     discount: "25% Off",
     rating: 4.9,
   },
-  {
-    title: "Software Development Engineer in Testing (SDET)",
-    //description: "Automate your testing process with the latest tools.",
-    image: "./Images/SDET.jpg",
-    bestseller: true,
-    discount: "25% Off",
-    rating: 4.9,
-  },
-  {
-    title: "Devops Engineer",
-    description: "Automate your testing process with the latest tools.",
-    image: "./Images/Devops engineer.jpg",
-    bestseller: true,
-    discount: "25% Off",
-    rating: 4.9,
-  },
+  // {
+  //   title: "Software Development Engineer in Testing (SDET)",
+  //   //description: "Automate your testing process with the latest tools.",
+  //   image: "./Images/SDET.jpg",
+  //   bestseller: true,
+  //   discount: "25% Off",
+  //   rating: 4.9,
+  // },
+  // {
+  //   title: "Devops Engineer",
+  //   description: "Automate your testing process with the latest tools.",
+  //   image: "./Images/Devops engineer.jpg",
+  //   bestseller: true,
+  //   discount: "25% Off",
+  //   rating: 4.9,
+  // },
   // Add more courses if needed
 ];
 
