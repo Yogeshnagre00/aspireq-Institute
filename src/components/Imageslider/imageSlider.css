@@ -25,11 +25,13 @@
 .image-slider img {
   width: 90%; 
   max-width: var(--max-image-width); 
+  border-radius: 30px;
   height: 380px; 
   margin: 0 auto;
   display: block;
   object-fit: contain; 
   object-position: center;
+
 }
 
 .slick-slide {
@@ -38,7 +40,6 @@
 
 .slick-center img {
   transform: scale(1.2);
-  border-radius: var(--border-radius-large);
   filter: blur(0);
 }
 
