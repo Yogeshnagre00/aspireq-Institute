@@ -28,7 +28,7 @@ const courses = [
   },
   {
     title: "Software Development Engineer in Testing (SDET)",
-    description: "Automate your testing process with the latest tools.",
+    //description: "Automate your testing process with the latest tools.",
     image: "./Images/SDET.jpg",
     bestseller: true,
     discount: "25% Off",
