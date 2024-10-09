@@ -17,27 +17,30 @@ export const Footer = () => {
             </p>
           </div>
           <div className="col-md-3">
-            <h4 className="footer-heading">Company</h4>
+            <h4 className="footer-heading">Courses</h4>
             <ul className="footer-links">
               <li>
-                <a href="#">About</a>
+                <a href="#">Scrum Master</a>
               </li>
               <li>
-                <a href="#">FAQ</a>
+                <a href="#">Full Stack Developer</a>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
+                <a href="#">SDET</a>
               </li>
               <li>
-                <a href="#">Terms of Service</a>
+                <a href="#">Devops Engineer</a>
               </li>
               <li>
-                <a href="#">Cookies</a>
+                <a href="#">Business Analyst</a>
+              </li>
+              <li>
+                <a href="#">Corporete Tranning</a>
               </li>
             </ul>
           </div>
           <div className="col-md-3">
-            <h4 className="footer-heading">Industries</h4>
+            <h4 className="footer-heading">Institite</h4>
             <ul className="footer-links">
               <li>
                 <a href="#">Healthcare</a>
