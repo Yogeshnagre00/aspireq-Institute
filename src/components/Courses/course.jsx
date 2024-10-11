@@ -45,7 +45,7 @@ const courses = [
   {
     title: "Corporate Tranning",
     description: "Automate your testing process with the latest tools.",
-    image: "./Images/corporate.png",
+    image: "./Images/corporate.jpeg",
     bestseller: true,
     discount: "20% Off",
     rating: 4.9,
