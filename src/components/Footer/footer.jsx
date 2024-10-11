@@ -35,12 +35,12 @@ export const Footer = () => {
                 <a href="#">Business Analyst</a>
               </li>
               <li>
-                <a href="#">Corporete Tranning</a>
+                <a href="#">Corporate Tranning</a>
               </li>
             </ul>
           </div>
           <div className="col-md-3">
-            <h4 className="footer-heading">Institite</h4>
+            <h4 className="footer-heading">Institute</h4>
             <ul className="footer-links">
               <li>
                 <a href="#">Healthcare</a>

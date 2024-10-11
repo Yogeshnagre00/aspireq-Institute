@@ -29,7 +29,7 @@ const Navbar = () => {
             <Link to="/blogscasestudies">BLOGS & CASE STUDIES</Link>
           </li>
           {/* Dropdown for ABOUT US */}
-          <li className="dropdown">
+          <li >
             <a href="#">ABOUT US</a>
           </li>
           <li>

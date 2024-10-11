@@ -1,6 +1,6 @@
 .blogs-case-studies {
   text-align: center;
-  padding: 40px;
+  padding: 30px;
 }
 
 .bcsh1 {
@@ -14,7 +14,7 @@
 .tabs {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin-bottom: 2rem;
 }
 
 .tab-button {
@@ -24,7 +24,7 @@
   border: black solid 0.5px;
   padding: 1rem 3rem;
   cursor: pointer;
-  /* margin-bottom: 40px; */
+  margin-bottom: 40px;
   font-size: 15px;
   border-radius: 25px 0 0 25px;
 }
@@ -53,6 +53,7 @@
 
 .grid {
   width: 93%;
+  height: auto;
   margin: 0 auto;
   text-align: start;
   display: grid;
@@ -69,7 +70,7 @@
   overflow: hidden;
   padding: 1.5rem;
   margin-bottom: 40px;
-  width: 93%;
+  transition: all 0.3s ease;
 }
 
 .card img {
