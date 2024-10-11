@@ -7,7 +7,7 @@ const courses = [
     description: "Learn the essentials of manual software testing.",
     image: "./Images/Scrum master.jpg",
     bestseller: true,
-    discount: "15% Off",
+    discount: "20% Off",
     rating: 4.7,
   },
   {
@@ -23,13 +23,13 @@ const courses = [
     description: "Automate your testing process with the latest tools.",
     image: "./Images/Full stack developer.jpg",
     bestseller: true,
-    discount: "15% Off",
+    discount: "20% Off",
     rating: 4.9,
   },
   {
     title: "Software Development Engineer in Testing (SDET)",
     description: "Automate your testing process with the latest tools.",
-    image: "./Images/SDET.jpg",
+    image: "./Images/SDET.jpeg",
     bestseller: true,
     discount: "20% Off",
     rating: 4.9,
@@ -37,9 +37,9 @@ const courses = [
   {
     title: "Devops Engineer",
     description: "Automate your testing process with the latest tools.",
-    image: "./Images/Devops engineer.jpg",
+    image: "./Images/Devops engineer.jpeg",
     bestseller: true,
-    discount: "25% Off",
+    discount: "20% Off",
     rating: 4.9,
   },
   {
@@ -47,7 +47,7 @@ const courses = [
     description: "Automate your testing process with the latest tools.",
     image: "./Images/corporate.png",
     bestseller: true,
-    discount: "25% Off",
+    discount: "20% Off",
     rating: 4.9,
   },
 ];
@@ -88,7 +88,7 @@ const CourseCards = () => {
                   <h3>{course.title}</h3>
                   <p>{course.description}</p>
                   <div className="course-rating">
-                    <span>⭐ {course.rating}</span>
+                    <span className="rating">⭐ {course.rating}</span>
                   </div>
                 </div>
               </div>

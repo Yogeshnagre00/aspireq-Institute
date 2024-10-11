@@ -4,7 +4,7 @@ import HeroSection from "../components/HeroSection/heroSection";
 import { Footer } from "../components/Footer/footer";
 
 // Lazy load other components
-const ImageSlider = React.lazy(() => import("../components/Imageslider/imageslider"));
+//const ImageSlider = React.lazy(() => import("../components/Imageslider/imageslider"));
 
 const CourseCards = React.lazy(() => import("../components/Courses/course"));
 const FAQSection = React.lazy(() => import("../components/FAQSection/faqSection"));
@@ -20,7 +20,7 @@ function Home() {
       <main>
         <HeroSection />
         <Suspense fallback={<div>Loading...</div>}>
-          <ImageSlider />
+          {/* <ImageSlider /> */}
           <CourseCards />
           <FAQSection />
           <ContactSection />
