@@ -1,5 +1,5 @@
 .course-section {
-  max-width: 92%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 30px;
   text-align: center;
@@ -18,20 +18,40 @@
   width: 30%;
 }
 
+/* Add margin between slides */
+.slick-slide {
+  padding: 0 10px; 
+  box-sizing: border-box;
+}
+
+/* Align the slides properly without shifting */
+.slick-list {
+  margin: 0 30px; 
+}
+
+/* Card container */
 .course-cards-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 40px; 
+}
+.slider-container {
+  position: relative; 
+  max-width: 90%; 
+  margin: 0 auto;
+  padding: 0 30px; 
+  overflow: hidden; 
 }
 
 .course-card {
   background: #ffffff;
   border: 1px solid rgba(206, 204, 204, 0.188);
-  border-radius: 8px;
+  border-radius: 15px;
   overflow: hidden;
-  width: 350px;
+  width: 300px;
   padding: 20px 20px 0 20px;
   transition: transform 0.3s ease;
+  margin-bottom: 20px; 
 }
 
 .course-card:hover {
@@ -80,6 +100,7 @@
   color: #1c1b1b;
 }
 
+
 .course-content {
   padding: 15px;
   text-align: left;
@@ -87,13 +108,13 @@
 
 .course-content h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #333;
+  color: #212020;
 }
 
 .course-content p {
   font-size: 0.9rem;
-  margin-bottom: 15px;
+  margin-top:-15px;
+  margin-bottom: 25px;
   color: #474747;
 }
 
@@ -101,12 +122,12 @@
   font-size: 1rem;
   color: #000000;
 }
-.rating{
+
+.rating {
   padding: 5px 12px;
   color: #000000;
   border: 1px solid rgb(211, 211, 211);
   border-radius: 25px;
- 
 }
 
 .explore-more-button {
@@ -125,38 +146,13 @@
   background: #0056b3;
 }
 
-/* Slider Container for Controls */
-.slider-container {
-  position: relative; 
-}
-
-/* Controls for Next and Previous buttons */
-.slider-controls {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 10px;
-}
-
-.slider-button-left {
-  position: absolute;
-  left: 10px;
-}
-
-.slider-button-right {
-  position: absolute;
-  right: 10px;
-}
-
-.slider-button {
-  background: #275b9477;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
+/* Custom slider button styles */
+.slick-prev,
+.slick-next {
+  color: rgb(141, 141, 141) !important;
+  background: #e9eaea7a !important;
+  border-radius: 70%;
+  padding: 2px;
   cursor: pointer;
   transition: background 0.3s ease;
   width: 40px;
@@ -166,6 +162,22 @@
   align-items: center;
 }
 
-.slider-button:hover {
-  background: #007bff;
+.slick-prev:hover,
+.slick-next:hover {
+  background: #007bff !important;
+}
+
+.slick-dots li button:before {
+  position: static;
+  color: #007bff !important;
+}
+
+.slick-slide {
+  padding: 0 30px; 
+}
+.slick-prev {
+  left:-20px;
+}
+.slick-next {
+  right: -20px;
 }

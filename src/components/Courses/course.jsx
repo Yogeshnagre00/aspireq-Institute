@@ -1,4 +1,6 @@
-import  { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import "./course.css";
 
 const courses = [
@@ -43,7 +45,7 @@ const courses = [
     rating: 4.9,
   },
   {
-    title: "Corporate Tranning",
+    title: "Corporate Training",
     description: "Automate your testing process with the latest tools.",
     image: "./Images/corporate.jpeg",
     bestseller: true,
@@ -53,55 +55,58 @@ const courses = [
 ];
 
 const CourseCards = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const coursesPerPage = 3; // Change this to show more or fewer courses
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % Math.ceil(courses.length / coursesPerPage));
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex - 1 + Math.ceil(courses.length / coursesPerPage)) % Math.ceil(courses.length / coursesPerPage)
-    );
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <section id="courses" className="course-section">
       <h2>Courses we provide</h2>
       <div className="slider-container">
-        <div className="course-cards-container">
-          {courses
-            .slice(currentIndex * coursesPerPage, (currentIndex + 1) * coursesPerPage)
-            .map((course, index) => (
-              <div key={index} className="course-card">
-                <div className="course-image">
-                  <img src={course.image} alt={course.title} loading="lazy" />
-                  {course.bestseller && course.discount && (
-                    <div className="custom-label">
-                      <span className="label-bestseller">Bestseller</span>
-                      <span className="label-discount">{course.discount}</span>
-                    </div>
-                  )}
-                </div>
-                <div className="course-content">
-                  <h3>{course.title}</h3>
-                  <p>{course.description}</p>
-                  <div className="course-rating">
-                    <span className="rating">⭐ {course.rating}</span>
+        <Slider {...settings}>
+          {courses.map((course, index) => (
+            <div key={index} className="course-card">
+              <div className="course-image">
+                <img src={course.image} alt={course.title} loading="lazy" />
+                {course.bestseller && course.discount && (
+                  <div className="custom-label">
+                    <span className="label-bestseller">Bestseller</span>
+                    <span className="label-discount">{course.discount}</span>
                   </div>
+                )}
+              </div>
+              <div className="course-content">
+                <h3>{course.title}</h3>
+                <p>{course.description}</p>
+                <div className="course-rating">
+                  <span className="rating">⭐ {course.rating}</span>
                 </div>
               </div>
-            ))}
-        </div>
-        <div className="slider-controls">
-          <button className="slider-button" onClick={handlePrev}>
-            &lt;
-          </button>
-          <button className="slider-button" onClick={handleNext}>
-            &gt;
-          </button>
-        </div>
+            </div>
+          ))}
+        </Slider>
       </div>
       <button className="explore-more-button">Explore More →</button>
     </section>
