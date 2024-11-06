@@ -1,4 +1,6 @@
 import React, { Suspense } from "react";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 

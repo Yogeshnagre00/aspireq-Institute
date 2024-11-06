@@ -11,7 +11,12 @@
   display: inline-block;
   border-bottom: 2px solid transparent;
   padding-bottom: 8px;
-  background: linear-gradient(to right, transparent, rgba(19, 122, 226, 0.438), transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(19, 122, 226, 0.438),
+    transparent
+  );
   background-position: bottom;
   background-size: 70% 2px;
   background-repeat: no-repeat;
@@ -20,27 +25,23 @@
 
 /* Add margin between slides */
 .slick-slide {
-  padding: 0 10px; 
+  padding: 0 10px;
   box-sizing: border-box;
 }
 
 /* Align the slides properly without shifting */
 .slick-list {
-  margin: 0 30px; 
+  margin: 0 -45px;
 }
 
 /* Card container */
-.course-cards-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px; 
-}
+
 .slider-container {
-  position: relative; 
-  max-width: 90%; 
+  position: relative;
+  max-width: 80%;
   margin: 0 auto;
-  padding: 0 30px; 
-  overflow: hidden; 
+  padding: 0 30px;
+  overflow: hidden;
 }
 
 .course-card {
@@ -48,15 +49,16 @@
   border: 1px solid rgba(206, 204, 204, 0.188);
   border-radius: 15px;
   overflow: hidden;
-  width: 300px;
+  width: 330px !important;
   padding: 20px 20px 0 20px;
   transition: transform 0.3s ease;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
+  gap: 10px;
 }
 
 .course-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 12px 12px 12px 6px rgba(62, 62, 62, 0.351);
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 8px 6px rgba(91, 91, 91, 0.351);
 }
 
 .course-image {
@@ -100,7 +102,6 @@
   color: #1c1b1b;
 }
 
-
 .course-content {
   padding: 15px;
   text-align: left;
@@ -113,7 +114,7 @@
 
 .course-content p {
   font-size: 0.9rem;
-  margin-top:-15px;
+  margin-top: -15px;
   margin-bottom: 25px;
   color: #474747;
 }
@@ -151,8 +152,8 @@
 .slick-next {
   color: rgb(141, 141, 141) !important;
   background: #e9eaea7a !important;
-  border-radius: 70%;
-  padding: 2px;
+  border-radius: 50%;
+  padding: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
   width: 40px;
@@ -160,6 +161,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  z-index: 10;
+}
+
+.slick-prev {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-next {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .slick-prev:hover,
@@ -173,11 +188,11 @@
 }
 
 .slick-slide {
-  padding: 0 30px; 
+  padding: 0 30px;
 }
-.slick-prev {
-  left:-20px;
-}
+
+.slick-prev,
 .slick-next {
-  right: -20px;
+  position: absolute;
+  z-index: 999;
 }
