@@ -1,5 +1,8 @@
+import Slider from "react-slick";
 import HeroCard from "./herosCard";
 import "./meetHeros.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const heroesData = [
   {
@@ -18,7 +21,7 @@ const heroesData = [
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     twitterUrl: "#",
     linkedinUrl: "#",
-    image: "./Images/Avatar.png",
+    image: "./Images/girl2.png",
   },
   {
     name: "Theresa Webb",
@@ -27,7 +30,7 @@ const heroesData = [
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     twitterUrl: "#",
     linkedinUrl: "#",
-    image: "./Images/Avatar.png",
+    image: "./Images/girl1.png",
   },
   {
     name: "Marvin McKinney",
@@ -36,15 +39,40 @@ const heroesData = [
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     twitterUrl: "#",
     linkedinUrl: "#",
-    image: "./Images/Avatar.png",
+    image: "./Images/girl3.png",
   },
+  // Add more heroes if needed
 ];
 
 const MeetTheHeroes = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <section className="meet-the-heroes">
       <h2>Meet the heroes</h2>
-      <div className="hero-cards">
+      <Slider {...settings} className="hero-cards">
         {heroesData.map((hero, index) => (
           <HeroCard
             key={index}
@@ -56,7 +84,7 @@ const MeetTheHeroes = () => {
             image={hero.image}
           />
         ))}
-      </div>
+      </Slider>
     </section>
   );
 };

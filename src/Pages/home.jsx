@@ -3,9 +3,9 @@ import Navbar from "../components/Header/header";
 import HeroSection from "../components/HeroSection/heroSection";
 import { Footer } from "../components/Footer/footer";
 import MeetHeroes from "../components/MeetOurHeros/meetHeros";
+import TestimonialPage from "../components/MeetOurHeros/career";
 
 // Lazy load other components
-//const ImageSlider = React.lazy(() => import("../components/Imageslider/imageslider"));
 
 const CourseCards = React.lazy(() => import("../components/Courses/course"));
 const FAQSection = React.lazy(() =>
@@ -25,9 +25,9 @@ function Home() {
       <main>
         <HeroSection />
         <Suspense fallback={<div>Loading...</div>}>
-          {/* <ImageSlider /> */}
           <CourseCards />
           <MeetHeroes />
+          <TestimonialPage />
           <FAQSection />
           <ContactSection />
         </Suspense>

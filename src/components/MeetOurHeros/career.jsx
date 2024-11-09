@@ -1,0 +1,95 @@
+import { useState } from "react";
+import "./career.css";
+
+const testimonials = [
+  {
+    rating: 4.8,
+    text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
+    name: "Sia Brown",
+    profession: "Behavioral Science",
+    image: "./Images/girl1.png",
+  },
+
+  {
+    rating: 4.5,
+    text: " This is a critical role.As an industrial, securing capacity and ensuring safety in the production process.",
+    name: "Mia Chen",
+    profession: "Software Engineering",
+    image: "./Images/girl2.png",
+  },
+  {
+    rating: 4.7,
+    text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
+    name: "Emma Stone",
+    profession: "Marketing",
+    image: "./Images/girl3.png",
+  },
+  {
+    rating: 4.6,
+    text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
+    name: "Chris Lee",
+    profession: "Finance",
+    image: "./Images/boy2.png",
+  },
+  {
+    rating: 4.9,
+    text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
+    name: "John Doe",
+    profession: "Product Management",
+    image: "./Images/boy1.png",
+  },
+];
+
+const TestimonialSection = () => {
+  const [selectedTestimonial, setSelectedTestimonial] = useState(0);
+
+  const handleImageClick = (index) => {
+    setSelectedTestimonial(index);
+  };
+
+  return (
+    <div className="testimonial-section">
+      <div className="profile-images">
+        {testimonials.map((testimonial, index) => (
+          <img
+            key={index}
+            src={testimonial.image}
+            alt={testimonial.name}
+            onClick={() => handleImageClick(index)}
+            className={`profile-image profile-image-${index + 1} ${
+              selectedTestimonial === index ? "selected" : ""
+            }`}
+          />
+        ))}
+      </div>
+
+      <div className="testimonial-card">
+        <div className="rating">
+          <span className="star-icon">⭐</span>{" "}
+          {testimonials[selectedTestimonial].rating}
+        </div>
+        <p className="testimonial-text">
+          {testimonials[selectedTestimonial].text}
+        </p>
+        <div className="testimonial-author">
+          <img
+            src={testimonials[selectedTestimonial].image}
+            alt={testimonials[selectedTestimonial].name}
+            className="author-image"
+          />
+          <div>
+            <div className="author-name">
+              {testimonials[selectedTestimonial].name}
+            </div>
+            <div className="author-profession">
+              {testimonials[selectedTestimonial].profession}
+            </div>
+          </div>
+        </div>
+        <div className="quote-mark">“</div>
+      </div>
+    </div>
+  );
+};
+
+export default TestimonialSection;

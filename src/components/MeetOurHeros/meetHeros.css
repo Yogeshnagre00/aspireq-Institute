@@ -1,7 +1,7 @@
 .meet-the-heroes {
   text-align: center;
-  padding: 50px;
-  background-color: #f9f9f9;
+  padding: 0 50px 50px 50px;
+  background-color: #fffdfd;
 }
 
 .meet-the-heroes h2 {
@@ -9,7 +9,6 @@
   margin-bottom: 70px;
   display: inline-block;
   border-bottom: 2px solid transparent;
-  padding-bottom: 8px;
   background: linear-gradient(
     to right,
     transparent,
@@ -23,8 +22,11 @@
 }
 
 .hero-cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  padding: 0 40px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.hero-card img {
+  display: unset !important;
 }

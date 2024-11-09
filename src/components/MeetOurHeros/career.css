@@ -1,0 +1,128 @@
+/* Main testimonial section container */
+.testimonial-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1ed5a9; /* Matching the green background color */
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Profile images container */
+.profile-images {
+  position: relative;
+  width: 50%;
+  height: 200px; /* Adjust if needed */
+}
+
+/* Positioning for each profile image to match the layout */
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.profile-image-1 {
+  top: 20px;
+  left: 50px;
+}
+
+.profile-image-2 {
+  top: -10px;
+  right: 180px;
+}
+
+.profile-image-3 {
+  bottom: -20px;
+  left: 100px;
+}
+
+.profile-image-4 {
+  top: 80px;
+  left: 200px;
+}
+
+.profile-image-5 {
+  bottom: 10px;
+  right: 100px;
+}
+
+.profile-image.selected {
+  border: 3px solid #ffffff; /* White border to show selected image */
+}
+
+/* Testimonial card styles */
+.testimonial-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 430px;
+  height: 250px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1; /* Ensures card is above the profile images */
+}
+
+/* Rating and star icon */
+.rating {
+  font-size: 1.2em;
+  color: #ffb400; /* Gold color for the star rating */
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.star-icon {
+  font-size: 1.5em;
+  margin-right: 5px;
+}
+
+/* Testimonial text */
+.testimonial-text {
+  font-size: 1em;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Author section with image, name, and profession */
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.author-name {
+  font-weight: bold;
+  color: #333333;
+}
+
+.author-profession {
+  color: #666666;
+  font-size: 0.9em;
+}
+
+/* Quotation mark styles */
+.quote-mark {
+  font-size: 5em;
+  color: #1ed5a9;
+  align-self: flex-end;
+  margin-top: 10px;
+}

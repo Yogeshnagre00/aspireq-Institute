@@ -1,14 +1,8 @@
-
- /* html {
-  scroll-behavior: smooth;
-} */
-
 body {
   font-family: "Montserrat", sans-serif;
   font-display: swap;
   margin: 0;
-  /* padding-top: 20px; */
-} 
+}
 
 :root {
   --header-bg-color: white;
@@ -16,12 +10,9 @@ body {
   --navbar-padding: 0 6rem;
   --nav-link-color: #555;
   --nav-link-hover-color: #2b4d82;
-  --btn-bg-color: #1ea0ff;
-  --btn-hover-bg-color: #5fa6e8;
   --dropdown-bg-color: white;
   --dropdown-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   --dropdown-link-hover-bg-color: #f0f0f0;
-  --dropdown-link-hover-color: #2b4d82;
 }
 
 /* Header */
@@ -65,7 +56,7 @@ header {
 
 /* Buttons */
 .btn {
-  background-color: var(--btn-bg-color);
+  background-color: #27cf78b8;
   color: white;
   padding: 10px 25px;
   border-radius: 60px;
@@ -77,12 +68,12 @@ header {
 }
 
 .btn:hover {
-  background-color: var(--btn-hover-bg-color);
+  background-color: #24d37990;
 }
 
 /* Hidden Class to Maintain Layout */
 .hidden {
-  visibility: hidden; 
+  visibility: hidden;
 }
 
 /* Responsive styles */
@@ -122,7 +113,7 @@ header {
     margin-right: 0;
   }
 }
- 
+
 @media (max-width: 480px) {
   .nav-links a {
     font-size: 16px;
