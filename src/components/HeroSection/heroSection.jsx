@@ -36,7 +36,11 @@ export const HeroSection = () => {
         </div>
       </div>
       <div className="hero-image-section">
-        <img src="./Images/animation.gif" alt="User" className="hero-image" />
+        <img
+          src="./Images/animationimage.gif"
+          alt="User"
+          className="hero-image"
+        />
       </div>
     </div>
   );
