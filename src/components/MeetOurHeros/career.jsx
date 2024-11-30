@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./career.css";
 
 const testimonials = [
@@ -9,10 +9,9 @@ const testimonials = [
     profession: "Behavioral Science",
     image: "./Images/girl1.png",
   },
-
   {
     rating: 4.5,
-    text: " This is a critical role.As an industrial, securing capacity and ensuring safety in the production process.",
+    text: "This is a critical role. As an industrial, securing capacity and ensuring safety in the production process.",
     name: "Mia Chen",
     profession: "Software Engineering",
     image: "./Images/girl2.png",
@@ -42,6 +41,15 @@ const testimonials = [
 
 const TestimonialSection = () => {
   const [selectedTestimonial, setSelectedTestimonial] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSelectedTestimonial((prevIndex) =>
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   const handleImageClick = (index) => {
     setSelectedTestimonial(index);

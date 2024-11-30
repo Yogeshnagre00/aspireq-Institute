@@ -11,9 +11,9 @@ const CourseCards = React.lazy(() => import("../components/Courses/course"));
 const FAQSection = React.lazy(() =>
   import("../components/FAQSection/faqSection")
 );
-const ContactSection = React.lazy(() =>
-  import("../components/ContactSection/contact")
-);
+// const ContactSection = React.lazy(() =>
+//   import("../components/ContactSection/contact")
+// );
 
 function Home() {
   return (
@@ -29,7 +29,7 @@ function Home() {
           <MeetHeroes />
           <TestimonialPage />
           <FAQSection />
-          <ContactSection />
+          {/* <ContactSection /> */}
         </Suspense>
       </main>
 

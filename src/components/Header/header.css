@@ -56,7 +56,7 @@ header {
 
 /* Buttons */
 .btn {
-  background-color: #27cf78b8;
+  background-color: rgb(30, 213, 169);
   color: white;
   padding: 10px 25px;
   border-radius: 60px;
@@ -68,7 +68,7 @@ header {
 }
 
 .btn:hover {
-  background-color: #24d37990;
+  background-color: rgb(29, 216, 175);
 }
 
 /* Hidden Class to Maintain Layout */

@@ -12,7 +12,7 @@ const heroesData = [
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     twitterUrl: "#",
     linkedinUrl: "#",
-    image: "./Images/Avatar.png",
+    image: "./Images/Avatar (1).png",
   },
   {
     name: "Albert Flores",

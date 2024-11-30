@@ -40,7 +40,10 @@ export const Footer = () => {
             </ul>
           </div>
           <div className="col-md-3">
-            <h4 className="footer-heading">Institute</h4>
+            <h4 className="footer-heading">
+              Projects in <br />
+              Domain
+            </h4>
             <ul className="footer-links">
               <li>
                 <a href="#">Healthcare</a>

@@ -23,13 +23,10 @@ const Navbar = () => {
             <Link to="/">HOME</Link>
           </li>
 
-          <li><a href="#courses">COURSES</a></li>
-
           <li>
-            <Link to="/blogscasestudies">BLOGS & CASE STUDIES</Link>
+            <a href="/courses">COURSES</a>
           </li>
-          {/* Dropdown for ABOUT US */}
-          <li >
+          <li>
             <a href="#">ABOUT US</a>
           </li>
           <li>
@@ -38,16 +35,17 @@ const Navbar = () => {
         </ul>
         {/* Conditionally apply a class to the button based on the current path */}
         <a
-  href="#"
-  className={`btn ${location.pathname === "/contactUs" ? "hidden" : ""}`}
-  onClick={handleLetsTalkClick}
->
-  Let&apos;s Connect
-</a>
+          href="#"
+          className={`btn ${
+            location.pathname === "/contactUs" ? "hidden" : ""
+          }`}
+          onClick={handleLetsTalkClick}
+        >
+          Let&apos;s Connect
+        </a>
       </nav>
     </header>
   );
 };
 
 export default Navbar;
-
