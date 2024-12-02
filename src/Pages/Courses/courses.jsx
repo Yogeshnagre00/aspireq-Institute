@@ -15,7 +15,7 @@ const QASection = () => {
     },
     {
       type: "video",
-      src: "./Images/Recording2024-11-10100841-ezgif.com-crop-video.mp4",
+      src: "./Videos/demo.mp4",
       title: "Video Demo",
       description: "A demonstration video about QA services.",
     },
