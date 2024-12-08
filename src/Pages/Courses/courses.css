@@ -31,6 +31,24 @@
   border-bottom: 1px solid #ddd;
 }
 
+.mute-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.mute-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .content {
   padding: 16px;
 }
@@ -129,25 +147,393 @@
   background: #555;
 }
 
+/* .how-it-works */
+
+.how-it-works {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.how-it-works h2, .certificate-section h2 , .DemoClass-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 70px;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
+  background: linear-gradient(to right, transparent, #27cf787d, transparent);
+  background-position: bottom;
+  background-size: 70% 2px;
+  background-repeat: no-repeat;
+  width: 30%;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  flex: 1;
+  max-width: 350px;
+  text-align: start;
+  background: #fff;
+  padding: 20px;
+}
+.horizontal-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+margin-bottom: 30px;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #00d1b2;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #00d1b2;
+  z-index: 1;
+  font-size: 1rem;
+  position: relative;
+}
+
+.line {
+  height: 2px;
+  background-color: #d3d3d3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  z-index: 0;
+}
+
+.step:first-child .line {
+  left: 50%; 
+}
+
+.step:last-child .line {
+  display: none; /
+}
+
+.step-image {
+  max-width: 100%;
+  height: 40vh;
+  margin-bottom: 20px;
+}
+.discription {
+  border: 0px 2px 4px solid #292828;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.step-card h3 {
+  font-size: 1.2rem;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  font-size: 0.9rem;
+  color: #636e72;
+}
+ /* certifiction */
+ .certificate-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.certificate-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certificate-image img {
+  max-width: 80%;
+  height: auto;
+}
+
+.certificate-details {
+  text-align: left;
+  max-width: 500px;
+}
+
+.certificate-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.certificate-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.certificate-details li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.certificate-details li::before {
+  content: "✔";
+  color: #28a745;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+/* Demo classes */
+.container {
+  text-align: center;
+  position: relative;
+  padding: 20px; 
+}
+
+.DemoClass-section h2 {
+ width: 50% !important;
+  margin-bottom: 250px;
+}
+.live-class-image img {
+  position: absolute;
+  top: 90px; 
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+.class-container {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  align-items: center;
+  background-color: #1abc9c;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #333;
+  padding: 10px 20px;
+  position: relative;
+  top: 50%;
+  margin: 0 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+  /* QA Section */
   .qa-section {
     flex-direction: column;
     align-items: center;
   }
 
+  /* Main Card */
+  .main-card {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  /* Thumbnail Stack */
   .thumbnail-stack {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    max-height: none; /* Disable height restriction for horizontal scrolling */
-    max-width: 100%; /* Expand to full width */
+    max-height: none; 
+    max-width: 100%; 
     overflow-y: hidden;
-    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-x: auto; 
   }
 
   .thumbnail {
     width: 80px;
     height: 80px;
+  }
+
+  /* Demo Class Section */
+  .DemoClass-section h2 {
+    width: 90%; 
+    margin-bottom: 50px; 
+  }
+
+  .live-class-image img {
+    width: 90%; 
+    position: static; 
+    transform: none;
+  }
+
+  .class-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px; 
+  }
+
+  /* Stepper Section */
+  .horizontal-stepper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .line {
+    width: 50%; 
+  }
+
+  /* Certificate Section */
+  .certificate-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate-details {
+    max-width: 100%; 
+    padding: 10px;
+  }
+
+  .certificate-image img {
+    width: 90%; 
+  }
+
+  /* Steps Container */
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Buttons */
+  .button {
+    padding: 8px 16px; 
+    font-size: 12px;
+  }
+}
+/* Responsive Adjustments for Mobile (480px and below) */
+@media (max-width: 480px) {
+  /* QA Section */
+  .qa-section {
+    flex-direction: column;
+    gap: 15px; 
+  }
+
+  /* Main Card */
+  .main-card {
+    padding: 8px;
+    max-width: 90%; 
+  }
+
+  /* Thumbnail Stack */
+  .thumbnail-stack {
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px; 
+    overflow-x: auto;
+  }
+
+  .thumbnail {
+    width: 70px;
+    height: 70px; 
+  }
+
+  /* Demo Class Section */
+  .DemoClass-section h2 {
+    width: 95%; 
+    font-size: 1.2rem; 
+    margin-bottom: 30px; 
+  }
+
+  .live-class-image img {
+    width: 100%; 
+    padding: 10px; 
+  }
+
+  .class-container {
+    padding: 15px;
+    height: auto; 
+  }
+
+  .button {
+    padding: 6px 14px; 
+    font-size: 11px; 
+  }
+
+  /* Horizontal Stepper */
+  .horizontal-stepper {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+  }
+
+  .circle {
+    width: 25px;
+    height: 25px; 
+    font-size: 0.7rem; 
+  }
+
+  .line {
+    width: 30%; 
+  }
+
+  /* Steps Container */
+  .steps-container {
+    gap: 15px; 
+  }
+
+  /* Certificate Section */
+  .certificate-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .certificate-image img {
+    width: 100%; 
+    padding: 10px; 
+  }
+
+  .certificate-details {
+    max-width: 100%; 
+    font-size: 0.9rem; 
+  }
+
+  /* General Adjustments */
+  h2, h3 {
+    font-size: 1.2rem; 
+  }
+
+  p {
+    font-size: 0.85rem; 
   }
 }
