@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer/footer";
 import "./courses.css";
 import CourseCard from "./courseCard";
 
-const QASection = () => {
+const CoursesPage = () => {
   // Slider items with images and videos
   const sliderItems = [
     {
@@ -310,7 +310,7 @@ const QASection = () => {
             <div className="button">Integration Testing</div>
           </div>
         </div>
-      </section>
+      </section >
       <section className="offer-section">
         <div className="offer-content">
           <p className="subheading">ARE YOU READY FOR THIS OFFER</p>
@@ -338,4 +338,4 @@ const QASection = () => {
   );
 };
 
-export default QASection;
+export default CoursesPage;
