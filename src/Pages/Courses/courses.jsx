@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "../../components/Header/header";
 import { Footer } from "../../components/Footer/footer";
 import "./courses.css";
-import CourseCard from "./CourseCard";
+import CourseCard from "./courseCard";
 
 const QASection = () => {
   // Slider items with images and videos
