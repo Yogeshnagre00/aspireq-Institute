@@ -29,7 +29,6 @@ function Home() {
           <MeetHeroes />
           <TestimonialPage />
           <FAQSection />
-          {/* <ContactSection /> */}
         </Suspense>
       </main>
 
