@@ -1,4 +1,5 @@
-import CourseCard from "./CourseCard";
+
+import CourseCards from "../../components/Courses/course";
 import "./CoursesPage.css";
 
 const courses = [
@@ -82,7 +83,7 @@ const CourseSection = () => {
       <h2>Courses</h2>
       <div className="course-section__grid">
         {courses.map((course, index) => (
-          <CourseCard key={index} {...course} />
+          <CourseCards key={index} {...course} />
         ))}
       </div>
     </section>

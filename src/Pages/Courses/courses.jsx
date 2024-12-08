@@ -2,11 +2,13 @@ import { useState, useEffect } from "react";
 import Navbar from "../../components/Header/header";
 import "./courses.css";
 import CourseSection from "./coursesPage";
+import { Footer } from "../../components/Footer/footer";
 
 const QASection = () => {
   // Slider items with images and videos
   const sliderItems = [
     {
+      id: 1,
       type: "image",
       src: "./Images/csaestudies.png",
       title: "QA Lorem Ipsum",
@@ -14,18 +16,21 @@ const QASection = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus urna orci.",
     },
     {
+      id: 2,
       type: "video",
       src: "./Videos/demo.mp4",
       title: "Video Demo",
       description: "A demonstration video about QA services.",
     },
     {
+      id: 3,
       type: "image",
       src: "./Images/Full stack developer.jpg",
       title: "Office 1",
       description: "Description for full stack developer",
     },
     {
+      id: 4,
       type: "image",
       src: "./Images/Business analyst.jpg",
       title: "Office 1",
@@ -40,26 +45,31 @@ const QASection = () => {
     "./Images/Devops engineer.jpeg",
     "./Images/Devops engineer.jpeg",
   ];
+
   const steps = [
     {
+      id: 1,
       title: "Take course by industry experts",
       description:
         "Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit",
       image: "./Images/Marriage counseling-cuate 1.png",
     },
     {
+      id: 2,
       title: "Get a Course Certificate",
       description:
         "Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit",
       image: "./Images/Certification-cuate 1.png",
     },
     {
+      id: 3,
       title: "Advance your career",
       description:
         "Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit",
       image: "./Images/Group 39881.png",
     },
   ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMuted, setIsMuted] = useState(true); // Track mute state
   const [isHovered, setIsHovered] = useState(false); // Track hover state
@@ -174,7 +184,7 @@ const QASection = () => {
             {steps.map((step) => (
               <div className="step-card" key={step.id}>
                 <img src={step.image} alt={step.title} className="step-image" />
-                <div className="discription">
+                <div className="description">
                   <h3>{step.title}</h3>
                   <p>{step.description}</p>
                 </div>
@@ -209,7 +219,7 @@ const QASection = () => {
           <h2>Join your live class with your instructor</h2>
           <div className="live-class-image">
             <img
-              src="public/Images/freepik__expand__17656 1.png"
+              src="./Images/democlass.png"
               alt="Live Class Example"
             />
           </div>
@@ -222,6 +232,29 @@ const QASection = () => {
           </div>
         </div>
       </section>
+      <section className="offer-section">
+        <div className="offer-content">
+          <p className="subheading">ARE YOU READY FOR THIS OFFER</p>
+          <h1 className="main-heading">40% offer for very first 100</h1>
+          <p className="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+          </p>
+          <div className="button-group">
+            <a href="#" className="btn btn-green">
+              ADMISSION NOW
+            </a>
+            <a href="#" className="btn btn-blue">
+              OUR COURSES
+            </a>
+          </div>
+        </div>
+        <div className="offer-image"></div>
+      </section>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
