@@ -1,6 +1,6 @@
 
 import CourseCards from "../../components/Courses/course";
-import "./CoursesPage.css";
+import "coursesPage.css";
 
 const courses = [
   {
