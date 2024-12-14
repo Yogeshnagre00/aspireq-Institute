@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navbar from "../../components/Header/header";
 import { Footer } from "../../components/Footer/footer";
 import "./courses.css";
-import CourseCard from "./courseCard";
+//import CourseCard from "./courseCard";
 
 const CoursesPage = () => {
   // Slider items with images and videos
@@ -31,6 +31,13 @@ const CoursesPage = () => {
     },
     {
       id: 4,
+      type: "video",
+      src: "public/Videos/Dem2.mp4",
+      title: "Video Demo 2",
+      description: "A demonstration video about QA services.",
+    },
+    {
+      id: 5,
       type: "image",
       src: "./Images/Business analyst.jpg",
       title: "Office 1",
@@ -39,84 +46,67 @@ const CoursesPage = () => {
   ];
   const courses = [
     {
-      image: "./Images/Container.png",
-      category: "Development",
-      title: "Full Stack Developer",
-      lessons: 12,
-      duration: "1h 30m",
-      students: 20,
-      author: "Angela",
-      authorImage: "./Images/author.png",
-      price: 60,
-      rating: 4.5,
-    },
-    {
-      image: "./Images/Container.png",
-      category: "Development",
-      title: "Business Analyst(BA)",
-      lessons: 10,
-      duration: "2h 00m",
-      students: 15,
-      author: "John Doe",
-      authorImage: "./Images/author.png",
-      price: 45,
-      rating: 4,
-    },
-    {
-      image: "./Images/Container.png",
-      category: "Development",
-      title: "Software Development Engineer in Testing ",
-      lessons: 15,
-      duration: "2h 30m",
-      students: 30,
-      author: "Jane Smith",
-      authorImage: "./Images/author.png",
-      price: 70,
+      title: "Scrum Master",
+      description: "Learn the essentials of manual software testing.",
+      image: "./Images/Scrum master.jpg",
+      bestseller: true,
+      discount: "20% Off",
       rating: 4.7,
     },
     {
-      image: "./Images/Container.png",
-      category: "Development",
+      title: "Business Analyst(BA)",
+      description: "Master software testing techniques and tools.",
+      image: "./Images/Business analyst.jpg",
+      bestseller: true,
+      discount: "20% Off",
+      rating: 4.8,
+    },
+    {
+      title: "Full Stack Developer",
+      description: "Automate your testing process with the latest tools.",
+      image: "./Images/Full stack developer.jpg",
+      bestseller: true,
+      discount: "20% Off",
+      rating: 4.9,
+    },
+    {
+      title: "Software Development Engineer in Testing (SDET)",
+      description: "Automate your testing process with the latest tools.",
+      image: "./Images/SDET.jpeg",
+      bestseller: true,
+      discount: "20% Off",
+      rating: 4.9,
+    },
+    {
       title: "Devops Engineer",
-      lessons: 15,
-      duration: "2h 30m",
-      students: 30,
-      author: "Jane Smith",
-      authorImage: "./Images/author.png",
-      price: 70,
-      rating: 3.8,
+      description: "Automate your testing process with the latest tools.",
+      image: "./Images/Devops engineer.jpeg",
+      bestseller: true,
+      discount: "20% Off",
+      rating: 4.9,
     },
     {
-      image: "./Images/Container.png",
-      category: "Development",
       title: "Corporate Training",
-      lessons: 15,
-      duration: "2h 30m",
-      students: 25,
-      author: "Jane Smith",
-      authorImage: "./Images/author.png",
-      price: 70,
-      rating: 4.5,
-    },
-    {
-      image: "/./Images/Container.png",
-      category: "Development",
-      title: "Scrum Master",
-      lessons: 15,
-      duration: "2h 30m",
-      students: 23,
-      author: "Jane Smith",
-      authorImage: "./Images/author.png",
-      price: 70,
-      rating: 4.5,
+      description: "Automate your testing process with the latest tools.",
+      image: "./Images/corporate.jpeg",
+      bestseller: true,
+      discount: "20% Off",
+      rating: 4.9,
     },
   ];
 
   const thumbnails = [
     "./Images/Devops engineer.jpeg",
+    "/./Images/Container.png",
+    "./Images/Full stack developer.jpg",
+    "./Images/Business analyst.jpg",
+    "./Images/Business analyst.jpg",
     "./Images/Devops engineer.jpeg",
     "./Images/Devops engineer.jpeg",
+    "/./Images/Container.png",
+    "./Images/Full stack developer.jpg",
     "./Images/Devops engineer.jpeg",
+    "./Images/Business analyst.jpg",
     "./Images/Devops engineer.jpeg",
   ];
 
@@ -145,28 +135,44 @@ const CoursesPage = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isMuted, setIsMuted] = useState(true); // Track mute state
-  const [isHovered, setIsHovered] = useState(false); // Track hover state
+  const [isMuted, setIsMuted] = useState(true);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [currentThumbnailIndex, setCurrentThumbnailIndex] = useState(0);
+  const videoRef = useRef(null);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderItems.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [sliderItems.length]);
+    if (!isPaused) {
+      const interval = setInterval(() => {
+        setCurrentThumbnailIndex((prevIndex) => {
+          const nextIndex = prevIndex + 3;
+          return nextIndex >= thumbnails.length ? 0 : nextIndex;
+        });
+      }, 1000);
+      return () => clearInterval(interval);
+    }
+  }, [isPaused, thumbnails.length]);
 
-  // Toggle mute/unmute when user clicks the mute/unmute button
+  useEffect(() => {
+    if (!isVideoPlaying) {
+      const interval = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderItems.length);
+      }, 5000);
+      return () => clearInterval(interval);
+    }
+  }, [isVideoPlaying, sliderItems.length]);
+
+  const handleVideoPlay = () => {
+    setIsVideoPlaying(true);
+  };
+  const handleVideoEnd = () => {
+    setIsVideoPlaying(false);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderItems.length);
+  };
   const toggleMute = () => {
     setIsMuted((prevState) => !prevState);
-  };
-
-  // Handle hover to stop/start autoplay
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
+    videoRef.current.muted = false;
+    videoRef.current.play();
   };
 
   return (
@@ -175,11 +181,7 @@ const CoursesPage = () => {
       <section>
         <div className="qa-section">
           {/* Main Slider */}
-          <div
-            className="main-card"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
+          <div className="main-card">
             {sliderItems[currentIndex].type === "image" ? (
               <img
                 src={sliderItems[currentIndex].src}
@@ -191,20 +193,19 @@ const CoursesPage = () => {
                 className="main-video"
                 src={sliderItems[currentIndex].src}
                 controls
-                autoPlay={!isHovered}
-                loop
-                muted={isMuted} // Mutes or unmutes based on the state
+                onPlay={handleVideoPlay}
+                onEnded={handleVideoEnd}
+                autoPlay
+                muted={isMuted}
               ></video>
             )}
+            <button className="mute-button" onClick={toggleMute}>
+              {isMuted ? "Unmute" : "Mute"}
+            </button>
             <div className="content">
               <h3>{sliderItems[currentIndex].title}</h3>
               <p>{sliderItems[currentIndex].description}</p>
             </div>
-
-            {/* Mute/Unmute Button */}
-            <button className="mute-button" onClick={toggleMute}>
-              {isMuted ? "Unmute" : "Mute"}
-            </button>
 
             {/* Slider Dots */}
             <div className="slider-dots">
@@ -212,36 +213,59 @@ const CoursesPage = () => {
                 <span
                   key={index}
                   className={`dot ${currentIndex === index ? "active" : ""}`}
-                  onClick={() => setCurrentIndex(index)} // Allows clicking on dots to navigate
+                  onClick={() => setCurrentIndex(index)}
                 ></span>
               ))}
             </div>
           </div>
-
-          {/* Vertical Divider */}
-          <div className="vertical-line"></div>
-
           {/* Thumbnail Stack */}
-          <div className="thumbnail-stack">
-            {thumbnails.map((thumb, index) => (
-              <img
-                key={index}
-                src={thumb}
-                alt={`Thumbnail ${index + 1}`}
-                className="thumbnail"
-              />
-            ))}
+          <div
+            className="thumbnail-stack"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
+            {/* Show all images, but only show 3 images at a time */}
+            {thumbnails
+              .slice(currentThumbnailIndex) //, currentThumbnailIndex + 3
+              .map((thumb, index) => (
+                <img
+                  key={index}
+                  src={thumb}
+                  alt={`Thumbnail ${index + 1}`}
+                  className="thumbnail"
+                />
+              ))}
           </div>
         </div>
       </section>
-      <section className="course-section">
-      <h2>Courses</h2>
-      <div className="course-section__grid">
-        {courses.map((course, index) => (
-          <CourseCard key={index} {...course} />
-        ))}
-      </div>
-    </section>
+
+      <section id="course-section" className="course-section">
+        <h2>Courses</h2>
+        <div className="course-section__grid">
+          {/* <div className="slider-container"> */}
+          {courses.map((course, index) => (
+            <div key={index} className="course-card">
+              <div className="course-image">
+                <img src={course.image} alt={course.title} loading="lazy" />
+                {course.bestseller && course.discount && (
+                  <div className="custom-label">
+                    <span className="label-bestseller">Bestseller</span>
+                    <span className="label-discount">{course.discount}</span>
+                  </div>
+                )}
+              </div>
+              <div className="course-content">
+                <h3>{course.title}</h3>
+                <p>{course.description}</p>
+                <div className="course-rating">
+                  <span className="rating">⭐ {course.rating}</span>
+                  <button className="course-card__button">→</button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
       <section>
         <div className="how-it-works">
           <h2>How it works</h2>
@@ -297,10 +321,7 @@ const CoursesPage = () => {
         <div className="container">
           <h2>Join your live class with your instructor</h2>
           <div className="live-class-image">
-            <img
-              src="./Images/democlass.png"
-              alt="Live Class Example"
-            />
+            <img src="./Images/democlass.png" alt="Live Class Example" />
           </div>
           <div className="class-container">
             <div className="button">Manual Testing</div>
@@ -310,7 +331,7 @@ const CoursesPage = () => {
             <div className="button">Integration Testing</div>
           </div>
         </div>
-      </section >
+      </section>
       <section className="offer-section">
         <div className="offer-content">
           <p className="subheading">ARE YOU READY FOR THIS OFFER</p>
@@ -324,16 +345,14 @@ const CoursesPage = () => {
             <a href="#" className="btn btn-green">
               ADMISSION NOW
             </a>
-            <a href="#" className="btn btn-blue">
+            <a href="#course-section" className="btn btn-blue">
               OUR COURSES
             </a>
           </div>
         </div>
         <div className="offer-image"></div>
       </section>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   );
 };

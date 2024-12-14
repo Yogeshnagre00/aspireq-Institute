@@ -27,13 +27,12 @@ const Navbar = () => {
             <a href="/courses">COURSES</a>
           </li>
           <li>
-            <a href="#">ABOUT US</a>
+            <a href="/courseDetails">ABOUT US</a>
           </li>
           <li>
             <Link to="/contactUs">CONTACT US</Link>
           </li>
         </ul>
-        {/* Conditionally apply a class to the button based on the current path */}
         <a
           href="#"
           className={`btn ${

@@ -5,8 +5,8 @@ const HeroCard = ({
   name,
   position,
   description,
-  twitterUrl,
-  linkedinUrl,
+  twitterUrl = "#",
+  linkedinUrl = "#",
   image,
 }) => {
   return (
@@ -40,11 +40,6 @@ HeroCard.propTypes = {
   twitterUrl: PropTypes.string,
   linkedinUrl: PropTypes.string,
   image: PropTypes.string.isRequired, // Adding image as a required prop
-};
-
-HeroCard.defaultProps = {
-  twitterUrl: "#",
-  linkedinUrl: "#",
 };
 
 export default HeroCard;

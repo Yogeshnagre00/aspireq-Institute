@@ -4,6 +4,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import CoursesPage from "./Pages/Courses/courses";
+import CourseDetails from "./Pages/Courses/courseDetails";
 
 // const CoursesPage = React.lazy(() => import("./Pages/Courses/courses"));
 const ContactForm = React.lazy(() => import("./Pages/ContactUs/contactUs"));
@@ -18,7 +19,7 @@ function App() {
           <Route path="/contactUs" element={<ContactForm />} />
           {/* <Route path="/courses" element={<CoursesPage />} /> */}
           <Route path="/courses" element={<CoursesPage />} />
-
+          <Route path="/courseDetails" element={<CourseDetails />} />
         </Routes>
       </Suspense>
     </Router>

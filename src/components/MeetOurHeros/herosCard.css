@@ -54,3 +54,73 @@
 .social-icons a:hover {
   color: #0073b1;
 }
+@media (max-width: 480px) {
+  .hero-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .hero-card h3 {
+    font-size: 16px;
+  }
+
+  .hero-card .position {
+    font-size: 12px;
+  }
+
+  .hero-card .description {
+    font-size: 11px;
+  }
+
+  .social-icons a {
+    font-size: 16px;
+  }
+}
+
+/* Tablet Devices (Medium screens) */
+@media (max-width: 768px) {
+  .hero-card {
+    width: 45%;
+    padding: 20px;
+  }
+
+  .hero-card h3 {
+    font-size: 17px;
+  }
+
+  .hero-card .position {
+    font-size: 13px;
+  }
+
+  .hero-card .description {
+    font-size: 12px;
+  }
+
+  .social-icons a {
+    font-size: 17px;
+  }
+}
+
+/* Desktop Devices (Large screens) */
+@media (min-width: 1024px) {
+  .hero-card {
+    width: 280px;
+    padding: 20px;
+  }
+
+  .hero-card h3 {
+    font-size: 18px;
+  }
+
+  .hero-card .position {
+    font-size: 14px;
+  }
+
+  .hero-card .description {
+    font-size: 12px;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+  }
+}

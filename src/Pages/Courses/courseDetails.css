@@ -1,0 +1,101 @@
+.coursepage-section {
+  margin: 100px auto;
+  padding: 16px;
+  max-width: 1200px;
+  width: 80%;
+}
+
+.coursepage-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 25px;
+  align-items: center;
+  padding: 16px;
+}
+
+.coursepage-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.coursepage-content p {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin: 0;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.coursepage-main {
+  position: relative;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.coursepage-image-container {
+  position: relative;
+}
+
+.coursepage-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: #27ae60;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.coursepage-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.coursepage-rating {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #f4f4f4;
+  padding: 4px 8px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.coursepage-rating .star {
+  color: #f1c40f;
+  margin-right: 4px;
+}
+
+.coursepage-footer {
+  padding: 16px;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerpage-info {
+  font-size: 1rem;
+  color: #34495e;
+  display: flex;
+  gap: 25px;
+}
+
+.author-info {
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.author-info b {
+  color: #2c3e50;
+}
