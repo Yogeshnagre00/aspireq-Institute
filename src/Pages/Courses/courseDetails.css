@@ -99,3 +99,187 @@
 .author-info b {
   color: #2c3e50;
 }
+
+/* syllabus */
+/* Main Container */
+.syllabus-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+  position: relative;
+}
+
+/* Title Styling */
+.syllabus-title {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+  text-align: center;
+  position: relative;
+}
+
+/* Download Button */
+.download-button {
+  background-color: #0fe8a7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #e06d00;
+}
+
+.download-icon {
+  font-size: 18px;
+}
+
+/* .syllabus-container */
+
+.module-content-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.module-sidebar {
+  width: 300px;
+}
+
+.module-item {
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.module-item:last-child {
+  border-bottom: none;
+}
+
+.module-item:hover {
+  background-color: #f7f7f7;
+}
+
+.module-item.active {
+  background-color: #e7f0ff;
+  font-weight: bold;
+  border-left: 4px solid #3b82f6;
+}
+
+.module-details {
+  /* flex: 1; */
+  padding: 1.5rem;
+  width: 800px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.module-details h2 {
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.topics-list {
+  columns: 2;
+  column-gap: 2rem;
+  padding-left: 1.5rem;
+  line-height: 3;
+}
+
+.download-syllabus {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.download-syllabus:hover {
+  background-color: #2563eb;
+}
+
+/* Schedule */
+.schedule-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.schedule-section h2 {
+  font-size: 1.5rem;
+  margin-top: 70px;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
+  background: linear-gradient(to right, transparent, #27cf787d, transparent);
+  background-position: bottom;
+  background-size: 30% 2px;
+  background-repeat: no-repeat;
+  width: 30%;
+}
+.schedule-container img {
+  max-width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+/* certifiction */
+.certificate-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.certificate-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certificate-image img {
+  max-width: 80%;
+  height: auto;
+}
+
+.certificate-details {
+  text-align: left;
+  max-width: 500px;
+}
+
+.certificate-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.certificate-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.certificate-details li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.certificate-details li::before {
+  content: "✔";
+  color: #28a745;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}

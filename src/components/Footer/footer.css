@@ -10,7 +10,7 @@
 }
 
 .footer {
-  background-color: #f5f5f5;
+  background-color: #f9f9f982;
   padding: 20px 30px 0 30px;
   color: #333;
   width: 96%;
@@ -19,7 +19,7 @@
   left: 0;
 }
 
-.container {
+.footer-container {
   width: 93%;
   margin: 0 auto;
 }
@@ -34,7 +34,6 @@
 .col-md-3 {
   padding: 0 30px;
   margin-bottom: 10px;
-  font-family: "Poppins", sans-serif;
 }
 
 /* Added: Ensure logo is centered in its column */

@@ -1,0 +1,87 @@
+/* Offer Section */
+.offer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 87%;
+  height: auto;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 15px;
+  background-color: #403f3f;
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-content {
+  max-width: 500px;
+  text-align: center;
+  z-index: 2;
+}
+
+.offer-content .subheading {
+  color: #00b289;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.offer-content .main-heading {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.offer-content .description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #b5b6b7;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-green {
+  background-color: #00b289;
+  color: #fff;
+}
+
+.btn-green:hover {
+  background-color: #009975;
+}
+
+.btn-blue {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;
+}
+
+/* Background image */
+.offer-image {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("./Images/back-courses.png") center/cover no-repeat;
+  opacity: 0.1;
+  z-index: 1;
+}

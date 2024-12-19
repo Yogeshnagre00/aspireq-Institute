@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Navbar from "../../components/Header/header";
 import { Footer } from "../../components/Footer/footer";
 import "./courses.css";
+import Offer from "../../components/offerSection/offer";
 //import CourseCard from "./courseCard";
 
 const CoursesPage = () => {
@@ -332,26 +333,7 @@ const CoursesPage = () => {
           </div>
         </div>
       </section>
-      <section className="offer-section">
-        <div className="offer-content">
-          <p className="subheading">ARE YOU READY FOR THIS OFFER</p>
-          <h1 className="main-heading">40% offer for very first 100</h1>
-          <p className="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-          </p>
-          <div className="button-group">
-            <a href="#" className="btn btn-green">
-              ADMISSION NOW
-            </a>
-            <a href="#course-section" className="btn btn-blue">
-              OUR COURSES
-            </a>
-          </div>
-        </div>
-        <div className="offer-image"></div>
-      </section>
+      <Offer />
       <Footer />
     </>
   );
