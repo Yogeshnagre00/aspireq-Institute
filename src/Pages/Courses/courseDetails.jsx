@@ -22,6 +22,7 @@ const CourseSection = () => {
 
   const modules = [
     {
+      id: 1,
       title: "Module 1",
       subtitle: "Master Problem Solving in DS & Algo",
       duration: "12 Weeks",
@@ -111,6 +112,7 @@ const CourseSection = () => {
         </div>
       </section>
       <section className="syllabus">
+        <h2 className="syllabus-h2">syllabus</h2>
         <div className="module-content-container">
           <div className="module-sidebar">
             {modules.map((module) => (
@@ -126,6 +128,7 @@ const CourseSection = () => {
               </div>
             ))}
           </div>
+          {/* Syllabus details module wise */}
           <div className="module-details">
             {modules.map((module) =>
               activeModule === module.title ? (
@@ -133,6 +136,7 @@ const CourseSection = () => {
                   <h2>
                     {module.title} - {module.subtitle}
                   </h2>
+                  <hr className="divider" />
                   {module.duration && (
                     <p>
                       <strong>Duration:</strong> {module.duration}
@@ -145,6 +149,29 @@ const CourseSection = () => {
                       <ul className="topics-list">
                         {renderTopics(module.topics)}
                       </ul>
+                      <div className="outcomes-section">
+                        <hr className="divider" />
+                        <h3 className="outcomes-title">
+                          <span role="img" aria-label="Outcomes">
+                            📝
+                          </span>{" "}
+                          Outcomes:
+                        </h3>
+                        <p>After these 12 weeks, you will:</p>
+                        <ul className="outcomes-list">
+                          <li>
+                            Feel confident in your problem-solving skills.
+                          </li>
+                          <li>
+                            Develop pattern recognition skills required to crack
+                            hard-level DSA problems.
+                          </li>
+                          <li>
+                            Be interview-ready with DSA to crack top tech
+                            companies.
+                          </li>
+                        </ul>
+                      </div>
                     </>
                   )}
                 </div>

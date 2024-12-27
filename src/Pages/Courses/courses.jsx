@@ -33,7 +33,7 @@ const CoursesPage = () => {
     {
       id: 4,
       type: "video",
-      src: "public/Videos/Dem2.mp4",
+      src: "./Videos/SampleVideo_1280x720_10mb.mp4",
       title: "Video Demo 2",
       description: "A demonstration video about QA services.",
     },
@@ -45,8 +45,10 @@ const CoursesPage = () => {
       description: "Description for business analyst",
     },
   ];
+  //courses card item
   const courses = [
     {
+      id: 1,
       title: "Scrum Master",
       description: "Learn the essentials of manual software testing.",
       image: "./Images/Scrum master.jpg",
@@ -55,6 +57,7 @@ const CoursesPage = () => {
       rating: 4.7,
     },
     {
+      id: 2,
       title: "Business Analyst(BA)",
       description: "Master software testing techniques and tools.",
       image: "./Images/Business analyst.jpg",
@@ -63,6 +66,7 @@ const CoursesPage = () => {
       rating: 4.8,
     },
     {
+      id: 3,
       title: "Full Stack Developer",
       description: "Automate your testing process with the latest tools.",
       image: "./Images/Full stack developer.jpg",
@@ -71,6 +75,7 @@ const CoursesPage = () => {
       rating: 4.9,
     },
     {
+      id: 4,
       title: "Software Development Engineer in Testing (SDET)",
       description: "Automate your testing process with the latest tools.",
       image: "./Images/SDET.jpeg",
@@ -79,6 +84,7 @@ const CoursesPage = () => {
       rating: 4.9,
     },
     {
+      id: 5,
       title: "Devops Engineer",
       description: "Automate your testing process with the latest tools.",
       image: "./Images/Devops engineer.jpeg",
@@ -87,6 +93,7 @@ const CoursesPage = () => {
       rating: 4.9,
     },
     {
+      id: 6,
       title: "Corporate Training",
       description: "Automate your testing process with the latest tools.",
       image: "./Images/corporate.jpeg",
@@ -96,6 +103,7 @@ const CoursesPage = () => {
     },
   ];
 
+  //slider thumbnails images
   const thumbnails = [
     "./Images/Devops engineer.jpeg",
     "/./Images/Container.png",
@@ -167,8 +175,11 @@ const CoursesPage = () => {
     setIsVideoPlaying(true);
   };
   const handleVideoEnd = () => {
-    setIsVideoPlaying(false);
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderItems.length);
+    const videoElement = videoRef.current;
+    if (videoElement && videoElement.ended) {
+      setIsVideoPlaying(false);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderItems.length);
+    }
   };
   const toggleMute = () => {
     setIsMuted((prevState) => !prevState);
@@ -191,6 +202,7 @@ const CoursesPage = () => {
               />
             ) : (
               <video
+                ref={videoRef}
                 className="main-video"
                 src={sliderItems[currentIndex].src}
                 controls
@@ -198,7 +210,7 @@ const CoursesPage = () => {
                 onEnded={handleVideoEnd}
                 autoPlay
                 muted={isMuted}
-              ></video>
+              />
             )}
             <button className="mute-button" onClick={toggleMute}>
               {isMuted ? "Unmute" : "Mute"}
@@ -243,9 +255,15 @@ const CoursesPage = () => {
       <section id="course-section" className="course-section">
         <h2>Courses</h2>
         <div className="course-section__grid">
-          {/* <div className="slider-container"> */}
           {courses.map((course, index) => (
-            <div key={index} className="course-card">
+            <div
+              key={index}
+              className="course-card"
+              onClick={() =>
+                window.open(`/course-details/${course.id}`, "_blank")
+              }
+              style={{ cursor: "pointer" }}
+            >
               <div className="course-image">
                 <img src={course.image} alt={course.title} loading="lazy" />
                 {course.bestseller && course.discount && (
@@ -267,6 +285,7 @@ const CoursesPage = () => {
           ))}
         </div>
       </section>
+
       <section>
         <div className="how-it-works">
           <h2>How it works</h2>

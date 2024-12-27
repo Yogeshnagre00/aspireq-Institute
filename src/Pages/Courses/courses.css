@@ -249,6 +249,15 @@
   font-size: 1rem;
   color: #000000;
 }
+.course-card__button {
+  font-size: 20px;
+  padding: 3px 10px;
+  text-align: center;
+  background-color: #00d19d;
+  border-radius: 10px;
+  border: none !important;
+  color: #ffffff;
+}
 
 .rating {
   padding: 5px 12px;
