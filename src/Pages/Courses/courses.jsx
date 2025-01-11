@@ -49,13 +49,14 @@ const CoursesPage = () => {
   const courses = [
     {
       id: 1,
-      title: "Scrum Master",
-      description: "Learn the essentials of manual software testing.",
-      image: "./Images/Scrum master.jpg",
+      title: "Full Stack Developer",
+      description: "Automate your testing process with the latest tools.",
+      image: "./Images/Full stack developer.jpg",
       bestseller: true,
       discount: "20% Off",
-      rating: 4.7,
+      rating: 4.9,
     },
+
     {
       id: 2,
       title: "Business Analyst(BA)",
@@ -67,12 +68,12 @@ const CoursesPage = () => {
     },
     {
       id: 3,
-      title: "Full Stack Developer",
-      description: "Automate your testing process with the latest tools.",
-      image: "./Images/Full stack developer.jpg",
+      title: "Scrum Master",
+      description: "Learn the essentials of manual software testing.",
+      image: "./Images/Scrum master.jpg",
       bestseller: true,
       discount: "20% Off",
-      rating: 4.9,
+      rating: 4.7,
     },
     {
       id: 4,
@@ -157,7 +158,7 @@ const CoursesPage = () => {
           const nextIndex = prevIndex + 3;
           return nextIndex >= thumbnails.length ? 0 : nextIndex;
         });
-      }, 1000);
+      }, 5000);
       return () => clearInterval(interval);
     }
   }, [isPaused, thumbnails.length]);
@@ -190,7 +191,7 @@ const CoursesPage = () => {
   return (
     <>
       <Navbar />
-      <section>
+      <section className="qa-section">
         <div className="qa-section">
           {/* Main Slider */}
           <div className="main-card">

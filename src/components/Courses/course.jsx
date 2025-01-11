@@ -5,22 +5,7 @@ import "./course.css";
 
 const courses = [
   {
-    title: "Scrum Master",
-    description: "Learn the essentials of manual software testing.",
-    image: "./Images/Scrum master.jpg",
-    bestseller: true,
-    discount: "20% Off",
-    rating: 4.7,
-  },
-  {
-    title: "Business Analyst(BA)",
-    description: "Master software testing techniques and tools.",
-    image: "./Images/Business analyst.jpg",
-    bestseller: true,
-    discount: "20% Off",
-    rating: 4.8,
-  },
-  {
+    id: 1,
     title: "Full Stack Developer",
     description: "Automate your testing process with the latest tools.",
     image: "./Images/Full stack developer.jpg",
@@ -29,6 +14,25 @@ const courses = [
     rating: 4.9,
   },
   {
+    id: 2,
+    title: "Business Analyst(BA)",
+    description: "Master software testing techniques and tools.",
+    image: "./Images/Business analyst.jpg",
+    bestseller: true,
+    discount: "20% Off",
+    rating: 4.8,
+  },
+  {
+    id: 3,
+    title: "Scrum Master",
+    description: "Learn the essentials of manual software testing.",
+    image: "./Images/Scrum master.jpg",
+    bestseller: true,
+    discount: "20% Off",
+    rating: 4.7,
+  },
+  {
+    id: 4,
     title: "Software Development Engineer in Testing (SDET)",
     description: "Automate your testing process with the latest tools.",
     image: "./Images/SDET.jpeg",
@@ -37,6 +41,7 @@ const courses = [
     rating: 4.9,
   },
   {
+    id: 5,
     title: "Devops Engineer",
     description: "Automate your testing process with the latest tools.",
     image: "./Images/Devops engineer.jpeg",
@@ -45,6 +50,7 @@ const courses = [
     rating: 4.9,
   },
   {
+    id: 6,
     title: "Corporate Training",
     description: "Automate your testing process with the latest tools.",
     image: "./Images/corporate.jpeg",
@@ -81,13 +87,21 @@ const CourseCards = () => {
     ],
   };
 
+  const handleCardClick = (id) => {
+    window.open(`/course-details/${id}`, "_blank");
+  };
+
   return (
     <section id="courses" className="course-section">
       <h2>Courses we provide</h2>
       <div className="slider-container">
         <Slider {...settings}>
           {courses.map((course, index) => (
-            <div key={index} className="course-card">
+            <div
+              key={index}
+              className="course-card"
+              onClick={() => handleCardClick(course.id)}
+            >
               <div className="course-image">
                 <img src={course.image} alt={course.title} loading="lazy" />
                 {course.bestseller && course.discount && (

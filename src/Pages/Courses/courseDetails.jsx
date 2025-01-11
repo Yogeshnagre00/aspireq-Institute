@@ -2,7 +2,7 @@ import "./courseDetails.css";
 import Navbar from "../../components/Header/header";
 import { Footer } from "../../components/Footer/footer";
 import Offer from "../../components/offerSection/offer";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const CourseDetailsPage = () => {
@@ -11,13 +11,14 @@ const CourseDetailsPage = () => {
   const [activeModule, setActiveModule] = useState(1);
 
   //course Name and Syllbus Data
-  const courses = [
+  const coursesRef = useRef([
     {
       id: 1,
+      name: "fullstackdevelopement",
       title: "Full Stack Development",
       description: "Learn Full Stack Development with React and Java.",
       category: "Development",
-      imageUrl: "./Images/Full stack developer.jpg",
+      imageUrl: "/Images/Full stack developer.jpg",
       rating: "4.8",
       lessons: 10,
       duration: "19h 30m",
@@ -143,10 +144,11 @@ const CourseDetailsPage = () => {
     },
     {
       id: 2,
+      name: "businessanalys",
       title: "Business Analyst",
       description: "Become an expert in Business Analysis and Data.",
       category: "Business",
-      imageUrl: "./Images/business-analyst.jpg",
+      imageUrl: "/Images/Business analyst.jpg",
       rating: "4.7",
       lessons: 12,
       duration: "15h 00m",
@@ -230,12 +232,12 @@ const CourseDetailsPage = () => {
         },
       ],
     },
-  ];
+  ]);
 
   const certificateData = [
     {
       title: "Gain Industry-Recognized Certificates",
-      image: "./Images/ux design certificate.png",
+      image: "/Images/ux design certificate.png",
       benefits: [
         "Use your certificates to make a life-changing shift",
         "Use your certificates to make a life-changing shift",
@@ -246,7 +248,7 @@ const CourseDetailsPage = () => {
     },
     {
       title: "Industry-Leading Certification",
-      image: "./Images/ux design certificate.png",
+      image: "/Images/ux design certificate.png",
       benefits: [
         "Boost your career prospects with a top-tier certificate",
         "Gain practical skills recognized by employers",
@@ -257,7 +259,7 @@ const CourseDetailsPage = () => {
     },
     {
       title: "Advanced UX Design Certificate",
-      image: "./Images/ux design certificate.png",
+      image: "/Images/ux design certificate.png",
       benefits: [
         "Master the latest UX design trends and tools",
         "Improve your problem-solving and creativity skills",
@@ -275,10 +277,11 @@ const CourseDetailsPage = () => {
     link.download = `${course ? course.title : "course"}.pdf`;
     link.click();
   };
+
   useEffect(() => {
     if (!courseId) return; // Wait for the courseId to be available
 
-    const courseDetails = courses.find(
+    const courseDetails = coursesRef.current.find(
       (course) => course.id === parseInt(courseId)
     );
     if (courseDetails) {
@@ -287,8 +290,14 @@ const CourseDetailsPage = () => {
   }, [courseId]);
 
   if (!course) {
-    return <div>Loading...</div>; // Handle course not found
+    return (
+      <div className="coming-soon">
+        <h2>Coming Soon</h2>
+        <p>The course you are looking for is not available yet. Stay tuned!</p>
+      </div>
+    );
   }
+
   return (
     <>
       <Navbar />
@@ -379,8 +388,8 @@ const CourseDetailsPage = () => {
       <section className="schedule-section">
         <div className="schedule-container">
           <h2>Schedule</h2>
-          <img src="./Images/day schedule.png" alt="day Schedule" />
-          <img src="./Images/year Schedule.png" alt="year Schedule" />
+          <img src="/Images/day schedule.png" alt="day Schedule" />
+          <img src="/Images/year Schedule.png" alt="year Schedule" />
         </div>
       </section>
 
@@ -413,3 +422,23 @@ const CourseDetailsPage = () => {
 };
 
 export default CourseDetailsPage;
+
+// useEffect(() => {
+//   if (!courseId) return; // Ensure courseId is available
+
+//   const courseDetails = coursesRef.current.find(
+//     (course) => course.id === parseInt(courseId)
+//   );
+
+//   if (courseDetails) {
+//     setCourse(courseDetails);
+//     // Update the URL to show course name instead of courseId
+//     window.history.replaceState(
+//       null,
+//       "",
+//       `/course-details/${courseDetails.name}`
+//     );
+//   } else {
+//     setCourse(null);
+//   }
+// }, [courseId]);

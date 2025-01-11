@@ -16,7 +16,7 @@ const Navbar = () => {
     <header>
       <nav className="navbar">
         <div className="logo">
-          <img src="./Images/Frame 27319.png" alt="Logo" />
+          <img src="/Images/Frame 27319.png" alt="Logo" />
         </div>
         <ul className="nav-links">
           <li>
@@ -27,7 +27,7 @@ const Navbar = () => {
             <a href="/courses">COURSES</a>
           </li>
           <li>
-            <a href="/courseDetails">ABOUT US</a>
+            <a href="/aboutUs">ABOUT US</a>
           </li>
           <li>
             <Link to="/contactUs">CONTACT US</Link>

@@ -121,6 +121,9 @@
   border: 1px solid rgb(211, 211, 211);
   border-radius: 25px;
 }
+/* .course-link {
+  text-decoration: none;
+} */
 
 .explore-more-button {
   margin-top: 30px;

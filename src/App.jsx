@@ -6,6 +6,7 @@ import "./App.css";
 const CoursesPage = React.lazy(() => import("./Pages/Courses/courses"));
 const CourseDetails = React.lazy(() => import("./Pages/Courses/courseDetails"));
 const ContactForm = React.lazy(() => import("./Pages/ContactUs/contactUs"));
+const AboutUs = React.lazy(() => import("./Pages/AboutUs/aboutUs"));
 const Home = React.lazy(() => import("./Pages/home"));
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contactUs" element={<ContactForm />} />
+          <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/course-details/:courseId" element={<CourseDetails />} />
         </Routes>

@@ -36,6 +36,26 @@
   overflow: hidden;
   background-color: #fff;
 }
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  padding: 50px;
+  font-size: 24px;
+  color: #2bba92;
+}
+
+.coming-soon h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.coming-soon p {
+  font-size: 18px;
+}
 
 .coursepage-image-container {
   position: relative;
@@ -329,4 +349,73 @@
   color: #28a745;
   font-size: 1.2rem;
   margin-right: 10px;
+}
+@media (max-width: 1024px) {
+  .coursepage-section {
+    width: 90%;
+  }
+
+  .coursepage-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .module-sidebar {
+    width: 250px;
+  }
+
+  .certificate-container {
+    flex-wrap: wrap;
+  }
+
+  .certificate-details {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .coursepage-section {
+    width: 95%;
+  }
+
+  .coursepage-content h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .module-sidebar {
+    width: 100%;
+  }
+
+  .module-item {
+    padding: 0.75rem;
+  }
+
+  .certificate-details h3 {
+    font-size: 1.2rem;
+  }
+
+  .download-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coursepage-content h2 {
+    font-size: 1rem;
+  }
+
+  .coursepage-content p {
+    font-size: 0.8rem;
+  }
+
+  .module-sidebar {
+    display: none;
+  }
+
+  .module-details {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
 }
