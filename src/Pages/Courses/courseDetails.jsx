@@ -2,183 +2,374 @@ import "./courseDetails.css";
 import Navbar from "../../components/Header/header";
 import { Footer } from "../../components/Footer/footer";
 import Offer from "../../components/offerSection/offer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
-const CourseSection = () => {
-  const [activeModule, setActiveModule] = useState("Module 1");
-  // Data added directly in the component
-  const courseData = {
-    title: "IT Statistics Data Science And Business Analysis",
-    description:
-      "or-em fit omet lorem ipsum ht ometlotern ipsum doner fit ipsum fit ipsum fit amotlørem ipsum doMe1 ht ometlorem ipsum dolle. fit arneuorem ipsurn doller fit amet",
-    category: "Development",
-    imageUrl: "./Images/Full stack developer.jpg",
-    rating: "4.8",
-    lessons: 10,
-    duration: "19h 30m",
-    students: 20,
-    author: "Angela",
-  };
+const CourseDetailsPage = () => {
+  const { courseId } = useParams();
+  const [course, setCourse] = useState(null);
+  const [activeModule, setActiveModule] = useState(1);
 
-  const modules = [
+  //course Name and Syllbus Data
+  const courses = [
     {
       id: 1,
-      title: "Module 1",
-      subtitle: "Master Problem Solving in DS & Algo",
-      duration: "12 Weeks",
-      description:
-        "Problem-solving in DS & Algo is one of the most important topics to master for a software engineer. That is why we spend the first 12 weeks of our program ensuring you have solid problem-solving skills in DS & Algo. High-quality live classes with regular assignment problems, doubt support, mock interviews & competitive contests make sure you develop strong problem-solving muscles.",
-      topics: [
-        "Time Complexity",
-        "Arrays",
-        "Strings",
-        "Binary Search",
-        "2 Pointers",
-        "Recursion",
-        "Hashing",
-        "Sorting",
-        "Bit Manipulation",
-        "Heap",
-        "Greedy",
-        "Dynamic Programming",
-        "Graphs",
+      title: "Full Stack Development",
+      description: "Learn Full Stack Development with React and Java.",
+      category: "Development",
+      imageUrl: "./Images/Full stack developer.jpg",
+      rating: "4.8",
+      lessons: 10,
+      duration: "19h 30m",
+      students: 20,
+      author: "Angela",
+
+      modules: [
+        {
+          id: 1,
+          title: "Module 1",
+          subtitle: "Introduction and Basics",
+          duration: "4 Weeks",
+          description:
+            "An introduction to the fundamental concepts of React and Java, providing a strong foundation to build upon.",
+          topics: [
+            "Introduction to React",
+            "What is React and why use it?",
+            "Setting up the development environment",
+            "Creating a new React project",
+            "Understanding JSX",
+            "Introduction to Java",
+            "History and features of Java",
+            "Setting up the Java Development Kit (JDK)",
+            "Writing your first Java program",
+            "Understanding the Java Virtual Machine (JVM)",
+          ],
+        },
+        {
+          id: 2,
+          title: "Module 2",
+          subtitle: "Intermediate Concepts",
+          duration: "6 Weeks",
+          description:
+            "Dive deeper into essential topics like React Basics, Java Syntax, and Object-Oriented Programming.",
+          topics: [
+            "React Basics",
+            "Components and props",
+            "State and lifecycle",
+            "Handling events",
+            "Conditional rendering",
+            "Lists and keys",
+            "Java Syntax",
+            "Data types and variables",
+            "Operators and expressions",
+            "Control flow statements",
+            "Loops",
+            "Object-Oriented Programming (OOP)",
+            "Classes and objects",
+            "Constructors",
+            "Inheritance",
+            "Polymorphism",
+          ],
+        },
+        {
+          id: 3,
+          title: "Module 3",
+          subtitle: "Advanced Topics and Projects",
+          duration: "8 Weeks",
+          description:
+            "Master advanced topics like React Router, Hooks, Context API, and Java's advanced OOP concepts while working on hands-on projects.",
+          topics: [
+            "Advanced React Concepts",
+            "React Router for navigation",
+            "Hooks (useState, useEffect, etc.)",
+            "Context API",
+            "Java Advanced OOP Concepts",
+            "Interfaces",
+            "Abstract classes",
+            "Inner classes",
+            "Packages and access modifiers",
+            "Full-Stack Project",
+            "Building a full-stack application",
+            "User authentication and authorization",
+            "CRUD operations",
+          ],
+        },
+        {
+          id: 4,
+          title: "Module 4",
+          subtitle: "State Management and Integration",
+          duration: "6 Weeks",
+          description:
+            "Learn state management using Redux, integrate React with a Java backend, and tackle debugging techniques.",
+          topics: [
+            "State Management",
+            "Introduction to Redux",
+            "Actions, reducers, and store",
+            "Connecting React with Redux",
+            "Middleware (Thunk, Saga)",
+            "Integrating React with Java Backend",
+            "Setting up a Spring Boot project",
+            "Creating RESTful APIs with Spring Boot",
+            "Connecting React frontend with Java backend",
+            "Handling CORS issues",
+            "Testing and Debugging",
+            "Testing React components",
+            "Debugging techniques",
+          ],
+        },
+        {
+          id: 5,
+          title: "Module 5",
+          subtitle: "Deployment and Best Practices",
+          duration: "4 Weeks",
+          description:
+            "Finalize your learning with deployment strategies, best practices, and design patterns to prepare for the real world.",
+          topics: [
+            "Deployment",
+            "Deploying React applications",
+            "Deploying Java applications",
+            "CI/CD pipelines",
+            "Best Practices and Design Patterns",
+            "Coding standards",
+            "Common design patterns in Java",
+            "Refactoring techniques",
+            "Project Work",
+            "Building a real-world application",
+            "Applying all learned concepts",
+            "Testing and debugging",
+          ],
+        },
       ],
     },
     {
-      title: "Module 2",
-      subtitle: "System Design - LLD + HLD",
-    },
-    {
-      title: "Module 3",
-      subtitle: "Full Stack Specialization With Project (OPTIONAL)",
-    },
-    {
-      title: "Module 4",
-      subtitle: "Leadership Skills (OPTIONAL)",
-    },
-    {
-      title: "Module 5",
-      subtitle: "GRAB YOUR DREAM OFFER",
+      id: 2,
+      title: "Business Analyst",
+      description: "Become an expert in Business Analysis and Data.",
+      category: "Business",
+      imageUrl: "./Images/business-analyst.jpg",
+      rating: "4.7",
+      lessons: 12,
+      duration: "15h 00m",
+      students: 30,
+      author: "John",
+      modules: [
+        {
+          id: 1,
+          title: "Module 1",
+          subtitle: "Introduction to Business Analysis",
+          duration: "4 Weeks",
+          description:
+            "Understand the basics of business analysis, key terminologies, and the role of a business analyst in projects.",
+          topics: [
+            "What is Business Analysis?",
+            "Role of a Business Analyst",
+            "Key Skills and Responsibilities",
+            "Stakeholder Identification and Management",
+            "Introduction to Business Process Modeling",
+          ],
+        },
+        {
+          id: 2,
+          title: "Module 2",
+          subtitle: "Requirement Gathering and Documentation",
+          duration: "5 Weeks",
+          description:
+            "Learn effective techniques for requirement gathering, analysis, and proper documentation standards.",
+          topics: [
+            "Techniques for Requirement Gathering",
+            "Functional vs Non-Functional Requirements",
+            "Creating Use Case Diagrams",
+            "Documenting Requirements with BRD, SRS, and FRS",
+            "Managing Requirement Changes",
+          ],
+        },
+        {
+          id: 3,
+          title: "Module 3",
+          subtitle: "Data Analysis and Tools",
+          duration: "6 Weeks",
+          description:
+            "Gain expertise in data analysis tools and methodologies used in business analysis.",
+          topics: [
+            "Introduction to Data Analysis",
+            "Data Visualization Tools (Tableau, PowerBI)",
+            "SQL for Data Analysis",
+            "Interpreting Data Insights",
+            "KPI and Metrics Management",
+          ],
+        },
+        {
+          id: 4,
+          title: "Module 4",
+          subtitle: "Project Management and Agile Methodology",
+          duration: "5 Weeks",
+          description:
+            "Understand how project management principles and Agile methodologies integrate with business analysis.",
+          topics: [
+            "Project Management Basics",
+            "Introduction to Agile and Scrum",
+            "Roles of a BA in Agile Projects",
+            "JIRA for Requirement Management",
+            "Creating User Stories and Acceptance Criteria",
+          ],
+        },
+        {
+          id: 5,
+          title: "Module 5",
+          subtitle: "Final Project and Career Guidance",
+          duration: "4 Weeks",
+          description:
+            "Work on a capstone project and receive career guidance for becoming a professional Business Analyst.",
+          topics: [
+            "Capstone Business Analysis Project",
+            "Documenting and Presenting Business Solutions",
+            "Interview Preparation",
+            "Creating a Professional Portfolio",
+            "Networking and Career Guidance",
+          ],
+        },
+      ],
     },
   ];
 
-  const renderTopics = (topics) => {
-    return topics.map((topic, index) => <li key={index}>{topic}</li>);
-  };
+  const certificateData = [
+    {
+      title: "Gain Industry-Recognized Certificates",
+      image: "./Images/ux design certificate.png",
+      benefits: [
+        "Use your certificates to make a life-changing shift",
+        "Use your certificates to make a life-changing shift",
+        "Use your certificates to make a life-changing shift",
+        "Use your certificates to make a life-changing shift",
+        "Use your certificates to make a life-changing shift",
+      ],
+    },
+    {
+      title: "Industry-Leading Certification",
+      image: "./Images/ux design certificate.png",
+      benefits: [
+        "Boost your career prospects with a top-tier certificate",
+        "Gain practical skills recognized by employers",
+        "Access to exclusive job opportunities",
+        "Learn from industry experts",
+        "Earn while you learn with our certification program",
+      ],
+    },
+    {
+      title: "Advanced UX Design Certificate",
+      image: "./Images/ux design certificate.png",
+      benefits: [
+        "Master the latest UX design trends and tools",
+        "Improve your problem-solving and creativity skills",
+        "Build a portfolio with real-world projects",
+        "Stand out in the competitive job market",
+        "Learn the fundamentals of user-centered design",
+      ],
+    },
+  ];
+
   const handleDownload = () => {
     // Create a download link to the PDF
     const link = document.createElement("a");
-    link.href = "/syllabus.pdf"; // Path to the PDF in the public folder
-    link.download = "syllabus_full_stack.pdf"; // File name to be saved
+    link.href = "./syllabus.pdf"; // Assuming syllabus.pdf is in the public folder
+    link.download = `${course ? course.title : "course"}.pdf`;
     link.click();
   };
+  useEffect(() => {
+    if (!courseId) return; // Wait for the courseId to be available
 
+    const courseDetails = courses.find(
+      (course) => course.id === parseInt(courseId)
+    );
+    if (courseDetails) {
+      setCourse(courseDetails);
+    }
+  }, [courseId]);
+
+  if (!course) {
+    return <div>Loading...</div>; // Handle course not found
+  }
   return (
     <>
       <Navbar />
       <section className="coursepage-section">
         <div className="coursepage-content">
-          <h2>{courseData.title}</h2>
-          <p>{courseData.description}</p>
+          <h2>{course.title}</h2>
+          <p>{course.description}</p>
         </div>
         <div className="coursepage-main">
           <div className="coursepage-image-container">
-            <span className="coursepage-badge">{courseData.category}</span>
+            <span className="coursepage-badge">{course.category}</span>
             <img
-              src={courseData.imageUrl}
+              src={course.imageUrl}
               alt="Course"
               className="coursepage-image"
             />
             <div className="coursepage-rating">
               <span className="star">⭐</span>
-              <span>{courseData.rating}</span>
+              <span>{course.rating}</span>
             </div>
           </div>
 
           <div className="coursepage-footer">
             <div className="footerpage-info">
-              <span>&#128196; Lesson {courseData.lessons}</span>
-              <span>&#9719; {courseData.duration}</span>
+              <span>&#128196; Lessons: {course.lessons}</span>
+              <span>&#9719; {course.duration}</span>
               <span>
-                <i className="fa fa-user"></i> Students {courseData.students}+
+                <i className="fa fa-user"></i> Students: {course.students}+
               </span>
             </div>
             <div className="author-info">
               <span>
-                By <b>{courseData.author}</b> in {courseData.category}
+                By <b>{course.author}</b> in {course.category}
               </span>
             </div>
           </div>
         </div>
       </section>
+
       <section className="syllabus">
-        <h2 className="syllabus-h2">syllabus</h2>
+        <h2 className="syllabus-title">Syllabus</h2>
         <div className="module-content-container">
           <div className="module-sidebar">
-            {modules.map((module) => (
+            {course.modules.map((module) => (
               <div
-                key={module.title}
+                key={module.id}
                 className={`module-item ${
-                  activeModule === module.title ? "active" : ""
+                  activeModule === module.id ? "active" : ""
                 }`}
-                onClick={() => setActiveModule(module.title)}
+                onClick={() => setActiveModule(module.id)}
               >
                 <h3>{module.title}</h3>
                 <p>{module.subtitle}</p>
               </div>
             ))}
           </div>
-          {/* Syllabus details module wise */}
+
           <div className="module-details">
-            {modules.map((module) =>
-              activeModule === module.title ? (
-                <div key={module.title}>
+            {course.modules
+              .filter((module) => module.id === activeModule)
+              .map((module) => (
+                <div key={module.id} className="module-detail">
                   <h2>
                     {module.title} - {module.subtitle}
                   </h2>
                   <hr className="divider" />
-                  {module.duration && (
-                    <p>
-                      <strong>Duration:</strong> {module.duration}
-                    </p>
-                  )}
+                  <p>
+                    <strong>Duration:</strong> {module.duration}
+                  </p>
                   <p>{module.description}</p>
-                  {module.topics && (
-                    <>
-                      <h3>Topics that will be covered -</h3>
-                      <ul className="topics-list">
-                        {renderTopics(module.topics)}
-                      </ul>
-                      <div className="outcomes-section">
-                        <hr className="divider" />
-                        <h3 className="outcomes-title">
-                          <span role="img" aria-label="Outcomes">
-                            📝
-                          </span>{" "}
-                          Outcomes:
-                        </h3>
-                        <p>After these 12 weeks, you will:</p>
-                        <ul className="outcomes-list">
-                          <li>
-                            Feel confident in your problem-solving skills.
-                          </li>
-                          <li>
-                            Develop pattern recognition skills required to crack
-                            hard-level DSA problems.
-                          </li>
-                          <li>
-                            Be interview-ready with DSA to crack top tech
-                            companies.
-                          </li>
-                        </ul>
-                      </div>
-                    </>
-                  )}
+                  <h3>Topics Covered:</h3>
+                  <ul className="topics-list">
+                    {module.topics.map((topic, index) => (
+                      <li key={index}>{topic}</li>
+                    ))}
+                  </ul>
                 </div>
-              ) : null
-            )}
+              ))}
           </div>
         </div>
+
         <div className="syllabus-container">
           <button className="download-button" onClick={handleDownload}>
             <span className="download-icon">⬇️</span> Download Syllabus
@@ -192,67 +383,33 @@ const CourseSection = () => {
           <img src="./Images/year Schedule.png" alt="year Schedule" />
         </div>
       </section>
+
       <section className="certificate-section">
         <h2>Certificate</h2>
-        <div className="certificate-container">
-          <div className="certificate-image">
-            <img
-              src="./Images/ux design certificate.png"
-              alt="Sample Certificate"
-            />
+        {certificateData.map((certificate, index) => (
+          <div className="certificate-container" key={index}>
+            <div className="certificate-image">
+              <img
+                src={certificate.image}
+                alt={`Certificate - ${certificate.title}`}
+              />
+            </div>
+            <div className="certificate-details">
+              <h3>{certificate.title}</h3>
+              <ul>
+                {certificate.benefits.map((benefit, idx) => (
+                  <li key={idx}>{benefit}</li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="certificate-details">
-            <h3>Gain Industry-Recognized Certificates</h3>
-            <ul>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-            </ul>
-          </div>
-        </div>
-        <div className="certificate-container">
-          <div className="certificate-details">
-            <h3>Gain Industry-Recognized Certificates</h3>
-            <ul>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-            </ul>
-          </div>
-          <div className="certificate-image">
-            <img
-              src="./Images/ux design certificate.png"
-              alt="Sample Certificate"
-            />
-          </div>
-        </div>
-        <div className="certificate-container">
-          <div className="certificate-image">
-            <img
-              src="./Images/ux design certificate.png"
-              alt="Sample Certificate"
-            />
-          </div>
-          <div className="certificate-details">
-            <h3>Gain Industry-Recognized Certificates</h3>
-            <ul>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-            </ul>
-          </div>
-        </div>
+        ))}
       </section>
+
       <Offer />
       <Footer />
     </>
   );
 };
 
-export default CourseSection;
+export default CourseDetailsPage;
