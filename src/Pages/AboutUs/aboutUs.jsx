@@ -1,6 +1,6 @@
 import { Footer } from "../../components/Footer/footer";
 import Navbar from "../../components/Header/header";
-import "./aboutus.css";
+import "./aboutUs.css";
 
 const AboutUs = () => {
   return (
