@@ -133,11 +133,14 @@
 
 /* Title Styling */
 .syllabus-title {
-  font-size: 24px;
-  color: #333;
-  margin: 0;
+  font-size: 1.5rem;
+  margin: 70px 0 50px 0;
   text-align: center;
-  position: relative;
+  padding-bottom: 8px;
+  background: linear-gradient(to right, transparent, #27cf787d, transparent);
+  background-position: bottom;
+  background-size: 10% 2px;
+  background-repeat: no-repeat;
 }
 
 /* Download Button */
@@ -171,7 +174,7 @@
   gap: 1.5rem;
   justify-content: center;
 }
-.syllabus-h2 {
+/* .syllabus-h2 {
   font-size: 1.5rem;
   margin-top: 70px;
   text-align: center;
@@ -180,7 +183,7 @@
   background-position: bottom;
   background-size: 10% 2px;
   background-repeat: no-repeat;
-}
+} */
 .module-sidebar {
   width: 300px;
 }
