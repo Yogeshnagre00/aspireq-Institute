@@ -174,22 +174,15 @@
   gap: 1.5rem;
   justify-content: center;
 }
-/* .syllabus-h2 {
-  font-size: 1.5rem;
-  margin-top: 70px;
-  text-align: center;
-  padding-bottom: 8px;
-  background: linear-gradient(to right, transparent, #27cf787d, transparent);
-  background-position: bottom;
-  background-size: 10% 2px;
-  background-repeat: no-repeat;
-} */
+
 .module-sidebar {
-  width: 300px;
+  width: 350px;
+  height: 600px;
+  overflow-y: auto;
 }
 
 .module-item {
-  padding: 1rem;
+  padding: 0.8rem;
   border-bottom: 1px solid #f0f0f0;
   cursor: pointer;
 }
@@ -368,7 +361,10 @@
   }
 
   .certificate-container {
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+  .reverse {
+    flex-direction: row-reverse;
   }
 
   .certificate-details {

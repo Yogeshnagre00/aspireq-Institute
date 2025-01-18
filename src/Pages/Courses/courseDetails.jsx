@@ -14,130 +14,143 @@ const CourseDetailsPage = () => {
   const coursesRef = useRef([
     {
       id: 1,
-      name: "fullstackdevelopement",
+      name: "Full Stack Development with React and Java",
       title: "Full Stack Development",
       description: "Learn Full Stack Development with React and Java.",
       category: "Development",
       imageUrl: "/Images/Full stack developer.jpg",
       rating: "4.8",
-      lessons: 10,
-      duration: "19h 30m",
-      students: 20,
+      lessons: 6,
+      students: 30,
       author: "Angela",
-
       modules: [
         {
           id: 1,
-          title: "Module 1",
-          subtitle: "Introduction and Basics",
-          duration: "4 Weeks",
+          title: "Introduction to Programming with Java",
+          subtitle: "Learn the fundamentals of Java.",
           description:
-            "An introduction to the fundamental concepts of React and Java, providing a strong foundation to build upon.",
+            "Understand the basics of Java programming and its setup.",
           topics: [
-            "Introduction to React",
-            "What is React and why use it?",
-            "Setting up the development environment",
-            "Creating a new React project",
-            "Understanding JSX",
-            "Introduction to Java",
             "History and features of Java",
             "Setting up the Java Development Kit (JDK)",
             "Writing your first Java program",
             "Understanding the Java Virtual Machine (JVM)",
+            "Data types and variables",
+            "Operators and expressions",
+            "Control flow statements (if-else, switch-case)",
+            "Loops (for, while, do-while)",
           ],
         },
         {
           id: 2,
-          title: "Module 2",
-          subtitle: "Intermediate Concepts",
-          duration: "6 Weeks",
+          title: "HTML, CSS, and JavaScript Basics",
+          subtitle: "Understand the foundations of web development.",
           description:
-            "Dive deeper into essential topics like React Basics, Java Syntax, and Object-Oriented Programming.",
+            "Learn the essential tools for front-end development, including HTML, CSS, and JavaScript.",
           topics: [
-            "React Basics",
+            "Introduction to HTML",
+            "Basic HTML tags and structure",
+            "Form Controls",
+            "Image Controls",
+            "Button Controls",
+            "HTML5 updates",
+            "Introduction to CSS",
+            "Borders and Backgrounds",
+            "Text Effects and Fonts",
+            "Transforms and Transitions",
+            "Animations in CSS",
+            "Multiple columns in CSS",
+            "User Interfaces with CSS",
+            "Flexbox and Grid layout",
+            "Responsive design with media queries",
+            "Introduction to JavaScript",
+            "Variables, data types, and operators",
+            "Functions and objects in JavaScript",
+            "DOM Manipulation",
+            "Asynchronous JavaScript",
+            "Debugging and Error Handling",
+            "Web APIs in JavaScript",
+          ],
+        },
+        {
+          id: 3,
+          title: "Frontend Development with React",
+          subtitle: "Learn to build dynamic user interfaces with React.",
+          description:
+            "Understand the core concepts of React and how to build web applications.",
+          topics: [
+            "What is React and why use it?",
+            "Setting up the development environment",
+            "Creating a new React project",
+            "Understanding JSX",
             "Components and props",
             "State and lifecycle",
             "Handling events",
             "Conditional rendering",
             "Lists and keys",
-            "Java Syntax",
-            "Data types and variables",
-            "Operators and expressions",
-            "Control flow statements",
-            "Loops",
-            "Object-Oriented Programming (OOP)",
-            "Classes and objects",
-            "Constructors",
-            "Inheritance",
-            "Polymorphism",
-          ],
-        },
-        {
-          id: 3,
-          title: "Module 3",
-          subtitle: "Advanced Topics and Projects",
-          duration: "8 Weeks",
-          description:
-            "Master advanced topics like React Router, Hooks, Context API, and Java's advanced OOP concepts while working on hands-on projects.",
-          topics: [
-            "Advanced React Concepts",
+            "Context API",
+            "Refs and the DOM",
+            "Higher-order components",
             "React Router for navigation",
             "Hooks (useState, useEffect, etc.)",
-            "Context API",
-            "Java Advanced OOP Concepts",
-            "Interfaces",
-            "Abstract classes",
-            "Inner classes",
-            "Packages and access modifiers",
-            "Full-Stack Project",
-            "Building a full-stack application",
-            "User authentication and authorization",
-            "CRUD operations",
           ],
         },
         {
           id: 4,
-          title: "Module 4",
-          subtitle: "State Management and Integration",
-          duration: "6 Weeks",
+          title: "Object-Oriented Programming in Java",
+          subtitle: "Master Object-Oriented Programming concepts.",
           description:
-            "Learn state management using Redux, integrate React with a Java backend, and tackle debugging techniques.",
+            "Learn OOP concepts like inheritance, polymorphism, and abstraction.",
           topics: [
-            "State Management",
-            "Introduction to Redux",
-            "Actions, reducers, and store",
-            "Connecting React with Redux",
-            "Middleware (Thunk, Saga)",
-            "Integrating React with Java Backend",
-            "Setting up a Spring Boot project",
-            "Creating RESTful APIs with Spring Boot",
-            "Connecting React frontend with Java backend",
-            "Handling CORS issues",
-            "Testing and Debugging",
-            "Testing React components",
-            "Debugging techniques",
+            "Classes and objects",
+            "Constructors",
+            "Inheritance",
+            "Polymorphism",
+            "Encapsulation",
+            "Abstraction",
+            "Interfaces",
+            "Abstract classes",
+            "Inner classes",
+            "Packages and access modifiers",
           ],
         },
         {
           id: 5,
-          title: "Module 5",
-          subtitle: "Deployment and Best Practices",
-          duration: "4 Weeks",
+          title: "Exception Handling and Collections Framework",
+          subtitle: "Handle exceptions and learn about Java collections.",
           description:
-            "Finalize your learning with deployment strategies, best practices, and design patterns to prepare for the real world.",
+            "Master Java’s exception handling and the collections framework.",
           topics: [
-            "Deployment",
-            "Deploying React applications",
-            "Deploying Java applications",
+            "Types of exceptions",
+            "Try-catch block",
+            "Finally block",
+            "Throw and throws keyword",
+            "Custom exceptions",
+            "List, Set, and Map interfaces",
+            "ArrayList, LinkedList, HashSet, TreeSet, HashMap, TreeMap",
+            "Iterators and for-each loop",
+          ],
+        },
+        {
+          id: 6,
+          title: "Backend Development with Java and Full-Stack Project",
+          subtitle:
+            "Combine your React and Java skills to build full-stack applications.",
+          description:
+            "Learn backend development with Java and integrate it with React to build complete applications.",
+          topics: [
+            "Setting up Spring Boot Project",
+            "Creating RESTful APIs with Spring Boot",
+            "Connecting React frontend with Java backend using Axios or Fetch API",
+            "Handling CORS issues",
+            "CRUD operations with Spring Boot",
+            "User authentication and authorization",
+            "Building a full-stack application",
+            "Deployment of Java and React applications",
             "CI/CD pipelines",
-            "Best Practices and Design Patterns",
-            "Coding standards",
-            "Common design patterns in Java",
-            "Refactoring techniques",
-            "Project Work",
-            "Building a real-world application",
-            "Applying all learned concepts",
-            "Testing and debugging",
+            "Unit testing in Java (JUnit)",
+            "Testing React components (Jest, React Testing Library)",
+            "Debugging techniques for full-stack applications",
           ],
         },
       ],
@@ -349,7 +362,7 @@ const CourseDetailsPage = () => {
                 }`}
                 onClick={() => setActiveModule(module.id)}
               >
-                <h3>{module.title}</h3>
+                <h4>{module.title}</h4>
                 <p>{module.subtitle}</p>
               </div>
             ))}
@@ -360,13 +373,10 @@ const CourseDetailsPage = () => {
               .filter((module) => module.id === activeModule)
               .map((module) => (
                 <div key={module.id} className="module-detail">
-                  <h2>
+                  <h3>
                     {module.title} - {module.subtitle}
-                  </h2>
+                  </h3>
                   <hr className="divider" />
-                  <p>
-                    <strong>Duration:</strong> {module.duration}
-                  </p>
                   <p>{module.description}</p>
                   <h3>Topics Covered:</h3>
                   <ul className="topics-list">
