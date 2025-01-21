@@ -26,8 +26,9 @@ const CourseDetailsPage = () => {
       modules: [
         {
           id: 1,
-          title: "Introduction to Programming with Java",
-          subtitle: "Learn the fundamentals of Java.",
+          title: "Module 1",
+          subtitle:
+            "Introduction to Programming with Java Learn the fundamentals of Java:-",
           description:
             "Understand the basics of Java programming and its setup.",
           topics: [
@@ -43,8 +44,16 @@ const CourseDetailsPage = () => {
         },
         {
           id: 2,
-          title: "HTML, CSS, and JavaScript Basics",
-          subtitle: "Understand the foundations of web development.",
+          title: "Module 2",
+          subtitle:
+            "AI tutorials in programming and Prompt engineering in chatgpt:-",
+          description: "Understand the basics of AI",
+          topics: [" Commng soon"],
+        },
+        {
+          id: 3,
+          title: "Module 3",
+          subtitle: "HTML, CSS, and JavaScript :-",
           description:
             "Learn the essential tools for front-end development, including HTML, CSS, and JavaScript.",
           topics: [
@@ -73,9 +82,9 @@ const CourseDetailsPage = () => {
           ],
         },
         {
-          id: 3,
-          title: "Frontend Development with React",
-          subtitle: "Learn to build dynamic user interfaces with React.",
+          id: 4,
+          title: " Module 4",
+          subtitle: "Frontend Development with React :-",
           description:
             "Understand the core concepts of React and how to build web applications.",
           topics: [
@@ -96,9 +105,9 @@ const CourseDetailsPage = () => {
           ],
         },
         {
-          id: 4,
-          title: "Object-Oriented Programming in Java",
-          subtitle: "Master Object-Oriented Programming concepts.",
+          id: 5,
+          title: "Module 5",
+          subtitle: "Master Object-Oriented Programming concepts:-",
           description:
             "Learn OOP concepts like inheritance, polymorphism, and abstraction.",
           topics: [
@@ -115,9 +124,9 @@ const CourseDetailsPage = () => {
           ],
         },
         {
-          id: 5,
-          title: "Exception Handling and Collections Framework",
-          subtitle: "Handle exceptions and learn about Java collections.",
+          id: 6,
+          title: "Module 6",
+          subtitle: "Handle exceptions and learn about Java collections:-",
           description:
             "Master Java’s exception handling and the collections framework.",
           topics: [
@@ -132,10 +141,10 @@ const CourseDetailsPage = () => {
           ],
         },
         {
-          id: 6,
-          title: "Backend Development with Java and Full-Stack Project",
+          id: 7,
+          title: "Module 7",
           subtitle:
-            "Combine your React and Java skills to build full-stack applications.",
+            "Combine your React and Java skills to build full-stack applications :-",
           description:
             "Learn backend development with Java and integrate it with React to build complete applications.",
           topics: [
@@ -373,9 +382,7 @@ const CourseDetailsPage = () => {
               .filter((module) => module.id === activeModule)
               .map((module) => (
                 <div key={module.id} className="module-detail">
-                  <h3>
-                    {module.title} - {module.subtitle}
-                  </h3>
+                  <h3>{module.subtitle}</h3>
                   <hr className="divider" />
                   <p>{module.description}</p>
                   <h3>Topics Covered:</h3>
