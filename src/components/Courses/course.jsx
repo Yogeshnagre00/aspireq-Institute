@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "./course.css";
+import { useNavigate } from "react-router-dom";
 
 const courses = [
   {
@@ -15,12 +16,12 @@ const courses = [
   },
   {
     id: 2,
-    title: "Business Analyst(BA)",
-    description: "Master software testing techniques and tools.",
-    image: "./Images/Business analyst.jpg",
+    title: "Software Development Engineer in Testing (SDET)",
+    description: "Automate your testing process with the latest tools.",
+    image: "./Images/SDET.jpeg",
     bestseller: true,
     discount: "20% Off",
-    rating: 4.8,
+    rating: 4.9,
   },
   {
     id: 3,
@@ -33,12 +34,12 @@ const courses = [
   },
   {
     id: 4,
-    title: "Software Development Engineer in Testing (SDET)",
-    description: "Automate your testing process with the latest tools.",
-    image: "./Images/SDET.jpeg",
+    title: "Business Analyst(BA)",
+    description: "Master software testing techniques and tools.",
+    image: "./Images/Business analyst.jpg",
     bestseller: true,
     discount: "20% Off",
-    rating: 4.9,
+    rating: 4.8,
   },
   {
     id: 5,
@@ -61,6 +62,7 @@ const courses = [
 ];
 
 const CourseCards = () => {
+  const navigate = useNavigate();
   const settings = {
     dots: true,
     infinite: true,
@@ -90,7 +92,9 @@ const CourseCards = () => {
   const handleCardClick = (id) => {
     window.open(`/course-details/${id}`, "_blank");
   };
-
+  const handleExploreMore = () => {
+    navigate("/courses");
+  };
   return (
     <section id="courses" className="course-section">
       <h2>Courses we provide</h2>
@@ -122,7 +126,9 @@ const CourseCards = () => {
           ))}
         </Slider>
       </div>
-      <button className="explore-more-button">Explore More →</button>
+      <button className="explore-more-button" onClick={handleExploreMore}>
+        Explore More →
+      </button>
     </section>
   );
 };

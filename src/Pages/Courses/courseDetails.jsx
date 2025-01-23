@@ -14,15 +14,22 @@ const CourseDetailsPage = () => {
   const coursesRef = useRef([
     {
       id: 1,
-      name: "Full Stack Development with React and Java",
+      name: "Full Stack Development",
       title: "Full Stack Development",
-      description: "Learn Full Stack Development with React and Java.",
+      description: (
+        <>
+          <span style={{ color: "black" }}>
+            Learn Full Stack Development with Frontend in <b>React</b> & backend
+            in <b>Java(SpringBoot)</b>.
+          </span>
+        </>
+      ),
       category: "Development",
       imageUrl: "/Images/Full stack developer.jpg",
       rating: "4.8",
-      lessons: 6,
-      students: 30,
-      author: "Angela",
+      lessons: "7 Modules",
+      students: 25,
+      author: "Anup",
       modules: [
         {
           id: 1,
@@ -44,11 +51,15 @@ const CourseDetailsPage = () => {
         },
         {
           id: 2,
-          title: "Module 2",
+          title: "AI Module 2",
           subtitle:
             "AI tutorials in programming and Prompt engineering in chatgpt:-",
           description: "Understand the basics of AI",
           topics: [" Commng soon"],
+          style: {
+            backgroundColor: "white",
+            color: "black",
+          },
         },
         {
           id: 3,
@@ -301,13 +312,22 @@ const CourseDetailsPage = () => {
   };
 
   useEffect(() => {
-    if (!courseId) return; // Wait for the courseId to be available
+    if (!courseId) return;
 
     const courseDetails = coursesRef.current.find(
       (course) => course.id === parseInt(courseId)
     );
+
     if (courseDetails) {
       setCourse(courseDetails);
+
+      // Replace spaces with dashes
+      const formattedName = courseDetails.name.replace(/\s+/g, "-");
+
+      // Update the URL to show course name with dashes
+      window.history.replaceState(null, "", `/course-details/${formattedName}`);
+    } else {
+      setCourse(null);
     }
   }, [courseId]);
 
@@ -347,7 +367,7 @@ const CourseDetailsPage = () => {
               <span>&#128196; Lessons: {course.lessons}</span>
               <span>&#9719; {course.duration}</span>
               <span>
-                <i className="fa fa-user"></i> Students: {course.students}+
+                <i className="fa fa-user"></i> Students: {course.students}
               </span>
             </div>
             <div className="author-info">
@@ -361,7 +381,13 @@ const CourseDetailsPage = () => {
 
       <section className="syllabus">
         <h2 className="syllabus-title">Syllabus</h2>
+        <div className="syllabus-container">
+          <button className="download-button" onClick={handleDownload}>
+            <span className="download-icon">⬇️</span> Download Syllabus
+          </button>
+        </div>
         <div className="module-content-container">
+          {/* Sidebar */}
           <div className="module-sidebar">
             {course.modules.map((module) => (
               <div
@@ -370,18 +396,29 @@ const CourseDetailsPage = () => {
                   activeModule === module.id ? "active" : ""
                 }`}
                 onClick={() => setActiveModule(module.id)}
+                style={module.id === 2 ? module.style : {}}
               >
-                <h4>{module.title}</h4>
+                <h4>
+                  {module.title}
+                  {module.id === 2 && (
+                    <span style={{ color: "green" }}> &#x2A;</span>
+                  )}
+                </h4>
                 <p>{module.subtitle}</p>
               </div>
             ))}
           </div>
 
+          {/* Module Details */}
           <div className="module-details">
             {course.modules
               .filter((module) => module.id === activeModule)
               .map((module) => (
-                <div key={module.id} className="module-detail">
+                <div
+                  key={module.id}
+                  className="module-detail"
+                  style={module.id === 2 ? module.style : {}}
+                >
                   <h3>{module.subtitle}</h3>
                   <hr className="divider" />
                   <p>{module.description}</p>
@@ -395,13 +432,8 @@ const CourseDetailsPage = () => {
               ))}
           </div>
         </div>
-
-        <div className="syllabus-container">
-          <button className="download-button" onClick={handleDownload}>
-            <span className="download-icon">⬇️</span> Download Syllabus
-          </button>
-        </div>
       </section>
+
       <section className="schedule-section">
         <div className="schedule-container">
           <h2>Schedule</h2>
@@ -413,7 +445,12 @@ const CourseDetailsPage = () => {
       <section className="certificate-section">
         <h2>Certificate</h2>
         {certificateData.map((certificate, index) => (
-          <div className="certificate-container" key={index}>
+          <div
+            className={`certificate-container ${
+              index % 2 === 0 ? "left-align" : "right-align"
+            }`}
+            key={index}
+          >
             <div className="certificate-image">
               <img
                 src={certificate.image}
@@ -439,23 +476,3 @@ const CourseDetailsPage = () => {
 };
 
 export default CourseDetailsPage;
-
-// useEffect(() => {
-//   if (!courseId) return; // Ensure courseId is available
-
-//   const courseDetails = coursesRef.current.find(
-//     (course) => course.id === parseInt(courseId)
-//   );
-
-//   if (courseDetails) {
-//     setCourse(courseDetails);
-//     // Update the URL to show course name instead of courseId
-//     window.history.replaceState(
-//       null,
-//       "",
-//       `/course-details/${courseDetails.name}`
-//     );
-//   } else {
-//     setCourse(null);
-//   }
-// }, [courseId]);

@@ -56,15 +56,14 @@ const CoursesPage = () => {
       discount: "20% Off",
       rating: 4.9,
     },
-
     {
       id: 2,
-      title: "Business Analyst(BA)",
-      description: "Master software testing techniques and tools.",
-      image: "./Images/Business analyst.jpg",
+      title: "Software Development Engineer in Testing (SDET)",
+      description: "Automate your testing process with the latest tools.",
+      image: "./Images/SDET.jpeg",
       bestseller: true,
       discount: "20% Off",
-      rating: 4.8,
+      rating: 4.9,
     },
     {
       id: 3,
@@ -77,12 +76,12 @@ const CoursesPage = () => {
     },
     {
       id: 4,
-      title: "Software Development Engineer in Testing (SDET)",
-      description: "Automate your testing process with the latest tools.",
-      image: "./Images/SDET.jpeg",
+      title: "Business Analyst(BA)",
+      description: "Master software testing techniques and tools.",
+      image: "./Images/Business analyst.jpg",
       bestseller: true,
       discount: "20% Off",
-      rating: 4.9,
+      rating: 4.8,
     },
     {
       id: 5,

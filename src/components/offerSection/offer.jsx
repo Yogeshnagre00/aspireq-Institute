@@ -4,19 +4,19 @@ function Offer() {
     <section className="offer-section">
       <div className="offer-content">
         <p className="subheading">ARE YOU READY FOR THIS OFFER</p>
-        <h1 className="main-heading">40% offer for very first 100</h1>
-        <p className="description">
+        <h1 className="main-heading">20% offer for 50</h1>
+        {/* <p className="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi.
-        </p>
+        </p> */}
         <div className="button-group">
           <a href="#" className="btn btn-green">
             ADMISSION NOW
           </a>
-          <a href="#course-section" className="btn btn-blue">
+          {/* <a href="#course-section" className="btn btn-blue">
             OUR COURSES
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="offer-image"></div>
