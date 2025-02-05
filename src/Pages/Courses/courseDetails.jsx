@@ -422,7 +422,7 @@ const CourseDetailsPage = () => {
               ],
             },
             {
-              topic: "Data driving from Excel",
+              title: "Data driving from Excel",
               subtopics: [
                 "What is Apache POI API / JXL API",
                 "Excel API Methods explanation",
@@ -431,7 +431,7 @@ const CourseDetailsPage = () => {
               ],
             },
             {
-              topic: "TestNG Framework",
+              title: "TestNG Framework",
               subtopics: [
                 "Why TestNG and Its Advantages",
                 "TestNG Installation and Setup in Eclipse",
@@ -446,7 +446,7 @@ const CourseDetailsPage = () => {
               ],
             },
             {
-              topic: "Data driven Framework",
+              title: "Data driven Framework",
               subtopics: [
                 "Why should not hard code the data?",
                 "How to write Global parameters with Java",
@@ -455,7 +455,7 @@ const CourseDetailsPage = () => {
             },
 
             {
-              topic: "MAVEN - Build Management Tool",
+              title: "MAVEN - Build Management Tool",
               subtopics: [
                 "What is a Build Management tool?",
                 "Installing & configuring MAVEN",
@@ -463,14 +463,14 @@ const CourseDetailsPage = () => {
               ],
             },
             {
-              topic: "Generating Reports",
+              title: "Generating Reports",
               subtopics: [
                 "Downloading and Configuring XSLT reports",
                 "Generating Excellent HTML reports for tests",
               ],
             },
             {
-              topic: "Jenkins - CI Tool",
+              title: "Jenkins - CI Tool",
               subtopics: [
                 "Why Jenkins?",
                 "Installing & Configuring Jenkins with Java",
@@ -588,7 +588,11 @@ const CourseDetailsPage = () => {
       // Replace spaces with dashes
       const formattedName = courseDetails.name.replace(/\s+/g, "");
       // Update the URL to show course name with dashes
-      window.history.replaceState(null, "", `/course-details/${formattedName}`);
+      window.history.replaceState(
+        null,
+        "",
+        `/course-details/${courseDetails.id}-${formattedName}`
+      );
     } else {
       setCourse(null);
     }
@@ -745,7 +749,7 @@ const CourseDetailsPage = () => {
       </section>
       <section className="schedule-container">
         <div className="tools">
-          <img src="/Images/SDET Tools.png" alt="SDET Tools" />
+          <img src="/Images/SDET Tools.jpg" alt="SDET Tools" />
         </div>
       </section>
 
@@ -782,7 +786,6 @@ const CourseDetailsPage = () => {
           </div>
         ))}
       </section>
-
       <Offer />
       <Footer />
     </>

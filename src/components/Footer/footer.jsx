@@ -41,7 +41,7 @@ export const Footer = () => {
           </div>
           <div className="col-md-3">
             <h4 className="footer-heading">
-              Projects in <br />
+              Products in <br />
               Domain
             </h4>
             <ul className="footer-links">
