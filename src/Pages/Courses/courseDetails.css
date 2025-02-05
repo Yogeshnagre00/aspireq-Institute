@@ -26,7 +26,6 @@
   font-size: 0.9rem;
   color: #7f8c8d;
   margin: 0;
-  margin-left: -40%;
   line-height: 1.5;
   flex: 1;
 }
@@ -77,8 +76,9 @@
 
 .coursepage-image {
   width: 100%;
-  height: auto;
+  height: 70vh;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .coursepage-rating {
@@ -134,15 +134,30 @@
 }
 
 /* Title Styling */
+.certificate-section h2,
+.schedule-section h2,
 .syllabus-title {
   font-size: 1.5rem;
-  margin: 70px 0 50px 0;
+  margin: 30px 0 50px 0;
   text-align: center;
   padding-bottom: 8px;
   background: linear-gradient(to right, transparent, #27cf787d, transparent);
   background-position: bottom;
-  background-size: 10% 2px;
   background-repeat: no-repeat;
+}
+
+.certificate-section h2,
+.syllabus-title {
+  background-size: 10% 2px;
+}
+
+.schedule-section h2 {
+  margin-top: 70px;
+  margin-bottom: -70px;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  background-size: 30% 2px;
+  width: 30%;
 }
 
 /* Download Button */
@@ -218,7 +233,7 @@
 }
 
 .module-details h2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   color: #1e293b;
 }
 .module-item p {
@@ -265,41 +280,45 @@
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
+.tools {
+  max-width: 75%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-left: 10%;
+  height: 70vh !important;
+}
+/* .topic-item {
+  margin-bottom: 20px;
+}
+
+.topic-title {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtopics-list {
+  padding-left: 20px;
+}
+
+.subtopic-item {
+  margin-bottom: 5px;
+} */
 
 /* Schedule */
 .schedule-section {
   padding: 40px 20px;
   text-align: center;
 }
-.schedule-section h2 {
-  font-size: 1.5rem;
-  margin-top: 70px;
-  margin-bottom: -70px;
-  display: inline-block;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 8px;
-  background: linear-gradient(to right, transparent, #27cf787d, transparent);
-  background-position: bottom;
-  background-size: 30% 2px;
-  background-repeat: no-repeat;
-  width: 30%;
-}
 .schedule-container img {
-  max-width: 80%;
+  max-width: 100%;
+  margin-top: 14px;
   height: auto;
   object-fit: cover;
 }
 /* certifiction */
-.certificate-section h2 {
-  font-size: 1.5rem;
-  margin: 30px 0 50px 0;
-  text-align: center;
-  padding-bottom: 8px;
-  background: linear-gradient(to right, transparent, #27cf787d, transparent);
-  background-position: bottom;
-  background-size: 10% 2px;
-  background-repeat: no-repeat;
-}
+
 .certificate-section {
   padding: 40px;
   text-align: center;
@@ -307,19 +326,25 @@
 
 .certificate-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
+}
+
+.certificate-image {
+  flex-basis: 48%;
 }
 
 .certificate-image img {
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
 }
 
 .certificate-details {
   text-align: left;
-  max-width: 500px;
+  flex-basis: 40%;
 }
+
 .certificate-container.left-align {
   flex-direction: row;
 }
@@ -351,6 +376,14 @@
   font-size: 1.2rem;
   margin-right: 10px;
 }
+
+@media (max-width: 768px) {
+  .certificate-image,
+  .certificate-details {
+    flex-basis: 100%; /* Stack on small screens */
+  }
+}
+
 @media (max-width: 1024px) {
   .coursepage-section {
     width: 90%;

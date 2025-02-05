@@ -26,7 +26,7 @@ const CourseDetailsPage = () => {
       ),
       category: "Development",
       imageUrl: "/Images/Full stack developer.jpg",
-      rating: "4.8",
+      rating: "5.0",
       lessons: "7 Modules",
       students: 25,
       author: "Anup",
@@ -51,7 +51,7 @@ const CourseDetailsPage = () => {
         },
         {
           id: 2,
-          title: "AI Module 2",
+          title: "New AI Module 2",
           subtitle:
             "AI tutorials in programming and Prompt engineering in chatgpt:-",
           description: "Understand the basics of AI",
@@ -177,90 +177,354 @@ const CourseDetailsPage = () => {
     },
     {
       id: 2,
-      name: "businessanalys",
-      title: "Business Analyst",
-      description: "Become an expert in Business Analysis and Data.",
-      category: "Business",
-      imageUrl: "/Images/Business analyst.jpg",
-      rating: "4.7",
-      lessons: 12,
-      duration: "15h 00m",
-      students: 30,
-      author: "John",
+      name: "Software Development Engineer in Testing",
+      title: "Software Development Engineer in Testing",
+      category: "Testing",
+      imageUrl: "/Images/SDET.jpeg",
+      rating: "5.0",
+      lessons: "6 Modules",
+      students: 25,
+      author: "Abhijit",
       modules: [
         {
           id: 1,
           title: "Module 1",
-          subtitle: "Introduction to Business Analysis",
-          duration: "4 Weeks",
+          subtitle: "Manual Testing",
           description:
-            "Understand the basics of business analysis, key terminologies, and the role of a business analyst in projects.",
+            "Introduction to software testing concepts, methodologies, and execution.",
           topics: [
-            "What is Business Analysis?",
-            "Role of a Business Analyst",
-            "Key Skills and Responsibilities",
-            "Stakeholder Identification and Management",
-            "Introduction to Business Process Modeling",
+            {
+              title: "SDLC - STLC",
+              subtopics: ["Waterfall Model", "V-Model", "Agile Methodologies"],
+            },
+            {
+              title: "Test Scenario",
+            },
+            {
+              title: "Test cases understanding",
+            },
+            {
+              title: "Test Scenario Design Techniques",
+              subtopics: [
+                "Boundary Value Analysis",
+                "Equivalence Partitioning Method",
+                "Error guessing",
+              ],
+            },
+            { title: "Test Scenario Execution" },
+            { title: "Test cases writing and execution" },
+            {
+              title: " Bug Logging",
+              subtopics: [
+                "How To Write Bugs",
+                "Defect Life Cycle",
+                "Test Management Tools",
+                "Jira Tool",
+              ],
+            },
+            {
+              title: "Agile Overview",
+              subtopics: ["ScrumSprint", "Kanban"],
+            },
+            { title: "Blackbox Testing" },
+            {
+              title: "Whitebox Testing",
+              subtopics: [
+                "Path Testing",
+                "Loop Testing",
+                "Statement Coverage",
+                "Conditional Testing",
+              ],
+            },
+            { title: "Greybox Testing" },
+            {
+              title: "Types of Testing",
+              subtopics: [
+                "Functional & Non-Functional Testing",
+                {
+                  title: "Feature Testing",
+                  subtopics: ["Smoke Testing", "Sanity Testing"],
+                },
+                "Integration Testing",
+                "Regression Testing",
+                "Compatibility Testing",
+                "UI Testing",
+                "Automation Testing",
+                "User Acceptance (Alpha & Beta) Testing",
+                "Adhoc Testing",
+              ],
+            },
+            {
+              title: "Testing Artifacts",
+              subtopics: [
+                "RTM Document",
+                "Test Strategy",
+                "Test Plan",
+                "Defect Triage Report",
+                "Release Notes",
+              ],
+            },
           ],
         },
         {
           id: 2,
-          title: "Module 2",
-          subtitle: "Requirement Gathering and Documentation",
-          duration: "5 Weeks",
-          description:
-            "Learn effective techniques for requirement gathering, analysis, and proper documentation standards.",
-          topics: [
-            "Techniques for Requirement Gathering",
-            "Functional vs Non-Functional Requirements",
-            "Creating Use Case Diagrams",
-            "Documenting Requirements with BRD, SRS, and FRS",
-            "Managing Requirement Changes",
-          ],
+          title: "New AI Module 2",
+          subtitle:
+            "AI tutorials in programming and Prompt engineering in ChatGPT",
+          description: "Understand the basics of AI",
+          topics: ["Coming soon"],
+          style: {
+            backgroundColor: "white",
+            color: "black",
+          },
         },
         {
           id: 3,
           title: "Module 3",
-          subtitle: "Data Analysis and Tools",
-          duration: "6 Weeks",
+          subtitle: "API Testing",
           description:
-            "Gain expertise in data analysis tools and methodologies used in business analysis.",
+            "Understanding API testing techniques, methods, and automation.",
           topics: [
-            "Introduction to Data Analysis",
-            "Data Visualization Tools (Tableau, PowerBI)",
-            "SQL for Data Analysis",
-            "Interpreting Data Insights",
-            "KPI and Metrics Management",
+            {
+              title: "API Testing and complete overview",
+              subtopics: [
+                "What is API",
+                "Purpose of API Testing",
+                "Things need to be considered in API Testing.",
+              ],
+            },
+            {
+              title: "API Methods",
+              subtopics: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+            },
+            { title: "Postman tools" },
+            {
+              title: "Request - Response Validation checking",
+              subtopics: [
+                "Status Code Interpretation,Validation & Testing etc.",
+                "Assertion - Test Snippet",
+                "cURL execution",
+              ],
+            },
+            {
+              title: "Authorization",
+              subtopics: [
+                "Basic",
+                "Bearer Token",
+                "API Key",
+                "JWT",
+                "AWS Signature",
+              ],
+            },
+            {
+              title: "Data Parameterization",
+              subtopics: [
+                "Text File Handling",
+                "Excel File Handling",
+                "JSON Input",
+              ],
+            },
+            {
+              title: "API Automation",
+              subtopics: [
+                "Rest Assured",
+                "Jenkins",
+                "NewMan",
+                "API Automation via Google Apps Script",
+              ],
+            },
+            { title: "API Automation Framework" },
           ],
         },
         {
           id: 4,
           title: "Module 4",
-          subtitle: "Project Management and Agile Methodology",
-          duration: "5 Weeks",
+          subtitle: "Automation Testing",
           description:
-            "Understand how project management principles and Agile methodologies integrate with business analysis.",
+            "Learning Selenium, TestNG, and CI/CD for test automation.",
           topics: [
-            "Project Management Basics",
-            "Introduction to Agile and Scrum",
-            "Roles of a BA in Agile Projects",
-            "JIRA for Requirement Management",
-            "Creating User Stories and Acceptance Criteria",
+            {
+              title: "Installations & Configurations with Java basics",
+              subtopics: [
+                "Java Installation",
+                "Eclipse Installation,configuration",
+                "Selenium Jars download/Configuration",
+              ],
+            },
+            {
+              title: "Basic Concepts for first WebDriver program",
+              subtopics: [
+                "WebDriver Interface explanation & Invoking Browser",
+                "Basic Methods of WebDriver",
+                "How to run tests in Google Chrome",
+                "How to run tests in Internet Explorer",
+                "How to run tests in Safari Browser",
+              ],
+            },
+            {
+              title: "Locator Techniques & Tools used",
+              subtopics: [
+                "Locator Techniques",
+                {
+                  title: "xpath identification using :",
+                  subtopics: [
+                    "Firepath",
+                    "Name",
+                    "ID",
+                    "ClassName",
+                    "LinkText",
+                  ],
+                },
+              ],
+            },
+            {
+              title: "ADVANCED WAYS-locating objects",
+              subtopics: [
+                "Writing Customized xpath Using Attributes",
+                "Writing customized xpath Using Tag names Traversing",
+                "Css Selectors locators",
+              ],
+            },
+            {
+              title: "Web UI Automation",
+              subtopics: [
+                "Handle Dynamic dropdowns with WebDriver API",
+                "Handling Static dropdowns with Select WebDriver API",
+                "Handling Checkboxes with WebDriver API",
+                "Handling Radio buttons with Customized xpath",
+                "Handling Radio button dynamically- real time examples",
+                "Types of Alerts present and Methods to handle them",
+                "Handling Java Alerts using WebDriver API",
+                "Web Elements Validation",
+              ],
+            },
+            {
+              title: "Techniques to automate ADVANCNED Web UI",
+              subtopics: [
+                "Handling Ajax/Mouse Interactions",
+                "Actions class-real time examples",
+                "Handling Multiple Windows",
+                "Window Handle concepts",
+                "Child windows Handling",
+                "How to handle Frames?",
+              ],
+            },
+            {
+              title:
+                "Practical problems & Methods to Handle them with Selenium",
+              subtopics: [
+                "How to handle table Grids in webpage",
+                "How to overcome Synchronization problems",
+                "Maximizing window and deleting cookies",
+                "Handling HTTPS certifications",
+                "Killing the Process and Cookies using Selenium",
+                "How to take Screenshots in Selenium",
+              ],
+            },
+            {
+              topic: "Data driving from Excel",
+              subtopics: [
+                "What is Apache POI API / JXL API",
+                "Excel API Methods explanation",
+                "Program for Retrieving data from excel",
+                "Program for Updating data back to excel",
+              ],
+            },
+            {
+              topic: "TestNG Framework",
+              subtopics: [
+                "Why TestNG and Its Advantages",
+                "TestNG Installation and Setup in Eclipse",
+                "TestNG Annotations",
+                "Prioritizing the tests using TestNG",
+                "Disabling Enabling the Testcases & putting Timeout",
+                "Importance of TestNG xml file",
+                "Including & excluding the Testcases from Execution with TestNG xml file",
+                "Data driving Testing with TestNG",
+                "Data Provider Annotation - Parameterizing Testcases",
+                "Parameterizing from TestNG xml file",
+              ],
+            },
+            {
+              topic: "Data driven Framework",
+              subtopics: [
+                "Why should not hard code the data?",
+                "How to write Global parameters with Java",
+                "Data driving parameterization from Properties file",
+              ],
+            },
+
+            {
+              topic: "MAVEN - Build Management Tool",
+              subtopics: [
+                "What is a Build Management tool?",
+                "Installing & configuring MAVEN",
+                "Understanding pom.xml file",
+              ],
+            },
+            {
+              topic: "Generating Reports",
+              subtopics: [
+                "Downloading and Configuring XSLT reports",
+                "Generating Excellent HTML reports for tests",
+              ],
+            },
+            {
+              topic: "Jenkins - CI Tool",
+              subtopics: [
+                "Why Jenkins?",
+                "Installing & Configuring Jenkins with Java",
+                "Creating Jenkins Project",
+              ],
+            },
           ],
         },
         {
           id: 5,
           title: "Module 5",
-          subtitle: "Final Project and Career Guidance",
-          duration: "4 Weeks",
+          subtitle: "Domain Knowledge",
           description:
-            "Work on a capstone project and receive career guidance for becoming a professional Business Analyst.",
+            "Gaining industry-specific testing knowledge across different domains.",
           topics: [
-            "Capstone Business Analysis Project",
-            "Documenting and Presenting Business Solutions",
-            "Interview Preparation",
-            "Creating a Professional Portfolio",
-            "Networking and Career Guidance",
+            {
+              title: "Industry Domains",
+              subtopics: [
+                "Healthcare",
+                "Banking & Finance",
+                "E-commerce",
+                "People Management",
+              ],
+            },
+          ],
+        },
+        {
+          id: 6,
+          title: "Module 6",
+          subtitle: "Performance Testing",
+          description:
+            "Understanding performance testing tools and metrics for load testing.",
+          topics: [
+            {
+              title: "Introduction to Performance Testing",
+              subtopics: [
+                "Performance Testing Tools",
+                "Load Testing",
+                "Stress Testing",
+                "Scalability Testing",
+              ],
+            },
+            {
+              title: "JMeter & Test Plans",
+              subtopics: [
+                "JMeter Setup",
+                "Creating Test Plans",
+                "Monitoring & Analyzing Test Results",
+              ],
+            },
+            {
+              title: "Performance Metrics",
+              subtopics: ["Benchmarking", "Identifying Bottlenecks"],
+            },
           ],
         },
       ],
@@ -306,7 +570,7 @@ const CourseDetailsPage = () => {
   const handleDownload = () => {
     // Create a download link to the PDF
     const link = document.createElement("a");
-    link.href = "./syllabus.pdf"; // Assuming syllabus.pdf is in the public folder
+    link.href = "./syllabus.pdf";
     link.download = `${course ? course.title : "course"}.pdf`;
     link.click();
   };
@@ -322,8 +586,7 @@ const CourseDetailsPage = () => {
       setCourse(courseDetails);
 
       // Replace spaces with dashes
-      const formattedName = courseDetails.name.replace(/\s+/g, "-");
-
+      const formattedName = courseDetails.name.replace(/\s+/g, "");
       // Update the URL to show course name with dashes
       window.history.replaceState(null, "", `/course-details/${formattedName}`);
     } else {
@@ -343,10 +606,18 @@ const CourseDetailsPage = () => {
   return (
     <>
       <Navbar />
+      {/* for first image container */}
       <section className="coursepage-section">
         <div className="coursepage-content">
           <h2>{course.title}</h2>
-          <p>{course.description}</p>
+          <p
+            style={{
+              marginLeft:
+                course.name === "Full Stack Development" ? "-40%" : "-10%",
+            }}
+          >
+            {course.description}
+          </p>
         </div>
         <div className="coursepage-main">
           <div className="coursepage-image-container">
@@ -365,7 +636,6 @@ const CourseDetailsPage = () => {
           <div className="coursepage-footer">
             <div className="footerpage-info">
               <span>&#128196; Lessons: {course.lessons}</span>
-              <span>&#9719; {course.duration}</span>
               <span>
                 <i className="fa fa-user"></i> Students: {course.students}
               </span>
@@ -378,7 +648,7 @@ const CourseDetailsPage = () => {
           </div>
         </div>
       </section>
-
+      {/* this is for our syllabus section */}
       <section className="syllabus">
         <h2 className="syllabus-title">Syllabus</h2>
         <div className="syllabus-container">
@@ -386,10 +656,11 @@ const CourseDetailsPage = () => {
             <span className="download-icon">⬇️</span> Download Syllabus
           </button>
         </div>
+
         <div className="module-content-container">
           {/* Sidebar */}
           <div className="module-sidebar">
-            {course.modules.map((module) => (
+            {course?.modules?.map((module) => (
               <div
                 key={module.id}
                 className={`module-item ${
@@ -398,10 +669,19 @@ const CourseDetailsPage = () => {
                 onClick={() => setActiveModule(module.id)}
                 style={module.id === 2 ? module.style : {}}
               >
-                <h4>
+                <h4
+                  style={{
+                    color: module.id === 2 ? "white" : "black",
+                    backgroundColor:
+                      module.id === 2 ? "#27ae60" : "transparent",
+                    padding: "5px",
+                    display: "inline-block",
+                    borderRadius: "5px",
+                  }}
+                >
                   {module.title}
                   {module.id === 2 && (
-                    <span style={{ color: "green" }}> &#x2A;</span>
+                    <span style={{ color: "white" }}> &#x2A; </span>
                   )}
                 </h4>
                 <p>{module.subtitle}</p>
@@ -411,12 +691,11 @@ const CourseDetailsPage = () => {
 
           {/* Module Details */}
           <div className="module-details">
-            {course.modules
-              .filter((module) => module.id === activeModule)
-              .map((module) => (
+            {course?.modules
+              ?.filter((module) => module.id === activeModule)
+              ?.map((module) => (
                 <div
                   key={module.id}
-                  className="module-detail"
                   style={module.id === 2 ? module.style : {}}
                 >
                   <h3>{module.subtitle}</h3>
@@ -425,12 +704,48 @@ const CourseDetailsPage = () => {
                   <h3>Topics Covered:</h3>
                   <ul className="topics-list">
                     {module.topics.map((topic, index) => (
-                      <li key={index}>{topic}</li>
+                      <li key={index} className="topic-item">
+                        <strong className="topic-title">{topic.title}</strong>
+                        {Array.isArray(topic.subtopics) &&
+                          topic.subtopics.length > 0 && (
+                            <ul className="subtopics-list">
+                              {topic.subtopics.map((subtopic, subIndex) => (
+                                <li key={subIndex} className="subtopic-item">
+                                  {/* Check if subtopic is an object with a title */}
+                                  {typeof subtopic === "string" ? (
+                                    subtopic
+                                  ) : (
+                                    <>
+                                      <strong>{subtopic.title}</strong>
+                                      {Array.isArray(subtopic.subtopics) &&
+                                        subtopic.subtopics.length > 0 && (
+                                          <ul>
+                                            {subtopic.subtopics.map(
+                                              (nestedSubtopic, nestedIndex) => (
+                                                <li key={nestedIndex}>
+                                                  {nestedSubtopic}
+                                                </li>
+                                              )
+                                            )}
+                                          </ul>
+                                        )}
+                                    </>
+                                  )}
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                      </li>
                     ))}
                   </ul>
                 </div>
               ))}
           </div>
+        </div>
+      </section>
+      <section className="schedule-container">
+        <div className="tools">
+          <img src="/Images/SDET Tools.png" alt="SDET Tools" />
         </div>
       </section>
 
@@ -441,7 +756,6 @@ const CourseDetailsPage = () => {
           <img src="/Images/year Schedule.png" alt="year Schedule" />
         </div>
       </section>
-
       <section className="certificate-section">
         <h2>Certificate</h2>
         {certificateData.map((certificate, index) => (

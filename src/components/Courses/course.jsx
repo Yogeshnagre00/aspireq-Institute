@@ -12,7 +12,7 @@ const courses = [
     image: "./Images/Full stack developer.jpg",
     bestseller: true,
     discount: "20% Off",
-    rating: 4.9,
+    rating: "5.0",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const courses = [
     image: "./Images/SDET.jpeg",
     bestseller: true,
     discount: "20% Off",
-    rating: 4.9,
+    rating: "5.0",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const courses = [
     image: "./Images/Scrum master.jpg",
     bestseller: true,
     discount: "20% Off",
-    rating: 4.7,
+    rating: "5.0",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const courses = [
     image: "./Images/Business analyst.jpg",
     bestseller: true,
     discount: "20% Off",
-    rating: 4.8,
+    rating: "5.0",
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const courses = [
     image: "./Images/Devops engineer.jpeg",
     bestseller: true,
     discount: "20% Off",
-    rating: 4.9,
+    rating: "5.0",
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const courses = [
     image: "./Images/corporate.jpeg",
     bestseller: true,
     discount: "20% Off",
-    rating: 4.9,
+    rating: "5.0",
   },
 ];
 
@@ -93,7 +93,7 @@ const CourseCards = () => {
     window.open(`/course-details/${id}`, "_blank");
   };
   const handleExploreMore = () => {
-    navigate("/courses");
+    navigate("/courses"); // Ensure this route matches your configuration
   };
   return (
     <section id="courses" className="course-section">
@@ -120,6 +120,18 @@ const CourseCards = () => {
                 <p>{course.description}</p>
                 <div className="course-rating">
                   <span className="rating">⭐ {course.rating}</span>
+                  <div className="course-arrow">
+                    <a href={`/course/${course.id}`} className="arrow-link">
+                      <i className="arrow-icon">→</i>
+                    </a>
+                    {/* <div
+                      key={index}
+                      className="arrow-link"
+                      onClick={() => handleCardClick(course.id)}
+                    >
+                      <i className="arrow-icon">→</i>
+                    </div> */}
+                  </div>
                 </div>
               </div>
             </div>

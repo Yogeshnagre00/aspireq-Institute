@@ -76,7 +76,7 @@ export const Footer = () => {
 
         <div className="footer-bottom">
           <p className="footer-copyright">
-            Copyright © 2024 aspireq. All rights reserved.
+            Copyright © 2025 aspireq. All rights reserved.
           </p>
           <div className="footer-social">
             <a href="#" target="_blank" rel="noopener noreferrer">

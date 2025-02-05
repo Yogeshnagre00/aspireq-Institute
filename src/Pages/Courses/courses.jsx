@@ -54,7 +54,7 @@ const CoursesPage = () => {
       image: "./Images/Full stack developer.jpg",
       bestseller: true,
       discount: "20% Off",
-      rating: 4.9,
+      rating: "5.0",
     },
     {
       id: 2,
@@ -63,7 +63,7 @@ const CoursesPage = () => {
       image: "./Images/SDET.jpeg",
       bestseller: true,
       discount: "20% Off",
-      rating: 4.9,
+      rating: "5.0",
     },
     {
       id: 3,
@@ -72,7 +72,7 @@ const CoursesPage = () => {
       image: "./Images/Scrum master.jpg",
       bestseller: true,
       discount: "20% Off",
-      rating: 4.7,
+      rating: "5.0",
     },
     {
       id: 4,
@@ -81,7 +81,7 @@ const CoursesPage = () => {
       image: "./Images/Business analyst.jpg",
       bestseller: true,
       discount: "20% Off",
-      rating: 4.8,
+      rating: "5.0",
     },
     {
       id: 5,
@@ -90,7 +90,7 @@ const CoursesPage = () => {
       image: "./Images/Devops engineer.jpeg",
       bestseller: true,
       discount: "20% Off",
-      rating: 4.9,
+      rating: "5.0",
     },
     {
       id: 6,
@@ -99,7 +99,7 @@ const CoursesPage = () => {
       image: "./Images/corporate.jpeg",
       bestseller: true,
       discount: "20% Off",
-      rating: 4.9,
+      rating: "5.0",
     },
   ];
 

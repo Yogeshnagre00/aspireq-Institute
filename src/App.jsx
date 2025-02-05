@@ -19,6 +19,10 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/course-details/:courseId" element={<CourseDetails />} />
+          <Route
+            path="/course-details/:formattedName"
+            element={<CourseDetails />}
+          />
         </Routes>
       </Suspense>
     </Router>
