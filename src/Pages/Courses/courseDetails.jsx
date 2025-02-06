@@ -39,14 +39,19 @@ const CourseDetailsPage = () => {
           description:
             "Understand the basics of Java programming and its setup.",
           topics: [
-            "History and features of Java",
-            "Setting up the Java Development Kit (JDK)",
-            "Writing your first Java program",
-            "Understanding the Java Virtual Machine (JVM)",
-            "Data types and variables",
-            "Operators and expressions",
-            "Control flow statements (if-else, switch-case)",
-            "Loops (for, while, do-while)",
+            {
+              title: "Core JAVA",
+              subtopics: [
+                "History and features of Java",
+                "Setting up the Java Development Kit (JDK)",
+                "Writing your first Java program",
+                "Understanding the Java Virtual Machine (JVM)",
+                "Data types and variables",
+                "Operators and expressions",
+                "Control flow statements (if-else, switch-case)",
+                "Loops (for, while, do-while)",
+              ],
+            },
           ],
         },
         {
@@ -68,28 +73,40 @@ const CourseDetailsPage = () => {
           description:
             "Learn the essential tools for front-end development, including HTML, CSS, and JavaScript.",
           topics: [
-            "Introduction to HTML",
-            "Basic HTML tags and structure",
-            "Form Controls",
-            "Image Controls",
-            "Button Controls",
-            "HTML5 updates",
-            "Introduction to CSS",
-            "Borders and Backgrounds",
-            "Text Effects and Fonts",
-            "Transforms and Transitions",
-            "Animations in CSS",
-            "Multiple columns in CSS",
-            "User Interfaces with CSS",
-            "Flexbox and Grid layout",
-            "Responsive design with media queries",
-            "Introduction to JavaScript",
-            "Variables, data types, and operators",
-            "Functions and objects in JavaScript",
-            "DOM Manipulation",
-            "Asynchronous JavaScript",
-            "Debugging and Error Handling",
-            "Web APIs in JavaScript",
+            {
+              title: "Introduction to HTML",
+              subtopics: [
+                "Basic HTML tags and structure",
+                "Form Controls",
+                "Image Controls",
+                "Button Controls",
+                "HTML5 updates",
+              ],
+            },
+            {
+              title: "Introduction to CSS",
+              subtopics: [
+                "Borders and Backgrounds",
+                "Text Effects and Fonts",
+                "Transforms and Transitions",
+                "Animations in CSS",
+                "Multiple columns in CSS",
+                "User Interfaces with CSS",
+                "Flexbox and Grid layout",
+                "Responsive design with media queries",
+              ],
+            },
+            {
+              title: "Introduction to JavaScript",
+              subtopics: [
+                "Variables, data types, and operators",
+                "Functions and objects in JavaScript",
+                "DOM Manipulation",
+                "Asynchronous JavaScript",
+                "Debugging and Error Handling",
+                "Web APIs in JavaScript",
+              ],
+            },
           ],
         },
         {
@@ -99,20 +116,25 @@ const CourseDetailsPage = () => {
           description:
             "Understand the core concepts of React and how to build web applications.",
           topics: [
-            "What is React and why use it?",
-            "Setting up the development environment",
-            "Creating a new React project",
-            "Understanding JSX",
-            "Components and props",
-            "State and lifecycle",
-            "Handling events",
-            "Conditional rendering",
-            "Lists and keys",
-            "Context API",
-            "Refs and the DOM",
-            "Higher-order components",
-            "React Router for navigation",
-            "Hooks (useState, useEffect, etc.)",
+            {
+              title: "Frontend Development with React",
+              subtopics: [
+                "What is React and why use it?",
+                "Setting up the development environment",
+                "Creating a new React project",
+                "Understanding JSX",
+                "Components and props",
+                "State and lifecycle",
+                "Handling events",
+                "Conditional rendering",
+                "Lists and keys",
+                "Context API",
+                "Refs and the DOM",
+                "Higher-order components",
+                "React Router for navigation",
+                "Hooks (useState, useEffect, etc.)",
+              ],
+            },
           ],
         },
         {
@@ -122,16 +144,21 @@ const CourseDetailsPage = () => {
           description:
             "Learn OOP concepts like inheritance, polymorphism, and abstraction.",
           topics: [
-            "Classes and objects",
-            "Constructors",
-            "Inheritance",
-            "Polymorphism",
-            "Encapsulation",
-            "Abstraction",
-            "Interfaces",
-            "Abstract classes",
-            "Inner classes",
-            "Packages and access modifiers",
+            {
+              title: "Object-Oriented Programming",
+              subtopics: [
+                "Classes and objects",
+                "Constructors",
+                "Inheritance",
+                "Polymorphism",
+                "Encapsulation",
+                "Abstraction",
+                "Interfaces",
+                "Abstract classes",
+                "Inner classes",
+                "Packages and access modifiers",
+              ],
+            },
           ],
         },
         {
@@ -141,14 +168,19 @@ const CourseDetailsPage = () => {
           description:
             "Master Java’s exception handling and the collections framework.",
           topics: [
-            "Types of exceptions",
-            "Try-catch block",
-            "Finally block",
-            "Throw and throws keyword",
-            "Custom exceptions",
-            "List, Set, and Map interfaces",
-            "ArrayList, LinkedList, HashSet, TreeSet, HashMap, TreeMap",
-            "Iterators and for-each loop",
+            {
+              title: "Exception handling and the collections framework.",
+              subtopics: [
+                "Types of exceptions",
+                "Try-catch block",
+                "Finally block",
+                "Throw and throws keyword",
+                "Custom exceptions",
+                "List, Set, and Map interfaces",
+                "ArrayList, LinkedList, HashSet, TreeSet, HashMap, TreeMap",
+                "Iterators and for-each loop",
+              ],
+            },
           ],
         },
         {
@@ -159,18 +191,24 @@ const CourseDetailsPage = () => {
           description:
             "Learn backend development with Java and integrate it with React to build complete applications.",
           topics: [
-            "Setting up Spring Boot Project",
-            "Creating RESTful APIs with Spring Boot",
-            "Connecting React frontend with Java backend using Axios or Fetch API",
-            "Handling CORS issues",
-            "CRUD operations with Spring Boot",
-            "User authentication and authorization",
-            "Building a full-stack application",
-            "Deployment of Java and React applications",
-            "CI/CD pipelines",
-            "Unit testing in Java (JUnit)",
-            "Testing React components (Jest, React Testing Library)",
-            "Debugging techniques for full-stack applications",
+            {
+              title:
+                "Building Full-Stack Applications with Spring Boot and React",
+              subtopics: [
+                "Setting up Spring Boot Project",
+                "Creating RESTful APIs with Spring Boot",
+                "Connecting React frontend with Java backend using Axios or Fetch API",
+                "Handling CORS issues",
+                "CRUD operations with Spring Boot",
+                "User authentication and authorization",
+                "Building a full-stack application",
+                "Deployment of Java and React applications",
+                "CI/CD pipelines",
+                "Unit testing in Java (JUnit)",
+                "Testing React components (Jest, React Testing Library)",
+                "Debugging techniques for full-stack applications",
+              ],
+            },
           ],
         },
       ],
@@ -706,6 +744,7 @@ const CourseDetailsPage = () => {
                   <hr className="divider" />
                   <p>{module.description}</p>
                   <h3>Topics Covered:</h3>
+
                   <ul className="topics-list">
                     {module.topics.map((topic, index) => (
                       <li key={index} className="topic-item">
