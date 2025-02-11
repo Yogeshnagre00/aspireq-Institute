@@ -19,10 +19,7 @@ const FAQSection = React.lazy(() =>
 function Home() {
   return (
     <div className="App">
-      <header>
-        <Navbar />
-      </header>
-
+      <Navbar />
       <main>
         <HeroSection />
         {/* <ImageSlider /> */}
@@ -33,10 +30,7 @@ function Home() {
           <FAQSection />
         </Suspense>
       </main>
-
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }

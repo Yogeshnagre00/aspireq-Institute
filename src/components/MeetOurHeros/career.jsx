@@ -56,47 +56,51 @@ const TestimonialSection = () => {
   };
 
   return (
-    <div className="testimonial-section">
-      <div className="profile-images">
-        {testimonials.map((testimonial, index) => (
-          <img
-            key={index}
-            src={testimonial.image}
-            alt={testimonial.name}
-            onClick={() => handleImageClick(index)}
-            className={`profile-image profile-image-${index + 1} ${
-              selectedTestimonial === index ? "selected" : ""
-            }`}
-          />
-        ))}
-      </div>
+    <>
+      <section className="testimonial-section">
+        <div>
+          <div className="profile-images">
+            {testimonials.map((testimonial, index) => (
+              <img
+                key={index}
+                src={testimonial.image}
+                alt={testimonial.name}
+                onClick={() => handleImageClick(index)}
+                className={`profile-image profile-image-${index + 1} ${
+                  selectedTestimonial === index ? "selected" : ""
+                }`}
+              />
+            ))}
+          </div>
 
-      <div className="testimonial-card">
-        <div className="rating">
-          <span className="star-icon">⭐</span>{" "}
-          {testimonials[selectedTestimonial].rating}
-        </div>
-        <p className="testimonial-text">
-          {testimonials[selectedTestimonial].text}
-        </p>
-        <div className="testimonial-author">
-          <img
-            src={testimonials[selectedTestimonial].image}
-            alt={testimonials[selectedTestimonial].name}
-            className="author-image"
-          />
-          <div>
-            <div className="author-name">
-              {testimonials[selectedTestimonial].name}
+          <div className="testimonial-card">
+            <div className="rating">
+              <span className="star-icon">⭐</span>{" "}
+              {testimonials[selectedTestimonial].rating}
             </div>
-            <div className="author-profession">
-              {testimonials[selectedTestimonial].profession}
+            <p className="testimonial-text">
+              {testimonials[selectedTestimonial].text}
+            </p>
+            <div className="testimonial-author">
+              <img
+                src={testimonials[selectedTestimonial].image}
+                alt={testimonials[selectedTestimonial].name}
+                className="author-image"
+              />
+              <div>
+                <div className="author-name">
+                  {testimonials[selectedTestimonial].name}
+                </div>
+                <div className="author-profession">
+                  {testimonials[selectedTestimonial].profession}
+                </div>
+              </div>
             </div>
+            <div className="quote-mark">“</div>
           </div>
         </div>
-        <div className="quote-mark">“</div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 
