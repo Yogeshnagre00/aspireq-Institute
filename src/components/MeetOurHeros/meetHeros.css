@@ -1,7 +1,8 @@
 .meet-the-heroes {
   text-align: center;
-  padding: 0 50px 50px 50px;
   background-color: #fffdfd;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .meet-the-heroes h2 {
@@ -22,11 +23,53 @@
 }
 
 .hero-cards {
-  padding: 0 40px;
+  padding: 0 20px;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
 .hero-card img {
   display: unset !important;
+}
+.meet-the-heroes .slick-prev {
+  left: -45px !important;
+}
+.meet-the-heroes .slick-next {
+  right: -45px !important;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .meet-the-heroes {
+    padding: 0 30px 30px 30px;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .meet-the-heroes h2 {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+    width: 40%;
+  }
+
+  .hero-cards {
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .meet-the-heroes {
+    padding: 0 20px 20px 20px;
+  }
+
+  .meet-the-heroes h2 {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    width: 60%;
+  }
+
+  .hero-cards {
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
 }

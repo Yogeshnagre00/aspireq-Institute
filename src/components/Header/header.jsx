@@ -1,36 +1,52 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "./header.css";
 
 const Navbar = () => {
-  const location = useLocation(); // Get the current location
-  const navigate = useNavigate(); // Hook for programmatic navigation
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleLetsTalkClick = () => {
-    // Redirect to "/contactUs" when the button is clicked
     if (location.pathname !== "/contactUs") {
       navigate("/contactUs");
     }
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Helper function to determine if a link is active
+  const isActive = (path) => (location.pathname === path ? "active-link" : "");
+
   return (
     <header>
       <nav className="navbar">
         <div className="logo">
-          <img src="/Images/Frame 27319.png" alt="Logo" />
+          <img src="./Images/Frame 27319.png" alt="Logo" />
         </div>
-        <ul className="nav-links">
-          <li>
-            <Link to="/">HOME</Link>
-          </li>
 
+        <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
           <li>
-            <a href="/courses">COURSES</a>
+            <Link to="/" className={isActive("/")}>
+              HOME
+            </Link>
           </li>
           <li>
-            <a href="/aboutUs">ABOUT US</a>
+            <Link to="/courses" className={isActive("/courses")}>
+              COURSES
+            </Link>
           </li>
           <li>
-            <Link to="/contactUs">CAREERS</Link>
+            <Link to="/aboutus" className={isActive("/aboutus")}>
+              ABOUT US
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className={isActive("/careers")}>
+              CAREERS
+            </Link>
           </li>
         </ul>
         <a
@@ -42,6 +58,9 @@ const Navbar = () => {
         >
           Let&apos;s Connect
         </a>
+        <div className="hamburger" onClick={toggleMenu}>
+          &#9776;
+        </div>
       </nav>
     </header>
   );

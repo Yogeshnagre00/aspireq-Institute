@@ -1,49 +1,67 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import Navbar from "../../components/Header/header";
 import { Footer } from "../../components/Footer/footer";
 import "./courses.css";
 import Offer from "../../components/offerSection/offer";
-//import CourseCard from "./courseCard";
 
 const CoursesPage = () => {
   // Slider items with images and videos
-  const sliderItems = [
-    {
-      id: 1,
-      type: "image",
-      src: "./Images/csaestudies.png",
-      title: "QA Lorem Ipsum",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus urna orci.",
-    },
-    {
-      id: 2,
-      type: "video",
-      src: "./Videos/demo.mp4",
-      title: "Video Demo",
-      description: "A demonstration video about QA services.",
-    },
-    {
-      id: 3,
-      type: "image",
-      src: "./Images/Full stack developer.jpg",
-      title: "Office 1",
-      description: "Description for full stack developer",
-    },
-    {
-      id: 4,
-      type: "video",
-      src: "./Videos/SampleVideo_1280x720_10mb.mp4",
-      title: "Video Demo 2",
-      description: "A demonstration video about QA services.",
-    },
-    {
-      id: 5,
-      type: "image",
-      src: "./Images/Business analyst.jpg",
-      title: "Office 1",
-      description: "Description for business analyst",
-    },
+  const sliderItems = useMemo(
+    () => [
+      {
+        id: 1,
+        type: "image",
+        src: "./Images/csaestudies.png",
+        title: "QA Lorem Ipsum",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus urna orci.",
+      },
+      {
+        id: 2,
+        type: "video",
+        src: "./Videos/demo.mp4",
+        title: "Video Demo",
+        description: "A demonstration video about QA services.",
+      },
+      {
+        id: 3,
+        type: "image",
+        src: "./Images/Full stack developer.jpg",
+        title: "Office 1",
+        description: "Description for full stack developer",
+      },
+      {
+        id: 4,
+        type: "video",
+        src: "./Videos/SampleVideo_1280x720_10mb.mp4",
+        title: "Video Demo 2",
+        description: "A demonstration video about QA services.",
+      },
+      {
+        id: 5,
+        type: "image",
+        src: "./Images/Business analyst.jpg",
+        title: "Office 1",
+        description: "Description for business analyst",
+      },
+    ],
+    []
+  );
+  //slider thumbnails images
+  const thumbnails = [
+    "./Images/Devops engineer.jpeg",
+    " /Images/back-courses.png",
+    "/./Images/Container.png",
+    "./Images/Full stack developer.jpg",
+    "./Images/Business analyst.jpg",
+    "./Images/Business analyst.jpg",
+    "./Images/Devops engineer.jpeg",
+    "./Images/Devops engineer.jpeg",
+    "/./Images/Container.png",
+    "./Images/Full stack developer.jpg",
+    "./Images/Devops engineer.jpeg",
+    "./Images/Business analyst.jpg",
+    "./Images/Devops engineer.jpeg",
   ];
   //courses card item
   const courses = [
@@ -103,22 +121,6 @@ const CoursesPage = () => {
     },
   ];
 
-  //slider thumbnails images
-  const thumbnails = [
-    "./Images/Devops engineer.jpeg",
-    "/./Images/Container.png",
-    "./Images/Full stack developer.jpg",
-    "./Images/Business analyst.jpg",
-    "./Images/Business analyst.jpg",
-    "./Images/Devops engineer.jpeg",
-    "./Images/Devops engineer.jpeg",
-    "/./Images/Container.png",
-    "./Images/Full stack developer.jpg",
-    "./Images/Devops engineer.jpeg",
-    "./Images/Business analyst.jpg",
-    "./Images/Devops engineer.jpeg",
-  ];
-
   const steps = [
     {
       id: 1,
@@ -144,42 +146,71 @@ const CoursesPage = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isMuted, setIsMuted] = useState(true);
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const [currentThumbnailIndex, setCurrentThumbnailIndex] = useState(0);
+  const [isMainCardCycleComplete, setIsMainCardCycleComplete] = useState(false);
+  const [, setIsVideoPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
-  const [isPaused, setIsPaused] = useState(false);
+
+  // Check if sessionStorage already has a flag indicating the slideshow has run
+  const hasSessionRun = sessionStorage.getItem("hasRun");
 
   useEffect(() => {
-    if (!isPaused) {
+    if (!hasSessionRun) {
+      const playNextSlide = () => {
+        setCurrentIndex((prevIndex) => {
+          const nextIndex = prevIndex + 1;
+
+          if (nextIndex >= sliderItems.length) {
+            setIsMainCardCycleComplete(true);
+            return prevIndex; // Stop main slider
+          }
+
+          return nextIndex;
+        });
+      };
+
+      if (sliderItems[currentIndex]?.type === "video") {
+        // Wait for video to end before switching
+        const video = videoRef.current;
+        if (video) {
+          video.onended = playNextSlide;
+          video.play();
+        }
+      } else {
+        // For images, use interval
+        const interval = setTimeout(playNextSlide, 5000);
+        return () => clearTimeout(interval);
+      }
+    }
+  }, [currentIndex, hasSessionRun, sliderItems]);
+
+  useEffect(() => {
+    if (!hasSessionRun && isMainCardCycleComplete) {
       const interval = setInterval(() => {
         setCurrentThumbnailIndex((prevIndex) => {
           const nextIndex = prevIndex + 3;
-          return nextIndex >= thumbnails.length ? 0 : nextIndex;
+          return nextIndex >= thumbnails.length ? prevIndex : nextIndex; // Stop thumbnails after one cycle
         });
       }, 5000);
-      return () => clearInterval(interval);
-    }
-  }, [isPaused, thumbnails.length]);
 
-  useEffect(() => {
-    if (!isVideoPlaying) {
-      const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderItems.length);
-      }, 5000);
+      // Set session flag to stop running on refresh
+      sessionStorage.setItem("hasRun", "true");
+
       return () => clearInterval(interval);
     }
-  }, [isVideoPlaying, sliderItems.length]);
+  }, [hasSessionRun, isMainCardCycleComplete, thumbnails.length]);
 
   const handleVideoPlay = () => {
     setIsVideoPlaying(true);
   };
+
   const handleVideoEnd = () => {
-    const videoElement = videoRef.current;
-    if (videoElement && videoElement.ended) {
-      setIsVideoPlaying(false);
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderItems.length);
-    }
+    setIsVideoPlaying(false);
+    setCurrentIndex((prevIndex) => {
+      const nextIndex = prevIndex + 1;
+      return nextIndex >= sliderItems.length ? 0 : nextIndex; // Loop back to start if at the end
+    });
   };
   const toggleMute = () => {
     setIsMuted((prevState) => !prevState);
@@ -192,19 +223,19 @@ const CoursesPage = () => {
       <Navbar />
       <section className="qa-section">
         <div className="qa-section">
-          {/* Main Slider */}
+          {/* Main Slider (Runs first, only once) */}
           <div className="main-card">
-            {sliderItems[currentIndex].type === "image" ? (
+            {sliderItems[currentIndex]?.type === "image" ? (
               <img
-                src={sliderItems[currentIndex].src}
-                alt={sliderItems[currentIndex].title}
+                src={sliderItems[currentIndex]?.src}
+                alt={sliderItems[currentIndex]?.title}
                 className="main-image"
               />
             ) : (
               <video
                 ref={videoRef}
                 className="main-video"
-                src={sliderItems[currentIndex].src}
+                src={sliderItems[currentIndex]?.src}
                 controls
                 onPlay={handleVideoPlay}
                 onEnded={handleVideoEnd}
@@ -216,8 +247,8 @@ const CoursesPage = () => {
               {isMuted ? "Unmute" : "Mute"}
             </button>
             <div className="content">
-              <h3>{sliderItems[currentIndex].title}</h3>
-              <p>{sliderItems[currentIndex].description}</p>
+              <h3>{sliderItems[currentIndex]?.title}</h3>
+              <p>{sliderItems[currentIndex]?.description}</p>
             </div>
 
             {/* Slider Dots */}
@@ -226,20 +257,16 @@ const CoursesPage = () => {
                 <span
                   key={index}
                   className={`dot ${currentIndex === index ? "active" : ""}`}
-                  onClick={() => setCurrentIndex(index)}
+                  onClick={() => setCurrentIndex(index)} // Change currentIndex on click
                 ></span>
               ))}
             </div>
           </div>
-          {/* Thumbnail Stack */}
-          <div
-            className="thumbnail-stack"
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
-          >
-            {/* Show all images, but only show 3 images at a time */}
+
+          {/* Thumbnail Stack (Runs only after main slider completes, stops after one cycle) */}
+          <div className="thumbnail-stack">
             {thumbnails
-              .slice(currentThumbnailIndex) //, currentThumbnailIndex + 3
+              .slice(currentThumbnailIndex, currentThumbnailIndex + 3)
               .map((thumb, index) => (
                 <img
                   key={index}

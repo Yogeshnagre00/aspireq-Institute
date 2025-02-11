@@ -124,13 +124,6 @@ const CourseCards = () => {
                     <a href={`/course/${course.id}`} className="arrow-link">
                       <i className="arrow-icon">→</i>
                     </a>
-                    {/* <div
-                      key={index}
-                      className="arrow-link"
-                      onClick={() => handleCardClick(course.id)}
-                    >
-                      <i className="arrow-icon">→</i>
-                    </div> */}
                   </div>
                 </div>
               </div>

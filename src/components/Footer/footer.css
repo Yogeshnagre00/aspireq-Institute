@@ -5,15 +5,16 @@
   flex-direction: column;
   min-height: 100vh;
 }
+
 .content {
   flex: 1;
 }
 
 .footer {
   background-color: #f9f9f982;
-  padding: 20px 30px 0 30px;
+  padding: 20px 30px 0;
   color: #333;
-  width: 96%;
+  width: 100%;
   position: relative;
   bottom: 0;
   left: 0;
@@ -24,35 +25,41 @@
   margin: 0 auto;
 }
 
+/* Row Flexbox */
 .row {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .col-md-3 {
-  padding: 0 30px;
-  margin-bottom: 10px;
+  flex: 1 1 22%; /* Ensures columns distribute evenly */
+  min-width: 200px;
+  padding: 0 15px;
+  text-align: left;
 }
 
-/* Added: Ensure logo is centered in its column */
 .footer-logo img {
   max-width: 100%;
   height: auto;
 }
 
 .footer-text {
-  width: 30%;
-  margin-top: 30px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: left;
 }
 
-/* Footer Heading styles */
+/* Footer Heading */
 .footer-heading {
   font-size: 1.2em;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
+/* Footer Links */
 .footer-links,
 .footer-contact {
   list-style: none;
@@ -61,7 +68,7 @@
 
 .footer-links li,
 .footer-contact li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .footer-links a {
@@ -74,25 +81,15 @@
   color: #007bff;
 }
 
-.footer-contact li {
-  color: #333;
-}
-
-/* Adjusted text alignment for social media icons */
-.footer-bottom {
+/* Social Media */
+.footer-social {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* padding: 10px 0; */
+  justify-content: flex-start;
+  gap: 15px;
 }
-/* .footer-social {
-  
-} */
 
 .footer-social a {
-  display: inline-block;
-  margin: 0 10px;
-  color: #000000;
+  color: #000;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
@@ -101,16 +98,20 @@
   color: #007bff;
 }
 
-/* Separator line between footer content and copyright section */
+/* Separator */
 .footer-separator {
   border-top: 1px solid #786d6d;
+  margin-top: 20px;
 }
 
+/* Copyright Section */
 .footer-copyright {
-  text-align: start;
+  text-align: left;
   font-size: 1rem;
   padding-top: 20px;
 }
+
+/* Instagram Gradient */
 .fa-instagram {
   color: transparent;
   background: radial-gradient(
@@ -121,28 +122,40 @@
     #d6249f 60%,
     #285aeb 90%
   );
-  background: -webkit-radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
   background-clip: text;
   -webkit-background-clip: text;
 }
-/* Responsive Design */
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column;
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 1024px) {
+  .footer-container {
+    width: 100%;
+    padding: 0 20px;
   }
 
   .col-md-3 {
-    flex: 1 0 100%; /* Full width on mobile */
+    flex: 1 1 45%;
     text-align: center;
-    padding: 0 10px;
-    margin-bottom: 20px;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-md-3 {
+    flex: 1 1 100%;
+    text-align: center;
   }
 
   .footer-heading {
@@ -151,25 +164,37 @@
 
   .footer-links li,
   .footer-contact li {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 
   .footer-social {
     margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
   .footer {
     padding: 15px;
+    margin: 0 auto;
   }
 
   .col-md-3 {
     padding: 0 5px;
-    flex: 1 1 100%;
   }
 
   .footer-bottom {
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-bottom: 15px;
   }
 }

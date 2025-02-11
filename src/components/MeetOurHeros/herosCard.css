@@ -3,7 +3,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 280px;
+  width: 260px;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -65,11 +65,11 @@
   }
 
   .hero-card .position {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .hero-card .description {
-    font-size: 11px;
+    font-size: 9px;
   }
 
   .social-icons a {
@@ -80,7 +80,7 @@
 /* Tablet Devices (Medium screens) */
 @media (max-width: 768px) {
   .hero-card {
-    width: 45%;
+    width: 85%;
     padding: 20px;
   }
 
@@ -89,38 +89,14 @@
   }
 
   .hero-card .position {
-    font-size: 13px;
-  }
-
-  .hero-card .description {
     font-size: 12px;
   }
 
-  .social-icons a {
-    font-size: 17px;
-  }
-}
-
-/* Desktop Devices (Large screens) */
-@media (min-width: 1024px) {
-  .hero-card {
-    width: 280px;
-    padding: 20px;
-  }
-
-  .hero-card h3 {
-    font-size: 18px;
-  }
-
-  .hero-card .position {
-    font-size: 14px;
-  }
-
   .hero-card .description {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .social-icons a {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
