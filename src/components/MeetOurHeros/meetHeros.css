@@ -1,7 +1,7 @@
 .meet-the-heroes {
   text-align: center;
   background-color: #fffdfd;
-  width: 90%;
+  width: 87%;
   margin: 0 auto;
 }
 
@@ -32,10 +32,10 @@
   display: unset !important;
 }
 .meet-the-heroes .slick-prev {
-  left: -45px !important;
+  left: -35px !important;
 }
 .meet-the-heroes .slick-next {
-  right: -45px !important;
+  right: -35px !important;
 }
 /* Responsive Styles */
 @media (max-width: 768px) {

@@ -3,6 +3,7 @@ import Navbar from "../../components/Header/header";
 import { Footer } from "../../components/Footer/footer";
 import "./courses.css";
 import Offer from "../../components/offerSection/offer";
+import ThumbnailSlider from "../../components/thambnailImages/thumbnailSlider";
 
 const CoursesPage = () => {
   // Slider items with images and videos
@@ -47,23 +48,8 @@ const CoursesPage = () => {
     ],
     []
   );
-  //slider thumbnails images
-  const thumbnails = [
-    "./Images/Devops engineer.jpeg",
-    " /Images/back-courses.png",
-    "/./Images/Container.png",
-    "./Images/Full stack developer.jpg",
-    "./Images/Business analyst.jpg",
-    "./Images/Business analyst.jpg",
-    "./Images/Devops engineer.jpeg",
-    "./Images/Devops engineer.jpeg",
-    "/./Images/Container.png",
-    "./Images/Full stack developer.jpg",
-    "./Images/Devops engineer.jpeg",
-    "./Images/Business analyst.jpg",
-    "./Images/Devops engineer.jpeg",
-  ];
-  //courses card item
+
+  // Courses card items
   const courses = [
     {
       id: 1,
@@ -146,24 +132,29 @@ const CoursesPage = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentThumbnailIndex, setCurrentThumbnailIndex] = useState(0);
   const [isMainCardCycleComplete, setIsMainCardCycleComplete] = useState(false);
-  const [, setIsVideoPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
 
   // Check if sessionStorage already has a flag indicating the slideshow has run
-  const hasSessionRun = sessionStorage.getItem("hasRun");
+  // const hasSessionRun = sessionStorage.getItem("hasRun");
 
   useEffect(() => {
-    if (!hasSessionRun) {
+    const hasMainRun = sessionStorage.getItem("hasMainRun");
+
+    if (!hasMainRun) {
+      let interval;
+      const video = videoRef.current;
+
       const playNextSlide = () => {
         setCurrentIndex((prevIndex) => {
           const nextIndex = prevIndex + 1;
 
           if (nextIndex >= sliderItems.length) {
+            console.log("Main slider cycle complete"); // Debugging
             setIsMainCardCycleComplete(true);
-            return prevIndex; // Stop main slider
+            sessionStorage.setItem("hasMainRun", "true");
+            return prevIndex; // Stop at the last slide
           }
 
           return nextIndex;
@@ -171,51 +162,28 @@ const CoursesPage = () => {
       };
 
       if (sliderItems[currentIndex]?.type === "video") {
-        // Wait for video to end before switching
-        const video = videoRef.current;
         if (video) {
           video.onended = playNextSlide;
           video.play();
         }
       } else {
-        // For images, use interval
-        const interval = setTimeout(playNextSlide, 5000);
-        return () => clearTimeout(interval);
+        interval = setTimeout(playNextSlide, 5000); // Change slide every 5 seconds
       }
+
+      return () => {
+        if (interval) clearTimeout(interval);
+        if (video) video.onended = null;
+      };
+    } else {
+      setIsMainCardCycleComplete(true);
     }
-  }, [currentIndex, hasSessionRun, sliderItems]);
+  }, [currentIndex, sliderItems]);
 
-  useEffect(() => {
-    if (!hasSessionRun && isMainCardCycleComplete) {
-      const interval = setInterval(() => {
-        setCurrentThumbnailIndex((prevIndex) => {
-          const nextIndex = prevIndex + 3;
-          return nextIndex >= thumbnails.length ? prevIndex : nextIndex; // Stop thumbnails after one cycle
-        });
-      }, 5000);
-
-      // Set session flag to stop running on refresh
-      sessionStorage.setItem("hasRun", "true");
-
-      return () => clearInterval(interval);
-    }
-  }, [hasSessionRun, isMainCardCycleComplete, thumbnails.length]);
-
-  const handleVideoPlay = () => {
-    setIsVideoPlaying(true);
-  };
-
-  const handleVideoEnd = () => {
-    setIsVideoPlaying(false);
-    setCurrentIndex((prevIndex) => {
-      const nextIndex = prevIndex + 1;
-      return nextIndex >= sliderItems.length ? 0 : nextIndex; // Loop back to start if at the end
-    });
-  };
   const toggleMute = () => {
     setIsMuted((prevState) => !prevState);
-    videoRef.current.muted = false;
-    videoRef.current.play();
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted;
+    }
   };
 
   return (
@@ -237,8 +205,6 @@ const CoursesPage = () => {
                 className="main-video"
                 src={sliderItems[currentIndex]?.src}
                 controls
-                onPlay={handleVideoPlay}
-                onEnded={handleVideoEnd}
                 autoPlay
                 muted={isMuted}
               />
@@ -257,7 +223,7 @@ const CoursesPage = () => {
                 <span
                   key={index}
                   className={`dot ${currentIndex === index ? "active" : ""}`}
-                  onClick={() => setCurrentIndex(index)} // Change currentIndex on click
+                  onClick={() => setCurrentIndex(index)}
                 ></span>
               ))}
             </div>
@@ -265,20 +231,12 @@ const CoursesPage = () => {
 
           {/* Thumbnail Stack (Runs only after main slider completes, stops after one cycle) */}
           <div className="thumbnail-stack">
-            {thumbnails
-              .slice(currentThumbnailIndex, currentThumbnailIndex + 3)
-              .map((thumb, index) => (
-                <img
-                  key={index}
-                  src={thumb}
-                  alt={`Thumbnail ${index + 1}`}
-                  className="thumbnail"
-                />
-              ))}
+            <ThumbnailSlider start={isMainCardCycleComplete} />
           </div>
         </div>
       </section>
 
+      {/* Rest of the code remains unchanged */}
       <section id="course-section" className="course-section">
         <h2>Courses</h2>
         <div className="course-section__grid">

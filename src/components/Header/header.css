@@ -54,7 +54,7 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 /* Link Styles */
@@ -70,7 +70,7 @@ header {
   color: var(--nav-link-hover-color);
 }
 .active-link {
-  color: var(--btn-bg-color);
+  color: #05e8c6;
   font-weight: bold;
 }
 

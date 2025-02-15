@@ -1,9 +1,10 @@
 .hero-card {
   background: #f2f2f28c;
   border-radius: 10px;
+  margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 260px;
+  padding: 15px;
+  width: 230px;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -21,20 +22,20 @@
 }
 
 .hero-card h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   color: #333;
   margin-bottom: 10px;
 }
 
 .hero-card .position {
-  font-size: 14px;
+  font-size: 13px;
   color: #28a745;
   margin-bottom: 10px;
 }
 
 .hero-card .description {
-  font-size: 12px;
+  font-size: 11px;
   color: #8a8a8a;
   margin-bottom: 15px;
 }
@@ -42,12 +43,12 @@
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 9px;
 }
 
 .social-icons a {
   color: #333;
-  font-size: 18px;
+  font-size: 16px;
   transition: color 0.3s ease;
 }
 
