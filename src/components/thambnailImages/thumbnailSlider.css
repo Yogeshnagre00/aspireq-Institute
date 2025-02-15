@@ -66,14 +66,14 @@
 .image-slider:hover .slick-next {
   opacity: 1;
 }
-/* .custom-prev-arrow,
+.custom-prev-arrow,
 .custom-next-arrow {
-  font-size: 24px; 
+  font-size: 24px;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  content: ""; 
-} */
+  content: "";
+}
 /* Responsive */
 @media (max-width: 768px) {
   .image-slider {
