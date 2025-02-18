@@ -24,6 +24,7 @@
 
 .hero-cards {
   padding: 0 20px;
+  height: 100%;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }

@@ -9,9 +9,8 @@ const ThumbnailSlider = ({ start }) => {
   const [autoplay, setAutoplay] = useState(false);
 
   useEffect(() => {
-    console.log("ThumbnailSlider start prop:", start); // Debugging
     if (start) {
-      setAutoplay(true); // Enable autoplay when start is true
+      setAutoplay(true);
     }
   }, [start]);
 
@@ -36,6 +35,7 @@ const ThumbnailSlider = ({ start }) => {
     "./Images/Business analyst.jpg",
     "./Images/Scrum master.jpg",
     "./Images/corporate.jpeg",
+    "./Images/Full stack developer.jpg",
   ];
 
   return (

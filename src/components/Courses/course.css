@@ -175,8 +175,8 @@
 }
 
 /* Custom styles for arrows */
-.slick-prev,
-.slick-next {
+.course-section .slick-prev,
+.course-section .slick-next {
   color: #fff !important; /* Change icon color */
   background: transparent !important; /* Remove extra background */
   border-radius: 50%;
@@ -192,17 +192,17 @@
 }
 
 /* Fix position for previous and next buttons */
-.slick-prev {
+.course-section .slick-prev {
   left: -50px; /* Adjust as needed */
 }
 
-.slick-next {
+.course-section .slick-next {
   right: -50px; /* Adjust as needed */
 }
 
 /* Change icon size */
-.slick-prev:before,
-.slick-next:before {
+.course-section .slick-prev:before,
+.course-section .slick-next:before {
   font-size: 20px; /* Adjust icon size */
   color: #007bff !important; /* Blue arrow */
 }

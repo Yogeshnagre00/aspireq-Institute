@@ -230,7 +230,7 @@ const CoursesPage = () => {
           </div>
 
           {/* Thumbnail Stack (Runs only after main slider completes, stops after one cycle) */}
-          <div className="thumbnail-stack">
+          <div className="thumbnail-stack ">
             <ThumbnailSlider start={isMainCardCycleComplete} />
           </div>
         </div>

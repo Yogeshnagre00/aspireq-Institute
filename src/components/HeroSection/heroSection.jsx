@@ -1,6 +1,6 @@
 import "./heroSection.css";
 
-export const HeroSection = () => {
+const HeroSection = () => {
   const handleGetStartedClick = () => {
     alert("Get Started clicked!");
   };

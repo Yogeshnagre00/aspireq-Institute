@@ -127,24 +127,23 @@
 }
 
 .top-left {
-  top: 20%;
+  top: 23%;
   left: 10%;
 }
 
 .top-right {
-  top: 30%;
+  top: 28%;
   right: 13%;
 }
 
 .bottom-center {
-  bottom: 7%;
-  left: 65%;
+  bottom: 5%;
+  left: 61%;
   transform: translateX(-50%);
 }
 .circleimage {
-  width: 100%;
-  max-width: 1200px;
-  height: 100%;
+  width: 1250px;
+  height: 80vh;
   object-fit: cover;
 }
 /* Feature */
