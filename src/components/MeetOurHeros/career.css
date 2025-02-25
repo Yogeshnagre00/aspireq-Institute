@@ -12,22 +12,16 @@
   position: relative;
 }
 
-.profile-images {
-  position: relative;
-  width: 50%;
-  height: 200px; /* Adjust if needed */
-}
-
-/* Positioning for each profile image to match the layout */
 /* 🌊 Profile Images Container */
 .profile-images {
   position: relative;
   width: 100%;
   max-width: 700px;
-  height: 300px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 /* 🔵 Common Profile Image Styling */
@@ -35,82 +29,76 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  padding: 5px;
   position: absolute;
-  border: 4px solid #ffffff;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: floatEffect 4s ease-in-out infinite;
 }
 
-/* Random Positions for a Natural Overlapping Effect */
-.profile-image-1 {
-  top: 30px;
+/* ✨ Random Positions for a Natural Effect */
+.profile-image:nth-child(1) {
+  top: 20px;
   left: 10%;
-  z-index: 3;
 }
-.profile-image-2 {
-  top: 50px;
-  left: 25%;
-  z-index: 1;
-}
-.profile-image-3 {
-  top: 120px;
-  left: 25%;
-  z-index: 2;
-}
-.profile-image-4 {
-  top: 40px;
+.profile-image:nth-child(2) {
+  top: 60px;
   left: 30%;
-  z-index: 4;
 }
-.profile-image-5 {
-  top: 160px;
-  left: 45%;
-  z-index: 2;
-}
-.profile-image-6 {
-  top: 80px;
+.profile-image:nth-child(3) {
+  top: 150px;
   left: 15%;
-  z-index: 5;
 }
-.profile-image-7 {
-  top: 145px;
-  left: 76%;
-  z-index: 1;
+.profile-image:nth-child(4) {
+  top: 90px;
+  left: 50%;
 }
-.profile-image-8 {
-  top: 80px;
-  left: 35%;
-  z-index: 3;
+.profile-image:nth-child(5) {
+  top: 250px;
+  left: 25%;
 }
-.profile-image-9 {
-  top: 190px;
-  left: 65%;
-  z-index: 4;
+.profile-image:nth-child(6) {
+  top: 180px;
+  left: 40%;
 }
-.profile-image-10 {
+.profile-image:nth-child(7) {
   top: 120px;
-  left: 90%;
-  z-index: 2;
+  left: 80%;
+}
+.profile-image:nth-child(8) {
+  top: 220px;
+  left: 60%;
+}
+.profile-image:nth-child(9) {
+  top: 230px;
+  left: 5%;
+}
+.profile-image:nth-child(10) {
+  top: 22px;
+  left: 70%;
 }
 
-/* ✨ Slight Floating Effect */
+/* ✨ Floating Animation for a Dynamic Look */
 @keyframes floatEffect {
   0% {
     transform: translateY(0px) scale(1);
   }
   50% {
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-8px) scale(1.05);
   }
   100% {
     transform: translateY(0px) scale(1);
   }
 }
 
-.profile-image {
-  animation: floatEffect 5s ease-in-out infinite;
+/* Slight Rotation Effect on Hover */
+.profile-image:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .profile-image.selected {
+  box-shadow: 0px 5px 10px white;
   border: 3px solid #ffffff; /* White border to show selected image */
 }
 

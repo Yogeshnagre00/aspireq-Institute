@@ -57,7 +57,7 @@ const AboutUs = () => {
           </div>
 
           <div className="box top-left">
-            <h3>Reach the goal</h3>
+            <h3>Reach the Goal</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
               ipsum dolor sit amet.
@@ -73,7 +73,7 @@ const AboutUs = () => {
           </div>
 
           <div className="box bottom-center">
-            <h3>Save time and Efforts</h3>
+            <h3>Save Time and Efforts</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
               ipsum dolor sit amet.

@@ -3,70 +3,70 @@ import "./career.css";
 
 const testimonials = [
   {
-    rating: 4.8,
+    rating: "5.0",
     text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
     name: "Sia Brown",
     profession: "Behavioral Science",
     image: "./Images/girl1.png",
   },
   {
-    rating: 4.5,
+    rating: "5.0",
     text: "This is a critical role. As an industrial, securing capacity and ensuring safety in the production process.",
     name: "Mia Chen",
     profession: "Software Engineering",
     image: "./Images/girl2.png",
   },
   {
-    rating: 4.7,
+    rating: "5.0",
     text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
     name: "Emma Stone",
     profession: "Marketing",
     image: "./Images/girl3.png",
   },
   {
-    rating: 4.6,
+    rating: "5.0",
     text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
     name: "Chris Lee",
     profession: "Finance",
     image: "./Images/boy2.png",
   },
   {
-    rating: 4.9,
+    rating: "5.0",
     text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
     name: "John Doe",
     profession: "Product Management",
     image: "./Images/boy1.png",
   },
   {
-    rating: 4.8,
+    rating: "5.0",
     text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
     name: "Sia Brown",
     profession: "Behavioral Science",
     image: "./Images/girl1.png",
   },
   {
-    rating: 4.5,
+    rating: "5.0",
     text: "This is a critical role. As an industrial, securing capacity and ensuring safety in the production process.",
     name: "Mia Chen",
     profession: "Software Engineering",
     image: "./Images/girl2.png",
   },
   {
-    rating: 4.7,
+    rating: "5.0",
     text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
     name: "Emma Stone",
     profession: "Marketing",
     image: "./Images/girl3.png",
   },
   {
-    rating: 4.6,
+    rating: "5.0",
     text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
     name: "Chris Lee",
     profession: "Finance",
     image: "./Images/boy2.png",
   },
   {
-    rating: 4.9,
+    rating: "5.0",
     text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
     name: "John Doe",
     profession: "Product Management",
@@ -82,7 +82,7 @@ const TestimonialSection = () => {
       setSelectedTestimonial((prevIndex) =>
         prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000);
+    }, 10000);
     return () => clearInterval(interval);
   }, []);
 
