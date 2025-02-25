@@ -54,7 +54,7 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 50px;
+  gap: 70px;
 }
 
 /* Link Styles */

@@ -10,24 +10,34 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "How experienced are your testers?",
+      question: "What about placement?",
       answer:
-        "Our testers have over 5 years of experience in manual and automated testing.",
+        "We provide 100% job guarantee. Here, at AspireQ, there will be a complete roadmap for your career.",
     },
     {
-      question: "What browsers and devices do you test on?",
-      answer:
-        "We test on all major browsers like Chrome, Firefox, Safari, and Edge, as well as on mobile devices running iOS and Android.",
+      question: "What syllabus you are going to cover?",
+      answer: "",
     },
     {
-      question: "What type of clients have you worked with?",
-      answer:
-        "We have worked with clients ranging from startups to large enterprises in various industries.",
+      question: "What is the admission criteria?",
+      answer: "",
     },
     {
-      question: "Do you require a long-term contract?",
+      question: "How much fees will be?",
+      answer: "",
+    },
+    {
+      question: "What is the duration of the course?",
+      answer: "",
+    },
+    {
+      question: "Who are the trainers for the courses?",
+      answer: "",
+    },
+    {
+      question: "Is there any live project or internship do you offer?",
       answer:
-        "No, we do not require a long-term contract. We offer flexible engagement models.",
+        "Yes, we do belive real time project experience is very much important.Just, technical and bookish knowledge is not enough.Domain knowledge and live project is crucial which we provide at aspireq institute along with internship certificate as well.",
     },
   ];
 

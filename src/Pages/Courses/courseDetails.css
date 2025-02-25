@@ -2,8 +2,8 @@
   margin: 100px auto;
   margin-bottom: 50px;
   padding: 16px;
-  max-width: 1200px;
-  width: 80%;
+  max-width: 1250px;
+  width: 100%;
 }
 
 .coursepage-content {
@@ -239,7 +239,8 @@
 .module-item p {
   font-size: 0.8rem;
   color: #4b5563;
-  line-height: 1.5;
+  margin-left: 6px;
+  line-height: 1;
 }
 .divider {
   border: none;
@@ -287,11 +288,42 @@
   margin-left: 10%;
   height: 70vh !important;
 }
-
+.Tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.Tools-container img {
+  max-width: 85%;
+  height: 120px;
+  margin: 0 auto;
+  margin-left: 8%;
+  margin-top: 25px;
+  height: auto;
+  object-fit: cover;
+}
+.SDET-Tools,
+.day-schedule,
+.year-schedule {
+  font-size: 1rem;
+  margin-left: 9%;
+  margin-top: 8%;
+  text-align: left;
+  padding-bottom: 8px;
+}
 /* Schedule */
 .schedule-section {
   padding: 40px 20px;
   text-align: center;
+}
+.day-schedule {
+  font-size: 1.2rem;
+}
+.year-schedule {
+  font-size: 1.2rem;
+}
+.year-schedule-container img {
+  width: 92%;
 }
 .schedule-container img {
   max-width: 100%;
@@ -299,6 +331,14 @@
   height: auto;
   object-fit: cover;
 }
+.topic-item.blank {
+  visibility: hidden;
+}
+
+.topic-item.force-new-column {
+  break-before: column;
+}
+
 /* certifiction */
 
 .certificate-section {
@@ -315,6 +355,7 @@
 
 .certificate-image {
   flex-basis: 48%;
+  margin-left: 1%;
 }
 
 .certificate-image img {
@@ -324,7 +365,7 @@
 
 .certificate-details {
   text-align: left;
-  margin-left: 5%;
+  margin-left: 6%;
   flex-basis: 40%;
 }
 
@@ -437,5 +478,91 @@
   .module-details {
     font-size: 0.875rem;
     padding: 0.5rem;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .coursepage-section {
+    width: 90%;
+  }
+
+  .coursepage-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .module-sidebar {
+    width: 250px;
+  }
+
+  .certificate-container {
+    flex-direction: column;
+  }
+
+  .certificate-details {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .coursepage-section {
+    width: 95%;
+  }
+
+  .coursepage-content h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .module-sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .module-item {
+    padding: 0.75rem;
+  }
+
+  .certificate-details h3 {
+    font-size: 1.2rem;
+  }
+
+  .download-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .topics-list {
+    columns: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .coursepage-content h2 {
+    font-size: 1rem;
+  }
+
+  .coursepage-content p {
+    font-size: 0.8rem;
+  }
+
+  .module-sidebar {
+    display: none;
+  }
+
+  .module-details {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+
+  .Tools-container img {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .SDET-Tools,
+  .day-schedule {
+    margin-left: 5%;
   }
 }

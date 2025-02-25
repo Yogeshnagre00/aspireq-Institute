@@ -28,14 +28,14 @@ const ThumbnailSlider = ({ start }) => {
   };
 
   const images = [
-    "./Images/Devops engineer.jpeg",
+    "/Images/Devops engineer.jpeg",
     "/Images/back-courses.png",
-    "/./Images/Container.png",
-    "./Images/Full stack developer.jpg",
-    "./Images/Business analyst.jpg",
-    "./Images/Scrum master.jpg",
-    "./Images/corporate.jpeg",
-    "./Images/Full stack developer.jpg",
+    "/Images/Container.png",
+    "/Images/Full stack developer.jpg",
+    "/Images/Business analyst.jpg",
+    "/Images/Scrum master.jpg",
+    "/Images/corporate.jpeg",
+    "/Images/Full stack developer.jpg",
   ];
 
   return (

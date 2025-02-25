@@ -6,13 +6,12 @@
   background-color: #1ed5a9; /* Matching the green background color */
   padding: 40px;
   border-radius: 15px;
-  max-width: 1000px;
+  max-width: 1250px;
   margin: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
-/* Profile images container */
 .profile-images {
   position: relative;
   width: 50%;
@@ -20,39 +19,95 @@
 }
 
 /* Positioning for each profile image to match the layout */
+/* 🌊 Profile Images Container */
+.profile-images {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔵 Common Profile Image Styling */
 .profile-image {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   position: absolute;
+  border: 4px solid #ffffff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Random Positions for a Natural Overlapping Effect */
 .profile-image-1 {
-  top: 20px;
-  left: 50px;
+  top: 30px;
+  left: 10%;
+  z-index: 3;
 }
-
 .profile-image-2 {
-  top: -10px;
-  right: 180px;
+  top: 50px;
+  left: 25%;
+  z-index: 1;
 }
-
 .profile-image-3 {
-  bottom: -20px;
-  left: 100px;
+  top: 120px;
+  left: 25%;
+  z-index: 2;
 }
-
 .profile-image-4 {
+  top: 40px;
+  left: 30%;
+  z-index: 4;
+}
+.profile-image-5 {
+  top: 160px;
+  left: 45%;
+  z-index: 2;
+}
+.profile-image-6 {
   top: 80px;
-  left: 200px;
+  left: 15%;
+  z-index: 5;
+}
+.profile-image-7 {
+  top: 145px;
+  left: 76%;
+  z-index: 1;
+}
+.profile-image-8 {
+  top: 80px;
+  left: 35%;
+  z-index: 3;
+}
+.profile-image-9 {
+  top: 190px;
+  left: 65%;
+  z-index: 4;
+}
+.profile-image-10 {
+  top: 120px;
+  left: 90%;
+  z-index: 2;
 }
 
-.profile-image-5 {
-  bottom: 10px;
-  right: 100px;
+/* ✨ Slight Floating Effect */
+@keyframes floatEffect {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.profile-image {
+  animation: floatEffect 5s ease-in-out infinite;
 }
 
 .profile-image.selected {
@@ -65,14 +120,14 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 430px;
-  height: 250px;
+  max-width: 600px;
+  height: 300px;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  z-index: 1; /* Ensures card is above the profile images */
+  z-index: 1;
 }
 
 /* Rating and star icon */

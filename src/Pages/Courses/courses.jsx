@@ -12,7 +12,7 @@ const CoursesPage = () => {
       {
         id: 1,
         type: "image",
-        src: "./Images/csaestudies.png",
+        src: "/Images/Scrum master.jpg",
         title: "QA Lorem Ipsum",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus urna orci.",
@@ -34,7 +34,7 @@ const CoursesPage = () => {
       {
         id: 4,
         type: "video",
-        src: "./Videos/SampleVideo_1280x720_10mb.mp4",
+        src: "/Videos/demo2.mp4",
         title: "Video Demo 2",
         description: "A demonstration video about QA services.",
       },
@@ -71,6 +71,15 @@ const CoursesPage = () => {
     },
     {
       id: 3,
+      title: "Devops Engineer",
+      description: "Automate your testing process with the latest tools.",
+      image: "/Images/Devops engineer.jpeg",
+      bestseller: true,
+      discount: "20% Off",
+      rating: "5.0",
+    },
+    {
+      id: 4,
       title: "Scrum Master",
       description: "Learn the essentials of manual software testing.",
       image: "./Images/Scrum master.jpg",
@@ -79,19 +88,10 @@ const CoursesPage = () => {
       rating: "5.0",
     },
     {
-      id: 4,
+      id: 5,
       title: "Business Analyst(BA)",
       description: "Master software testing techniques and tools.",
       image: "./Images/Business analyst.jpg",
-      bestseller: true,
-      discount: "20% Off",
-      rating: "5.0",
-    },
-    {
-      id: 5,
-      title: "Devops Engineer",
-      description: "Automate your testing process with the latest tools.",
-      image: "./Images/Devops engineer.jpeg",
       bestseller: true,
       discount: "20% Off",
       rating: "5.0",

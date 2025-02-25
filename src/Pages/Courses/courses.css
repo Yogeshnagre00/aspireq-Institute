@@ -1,6 +1,7 @@
 /* QA Section Styles */
 .qa-section {
   display: flex;
+  min-height: 800px;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -10,11 +11,10 @@
 /* Main Card Styling */
 .main-card {
   flex: 1;
-  max-width: 1100px;
-  height: 580px;
+  width: 900px;
+  height: auto;
   margin: 0 auto;
   margin-left: 4%;
-  margin-top: 4%;
   display: flex;
   flex-direction: column;
   border: 1px solid #ddd;
@@ -27,12 +27,11 @@
 .main-image,
 .main-video {
   width: 100%;
-  max-width: 1200px;
+  height: 470px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-bottom: 1px solid #ddd;
-}
-.main-image {
-  height: 60vh;
+  background: #f0f0f0;
 }
 
 .mute-button {
@@ -96,43 +95,8 @@
   border: 2px solid #ccc;
 }
 
-/* Thumbnail Images */
-/* Thumbnail Styling */
-.thumbnail {
-  width: 100%;
-  max-width: 450px;
-  height: 207px;
-  object-fit: cover;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Thumbnail Stack */
-.thumbnail-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 10px;
-  scroll-behavior: smooth;
-  margin-top: 8%;
-  max-height: 600px;
-  overflow-y: auto;
-}
-
-/* Scrollbar Styling */
-.thumbnail-stack::-webkit-scrollbar {
-  width: 6px;
-}
-
-.thumbnail-stack::-webkit-scrollbar-thumb {
-  background: #535252;
-  border-radius: 10px;
-}
-
 /* courses */
 .course-section {
-  margin-top: 3%;
   padding: 40px 20px;
   text-align: center;
   display: flex;

@@ -35,7 +35,7 @@ const CourseDetailsPage = () => {
           id: 1,
           title: "Module 1",
           subtitle:
-            "Introduction to Programming with Java Learn the fundamentals of Java:-",
+            "Introduction to Programming with Java Learn the fundamentals of Java:",
           description:
             "Understand the basics of Java programming and its setup.",
           topics: [
@@ -58,7 +58,7 @@ const CourseDetailsPage = () => {
           id: 2,
           title: "New AI Module 2",
           subtitle:
-            "AI tutorials in programming and Prompt engineering in chatgpt:-",
+            "AI tutorials in programming and Prompt engineering in chatgpt:",
           description: "Understand the basics of AI",
           topics: [" Commng soon"],
           style: {
@@ -69,7 +69,7 @@ const CourseDetailsPage = () => {
         {
           id: 3,
           title: "Module 3",
-          subtitle: "HTML, CSS, and JavaScript :-",
+          subtitle: "HTML, CSS, and JavaScript :",
           description:
             "Learn the essential tools for front-end development, including HTML, CSS, and JavaScript.",
           topics: [
@@ -112,7 +112,7 @@ const CourseDetailsPage = () => {
         {
           id: 4,
           title: " Module 4",
-          subtitle: "Frontend Development with React :-",
+          subtitle: "Frontend Development with React :",
           description:
             "Understand the core concepts of React and how to build web applications.",
           topics: [
@@ -140,7 +140,7 @@ const CourseDetailsPage = () => {
         {
           id: 5,
           title: "Module 5",
-          subtitle: "Master Object-Oriented Programming concepts:-",
+          subtitle: "Master Object-Oriented Programming concepts:",
           description:
             "Learn OOP concepts like inheritance, polymorphism, and abstraction.",
           topics: [
@@ -164,7 +164,7 @@ const CourseDetailsPage = () => {
         {
           id: 6,
           title: "Module 6",
-          subtitle: "Handle exceptions and learn about Java collections:-",
+          subtitle: "Handle exceptions and learn about Java collections:",
           description:
             "Master Java’s exception handling and the collections framework.",
           topics: [
@@ -187,7 +187,7 @@ const CourseDetailsPage = () => {
           id: 7,
           title: "Module 7",
           subtitle:
-            "Combine your React and Java skills to build full-stack applications :-",
+            "Combine your React and Java skills to build full-stack applications :",
           description:
             "Learn backend development with Java and integrate it with React to build complete applications.",
           topics: [
@@ -217,6 +217,7 @@ const CourseDetailsPage = () => {
       id: 2,
       name: "Software Development Engineer in Testing",
       title: "Software Development Engineer in Testing",
+      description: "Learn manual, automation, API, and performance testing.",
       category: "Testing",
       imageUrl: "/Images/SDET.jpeg",
       rating: "5.0",
@@ -307,8 +308,7 @@ const CourseDetailsPage = () => {
         {
           id: 2,
           title: "New AI Module 2",
-          subtitle:
-            "AI tutorials in programming and Prompt engineering in ChatGPT",
+          subtitle: "AI tutorials For Software Testing",
           description: "Understand the basics of AI",
           topics: ["Coming soon"],
           style: {
@@ -319,7 +319,7 @@ const CourseDetailsPage = () => {
         {
           id: 3,
           title: "Module 3",
-          subtitle: "API Testing",
+          subtitle: " API Testing",
           description:
             "Understanding API testing techniques, methods, and automation.",
           topics: [
@@ -567,6 +567,149 @@ const CourseDetailsPage = () => {
         },
       ],
     },
+    {
+      id: 3,
+      name: "DevOps Engineer",
+      title: "DevOps Engineering",
+      description:
+        "Master CI/CD, Docker, Kubernetes, cloud platforms, and automation.",
+      category: "DevOps",
+      imageUrl: "/Images/Devops engineer.jpeg",
+      rating: "5.0",
+      lessons: "5 Modules",
+      students: 30,
+      author: "Jagdish",
+      modules: [
+        {
+          id: 1,
+          title: "Module 1",
+          subtitle: "DevOps Fundamentals",
+          description: "Understand the core principles and culture of DevOps.",
+          topics: [
+            {
+              title: "Introduction to DevOps",
+              subtopics: [
+                " What is DevOps?",
+                "History and evolution of DevOps",
+                "DevOps principles and practices",
+                "Benefits of DevOps",
+              ],
+            },
+            {
+              title: "DevOps Tools and Technologies",
+              subtopics: [
+                "Overview of popular DevOps tools",
+                "Version control with Git",
+                "Continuous Integration (CI) with Jenkins",
+                "Configuration management with Ansible, Puppet, and Chef",
+                "Containerization with Docker",
+                "Orchestration with Kubernetes",
+              ],
+            },
+            {
+              title: "Cloud Computing and DevOps",
+              subtopics: [
+                "Introduction to cloud computing",
+                "Cloud service models (IaaS, PaaS, SaaS)",
+                "Cloud providers (AWS, Azure, Google Cloud)",
+                "DevOps on cloud platforms",
+              ],
+            },
+          ],
+        },
+        {
+          id: 2,
+          title: "New AI Module 2",
+          subtitle: "AI tutorials For DevOps",
+          description: "Understand the basics of AI",
+          topics: ["Coming soon"],
+          style: {
+            backgroundColor: "white",
+            color: "black",
+          },
+        },
+        {
+          id: 3,
+          title: "Module 3",
+          subtitle: "Continuous Integration and Continuous Deployment (CI/CD)",
+          description: "Learn Linux commands and scripting for automation.",
+          topics: [
+            {
+              title: "Continuous Integration and Deployment (CI/CD)",
+              subtopics: [
+                "CI/CD concepts and practices",
+                "Setting up CI/CD pipelines",
+                "Automated testing and deployment",
+                "Monitoring and logging",
+              ],
+            },
+            {
+              title: " Infrastructure as Code (IaC)",
+              subtopics: [
+                "Introduction to IaC",
+                "Tools for IaC (Terraform, CloudFormation)",
+                "Writing and managing infrastructure code",
+                "Best practices for IaC",
+              ],
+            },
+            {
+              title: " Monitoring and Logging",
+              subtopics: [
+                "Importance of monitoring and logging",
+                "Tools for monitoring (Prometheus, Grafana)",
+                "Tools for logging (ELK Stack, Splunk)",
+                "Setting up monitoring and logging systems",
+              ],
+            },
+          ],
+        },
+        {
+          id: 4,
+          title: "Module 4",
+          subtitle: "Security in DevOps",
+          description:
+            "Understand how to containerize applications using Docker.",
+          topics: [
+            {
+              title: "Security in DevOps",
+              subtopics: [
+                "DevSecOps principles",
+                "Integrating security into CI/CD pipelines",
+                "Security best practices for DevOps",
+                "Tools for security (Aqua, Twistlock)",
+              ],
+            },
+            {
+              title: "Advanced Topics",
+              subtopics: [
+                " Microservices architectures",
+                "Serverless computing",
+                "Site Reliability Engineering (SRE)",
+                "DevOps for mobile applications",
+              ],
+            },
+          ],
+        },
+        {
+          id: 5,
+          title: "Module 5",
+          subtitle: "Hands-on Projects",
+          description:
+            "Learn Kubernetes for managing containerized applications.",
+          topics: [
+            {
+              title: "Introduction to Kubernetes",
+              subtopics: [
+                "Setting up a CI/CD pipeline for a sample application",
+                "Containerizing an application with Docker",
+                "Deploying an application on Kubernetes",
+                "Implementing IaC with Terraform",
+              ],
+            },
+          ],
+        },
+      ],
+    },
   ]);
 
   const certificateData = [
@@ -647,7 +790,9 @@ const CourseDetailsPage = () => {
 
   return (
     <>
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
       {/* for first image container */}
       <section className="coursepage-section">
         <div className="coursepage-content">
@@ -747,7 +892,16 @@ const CourseDetailsPage = () => {
 
                   <ul className="topics-list">
                     {module.topics.map((topic, index) => (
-                      <li key={index} className="topic-item">
+                      <li
+                        key={index}
+                        className={`topic-item ${
+                          topic.title === " "
+                            ? "blank"
+                            : topic.title === "Whitebox Testing"
+                            ? "force-new-column"
+                            : ""
+                        }`}
+                      >
                         <strong className="topic-title">{topic.title}</strong>
                         {Array.isArray(topic.subtopics) &&
                           topic.subtopics.length > 0 && (
@@ -786,17 +940,40 @@ const CourseDetailsPage = () => {
           </div>
         </div>
       </section>
-      <section className="schedule-container">
-        <div className="tools">
-          <img src="/Images/SDET Tools.jpg" alt="SDET Tools" />
+      <section className="Tools-section">
+        <div className="Tools-container">
+          <h1 className="SDET-Tools">Software / Tools Covered in Internship</h1>
+          <div className="Tools-images">
+            {course && (
+              <img
+                src={
+                  course.name === "Full Stack Development"
+                    ? "/Images/Devopls Tools.png"
+                    : course.name === "Software Development Engineer in Testing"
+                    ? "/Images/SDET Tools.png"
+                    : course.name === "DevOps Engineer"
+                    ? "/Images/Devopls Tools.png"
+                    : "/Images/default.png"
+                }
+                alt={course.name}
+                className="Tool-image"
+              />
+            )}
+          </div>
         </div>
       </section>
 
       <section className="schedule-section">
         <div className="schedule-container">
           <h2>Schedule</h2>
-          <img src="/Images/day schedule.png" alt="day Schedule" />
-          <img src="/Images/year Schedule.png" alt="year Schedule" />
+          <div>
+            <h3 className="day-schedule"> Day Schedule</h3>
+            <img src="/Images/day schedule.png" alt="day Schedule" />
+          </div>
+          <div className="year-schedule-container">
+            <h3 className="year-schedule"> Year Schedule</h3>
+            <img src="/Images/year Schedule.png" alt="year Schedule" />
+          </div>
         </div>
       </section>
       <section className="certificate-section">
