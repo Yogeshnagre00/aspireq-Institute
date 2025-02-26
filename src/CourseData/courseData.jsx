@@ -867,3 +867,4 @@ export const certificateData = [
     ],
   },
 ];
+
