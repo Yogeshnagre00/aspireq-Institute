@@ -1,15 +1,15 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./course.css";
 import { useNavigate } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "./course.css";
 
 const courses = [
   {
     id: 1,
     title: "Full Stack Developer",
     description: "Automate your testing process with the latest tools.",
-    image: "./Images/Full stack developer.jpg",
+    image: "./Images/Full stack developer.webp",
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",
@@ -18,7 +18,7 @@ const courses = [
     id: 2,
     title: "Software Development Engineer in Testing (SDET)",
     description: "Automate your testing process with the latest tools.",
-    image: "./Images/SDET.jpeg",
+    image: "./Images/SDET.webp",
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",
@@ -27,7 +27,7 @@ const courses = [
     id: 3,
     title: "Devops Engineer",
     description: "Automate your testing process with the latest tools.",
-    image: "/Images/Devops engineer.jpeg",
+    image: "/Images/Devops engineer.webp",
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",
@@ -36,7 +36,7 @@ const courses = [
     id: 4,
     title: "Business Analyst(BA)",
     description: "Master software testing techniques and tools.",
-    image: "./Images/Business analyst.jpg",
+    image: "./Images/Business analyst.webp",
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",
@@ -45,7 +45,7 @@ const courses = [
     id: 5,
     title: "Scrum Master",
     description: "Learn the essentials of manual software testing.",
-    image: "./Images/Scrum master.jpg",
+    image: "./Images/Scrum master.webp",
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",
@@ -54,7 +54,7 @@ const courses = [
     id: 6,
     title: "Corporate Training",
     description: "Automate your testing process with the latest tools.",
-    image: "./Images/corporate.jpeg",
+    image: "./Images/corporate.webp",
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",

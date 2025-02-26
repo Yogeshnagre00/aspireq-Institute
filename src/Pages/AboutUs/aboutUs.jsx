@@ -22,7 +22,7 @@ const AboutUs = () => {
             ipsum doller fit amet Lorem ipsum doller fit
           </p>
           <img
-            src="/Images/Rectangle 15.png"
+            src="/Images/Rectangle 15.webp"
             alt="Who We Are"
             className="about-image"
           />
@@ -39,7 +39,7 @@ const AboutUs = () => {
             ipsum doller fit amet Lorem ipsum doller fit
           </p>
           <img
-            src="/Images/Rectangle 15.png"
+            src="/Images/Rectangle 15.webp"
             alt="Why Us"
             className="about-image"
           />
@@ -50,7 +50,7 @@ const AboutUs = () => {
         <div className="vision-container">
           <div>
             <img
-              src="/Images/ourvison.png"
+              src="/Images/ourvison.webp"
               alt="ASPIREQ Logo"
               className="circleimage"
             />
@@ -86,7 +86,7 @@ const AboutUs = () => {
         <div className="feature-card">
           <div className="feature-image-container">
             <img
-              src="/Images/Rectangle 15.png"
+              src="/Images/Rectangle 15.webp"
               alt="Feature"
               className="feature-image"
             />
@@ -107,7 +107,7 @@ const AboutUs = () => {
         <div className="feature-card reverse">
           <div className="feature-image-container">
             <img
-              src="/Images/Rectangle 15.png"
+              src="/Images/Rectangle 15.webp"
               alt="Feature"
               className="feature-image"
             />

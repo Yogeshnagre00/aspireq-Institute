@@ -12,7 +12,7 @@ export const courses = [
       </>
     ),
     category: "Development",
-    imageUrl: "/Images/Full stack developer.jpg",
+    imageUrl: "/Images/Full stack developer.webp",
     rating: "5.0",
     lessons: "7 Modules",
     students: 25,
@@ -205,7 +205,7 @@ export const courses = [
     title: "Software Development Engineer in Testing",
     description: "Learn manual, automation, API, and performance testing.",
     category: "Testing",
-    imageUrl: "/Images/SDET.jpeg",
+    imageUrl: "/Images/SDET.webp",
     rating: "5.0",
     lessons: "6 Modules",
     students: 25,
@@ -553,7 +553,7 @@ export const courses = [
     description:
       "Master CI/CD, Docker, Kubernetes, cloud platforms, and automation.",
     category: "DevOps",
-    imageUrl: "/Images/Devops engineer.jpeg",
+    imageUrl: "/Images/Devops engineer.webp",
     rating: "5.0",
     lessons: "5 Modules",
     students: 30,
@@ -696,7 +696,7 @@ export const courses = [
     description:
       "Learn Business Analyst from fundamentals to advanced concepts.",
     category: "Analysis",
-    imageUrl: "/Images/Business analyst.jpg",
+    imageUrl: "/Images/Business analyst.webp",
     rating: "4.8",
     lessons: "5 Modules",
     students: 5,
@@ -835,7 +835,7 @@ export const courses = [
 export const certificateData = [
   {
     title: "Gain Industry-Recognized Certificates",
-    image: "/Images/ux design certificate.png",
+    image: "/Images/ux design certificate.webp",
     benefits: [
       "Use your certificates to make a life-changing shift",
       "Use your certificates to make a life-changing shift",
@@ -846,7 +846,7 @@ export const certificateData = [
   },
   {
     title: "Industry-Leading Certification",
-    image: "/Images/ux design certificate.png",
+    image: "/Images/ux design certificate.webp",
     benefits: [
       "Boost your career prospects with a top-tier certificate",
       "Gain practical skills recognized by employers",
@@ -857,7 +857,7 @@ export const certificateData = [
   },
   {
     title: "Advanced UX Design Certificate",
-    image: "/Images/ux design certificate.png",
+    image: "/Images/ux design certificate.webp",
     benefits: [
       "Master the latest UX design trends and tools",
       "Improve your problem-solving and creativity skills",

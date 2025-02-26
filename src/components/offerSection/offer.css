@@ -81,7 +81,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: url("/Images/back-courses.png") center/cover no-repeat;
+  background: url("/Images/back-courses.webp") center/cover no-repeat;
   opacity: 0.1;
   z-index: 1;
 }

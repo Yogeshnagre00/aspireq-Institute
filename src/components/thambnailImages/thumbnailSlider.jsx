@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "./thumbnailSlider.css";
-import { useState, useEffect } from "react";
 
 const ThumbnailSlider = ({ start }) => {
   const [autoplay, setAutoplay] = useState(false);
@@ -28,14 +28,14 @@ const ThumbnailSlider = ({ start }) => {
   };
 
   const images = [
-    "/Images/Devops engineer.jpeg",
-    "/Images/back-courses.png",
-    "/Images/Container.png",
-    "/Images/Full stack developer.jpg",
-    "/Images/Business analyst.jpg",
-    "/Images/Scrum master.jpg",
-    "/Images/corporate.jpeg",
-    "/Images/Full stack developer.jpg",
+    "/Images/Devops engineer.webp",
+    "/Images/back-courses.webp",
+    "/Images/Container.webp",
+    "/Images/Full stack developer.webp",
+    "/Images/Business analyst.webp",
+    "/Images/Scrum master.webp",
+    "/Images/corporate.webp",
+    "/Images/Full stack developer.webp",
   ];
 
   return (
@@ -49,7 +49,7 @@ const ThumbnailSlider = ({ start }) => {
               alt={`Thumbnail ${index + 1}`}
               loading="lazy"
               onError={(e) => {
-                e.target.src = "./Images/fallback-image.jpg"; // Fallback image
+                e.target.src = "./Images/fallback-image.webp"; // Fallback image
               }}
             />
           </div>

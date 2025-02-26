@@ -36,7 +36,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="hero-image-section">
-        <img src="/Images/Animation.gif" alt="Anumation" />
+        <img src="Images/Animation.webp" alt="Animation" />
       </div>
     </div>
   );

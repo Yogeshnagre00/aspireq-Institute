@@ -8,7 +8,6 @@ import { Footer } from "../../components/Footer/footer";
 import Navbar from "../../components/Header/header";
 import Offer from "../../components/offerSection/offer";
 import "./courseDetails.css";
-// Import courses data
 
 const CourseDetailsPage = () => {
   const { courseId } = useParams();
@@ -216,12 +215,12 @@ const CourseDetailsPage = () => {
               <img
                 src={
                   course.name === "Full Stack Development"
-                    ? "/Images/Devopls Tools.png"
+                    ? "/Images/Devopls Tools.webp"
                     : course.name === "Software Development Engineer in Testing"
-                    ? "/Images/SDET Tools.png"
+                    ? "/Images/SDET Tools.webp"
                     : course.name === "DevOps Engineer"
-                    ? "/Images/Devopls Tools.png"
-                    : "/Images/default.png"
+                    ? "/Images/Devopls Tools.webp"
+                    : "/Images/default.webp"
                 }
                 alt={course.name}
                 className="Tool-image"
@@ -238,7 +237,7 @@ const CourseDetailsPage = () => {
           <div>
             <h3 className="day-schedule"> Day Schedule</h3>
             <img
-              src="/Images/day schedule.png"
+              src="/Images/day schedule.webp"
               alt="day Schedule"
               loading="lazy"
             />
@@ -246,7 +245,7 @@ const CourseDetailsPage = () => {
           <div className="year-schedule-container">
             <h3 className="year-schedule"> Year Schedule</h3>
             <img
-              src="/Images/year Schedule.png"
+              src="/Images/year Schedule.webp"
               alt="year Schedule"
               loading="lazy"
             />

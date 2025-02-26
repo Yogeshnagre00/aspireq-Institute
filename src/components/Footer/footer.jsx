@@ -9,7 +9,7 @@ export const Footer = () => {
         <div className="row">
           <div className="col-md-3">
             <div className="footer-logo">
-              <img src="/Images/Frame 27319.png" alt="AspireQ Logo" />
+              <img src="/Images/Frame 27319.webp" alt="AspireQ Logo" />
             </div>
             <p className="footer-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed

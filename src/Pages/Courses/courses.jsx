@@ -1,9 +1,9 @@
-import { useState, useEffect, useRef, useMemo } from "react";
-import Navbar from "../../components/Header/header";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Footer } from "../../components/Footer/footer";
-import "./courses.css";
+import Navbar from "../../components/Header/header";
 import Offer from "../../components/offerSection/offer";
 import ThumbnailSlider from "../../components/thambnailImages/thumbnailSlider";
+import "./courses.css";
 
 const CoursesPage = () => {
   // Slider items with images and videos
@@ -12,7 +12,7 @@ const CoursesPage = () => {
       {
         id: 1,
         type: "image",
-        src: "/Images/Scrum master.jpg",
+        src: "/Images/Scrum master.webp",
         title: "QA Lorem Ipsum",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus urna orci.",
@@ -20,28 +20,28 @@ const CoursesPage = () => {
       {
         id: 2,
         type: "video",
-        src: "./Videos/demo.mp4",
+        src: "/Videos/demo.webm",
         title: "Video Demo",
         description: "A demonstration video about QA services.",
       },
       {
         id: 3,
         type: "image",
-        src: "./Images/Full stack developer.jpg",
+        src: "./Images/Full stack developer.webp",
         title: "Office 1",
         description: "Description for full stack developer",
       },
       {
         id: 4,
         type: "video",
-        src: "/Videos/demo2.mp4",
+        src: "/Videos/demo2.webm",
         title: "Video Demo 2",
         description: "A demonstration video about QA services.",
       },
       {
         id: 5,
         type: "image",
-        src: "./Images/Business analyst.jpg",
+        src: "./Images/Business analyst.webp",
         title: "Office 1",
         description: "Description for business analyst",
       },
@@ -55,7 +55,7 @@ const CoursesPage = () => {
       id: 1,
       title: "Full Stack Developer",
       description: "Automate your testing process with the latest tools.",
-      image: "./Images/Full stack developer.jpg",
+      image: "./Images/Full stack developer.webp",
       bestseller: true,
       discount: "20% Off",
       rating: "5.0",
@@ -64,7 +64,7 @@ const CoursesPage = () => {
       id: 2,
       title: "Software Development Engineer in Testing (SDET)",
       description: "Automate your testing process with the latest tools.",
-      image: "./Images/SDET.jpeg",
+      image: "./Images/SDET.webp",
       bestseller: true,
       discount: "20% Off",
       rating: "5.0",
@@ -73,7 +73,7 @@ const CoursesPage = () => {
       id: 3,
       title: "Devops Engineer",
       description: "Automate your testing process with the latest tools.",
-      image: "/Images/Devops engineer.jpeg",
+      image: "/Images/Devops engineer.webp",
       bestseller: true,
       discount: "20% Off",
       rating: "5.0",
@@ -82,7 +82,7 @@ const CoursesPage = () => {
       id: 4,
       title: "Scrum Master",
       description: "Learn the essentials of manual software testing.",
-      image: "./Images/Scrum master.jpg",
+      image: "./Images/Scrum master.webp",
       bestseller: true,
       discount: "20% Off",
       rating: "5.0",
@@ -91,7 +91,7 @@ const CoursesPage = () => {
       id: 5,
       title: "Business Analyst(BA)",
       description: "Master software testing techniques and tools.",
-      image: "./Images/Business analyst.jpg",
+      image: "./Images/Business analyst.webp",
       bestseller: true,
       discount: "20% Off",
       rating: "5.0",
@@ -100,7 +100,7 @@ const CoursesPage = () => {
       id: 6,
       title: "Corporate Training",
       description: "Automate your testing process with the latest tools.",
-      image: "./Images/corporate.jpeg",
+      image: "./Images/corporate.webp",
       bestseller: true,
       discount: "20% Off",
       rating: "5.0",
@@ -113,21 +113,21 @@ const CoursesPage = () => {
       title: "Take course by industry experts",
       description:
         "Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit",
-      image: "./Images/Marriage counseling-cuate 1.png",
+      image: "./Images/Marriage counseling-cuate 1.webp",
     },
     {
       id: 2,
       title: "Get a Course Certificate",
       description:
         "Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit",
-      image: "./Images/Certification-cuate 1.png",
+      image: "./Images/Certification-cuate 1.webp",
     },
     {
       id: 3,
       title: "Advance your career",
       description:
         "Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit",
-      image: "./Images/Group 39881.png",
+      image: "./Images/Group 39881.webp",
     },
   ];
 
@@ -306,7 +306,7 @@ const CoursesPage = () => {
         <div className="certificate-container">
           <div className="certificate-image">
             <img
-              src="./Images/ux design certificate.png"
+              src="./Images/ux design certificate.webp"
               alt="Sample Certificate"
             />
           </div>
@@ -326,7 +326,7 @@ const CoursesPage = () => {
         <div className="container">
           <h2>Join your live class with your instructor</h2>
           <div className="live-class-image">
-            <img src="./Images/democlass.png" alt="Live Class Example" />
+            <img src="./Images/democlass.webp" alt="Live Class Example" />
           </div>
           <div className="class-container">
             <div className="button">Manual Testing</div>

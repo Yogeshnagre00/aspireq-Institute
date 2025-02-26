@@ -12,7 +12,7 @@ const heroesData = [
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     twitterUrl: "#",
     linkedinUrl: "#",
-    image: "./Images/Avatar (1).png",
+    image: "./Images/Avatar (1).webp",
   },
   {
     name: "Albert Flores",
@@ -21,7 +21,7 @@ const heroesData = [
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     twitterUrl: "#",
     linkedinUrl: "#",
-    image: "./Images/girl2.png",
+    image: "./Images/girl2.webp",
   },
   {
     name: "Theresa Webb",
@@ -30,7 +30,7 @@ const heroesData = [
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     twitterUrl: "#",
     linkedinUrl: "#",
-    image: "./Images/girl1.png",
+    image: "./Images/girl1.webp",
   },
   {
     name: "Marvin McKinney",
@@ -39,7 +39,7 @@ const heroesData = [
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     twitterUrl: "#",
     linkedinUrl: "#",
-    image: "./Images/girl3.png",
+    image: "./Images/girl3.webp",
   },
   // Add more heroes if needed
 ];
