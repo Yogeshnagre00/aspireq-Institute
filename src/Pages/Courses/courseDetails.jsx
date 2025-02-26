@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import {
   certificateData,
   courses,
-} from "../../components/CourseData/courseData";
+} from "../../CourseData/courseData";
 import { Footer } from "../../components/Footer/footer";
 import Navbar from "../../components/Header/header";
 import Offer from "../../components/offerSection/offer";

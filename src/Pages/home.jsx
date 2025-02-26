@@ -1,20 +1,19 @@
 import React, { Suspense } from "react";
+import { Footer } from "../components/Footer/footer";
 import Navbar from "../components/Header/header";
 import HeroSection from "../components/HeroSection/heroSection";
-import { Footer } from "../components/Footer/footer";
-import MeetHeroes from "../components/MeetOurHeros/meetHeros";
-import TestimonialPage from "../components/MeetOurHeros/career";
-//import ImageSlider from "../components/Imageslider/imageslider";
-
-// Lazy load other components
+import Loader from "../components/loader";
 
 const CourseCards = React.lazy(() => import("../components/Courses/course"));
 const FAQSection = React.lazy(() =>
   import("../components/FAQSection/faqSection")
 );
-// const ContactSection = React.lazy(() =>
-//   import("../components/ContactSection/contact")
-// );
+const MeetHeroes = React.lazy(() =>
+  import("../components/MeetOurHeros/meetHeros")
+);
+const TestimonialPage = React.lazy(() =>
+  import("../components/MeetOurHeros/career")
+);
 
 function Home() {
   return (
@@ -23,7 +22,7 @@ function Home() {
       <main>
         <HeroSection />
         {/* <ImageSlider /> */}
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loader />}>
           <CourseCards />
           <MeetHeroes />
           <TestimonialPage />
