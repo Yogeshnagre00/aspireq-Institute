@@ -44,7 +44,7 @@ export const courses = [
         id: 2,
         title: "New AI Module 2",
         subtitle:
-          "AI tutorials in programming and Prompt engineering in chatgpt:",
+          "AI tutorials in programming and Prompt engineering in chatgpt:",
         description: "Understand the basics of AI",
         topics: [" Commng soon"],
         style: {
@@ -152,7 +152,7 @@ export const courses = [
         title: "Module 6",
         subtitle: "Handle exceptions and learn about Java collections:",
         description:
-          "Master Java’s exception handling and the collections framework.",
+          "Master Java's exception handling and the collections framework.",
         topics: [
           {
             title: "Exception handling and the collections framework.",
@@ -209,7 +209,7 @@ export const courses = [
     rating: "5.0",
     lessons: "6 Modules",
     students: 25,
-    author: "Abhijit",
+    author: "Mayur",
     modules: [
       {
         id: 1,
@@ -695,22 +695,22 @@ export const courses = [
     title: "Business Analyst",
     description:
       "Learn Business Analyst from fundamentals to advanced concepts.",
-    category: "Analysis",
+    category: "Business Analyst",
     imageUrl: "/Images/Business analyst.webp",
-    rating: "4.8",
+    rating: "5.0",
     lessons: "5 Modules",
     students: 5,
-    author: "John Doe",
+    author: "Abhijit",
     modules: [
       {
         id: 1,
         title: "Module 1",
-        subtitle: "Introduction to Business Analysis:",
+        subtitle: "Introduction to Business Analyst:",
         description:
-          "Learn business analysis fundamentals, key roles, planning, and stakeholder engagement.",
+          "Learn business analyst fundamentals, key roles, planning, and stakeholder engagement.",
         topics: [
           {
-            title: "Introduction to Business Analysis",
+            title: "Introduction to Business Analyst",
             subtopics: [
               "Overview of Business Analysis",
               "Role and responsibilities of a Business Analyst",
@@ -831,7 +831,118 @@ export const courses = [
       },
     ],
   },
+  {
+    id: 5,
+    name: "Scrum Master",
+    title: "Scrum Master ",
+    description: "Learn Scrum framework, roles, events, and Agile principles.",
+    category: "Scrum Master",
+    imageUrl: "/Images/Scrum master.webp",
+    rating: "5.0",
+    lessons: "4 Modules",
+    students: 5,
+    author: "Mayur",
+    modules: [
+      {
+        id: 1,
+        title: "Module 1",
+        subtitle: "Introduction to Scrum and Agile Principles",
+        description:
+          "Learn the fundamentals of Agile methodologies and the Scrum framework, including its history, principles, and core values.",
+        topics: [
+          {
+            title: "Introduction to Scrum and Agile Principles",
+            subtopics: [
+              "Overview of Agile methodologies",
+              "History and evolution of Scrum",
+              "Key principles and values of Scrum",
+            ],
+          },
+          {
+            title: "Scrum Framework",
+            subtopics: [
+              "Scrum roles: Product Owner, Scrum Master, Development Team",
+              "Scrum events: Sprint, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective",
+              "Scrum artifacts: Product Backlog, Sprint Backlog, Increment",
+            ],
+          },
+          {
+            title: "Scrum Roles and Responsibilities",
+            subtopics: [
+              "Detailed responsibilities of the Scrum Master",
+              "How the Scrum Master supports the Product Owner and Development Team",
+              "Facilitating Scrum events and removing impediments",
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: "Module 2",
+        subtitle: "AI Tutorials for Scrum Master",
+        description:
+          "Explore how AI can enhance business analysis, automation, and decision-making with prompt engineering concepts.",
+        topics: ["Coming soon"],
+        style: {
+          backgroundColor: "white",
+          color: "black",
+        },
+      },
+      {
+        id: 3,
+        title: "Module 3",
+        subtitle: "Scrum Team Management",
+        description:
+          "Understand how to manage Scrum teams effectively, conduct ceremonies, and develop core competencies as a Scrum Master.",
+        topics: [
+          {
+            title: "Scrum Ceremonies and Artifacts",
+            subtopics: [
+              "Conducting effective Sprint Planning sessions",
+              "Running productive Daily Scrums",
+              "Facilitating Sprint Reviews and Retrospectives",
+              "Managing and refining the Product Backlog",
+            ],
+          },
+          {
+            title: "Core Competencies of a Scrum Master",
+            subtopics: [
+              "Servant leadership and coaching",
+              "Conflict resolution and team dynamics",
+              "Effective communication and facilitation skills",
+            ],
+          },
+        ],
+      },
+      {
+        id: 4,
+        title: "Module 4",
+        subtitle: "Practical Applications of Scrum",
+        description:
+          "Apply Scrum principles in real-world scenarios, including scaling Scrum for larger projects and preparing for certification.",
+        topics: [
+          {
+            title: "Practical Applications of Scrum",
+            subtopics: [
+              "Implementing Scrum in different environments",
+              "Scaling Scrum for large projects",
+              "Using Scrum with other Agile methodologies",
+            ],
+          },
+          {
+            title: "Preparation for the CSM Exam",
+            subtopics: [
+              "Study tips and resources",
+              "Practice questions and mock exams",
+              "Understanding the certification process",
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
+
 export const certificateData = [
   {
     title: "Gain Industry-Recognized Certificates",
@@ -867,4 +978,3 @@ export const certificateData = [
     ],
   },
 ];
-

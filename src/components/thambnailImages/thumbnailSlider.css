@@ -1,6 +1,6 @@
 /* Main container for the image slider */
 .thumbnail-stack {
-  margin-top: 2%;
+  margin-top: 8%;
 }
 .image-slider {
   width: 100%;
@@ -37,7 +37,7 @@
   outline: none;
 }
 /* Highlight the center image */
-.image-slider .slick-center img {
+.slider-item .slick-center img {
   transform: scale(1);
   border-radius: 20px !important;
   filter: blur(0);

@@ -33,7 +33,7 @@ header {
 }
 
 /* Button Styling */
-.btn {
+.navbar .btn {
   background-color: var(--btn-bg-color);
   color: white;
   padding: 10px 25px;

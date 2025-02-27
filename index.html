@@ -5,43 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>aspireq-institute</title>
 
-    <!-- Preconnect to external domains -->
+    <!-- Preconnect for better performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Preload Font Awesome CSS -->
     <link
-      rel="preload"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      as="style"
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
     />
 
-    <!-- Preload key font -->
-    <link
-      rel="preload"
-      href="https://fonts.gstatic.com/s/montserrat/v22/4iCs6I4kYsz5paN-GpK-QH0q_vYJ5hz5OdF7eYl7Z9s.woff2"
-      as="font"
-      type="font/woff2"
-    />
-
-    <!-- Link to Google Fonts -->
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Updated Font Awesome link -->
+    <!-- Load Font Awesome properly -->
     <link
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
 
-    <!-- Favicon with updated path -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="./Images/image9.webp" />
   </head>
   <body>
     <div id="root"></div>
-    <!-- Load JavaScript file asynchronously -->
-    <script type="module" src="/src/main.jsx" async></script>
+
+    <!-- Load JavaScript file properly -->
+    <script type="module" src="/src/main.jsx" defer></script>
   </body>
 </html>

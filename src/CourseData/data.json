@@ -66,18 +66,18 @@
     },
     {
       "id": 4,
-      "title": "Scrum Master",
-      "description": "Learn the essentials of manual software testing.",
-      "image": "./Images/Scrum master.webp",
+      "title": "Business Analyst(BA)",
+      "description": "Master software testing techniques and tools.",
+      "image": "./Images/Business analyst.webp",
       "bestseller": true,
       "discount": "20% Off",
       "rating": "5.0"
     },
     {
       "id": 5,
-      "title": "Business Analyst(BA)",
-      "description": "Master software testing techniques and tools.",
-      "image": "./Images/Business analyst.webp",
+      "title": "Scrum Master",
+      "description": "Learn the essentials of manual software testing.",
+      "image": "./Images/Scrum master.webp",
       "bestseller": true,
       "discount": "20% Off",
       "rating": "5.0"

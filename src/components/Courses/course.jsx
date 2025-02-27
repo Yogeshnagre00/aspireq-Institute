@@ -89,11 +89,13 @@ const CourseCards = () => {
     ],
   };
 
+  //for navigate courses with it
   const handleCardClick = (id) => {
     window.open(`/course-details/${id}`, "_blank");
   };
+  //for navigate explore For coursesPage
   const handleExploreMore = () => {
-    navigate("/courses"); // Ensure this route matches your configuration
+    navigate("/courses");
   };
   return (
     <section id="courses" className="course-section">
@@ -131,7 +133,11 @@ const CourseCards = () => {
           ))}
         </Slider>
       </div>
-      <button className="explore-more-button" onClick={handleExploreMore}>
+      <button
+        className="explore-more-button"
+        onClick={handleExploreMore}
+        aria-label="Explore more courses"
+      >
         Explore More →
       </button>
     </section>

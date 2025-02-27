@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {
-  certificateData,
-  courses,
-} from "../../CourseData/courseData";
+import { certificateData, courses } from "../../CourseData/courseData";
 import { Footer } from "../../components/Footer/footer";
 import Navbar from "../../components/Header/header";
 import Offer from "../../components/offerSection/offer";
@@ -14,12 +11,22 @@ const CourseDetailsPage = () => {
   const [course, setCourse] = useState(null);
   const [activeModule, setActiveModule] = useState(1);
 
-  const handleDownload = () => {
-    // Create a download link to the PDF
+  const handleDownload = (courseTitle) => {
+    if (!courseTitle) {
+      console.error("Course not selected");
+      return;
+    }
+
+    // Define the PDF file path
+    const pdfFilePath = `/pdfs/${courseTitle}.pdf`;
+
+    // Create a download link
     const link = document.createElement("a");
-    link.href = "./syllabus.pdf";
-    link.download = `${course ? course.title : "course"}.pdf`;
+    link.href = pdfFilePath;
+    link.download = `${courseTitle}.pdf`;
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   useEffect(() => {
@@ -153,7 +160,9 @@ const CourseDetailsPage = () => {
                   <h3>{module.subtitle}</h3>
                   <hr className="divider" />
                   <p>{module.description}</p>
-                  <h3>Topics Covered:</h3>
+                  {!(course.name === "Business Analyst" && module.id === 5) && (
+                    <h3>Topics Covered:</h3>
+                  )}
 
                   <ul className="topics-list">
                     {module.topics.map((topic, index) => (
@@ -166,6 +175,12 @@ const CourseDetailsPage = () => {
                               topic.title ===
                                 "Tools and Techniques for Business Analysis"
                             ? "force-new-column"
+                            : topic.title ===
+                              "Real-World Applications and Hands-On Experience"
+                            ? "single-column"
+                            : topic.title ===
+                              "Real-World Applications and Hands-On Experience"
+                            ? "single-column"
                             : ""
                         }`}
                       >
@@ -215,11 +230,15 @@ const CourseDetailsPage = () => {
               <img
                 src={
                   course.name === "Full Stack Development"
-                    ? "/Images/Devopls Tools.webp"
+                    ? "/Images/Full-Stack-Developer Tools.webp"
                     : course.name === "Software Development Engineer in Testing"
                     ? "/Images/SDET Tools.webp"
                     : course.name === "DevOps Engineer"
-                    ? "/Images/Devopls Tools.webp"
+                    ? "/Images/Devops-Tools.webp"
+                    : course.name === "Business Analyst"
+                    ? "/Images/Devops-Tools.webp"
+                    : course.name === "Scrum Master"
+                    ? "/Images/Devops-Tools.webp"
                     : "/Images/default.webp"
                 }
                 alt={course.name}

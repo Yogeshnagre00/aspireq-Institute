@@ -28,6 +28,10 @@
 .slick-list {
   margin: 0 -45px;
 }
+.slider-container,
+.slick-list {
+  overflow: visible !important;
+}
 
 /* Card container */
 
@@ -36,7 +40,6 @@
   max-width: 89%;
   margin: 0 auto;
   padding: 0 30px;
-  overflow: visible;
 }
 
 .course-card {
@@ -51,7 +54,7 @@
 
 .course-card:hover {
   transform: translateY(-1px);
-  box-shadow: 8px 8px 8px 6px rgba(91, 91, 91, 0.351);
+  box-shadow: 6px 6px 6px 5px rgba(91, 91, 91, 0.351);
 }
 
 .course-image {
@@ -63,7 +66,7 @@
   width: 100%;
   height: 150px;
   border-radius: 20px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .custom-label {

@@ -9,7 +9,6 @@ import "./courses.css";
 const CoursesPage = () => {
   // Use the data from the JSON file
   const { sliderItems, courses, steps } = data;
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMainCardCycleComplete, setIsMainCardCycleComplete] = useState(false);
   const [isMuted, setIsMuted] = useState(true);

@@ -4,8 +4,10 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Loader from "./components/loader";
 
-const CoursesPage = React.lazy(() => import("./Pages/Courses/courses"));
-const CourseDetails = React.lazy(() => import("./Pages/Courses/courseDetails"));
+const CoursesPage = React.lazy(() => import("./Pages/CoursesPage/courses"));
+const CourseDetails = React.lazy(() =>
+  import("./Pages/CoursesPage/courseDetails")
+);
 const ContactForm = React.lazy(() => import("./Pages/ContactUs/contactUs"));
 const AboutUs = React.lazy(() => import("./Pages/AboutUs/aboutUs"));
 const Home = React.lazy(() => import("./Pages/home"));
