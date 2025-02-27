@@ -10,7 +10,7 @@
 }
 
 .footer {
-  background-color: #f9f9f982;
+  /* background-color: #f9f9f982; */
   padding: 20px 30px 0 30px;
   color: #333;
   width: 96%;
@@ -28,14 +28,17 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .col-md-3 {
   padding: 0 30px;
   margin-bottom: 10px;
 }
-
+.col-md-3:first-child {
+  width: 600px;
+  padding: 0;
+}
 /* Added: Ensure logo is centered in its column */
 .footer-logo img {
   max-width: 100%;
@@ -85,9 +88,6 @@
   align-items: center;
   /* padding: 10px 0; */
 }
-/* .footer-social {
-  
-} */
 
 .footer-social a {
   display: inline-block;

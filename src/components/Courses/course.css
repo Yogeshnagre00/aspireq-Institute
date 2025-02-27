@@ -28,16 +28,12 @@
 .slick-list {
   margin: 0 -45px;
 }
-.slider-container,
-.slick-list {
-  overflow: visible !important;
-}
 
 /* Card container */
 
 .slider-container {
   position: relative;
-  max-width: 89%;
+  max-width: 88%;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -53,8 +49,8 @@
 }
 
 .course-card:hover {
-  transform: translateY(-1px);
-  box-shadow: 6px 6px 6px 5px rgba(91, 91, 91, 0.351);
+  transform: translateY(-2px);
+  box-shadow: 8px 8px 8px 6px rgba(91, 91, 91, 0.351);
 }
 
 .course-image {
@@ -66,7 +62,7 @@
   width: 100%;
   height: 150px;
   border-radius: 20px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .custom-label {
@@ -131,7 +127,7 @@
   text-decoration: none;
   font-size: 20px;
   padding: 4px 15px;
-  background-color: #00d19d;
+  background-color: #00d09c;
   color: #ffffff;
   border-radius: 20px;
   border: none !important;
@@ -158,7 +154,7 @@
 .explore-more-button {
   margin-top: 30px;
   padding: 10px 20px;
-  background: rgb(30, 213, 169);
+  background: #00d09c;
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -168,7 +164,7 @@
 }
 
 .explore-more-button:hover {
-  background: #27cf78b8;
+  background: #00d09c;
 }
 
 /* Custom slider button styles */
@@ -180,8 +176,8 @@
 /* Custom styles for arrows */
 .course-section .slick-prev,
 .course-section .slick-next {
-  color: #fff !important; /* Change icon color */
-  background: transparent !important; /* Remove extra background */
+  color: #fff !important;
+  background: transparent !important;
   border-radius: 50%;
   width: 40px; /* Adjust size */
   height: 40px;
@@ -191,7 +187,7 @@
   position: absolute;
   z-index: 999;
   top: 50%;
-  transform: translateY(-50%); /* Center properly */
+  transform: translateY(-50%);
 }
 
 /* Fix position for previous and next buttons */

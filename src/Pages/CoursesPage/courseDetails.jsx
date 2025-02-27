@@ -160,9 +160,7 @@ const CourseDetailsPage = () => {
                   <h3>{module.subtitle}</h3>
                   <hr className="divider" />
                   <p>{module.description}</p>
-                  {!(course.name === "Business Analyst" && module.id === 5) && (
-                    <h3>Topics Covered:</h3>
-                  )}
+                  {module.id === 1 && <h3>Topics Covered:</h3>}
 
                   <ul className="topics-list">
                     {module.topics.map((topic, index) => (

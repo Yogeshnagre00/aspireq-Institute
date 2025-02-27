@@ -4,8 +4,8 @@
   --header-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   --navbar-padding: 0 5rem;
   --nav-link-color: #555;
-  --nav-link-hover-color: #2b4d82;
-  --btn-bg-color: #05e8c6;
+  --nav-link-hover-color: #00d09c;
+  --btn-bg-color: #00d09c;
   --btn-hover-bg-color: #5fa6e8;
 }
 
@@ -41,6 +41,8 @@ header {
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 /* Hamburger Icon for mobile */
@@ -70,7 +72,7 @@ header {
   color: var(--nav-link-hover-color);
 }
 .active-link {
-  color: #05e8c6;
+  color: var(--btn-bg-color);
   font-weight: bold;
 }
 

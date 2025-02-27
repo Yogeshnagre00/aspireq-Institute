@@ -222,7 +222,7 @@
   font-size: 20px;
   padding: 3px 13px;
   text-align: center;
-  background-color: #00d19d;
+  background-color: #00d09c;
   border-radius: 15px;
   border: none !important;
   color: #ffffff;
@@ -398,7 +398,7 @@
 
 .certificate-details li::before {
   content: "✔";
-  color: #28a745;
+  color: #00d09c;
   font-size: 1.2rem;
   margin-right: 10px;
 }
@@ -430,7 +430,7 @@
   justify-content: center;
   height: 350px;
   align-items: center;
-  background-color: #1abc9c;
+  background-color: #00d09c;
   padding: 40px;
   border-radius: 10px;
 }

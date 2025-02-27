@@ -209,7 +209,7 @@ export const courses = [
     rating: "5.0",
     lessons: "6 Modules",
     students: 25,
-    author: "Mayur",
+    author: "Mahesh",
     modules: [
       {
         id: 1,

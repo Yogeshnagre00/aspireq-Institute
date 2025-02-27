@@ -45,7 +45,7 @@
 }
 
 .btn-primary {
-  background-color: #1be3b6;
+  background-color: #00d09c;
   color: white;
 }
 
@@ -55,8 +55,8 @@
 
 .btn-secondary {
   background-color: transparent;
-  color: #1be3b6;
-  border: 1px solid #1be3b6;
+  color: #00d09c;
+  border: 1px solid #00d09c;
 }
 
 .btn-secondary:hover {
