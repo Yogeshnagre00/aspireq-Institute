@@ -84,9 +84,9 @@
 /* Adjusted text alignment for social media icons */
 .footer-bottom {
   display: flex;
+  height: 50px;
   justify-content: space-between;
   align-items: center;
-  /* padding: 10px 0; */
 }
 
 .footer-social a {
@@ -109,7 +109,6 @@
 .footer-copyright {
   text-align: start;
   font-size: 1rem;
-  padding-top: 20px;
 }
 .fa-instagram {
   color: transparent;

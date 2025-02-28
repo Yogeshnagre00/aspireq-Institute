@@ -32,22 +32,52 @@ export const Footer = () => {
             <h4 className="footer-heading">Courses</h4>
             <ul className="footer-links">
               <li>
-                <a href="#">Scrum Master</a>
+                <a
+                  href="/course-details/5-ScrumMaster"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Scrum Master
+                </a>
               </li>
               <li>
-                <a href="#">Full Stack Developer</a>
+                <a
+                  href="/course-details/1-FullStackDevelopment"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Full Stack Developer
+                </a>
               </li>
               <li>
-                <a href="#">SDET</a>
+                <a
+                  href="/course-details/2-SoftwareDevelopmentEngineerinTesting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SDET
+                </a>
               </li>
               <li>
-                <a href="#">Devops Engineer</a>
+                <a
+                  href="/course-details/3-DevOpsEngineer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  DevOps Engineer
+                </a>
               </li>
               <li>
-                <a href="#">Business Analyst</a>
+                <a
+                  href="/course-details/4-BusinessAnalyst"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Business Analyst
+                </a>
               </li>
               <li>
-                <a href="#">Corporate Tranning</a>
+                <a href="#">Corporate Training</a>
               </li>
             </ul>
           </div>
