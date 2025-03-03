@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Footer } from "../components/Footer/footer";
+//import { Footer } from "../components/Footer/footer";
 import Navbar from "../components/Header/header";
 import HeroSection from "../components/HeroSection/heroSection";
 import Loader from "../components/loader";
@@ -29,7 +29,7 @@ function Home() {
           <FAQSection />
         </Suspense>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

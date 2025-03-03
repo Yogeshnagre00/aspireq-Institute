@@ -215,7 +215,7 @@
 /* Resoponsive Design  */
 @media (max-width: 1024px) {
   .slider-container {
-    max-width: 90%;
+    max-width: 80%;
     padding: 0 20px;
   }
 
@@ -337,7 +337,7 @@
   }
 
   .slider-container {
-    max-width: 100%;
+    max-width: 70%;
     padding: 0 10px;
   }
 

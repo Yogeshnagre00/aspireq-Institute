@@ -49,6 +49,7 @@ header {
 .hamburger {
   display: none;
   font-size: 25px;
+  margin-right: 15px;
   cursor: pointer;
 }
 
@@ -83,8 +84,11 @@ header {
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
   .navbar {
-    padding: 0 1rem;
+    padding: 0 0.3rem;
   }
+  /* header {
+    position: relative;
+  } */
 
   .hamburger {
     display: block;
@@ -95,7 +99,7 @@ header {
     position: absolute;
     top: 60px;
     right: 0;
-    /* width: 100%; */
+    width: 45%;
     background-color: var(--header-bg-color);
     flex-direction: column;
     padding: 0;
@@ -114,7 +118,7 @@ header {
   }
 
   .btn {
-    margin-left: 100px;
+    margin-left: 80px;
     padding: 7px 20px;
     margin-top: 8px;
     white-space: nowrap;
@@ -131,9 +135,9 @@ header {
   }
 
   .btn {
-    font-size: 15px;
-    /* margin-left: 80px; */
-    padding: 6px 10px;
+    font-size: 12px !important;
+    margin-left: 80px;
+    padding: 6px 10px !important;
   }
 
   .logo img {
