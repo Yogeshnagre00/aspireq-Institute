@@ -222,7 +222,7 @@ const CourseDetailsPage = () => {
       </section>
       <section className="Tools-section">
         <div className="Tools-container">
-          <h1 className="SDET-Tools">Software / Tools Covered in Internship</h1>
+          <h1 className="SDET-Tools">Software / Tools Covered</h1>
           <div className="Tools-images">
             {course && (
               <img

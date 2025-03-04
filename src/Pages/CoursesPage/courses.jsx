@@ -204,11 +204,12 @@ const CoursesPage = () => {
             <img src="./Images/democlass.webp" alt="Live Class Example" />
           </div>
           <div className="class-container">
-            <div className="button">Manual Testing</div>
-            <div className="button">Automation Testing</div>
-            <div className="button">Integration Testing</div>
-            <div className="button">UI Testing</div>
-            <div className="button">Integration Testing</div>
+            <div className="button">Full Stack DEvelopment</div>
+            <div className="button"> Scrum Master</div>
+            <div className="button">DevOps Engineer</div>
+            <div className="button">SDET</div>
+            <div className="button">Business Analyst</div>
+            <div className="button">Corporate Training</div>
           </div>
         </div>
       </section>

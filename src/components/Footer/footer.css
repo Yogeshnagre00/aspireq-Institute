@@ -37,6 +37,8 @@
 }
 .col-md-3:first-child {
   width: 600px;
+  align-items: center;
+  margin-top: 30px;
   padding: 0;
 }
 /* Added: Ensure logo is centered in its column */
@@ -47,7 +49,7 @@
 
 .footer-text {
   width: 30%;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 /* Footer Heading styles */

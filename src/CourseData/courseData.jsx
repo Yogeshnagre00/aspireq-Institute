@@ -11,7 +11,7 @@ export const courses = [
         </span>
       </>
     ),
-    category: "Development",
+    category: "Software Development",
     imageUrl: "/Images/Full stack developer.webp",
     rating: "5.0",
     lessons: "7 Modules",
@@ -178,8 +178,7 @@ export const courses = [
           "Learn backend development with Java and integrate it with React to build complete applications.",
         topics: [
           {
-            title:
-              "Building Full-Stack Applications with Spring Boot and React",
+            title: "Building Full-Stack Applications",
             subtopics: [
               "Setting up Spring Boot Project",
               "Creating RESTful APIs with Spring Boot",
