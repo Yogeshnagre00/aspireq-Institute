@@ -8,7 +8,7 @@ const courses = [
   {
     id: 1,
     title: "Full Stack Developer",
-    description: "Automate your testing process with the latest tools.",
+    description: "Conquer the coding ground.",
     image: "./Images/Full stack developer.webp",
     bestseller: true,
     discount: "20% Off",
@@ -17,7 +17,7 @@ const courses = [
   {
     id: 2,
     title: "Software Development Engineer in Testing (SDET)",
-    description: "Automate your testing process with the latest tools.",
+    description: "Be a software quality expert.",
     image: "./Images/SDET.webp",
     bestseller: true,
     discount: "20% Off",
@@ -26,7 +26,7 @@ const courses = [
   {
     id: 3,
     title: "Devops Engineer",
-    description: "Automate your testing process with the latest tools.",
+    description: "Become Hero of Deployment.",
     image: "/Images/Devops engineer.webp",
     bestseller: true,
     discount: "20% Off",
@@ -35,7 +35,7 @@ const courses = [
   {
     id: 4,
     title: "Business Analyst(BA)",
-    description: "Master software testing techniques and tools.",
+    description: "Master the Cognizance Virtuoso.",
     image: "./Images/Business analyst.webp",
     bestseller: true,
     discount: "20% Off",
@@ -44,7 +44,7 @@ const courses = [
   {
     id: 5,
     title: "Scrum Master",
-    description: "Learn the essentials of manual software testing.",
+    description: "Master the Agile project management.",
     image: "./Images/Scrum master.webp",
     bestseller: true,
     discount: "20% Off",

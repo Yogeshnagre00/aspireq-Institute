@@ -1,4 +1,7 @@
 /* QA Section Styles */
+.coursePage {
+  margin: 0 auto;
+}
 .qa-section {
   display: flex;
   min-height: 800px;
@@ -453,6 +456,7 @@
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
   .qa-section {
+    width: 100%;
     flex-direction: column;
     gap: 15px;
     padding: 15px;
