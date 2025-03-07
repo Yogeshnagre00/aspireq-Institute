@@ -21,7 +21,6 @@ function Home() {
       <Navbar />
       <main>
         <HeroSection />
-        {/* <ImageSlider /> */}
         <Suspense fallback={<Loader />}>
           <CourseCards />
           <MeetHeroes />

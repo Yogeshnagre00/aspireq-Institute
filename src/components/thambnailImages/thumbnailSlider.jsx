@@ -7,24 +7,35 @@ import "./thumbnailSlider.css";
 
 const ThumbnailSlider = ({ start }) => {
   const [autoplay, setAutoplay] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     if (start) {
       setAutoplay(true);
     }
+
+    // Listen for window resize to switch layout dynamically
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, [start]);
 
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: isMobile ? 1 : 3,
     slidesToScroll: 1,
-    vertical: true,
-    verticalSwiping: true,
     autoplay: autoplay,
     autoplaySpeed: 5000,
     centerMode: true,
     centerPadding: "0",
+    vertical: !isMobile,
+    verticalSwiping: !isMobile,
+    arrows: true,
+    dots: false,
   };
 
   const images = [
@@ -40,7 +51,6 @@ const ThumbnailSlider = ({ start }) => {
 
   return (
     <div className="image-slider">
-      {/* Force reinitialization of the Slider when `start` changes */}
       <Slider key={start ? "autoplay-on" : "autoplay-off"} {...settings}>
         {images.map((image, index) => (
           <div key={index} className="slider-item">

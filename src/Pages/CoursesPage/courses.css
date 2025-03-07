@@ -14,7 +14,7 @@
 /* Main Card Styling */
 .main-card {
   flex: 1;
-  width: 950px;
+  width: 900px;
   height: auto;
   margin: 0 auto;
   margin-left: 4%;
@@ -237,17 +237,6 @@
   border: 1px solid rgb(211, 211, 211);
   border-radius: 25px;
 }
-@media (max-width: 768px) {
-  .course-section__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .course-section__grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* .how-it-works */
 
@@ -420,7 +409,8 @@
 }
 .live-class-image img {
   position: absolute;
-  top: 180px;
+  border-radius: 50px;
+  top: 150px;
   left: 50%;
   transform: translateX(-50%);
   padding: 20px;
@@ -514,36 +504,36 @@
 
 @media (max-width: 768px) {
   .qa-section {
+    min-height: 700px;
     flex-direction: column;
     padding: 10px;
-    margin-top: 10%;
+    margin-top: 8%;
   }
 
   .main-card {
-    width: 95%;
+    width: 100%;
     margin: 3% auto;
   }
 
-  .main-image {
-    height: 5vh;
+  .main-image,
+  .main-video {
+    height: 40vh;
   }
-
+  .content h3 {
+    font-size: 16px;
+  }
+  .content p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+  }
   .thumbnail-stack {
-    flex-direction: row;
-    overflow-x: auto;
-    max-height: 120px;
-    padding: 5px;
-    gap: 5px;
-  }
-
-  .thumbnail {
-    width: 150px;
-    height: 100px;
+    width: 100%;
   }
 
   .course-section__grid {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 
   .course-card {
@@ -575,6 +565,10 @@
   .container {
     padding: 15px;
   }
+  .certificate-details {
+    text-align: center;
+    max-width: 500px;
+  }
 
   .live-class-image img {
     top: 150px;
@@ -585,28 +579,18 @@
 @media (max-width: 480px) {
   .qa-section {
     flex-direction: column;
+    width: 98%;
+    margin-top: -20px;
     padding: 5px;
     gap: 10px;
   }
 
   .main-card {
-    width: 90%;
-    margin-top: 2%;
+    flex: unset;
   }
 
   .main-image {
-    height: 50vh;
-  }
-
-  .thumbnail-stack {
-    flex-direction: row;
-    overflow-x: auto;
-    padding: 5px;
-  }
-
-  .thumbnail {
-    width: 100px;
-    height: 70px;
+    height: 20vh;
   }
 
   .course-section h2 {
@@ -620,7 +604,7 @@
   }
 
   .course-card {
-    width: 100% !important;
+    width: 100%;
     padding: 15px;
   }
 

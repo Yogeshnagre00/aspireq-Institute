@@ -354,6 +354,7 @@
 .certificate-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5rem;
   gap: 20px;
   flex-wrap: wrap;
 }

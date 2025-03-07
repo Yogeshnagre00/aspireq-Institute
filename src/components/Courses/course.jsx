@@ -90,7 +90,8 @@ const CourseCards = () => {
   };
 
   //for navigate courses with it
-  const handleCardClick = (id) => {
+  const handleCardClick = (event, id) => {
+    event.preventDefault();
     window.open(`/course-details/${id}`, "_blank");
   };
   //for navigate explore For coursesPage
@@ -106,7 +107,7 @@ const CourseCards = () => {
             <div
               key={index}
               className="course-card"
-              onClick={() => handleCardClick(course.id)}
+              onClick={(event) => handleCardClick(event, course.id)}
             >
               <div className="course-image">
                 <img src={course.image} alt={course.title} loading="lazy" />
@@ -123,7 +124,11 @@ const CourseCards = () => {
                 <div className="course-rating">
                   <span className="rating">⭐ {course.rating}</span>
                   <div className="course-arrow">
-                    <a href={`/course/${course.id}`} className="arrow-link">
+                    <a
+                      href={`/course/${course.id}`}
+                      className="arrow-link"
+                      onClick={(event) => handleCardClick(event, course.id)}
+                    >
                       <i className="arrow-icon">→</i>
                     </a>
                   </div>

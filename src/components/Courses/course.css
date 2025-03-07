@@ -93,7 +93,6 @@
 }
 
 .course-content {
-  padding: 15px;
   text-align: left;
 }
 
@@ -119,6 +118,7 @@
 
 .rating {
   padding: 5px 12px;
+  align-items: center;
   color: #000000;
   border: 1px solid rgb(211, 211, 211);
   border-radius: 25px;
@@ -126,7 +126,7 @@
 .arrow-link {
   text-decoration: none;
   font-size: 20px;
-  padding: 3px 15px;
+  padding: 4px 21px;
   background-color: #00d09c;
   color: #ffffff;
   border-radius: 20px;
@@ -135,8 +135,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 23px;
-  bottom: 21px;
+  right: 20px;
+  bottom: 8px;
   transition: background 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -204,8 +204,8 @@
 /* Change icon size */
 .course-section .slick-prev:before,
 .course-section .slick-next:before {
-  font-size: 20px; /* Adjust icon size */
-  color: #007bff !important; /* Blue arrow */
+  font-size: 20px;
+  color: #00d09c !important;
 }
 
 /* Hover effect */

@@ -3,12 +3,14 @@ import { useParams } from "react-router-dom";
 import { certificateData, courses } from "../../CourseData/courseData";
 import { Footer } from "../../components/Footer/footer";
 import Navbar from "../../components/Header/header";
+import Loader from "../../components/loader";
 import Offer from "../../components/offerSection/offer";
 import "./courseDetails.css";
 
 const CourseDetailsPage = () => {
   const { courseId } = useParams();
   const [course, setCourse] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [activeModule, setActiveModule] = useState(1);
 
   const handleDownload = (courseTitle) => {
@@ -32,6 +34,8 @@ const CourseDetailsPage = () => {
   useEffect(() => {
     if (!courseId) return;
 
+    setLoading(true);
+
     // Find the course by ID from the imported `courses` data
     const courseDetails = courses.find(
       (course) => course.id === parseInt(courseId)
@@ -40,19 +44,24 @@ const CourseDetailsPage = () => {
     if (courseDetails) {
       setCourse(courseDetails);
 
-      // Replace spaces with dashes
+      // Format name and update URL
       const formattedName = courseDetails.name.replace(/\s+/g, "");
-      // Update the URL to show course name with dashes
       window.history.replaceState(
         null,
         "",
         `/course-details/${courseDetails.id}-${formattedName}`
       );
-    } else {
-      setCourse(null);
     }
+
+    setLoading(false);
   }, [courseId]);
 
+  // Show a loading message while fetching data
+  if (loading) {
+    return <Loader />;
+  }
+
+  // Show "Coming Soon" only when course is definitely not found
   if (!course) {
     return (
       <div className="coming-soon">

@@ -5,7 +5,7 @@ export const courses = [
     title: "Full Stack Development",
     description: (
       <>
-        <span style={{ color: "black" }}>
+        <span style={{ color: "#7f8c8d" }}>
           Learn Full Stack Development with Frontend in <b>React</b> & backend
           in <b>Java(SpringBoot)</b>.
         </span>
@@ -45,8 +45,48 @@ export const courses = [
         title: "New AI Module 2",
         subtitle:
           "AI tutorials in programming and Prompt engineering in chatgpt:",
-        description: "Understand the basics of AI",
-        topics: [" Commng soon"],
+        description:
+          "How to use AI (ChatGPT, microsoft copilot & deepseek)  to solve business problems",
+        topics: [
+          {
+            title: "AI in Excel",
+            subtopics: [
+              {
+                title: " Data Analysis and Insights",
+                subtopics: ["Analyze Data", "Power Query", "Forecasting"],
+              },
+              "Data Types",
+              "Dynamic Array Functions",
+              "Natural Language Queries",
+              "Insert Data from Pictures",
+            ],
+          },
+          {
+            title: "AI in PowerPoint",
+            subtopics: [
+              {
+                title: " Data Analysis and Insights",
+                subtopics: ["Design Ideas", "Smart Formatting"],
+              },
+              "Content Generation",
+              "Visual Enhancements",
+              "Data Visualization",
+              "AI-Powered Presentation Makers",
+            ],
+          },
+          {
+            title: "For Full Stack Development",
+            subtopics: [
+              "How To Use AI To Learn For Developers",
+              "AI-Powered Code Generation and Debugging",
+              "AI Prompts for Enhanced User Interfaces (front end Designs)",
+              "Prompts For Learning To Code",
+              "AI Prompting Practice",
+              "AI-Powered Frameworks and Libraries",
+              "AI Prompting CheatSheets",
+            ],
+          },
+        ],
         style: {
           backgroundColor: "white",
           color: "black",
@@ -202,8 +242,8 @@ export const courses = [
     id: 2,
     name: "Software Development Engineer in Testing",
     title: "Software Development Engineer in Testing",
-    description: "Learn manual, automation, API, and performance testing.",
-    category: "Testing",
+    description: "Learn manual, automation and  API Testing",
+    category: "Software Testing",
     imageUrl: "/Images/SDET.webp",
     rating: "5.0",
     lessons: "6 Modules",
@@ -293,9 +333,50 @@ export const courses = [
       {
         id: 2,
         title: "New AI Module 2",
-        subtitle: "AI tutorials For Software Testing",
-        description: "Understand the basics of AI",
-        topics: ["Coming soon"],
+        subtitle:
+          "AI tutorials in programming and Prompt engineering in chatgpt:",
+        description:
+          "How to use AI (ChatGPT, microsoft copilot & deepseek)  to solve business problems",
+        topics: [
+          {
+            title: "AI in Excel",
+            subtopics: [
+              {
+                title: " Data Analysis and Insights",
+                subtopics: ["Analyze Data", "Power Query", "Forecasting"],
+              },
+              "Data Types",
+              "Dynamic Array Functions",
+              "Natural Language Queries",
+              "Insert Data from Pictures",
+            ],
+          },
+          {
+            title: "AI in PowerPoint",
+            subtopics: [
+              {
+                title: " Data Analysis and Insights",
+                subtopics: ["Design Ideas", "Smart Formatting"],
+              },
+              "Content Generation",
+              "Visual Enhancements",
+              "Data Visualization",
+              "AI-Powered Presentation Makers",
+            ],
+          },
+          {
+            title: "For Full Stack Development",
+            subtopics: [
+              "How To Use AI To Learn For Developers",
+              "AI-Powered Code Generation and Debugging",
+              "AI Prompts for Enhanced User Interfaces (front end Designs)",
+              "Prompts For Learning To Code",
+              "AI Prompting Practice",
+              "AI-Powered Frameworks and Libraries",
+              "AI Prompting CheatSheets",
+            ],
+          },
+        ],
         style: {
           backgroundColor: "white",
           color: "black",
@@ -555,7 +636,7 @@ export const courses = [
     imageUrl: "/Images/Devops engineer.webp",
     rating: "5.0",
     lessons: "5 Modules",
-    students: 30,
+    students: 5,
     author: "Jagdish",
     modules: [
       {
@@ -598,9 +679,50 @@ export const courses = [
       {
         id: 2,
         title: "New AI Module 2",
-        subtitle: "AI tutorials For DevOps",
-        description: "Understand the basics of AI",
-        topics: ["Coming soon"],
+        subtitle:
+          "AI tutorials in programming and Prompt engineering in chatgpt:",
+        description:
+          "How to use AI (ChatGPT, microsoft copilot & deepseek)  to solve business problems",
+        topics: [
+          {
+            title: "AI in Excel",
+            subtopics: [
+              {
+                title: " Data Analysis and Insights",
+                subtopics: ["Analyze Data", "Power Query", "Forecasting"],
+              },
+              "Data Types",
+              "Dynamic Array Functions",
+              "Natural Language Queries",
+              "Insert Data from Pictures",
+            ],
+          },
+          {
+            title: "AI in PowerPoint",
+            subtopics: [
+              {
+                title: " Data Analysis and Insights",
+                subtopics: ["Design Ideas", "Smart Formatting"],
+              },
+              "Content Generation",
+              "Visual Enhancements",
+              "Data Visualization",
+              "AI-Powered Presentation Makers",
+            ],
+          },
+          {
+            title: "For Full Stack Development",
+            subtopics: [
+              "How To Use AI To Learn For Developers",
+              "AI-Powered Code Generation and Debugging",
+              "AI Prompts for Enhanced User Interfaces (front end Designs)",
+              "Prompts For Learning To Code",
+              "AI Prompting Practice",
+              "AI-Powered Frameworks and Libraries",
+              "AI Prompting CheatSheets",
+            ],
+          },
+        ],
         style: {
           backgroundColor: "white",
           color: "black",
@@ -739,10 +861,50 @@ export const courses = [
       {
         id: 2,
         title: "New AI Module 2",
-        subtitle: "AI tutorials For Business Analyst",
+        subtitle:
+          "AI tutorials in programming and Prompt engineering in chatgpt:",
         description:
-          "Learn AI-driven business analysis, automation, and prompt engineering concepts.",
-        topics: ["Coming soon"],
+          "How to use AI (ChatGPT, microsoft copilot & deepseek)  to solve business problems",
+        topics: [
+          {
+            title: "AI in Excel",
+            subtopics: [
+              {
+                title: " Data Analysis and Insights",
+                subtopics: ["Analyze Data", "Power Query", "Forecasting"],
+              },
+              "Data Types",
+              "Dynamic Array Functions",
+              "Natural Language Queries",
+              "Insert Data from Pictures",
+            ],
+          },
+          {
+            title: "AI in PowerPoint",
+            subtopics: [
+              {
+                title: " Data Analysis and Insights",
+                subtopics: ["Design Ideas", "Smart Formatting"],
+              },
+              "Content Generation",
+              "Visual Enhancements",
+              "Data Visualization",
+              "AI-Powered Presentation Makers",
+            ],
+          },
+          {
+            title: "For Full Stack Development",
+            subtopics: [
+              "How To Use AI To Learn For Developers",
+              "AI-Powered Code Generation and Debugging",
+              "AI Prompts for Enhanced User Interfaces (front end Designs)",
+              "Prompts For Learning To Code",
+              "AI Prompting Practice",
+              "AI-Powered Frameworks and Libraries",
+              "AI Prompting CheatSheets",
+            ],
+          },
+        ],
         style: {
           backgroundColor: "white",
           color: "black",
@@ -877,11 +1039,51 @@ export const courses = [
       },
       {
         id: 2,
-        title: "Module 2",
-        subtitle: "AI Tutorials for Scrum Master",
+        title: "New AI Module 2",
+        subtitle:
+          "AI tutorials in programming and Prompt engineering in chatgpt:",
         description:
-          "Explore how AI can enhance business analysis, automation, and decision-making with prompt engineering concepts.",
-        topics: ["Coming soon"],
+          "How to use AI (ChatGPT, microsoft copilot & deepseek)  to solve business problems",
+        topics: [
+          {
+            title: "AI in Excel",
+            subtopics: [
+              {
+                title: " Data Analysis and Insights",
+                subtopics: ["Analyze Data", "Power Query", "Forecasting"],
+              },
+              "Data Types",
+              "Dynamic Array Functions",
+              "Natural Language Queries",
+              "Insert Data from Pictures",
+            ],
+          },
+          {
+            title: "AI in PowerPoint",
+            subtopics: [
+              {
+                title: " Data Analysis and Insights",
+                subtopics: ["Design Ideas", "Smart Formatting"],
+              },
+              "Content Generation",
+              "Visual Enhancements",
+              "Data Visualization",
+              "AI-Powered Presentation Makers",
+            ],
+          },
+          {
+            title: "For Full Stack Development",
+            subtopics: [
+              "How To Use AI To Learn For Developers",
+              "AI-Powered Code Generation and Debugging",
+              "AI Prompts for Enhanced User Interfaces (front end Designs)",
+              "Prompts For Learning To Code",
+              "AI Prompting Practice",
+              "AI-Powered Frameworks and Libraries",
+              "AI Prompting CheatSheets",
+            ],
+          },
+        ],
         style: {
           backgroundColor: "white",
           color: "black",

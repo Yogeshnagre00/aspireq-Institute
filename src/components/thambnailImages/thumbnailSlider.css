@@ -87,6 +87,22 @@
 
   .image-slider .slick-prev,
   .image-slider .slick-next {
-    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    z-index: 2;
+    cursor: pointer;
+    background: transparent;
+  }
+
+  /* Move arrows to left & right for smaller screens */
+  .image-slider .slick-prev {
+    left: 10px;
+  }
+
+  .image-slider .slick-next {
+    right: 10px !important;
+    left: auto !important;
   }
 }
