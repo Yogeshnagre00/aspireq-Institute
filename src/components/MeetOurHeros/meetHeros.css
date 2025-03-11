@@ -26,7 +26,7 @@
   padding: 0 20px;
   height: 100%;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .hero-card img {
@@ -38,6 +38,30 @@
 .meet-the-heroes .slick-next {
   right: -35px !important;
 }
+.meet-the-heroes .slick-dots {
+  margin-top: 20px;
+}
+.meet-the-heroes .slick-dots li {
+  margin: 0 5px;
+}
+.meet-the-heroes .slick-dots li button:before {
+  font-size: 8px;
+  color: #ccc;
+  opacity: 1;
+}
+
+.meet-the-heroes .slick-dots li.slick-active button:before {
+  content: "";
+}
+
+.meet-the-heroes .slick-dots li.slick-active button {
+  width: 22px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: #ccc;
+  display: block;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .meet-the-heroes {

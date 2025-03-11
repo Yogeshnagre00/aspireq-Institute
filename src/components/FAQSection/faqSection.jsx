@@ -12,32 +12,31 @@ const FAQSection = () => {
     {
       question: "What about placement?",
       answer:
-        "We provide 100% job guarantee. Here, at AspireQ, there will be a complete roadmap for your career.",
+        "We provide 100% job guarantee. Here, at aspireq there is a complete roadmap for your career,Training + Internship and Job.",
     },
     {
-      question: "What syllabus you are going to cover?",
-      answer: "",
+      question: "Are there any live projects or internships you offer?",
+      answer:
+        "Yes, we do believe real time project experience is very important.Just, technical and bookish knowledge is not enough. Domain knowledge and live projects are crucial things which we provide at aspireq institute along with internship certificates as well.",
     },
     {
       question: "What is the admission criteria?",
-      answer: "",
-    },
-    {
-      question: "How much fees will be?",
-      answer: "",
-    },
-    {
-      question: "What is the duration of the course?",
-      answer: "",
-    },
-    {
-      question: "Who are the trainers for the courses?",
-      answer: "",
-    },
-    {
-      question: "Is there any live project or internship do you offer?",
       answer:
-        "Yes, we do belive real time project experience is very much important.Just, technical and bookish knowledge is not enough.Domain knowledge and live project is crucial which we provide at aspireq institute along with internship certificate as well.",
+        "Any aspirant candidate who wants to do a career in software field is eligible, can apply.",
+    },
+    {
+      question: "What is the duration of course",
+      answer:
+        "Course duration is 3 months training then 6 months internship and guaranteed job. ",
+    },
+    {
+      question: "Who are the Trainers for courses?",
+      answer: "Trainers are working professionals in the software industry.",
+    },
+    {
+      question: "How much is the course fee",
+      answer:
+        "It depends on the course you are taking. For further information, you can come to the office and contact the team.",
     },
   ];
 

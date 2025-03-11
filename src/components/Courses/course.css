@@ -80,14 +80,14 @@
 }
 
 .label-bestseller {
-  color: #007bff;
+  color: #00d09c;
   font-weight: bold;
 }
 
 .label-discount {
   margin-left: 8px;
   padding: 3px 6px;
-  border: 1px solid #007bff;
+  border: 1px solid #00d09c;
   border-radius: 6px;
   color: #1c1b1b;
 }

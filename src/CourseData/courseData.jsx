@@ -53,6 +53,7 @@ export const courses = [
             subtopics: [
               {
                 title: " Data Analysis and Insights",
+                fontWeight: "normal",
                 subtopics: ["Analyze Data", "Power Query", "Forecasting"],
               },
               "Data Types",
@@ -75,7 +76,7 @@ export const courses = [
             ],
           },
           {
-            title: "For Full Stack Development",
+            title: "AI in Programming",
             subtopics: [
               "How To Use AI To Learn For Developers",
               "AI-Powered Code Generation and Debugging",
@@ -87,10 +88,6 @@ export const courses = [
             ],
           },
         ],
-        style: {
-          backgroundColor: "white",
-          color: "black",
-        },
       },
       {
         id: 3,

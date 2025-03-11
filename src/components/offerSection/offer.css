@@ -12,14 +12,20 @@
   background-color: #403f3f;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
+/* Adjust text content */
 .offer-content {
   max-width: 500px;
   text-align: center;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Headings & Description */
 .offer-content .subheading {
   color: #00b289;
   font-weight: bold;
@@ -29,7 +35,7 @@
 
 .offer-content .main-heading {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -40,12 +46,16 @@
   color: #b5b6b7;
 }
 
+/* Button group placed below the content */
 .button-group {
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap; /* Wrap buttons on smaller screens */
+  margin-top: 20px; /* Add space between description and buttons */
 }
 
+/* Buttons */
 .btn {
   text-decoration: none;
   padding: 12px 20px;
@@ -53,6 +63,7 @@
   font-size: 1rem;
   font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
 .btn-green {
@@ -84,4 +95,69 @@
   background: url("/Images/back-courses.webp") center/cover no-repeat;
   opacity: 0.1;
   z-index: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .offer-section {
+    width: 90%;
+    padding: 40px;
+  }
+
+  .offer-content {
+    max-width: 400px;
+  }
+
+  .offer-content .main-heading {
+    font-size: 1.3rem;
+  }
+
+  .offer-content .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-section {
+    width: 85%;
+    padding: 30px;
+  }
+
+  .offer-content {
+    max-width: 100%;
+  }
+
+  .offer-content .main-heading {
+    font-size: 0.9rem;
+  }
+
+  .offer-content .description {
+    font-size: 0.9rem;
+  }
+
+  .offer-section .btn {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .offer-section {
+    width: 85%;
+    padding: 20px;
+  }
+
+  .offer-content .main-heading {
+    font-size: 1rem;
+  }
+
+  .offer-content .description {
+    font-size: 0.8rem;
+  }
+
+  .offer-section .btn {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
 }

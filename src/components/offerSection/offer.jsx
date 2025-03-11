@@ -4,7 +4,7 @@ function Offer() {
     <section className="offer-section">
       <div className="offer-content">
         <p className="subheading">ARE YOU READY FOR THIS OFFER ?</p>
-        <h1 className="main-heading">20% offer for 50</h1>
+        <h1 className="main-heading">50% offer for FIRST BATCH</h1>
         {/* <p className="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -12,7 +12,7 @@ function Offer() {
         </p> */}
         <div className="button-group">
           <a href="#" className="btn btn-green">
-            ADMISSION NOW
+            APPLY NOW
           </a>
           {/* <a href="#course-section" className="btn btn-blue">
             OUR COURSES

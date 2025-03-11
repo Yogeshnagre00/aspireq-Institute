@@ -13,19 +13,34 @@ const CourseDetailsPage = () => {
   const [loading, setLoading] = useState(true);
   const [activeModule, setActiveModule] = useState(1);
 
-  const handleDownload = (courseTitle) => {
-    if (!courseTitle) {
+  const handleDownload = () => {
+    if (!course || !course.name) {
       console.error("Course not selected");
       return;
     }
 
-    // Define the PDF file path
-    const pdfFilePath = `/pdfs/${courseTitle}.pdf`;
+    // Define PDF mapping based on course names
+    const pdfFiles = {
+      "Full Stack Development": "/Pdf/Full_Stack_Developer.pdf",
+      "Software Development Engineer in Testing":
+        "/Pdf/Software_Development_Engineer_in_Testing_(SDET).pdf",
+      "DevOps Engineer": "/Pdf/Devops_Engineer.pdf",
+      "Business Analyst": "/Pdf/Business_Analyst(BA).pdf",
+      "Scrum Master": "/Pdf/Scrum_Master.pdf",
+    };
+
+    // Get the correct PDF file for the course
+    const pdfFilePath = pdfFiles[course.name];
+
+    if (!pdfFilePath) {
+      console.error("PDF file not found for this course");
+      return;
+    }
 
     // Create a download link
     const link = document.createElement("a");
     link.href = pdfFilePath;
-    link.download = `${courseTitle}.pdf`;
+    link.download = `${course.name.replace(/\s+/g, "_")}.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -78,14 +93,7 @@ const CourseDetailsPage = () => {
       <section className="coursepage-section">
         <div className="coursepage-content">
           <h2>{course.title}</h2>
-          <p
-            style={{
-              marginLeft:
-                course.name === "Full Stack Development" ? "-40%" : "-10%",
-            }}
-          >
-            {course.description}
-          </p>
+          <p>{course.description}</p>
         </div>
         <div className="coursepage-main">
           <div className="coursepage-image-container">
@@ -115,16 +123,15 @@ const CourseDetailsPage = () => {
             </div>
           </div>
         </div>
+        <div className="Brochure-container">
+          <button className="download-button" onClick={handleDownload}>
+            <span className="download-icon">⬇️</span> Download Brochure
+          </button>
+        </div>
       </section>
       {/* this is for our syllabus section */}
       <section className="syllabus">
         <h2 className="syllabus-title">Syllabus</h2>
-        <div className="syllabus-container">
-          <button className="download-button" onClick={handleDownload}>
-            <span className="download-icon">⬇️</span> Download Syllabus
-          </button>
-        </div>
-
         <div className="module-content-container">
           {/* Sidebar */}
           <div className="module-sidebar">
@@ -141,7 +148,7 @@ const CourseDetailsPage = () => {
                   style={{
                     color: module.id === 2 ? "white" : "black",
                     backgroundColor:
-                      module.id === 2 ? "#27ae60" : "transparent",
+                      module.id === 2 ? "#00d09c" : "transparent",
                     padding: "5px",
                     display: "inline-block",
                     borderRadius: "5px",
@@ -156,53 +163,49 @@ const CourseDetailsPage = () => {
               </div>
             ))}
           </div>
-
           {/* Module Details */}
           <div className="module-details">
-            {course?.modules
-              ?.filter((module) => module.id === activeModule)
-              ?.map((module) => (
+            {(() => {
+              const activeModuleData = course?.modules?.find(
+                (mod) => mod.id === activeModule
+              );
+              if (!activeModuleData) return null;
+
+              return (
                 <div
-                  key={module.id}
-                  style={module.id === 2 ? module.style : {}}
+                  key={activeModuleData.id}
+                  style={
+                    activeModuleData.id === 2 ? activeModuleData.style : {}
+                  }
                 >
-                  <h3>{module.subtitle}</h3>
+                  <h3>{activeModuleData.subtitle}</h3>
                   <hr className="divider" />
-                  <p>{module.description}</p>
-                  {module.id === 1 && <h3>Topics Covered:</h3>}
+                  <p>{activeModuleData.description}</p>
+
+                  {activeModuleData.id === 1 && <h3>Topics Covered:</h3>}
 
                   <ul className="topics-list">
-                    {module.topics.map((topic, index) => (
-                      <li
-                        key={index}
-                        className={`topic-item ${
-                          topic.title === " "
-                            ? "blank"
-                            : topic.title === "Whitebox Testing" ||
-                              topic.title ===
-                                "Tools and Techniques for Business Analysis"
-                            ? "force-new-column"
-                            : topic.title ===
-                              "Real-World Applications and Hands-On Experience"
-                            ? "single-column"
-                            : topic.title ===
-                              "Real-World Applications and Hands-On Experience"
-                            ? "single-column"
-                            : ""
-                        }`}
-                      >
+                    {activeModuleData.topics.map((topic, index) => (
+                      <li key={index} className="topic-item">
                         <strong className="topic-title">{topic.title}</strong>
                         {Array.isArray(topic.subtopics) &&
                           topic.subtopics.length > 0 && (
                             <ul className="subtopics-list">
                               {topic.subtopics.map((subtopic, subIndex) => (
                                 <li key={subIndex} className="subtopic-item">
-                                  {/* Check if subtopic is an object with a title */}
                                   {typeof subtopic === "string" ? (
                                     subtopic
                                   ) : (
                                     <>
-                                      <strong>{subtopic.title}</strong>
+                                      {/* Apply fontWeight dynamically */}
+                                      <strong
+                                        style={{
+                                          fontWeight:
+                                            subtopic.fontWeight || "bold",
+                                        }}
+                                      >
+                                        {subtopic.title}
+                                      </strong>
                                       {Array.isArray(subtopic.subtopics) &&
                                         subtopic.subtopics.length > 0 && (
                                           <ul>
@@ -225,8 +228,14 @@ const CourseDetailsPage = () => {
                     ))}
                   </ul>
                 </div>
-              ))}
+              );
+            })()}
           </div>
+        </div>
+        <div className="syllabus-container">
+          <button className="download-button" onClick={handleDownload}>
+            <span className="download-icon">⬇️</span> Download Syllabus
+          </button>
         </div>
       </section>
       <section className="Tools-section">

@@ -146,7 +146,7 @@ const CoursesPage = () => {
         </div>
       </section>
 
-      <section>
+      <section className="how-it-work">
         <div className="how-it-works">
           <h2>How it works</h2>
           <div className="horizontal-stepper">
@@ -197,22 +197,7 @@ const CoursesPage = () => {
           </div>
         </div>
       </section>
-      <section className="DemoClass-section">
-        <div className="container">
-          <h2>Join your live class with your instructor</h2>
-          <div className="live-class-image">
-            <img src="/Images/classRoom.jpg" alt="Live Class Example" />
-          </div>
-          <div className="class-container">
-            <div className="button"> Scrum Master</div>
-            <div className="button">Full Stack Developer</div>
-            <div className="button">DevOps Engineer</div>
-            <div className="button">SDET</div>
-            <div className="button">Business Analyst</div>
-            <div className="button">Corporate Training</div>
-          </div>
-        </div>
-      </section>
+
       <Offer />
       <Footer />
     </>

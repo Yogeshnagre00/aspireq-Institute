@@ -1,12 +1,12 @@
 import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import HeroCard from "./herosCard";
 import "./meetHeros.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const heroesData = [
   {
-    name: "Alexandra Rice",
+    name: "Abhijit Pampatwar",
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
@@ -15,7 +15,7 @@ const heroesData = [
     image: "./Images/Avatar (1).webp",
   },
   {
-    name: "Albert Flores",
+    name: "Pankaj Pampatwar",
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
@@ -24,7 +24,7 @@ const heroesData = [
     image: "./Images/girl2.webp",
   },
   {
-    name: "Theresa Webb",
+    name: "Mayur Yambal",
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
@@ -33,7 +33,52 @@ const heroesData = [
     image: "./Images/girl1.webp",
   },
   {
-    name: "Marvin McKinney",
+    name: "Mahesh Yambal",
+    position: "Application Support Analyst Lead",
+    description:
+      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    image: "./Images/girl3.webp",
+  },
+  {
+    name: "Baslingappa Songi",
+    position: "Application Support Analyst Lead",
+    description:
+      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    image: "./Images/girl3.webp",
+  },
+  {
+    name: "Rajesh Patil",
+    position: "Application Support Analyst Lead",
+    description:
+      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    image: "./Images/girl3.webp",
+  },
+  {
+    name: "Parmeshwar Nagre",
+    position: "Application Support Analyst Lead",
+    description:
+      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    image: "./Images/girl3.webp",
+  },
+  {
+    name: "Saroj Bhosle",
+    position: "Application Support Analyst Lead",
+    description:
+      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    image: "./Images/girl3.webp",
+  },
+  {
+    name: "Jagdish Belapure",
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
