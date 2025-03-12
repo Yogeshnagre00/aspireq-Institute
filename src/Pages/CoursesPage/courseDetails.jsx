@@ -250,11 +250,11 @@ const CourseDetailsPage = () => {
                     : course.name === "Software Development Engineer in Testing"
                     ? "/Images/SDET Tools.webp"
                     : course.name === "DevOps Engineer"
-                    ? "/Images/Devops-Tools.webp"
+                    ? "/Images/Devops-Tools.png"
                     : course.name === "Business Analyst"
-                    ? "/Images/Devops-Tools.webp"
+                    ? "/Images/Business analyst-Tools.png"
                     : course.name === "Scrum Master"
-                    ? "/Images/Devops-Tools.webp"
+                    ? "/Images/Devops-Tools.png"
                     : "/Images/default.webp"
                 }
                 alt={course.name}

@@ -11,7 +11,7 @@ const courses = [
     description: "Conquer the coding ground.",
     image: "./Images/Full stack developer.webp",
     bestseller: true,
-    discount: "20% Off",
+    discount: "50% Off",
     rating: "5.0",
   },
   {
@@ -20,7 +20,7 @@ const courses = [
     description: "Be a software quality expert.",
     image: "./Images/SDET.webp",
     bestseller: true,
-    discount: "20% Off",
+    discount: "50% Off",
     rating: "5.0",
   },
   {
@@ -29,7 +29,7 @@ const courses = [
     description: "Become Hero of Deployment.",
     image: "/Images/Devops engineer.webp",
     bestseller: true,
-    discount: "20% Off",
+    discount: "50% Off",
     rating: "5.0",
   },
   {
@@ -38,7 +38,7 @@ const courses = [
     description: "Master the Cognizance Virtuoso.",
     image: "./Images/Business analyst.webp",
     bestseller: true,
-    discount: "20% Off",
+    discount: "50% Off",
     rating: "5.0",
   },
   {
@@ -47,7 +47,7 @@ const courses = [
     description: "Master the Agile project management.",
     image: "./Images/Scrum master.webp",
     bestseller: true,
-    discount: "20% Off",
+    discount: "50% Off",
     rating: "5.0",
   },
   {
@@ -56,7 +56,7 @@ const courses = [
     description: "Automate your testing process with the latest tools.",
     image: "./Images/corporate.webp",
     bestseller: true,
-    discount: "20% Off",
+    discount: " ",
     rating: "5.0",
   },
 ];

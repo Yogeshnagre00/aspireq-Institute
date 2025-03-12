@@ -67,6 +67,7 @@ export const courses = [
             subtopics: [
               {
                 title: " Data Analysis and Insights",
+                fontWeight: "normal",
                 subtopics: ["Design Ideas", "Smart Formatting"],
               },
               "Content Generation",
@@ -340,6 +341,7 @@ export const courses = [
             subtopics: [
               {
                 title: " Data Analysis and Insights",
+                fontWeight: "normal",
                 subtopics: ["Analyze Data", "Power Query", "Forecasting"],
               },
               "Data Types",
@@ -353,6 +355,7 @@ export const courses = [
             subtopics: [
               {
                 title: " Data Analysis and Insights",
+                fontWeight: "normal",
                 subtopics: ["Design Ideas", "Smart Formatting"],
               },
               "Content Generation",
@@ -686,6 +689,7 @@ export const courses = [
             subtopics: [
               {
                 title: " Data Analysis and Insights",
+                fontWeight: "normal",
                 subtopics: ["Analyze Data", "Power Query", "Forecasting"],
               },
               "Data Types",
@@ -699,6 +703,7 @@ export const courses = [
             subtopics: [
               {
                 title: " Data Analysis and Insights",
+                fontWeight: "normal",
                 subtopics: ["Design Ideas", "Smart Formatting"],
               },
               "Content Generation",
@@ -868,6 +873,7 @@ export const courses = [
             subtopics: [
               {
                 title: " Data Analysis and Insights",
+                fontWeight: "normal",
                 subtopics: ["Analyze Data", "Power Query", "Forecasting"],
               },
               "Data Types",
@@ -881,6 +887,7 @@ export const courses = [
             subtopics: [
               {
                 title: " Data Analysis and Insights",
+                fontWeight: "normal",
                 subtopics: ["Design Ideas", "Smart Formatting"],
               },
               "Content Generation",
@@ -1047,6 +1054,7 @@ export const courses = [
             subtopics: [
               {
                 title: " Data Analysis and Insights",
+                fontWeight: "normal",
                 subtopics: ["Analyze Data", "Power Query", "Forecasting"],
               },
               "Data Types",
@@ -1060,6 +1068,7 @@ export const courses = [
             subtopics: [
               {
                 title: " Data Analysis and Insights",
+                fontWeight: "normal",
                 subtopics: ["Design Ideas", "Smart Formatting"],
               },
               "Content Generation",

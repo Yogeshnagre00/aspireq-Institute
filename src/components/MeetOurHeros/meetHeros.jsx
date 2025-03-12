@@ -1,6 +1,7 @@
 import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import HeroCard from "./herosCard";
 import "./meetHeros.css";
 
@@ -95,7 +96,7 @@ const MeetTheHeroes = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     autoplay: true,
     autoplaySpeed: 5000,
     responsive: [

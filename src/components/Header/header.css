@@ -57,7 +57,7 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 70px;
+  gap: 0px;
 }
 
 /* Link Styles */
@@ -86,9 +86,6 @@ header {
   .navbar {
     padding: 0 0.3rem;
   }
-  /* header {
-    position: relative;
-  } */
 
   .hamburger {
     display: block;
