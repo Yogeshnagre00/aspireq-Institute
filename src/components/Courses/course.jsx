@@ -56,7 +56,7 @@ const courses = [
     description: "Automate your testing process with the latest tools.",
     image: "./Images/corporate.webp",
     bestseller: true,
-    discount: " ",
+    discount: "50% Off",
     rating: "5.0",
   },
 ];

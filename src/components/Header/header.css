@@ -2,7 +2,7 @@
 :root {
   --header-bg-color: white;
   --header-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  --navbar-padding: 0 5rem;
+  --navbar-padding: 0 5vw;
   --nav-link-color: #555;
   --nav-link-hover-color: #00d09c;
   --btn-bg-color: #00d09c;
@@ -13,13 +13,12 @@
 header {
   background-color: var(--header-bg-color);
   box-shadow: var(--header-box-shadow);
-  padding: 9px 0;
+  padding: 11px 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
 }
-
 /* Navbar */
 .navbar {
   display: flex;
@@ -29,7 +28,11 @@ header {
 }
 
 .logo img {
-  height: 30px;
+  height: 55px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 /* Button Styling */
@@ -38,6 +41,7 @@ header {
   color: white;
   padding: 10px 25px;
   border-radius: 100px;
+  margin-right: 22px;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -108,10 +112,7 @@ header {
   }
 
   .nav-links a {
-    padding: 15px;
-    font-size: 18px;
-    width: 100%;
-    text-align: center;
+    font-size: clamp(0.9rem, 1vw, 1.2rem);
   }
 
   .btn {
@@ -123,6 +124,7 @@ header {
 
   .logo img {
     margin-right: 10px;
+    height: 30px;
   }
 }
 
@@ -138,6 +140,6 @@ header {
   }
 
   .logo img {
-    height: 25px;
+    height: 30px;
   }
 }

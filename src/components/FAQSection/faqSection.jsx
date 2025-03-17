@@ -25,7 +25,7 @@ const FAQSection = () => {
         "Any aspirant candidate who wants to do a career in software field is eligible, can apply.",
     },
     {
-      question: "What is the duration of course",
+      question: "What is the duration of course?",
       answer:
         "Course duration is 3 months training then 6 months internship and guaranteed job. ",
     },
@@ -34,7 +34,7 @@ const FAQSection = () => {
       answer: "Trainers are working professionals in the software industry.",
     },
     {
-      question: "How much is the course fee",
+      question: "How much is the course fee?",
       answer:
         "It depends on the course you are taking. For further information, you can come to the office and contact the team.",
     },

@@ -254,7 +254,7 @@ const CourseDetailsPage = () => {
                     : course.name === "Business Analyst"
                     ? "/Images/Business analyst-Tools.png"
                     : course.name === "Scrum Master"
-                    ? "/Images/Devops-Tools.png"
+                    ? "/Images/scrumMaster-tools.png"
                     : "/Images/default.webp"
                 }
                 alt={course.name}
