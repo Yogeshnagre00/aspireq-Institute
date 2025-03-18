@@ -105,8 +105,6 @@ const ContactForm = () => {
     <>
       <Navbar />
       <div className="contact-form-container">
-        <h1 className="contacth1">Contact us</h1>
-
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="form-row">
             <div className="form-group">
@@ -168,9 +166,7 @@ const ContactForm = () => {
                 required
                 onInvalid={(e) => {
                   if (!e.target.validity.valid) {
-                    e.target.setCustomValidity(
-                      "Only numbers are allowed "
-                    );
+                    e.target.setCustomValidity("Only numbers are allowed ");
                   }
                 }}
                 onInput={(e) => e.target.setCustomValidity("")}

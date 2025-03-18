@@ -2,38 +2,17 @@
   "sliderItems": [
     {
       "id": 1,
-      "type": "image",
-      "src": "/Images/Scrum master.webp",
-      "title": "QA Lorem Ipsum",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus urna orci."
-    },
-    {
-      "id": 2,
       "type": "video",
       "src": "/Videos/demo.webm",
       "title": "Video Demo",
       "description": "A demonstration video about QA services."
     },
     {
-      "id": 3,
-      "type": "image",
-      "src": "./Images/Full stack developer.webp",
-      "title": "Office 1",
-      "description": "Description for full stack developer"
-    },
-    {
-      "id": 4,
+      "id": 2,
       "type": "video",
       "src": "/Videos/demo2.webm",
       "title": "Video Demo 2",
       "description": "A demonstration video about QA services."
-    },
-    {
-      "id": 5,
-      "type": "image",
-      "src": "./Images/Business analyst.webp",
-      "title": "Office 1",
-      "description": "Description for business analyst"
     }
   ],
   "courses": [
@@ -96,19 +75,19 @@
     {
       "id": 1,
       "title": "Take course by industry experts",
-      "description": "Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit",
+      "description": "Unlock Your Potential with Industry-Leading Training & Empower Your Future with ASPIREQ.",
       "image": "./Images/Marriage counseling-cuate 1.webp"
     },
     {
       "id": 2,
       "title": "Get a Course Certificate",
-      "description": "Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit",
+      "description": "With our certification, you're not just learning new skills—you’re building a future of opportunities.",
       "image": "./Images/Certification-cuate 1.webp"
     },
     {
       "id": 3,
       "title": "Advance your career",
-      "description": "Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit Lorem ipsum dolor amet sit",
+      "description": "Your Future Starts Here! Get Your Dream Job with ASPIREQ",
       "image": "./Images/Group 39881.webp"
     }
   ]

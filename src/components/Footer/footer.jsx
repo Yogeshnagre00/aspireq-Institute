@@ -7,6 +7,7 @@ export const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="row">
+          {/* Courses */}
           <div className="col-md-3">
             <h3 className="footer-heading">Courses</h3>
             <ul className="footer-links">
@@ -60,6 +61,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
+          {/* Domains */}
           <div className="col-md-3">
             <h4 className="footer-heading">Training in Domains</h4>
             <ul className="footer-links">
@@ -80,6 +82,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
+          {/* Address */}
           <div className="col-md-3 ">
             <h4 className="footer-heading">Meet Us</h4>
             <ul className="footer-contact">
@@ -87,12 +90,13 @@ export const Footer = () => {
               <li>info@aspireq.com</li>
               <li>Address</li>
               <li>
-                Aspireq 16 A, Karle Empire 2, <br /> Nanded City, Sinhgad Road,
-                <br />
-                Pune - 411041
+                Aspireq 16 A,
+                <br /> Karle Empire 2, Nanded City, <br />
+                Sinhgad Road, Pune - 411041
               </li>
             </ul>
           </div>
+          {/* map */}
           <div className="col-md-3">
             <div className="footer-column map-container">
               <iframe

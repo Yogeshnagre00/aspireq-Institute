@@ -6,12 +6,8 @@ const AboutUs = () => {
   return (
     <>
       <Navbar />
-      <div className="heading">
-        <h1 className="h1">About Us</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-      </div>
+      {/* Who We Are Section */}
       <section className="about-section">
-        {/* Who We Are Section */}
         <div className="about-card">
           <h3 className="small-heading">Who We Are</h3>
           <h2 className="main-heading">Who We Are</h2>
