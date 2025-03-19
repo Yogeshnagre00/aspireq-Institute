@@ -21,7 +21,8 @@ const CourseDetailsPage = () => {
 
     // Define PDF mapping based on course names
     const pdfFiles = {
-      "Full Stack Development": "/Pdf/Full_Stack_Developer.pdf",
+      "Full Stack Development":
+        "/Pdf/Full_Stack_Development_Complete_Syllabus.pdf",
       "Software Development Engineer in Testing":
         "/Pdf/Software_Development_Engineer_in_Testing_(SDET).pdf",
       "DevOps Engineer": "/Pdf/Devops_Engineer.pdf",
@@ -40,7 +41,7 @@ const CourseDetailsPage = () => {
     // Create a download link
     const link = document.createElement("a");
     link.href = pdfFilePath;
-    link.download = `${course.name.replace(/\s+/g, "_")}.pdf`;
+    link.download = `${course.name.replace(/\s+/g, "_")}_Complete_Syllabus.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

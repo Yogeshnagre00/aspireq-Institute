@@ -16,42 +16,37 @@ const CoursesPage = () => {
 
   useEffect(() => {
     const hasMainRun = sessionStorage.getItem("hasMainRun");
+    let interval;
+    const video = videoRef.current;
 
     if (!hasMainRun) {
-      let interval;
-      const video = videoRef.current;
-
       const playNextSlide = () => {
         setCurrentIndex((prevIndex) => {
           const nextIndex = prevIndex + 1;
-
           if (nextIndex >= sliderItems.length) {
-            console.log("Main slider cycle complete"); // Debugging
             setIsMainCardCycleComplete(true);
             sessionStorage.setItem("hasMainRun", "true");
-            return prevIndex; // Stop at the last slide
+            return prevIndex;
           }
-
           return nextIndex;
         });
       };
 
-      if (sliderItems[currentIndex]?.type === "video") {
-        if (video) {
-          video.onended = playNextSlide;
-          video.play();
-        }
+      if (sliderItems[currentIndex]?.type === "video" && video) {
+        video.onended = playNextSlide;
+        video.play().catch((err) => console.log("Video play error:", err));
+        interval = setTimeout(playNextSlide, 15000); 
       } else {
-        interval = setTimeout(playNextSlide, 5000); // Change slide every 5 seconds
+        interval = setTimeout(playNextSlide, 5000); 
       }
-
-      return () => {
-        if (interval) clearTimeout(interval);
-        if (video) video.onended = null;
-      };
     } else {
       setIsMainCardCycleComplete(true);
     }
+
+    return () => {
+      clearTimeout(interval);
+      if (video) video.onended = null;
+    };
   }, [currentIndex, sliderItems]);
 
   const toggleMute = () => {

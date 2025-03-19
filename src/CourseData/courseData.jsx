@@ -13,6 +13,15 @@ export const courses = [
     ),
     category: "Software Development",
     imageUrl: "/Images/Full stack developer.webp",
+    certificate: {
+      title: "Gain Industry-Recognized Certificates",
+      image: "/Images/ux design certificate.webp",
+      benefits: [
+        "Use your certificates to make a life-changing shift",
+        "Use your certificates to make a life-changing shift",
+        "Use your certificates to make a life-changing shift",
+      ],
+    },
     rating: "5.0",
     lessons: "7 Modules",
     students: 25,
