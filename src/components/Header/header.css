@@ -30,7 +30,7 @@ header {
 .logo img {
   height: 55px;
   width: auto;
-  max-width: 100%;
+  max-width: 80%;
   object-fit: contain;
   display: block;
 }
