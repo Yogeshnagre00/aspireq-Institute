@@ -346,32 +346,56 @@
   font-size: 0.9rem;
   color: #636e72;
 }
-/* certifiction */
+
+/* Certificate Section */
 .certificate-section {
   padding: 40px;
-  text-align: center;
+  width: 89%;
+  margin: 0 auto;
 }
 
+.certificate-section h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  background-size: 20% 2px;
+  width: 100%;
+  display: block;
+}
+
+/* Certificate Container Styling */
 .certificate-container {
   display: flex;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 60px;
-  gap: 20px;
+}
+
+/* Certificate Image Styling */
+.certificate-image {
+  flex: 1;
+  max-width: 40%;
 }
 
 .certificate-image img {
-  max-width: 80%;
+  width: 100%;
   height: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
+/* Certificate Details Styling */
 .certificate-details {
+  flex: 1;
+  max-width: 48%; /* Balanced width */
   text-align: left;
-  max-width: 500px;
+  margin-top: -30px;
 }
 
 .certificate-details h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .certificate-details ul {
@@ -380,17 +404,21 @@
 }
 
 .certificate-details li {
-  margin-bottom: 10px;
-  font-size: 1rem;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
 }
 
 .certificate-details li::before {
-  content: "✔";
+  content: "✓";
   color: #00d09c;
   font-size: 1.2rem;
   margin-right: 10px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 /* Demo classes */
 .container {
@@ -480,7 +508,7 @@
   }
 
   .certificate-image img {
-    max-width: 100%;
+    max-width: 50%;
   }
 
   .horizontal-stepper {

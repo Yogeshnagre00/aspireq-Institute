@@ -1,26 +1,11 @@
-.heading {
-  text-align: center;
-  padding: 100px 20px 30px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-.h1 {
-  font-size: 45px;
-  color: #333;
-  margin-bottom: -10px;
-}
-.heading p {
-  font-size: 15px;
-  color: #555;
-}
+/* General Styles for About Section */
 .about-section {
   display: flex;
   width: 95%;
-  margin-top: 7%;
   justify-content: center;
   align-items: flex-start;
   gap: 100px;
-  margin: 0 auto;
+  margin: 9% auto;
   padding: 40px 20px;
 }
 
@@ -35,7 +20,6 @@
 
 .small-heading {
   font-size: 14px;
-
   color: #4a90e2;
   text-transform: uppercase;
   letter-spacing: 13px;
@@ -61,8 +45,7 @@
   border-radius: 8px;
 }
 
-/* our vison */
-
+/* Our Vision */
 .our-vision h2 {
   text-align: center;
   margin-left: 33%;
@@ -80,6 +63,7 @@
   background-repeat: no-repeat;
   width: 30%;
 }
+
 .vision-container {
   position: relative;
   width: 98vw;
@@ -142,13 +126,14 @@
   left: 61%;
   transform: translateX(-50%);
 }
+
 .circleimage {
   width: 1250px;
   height: 80vh;
   object-fit: cover;
 }
-/* Feature */
 
+/* Features Section */
 .features-section {
   max-width: 1000px;
   margin: 0 auto;
@@ -244,8 +229,7 @@
   background-color: #0056b3;
 }
 
-/* our culture */
-
+/* Our Culture Section */
 .our-culture {
   text-align: center;
   padding: 2em;
@@ -295,4 +279,168 @@
 .card p {
   color: #666;
   font-size: 0.9rem;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+  .about-section {
+    gap: 50px;
+  }
+
+  .main-heading {
+    font-size: 50px;
+  }
+
+  .about-image {
+    width: 70%;
+  }
+
+  .vision-container {
+    width: 95vw;
+    height: 80vh;
+  }
+
+  .center-circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  .box {
+    width: 200px;
+    padding: 15px;
+  }
+
+  .features-section h2,
+  .our-culture h2 {
+    width: 40%;
+  }
+
+  .feature-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature-image-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .feature-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-card:first-child {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .main-heading {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .vision-container {
+    width: 90vw;
+    height: 60vh;
+  }
+
+  .center-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .box {
+    width: 180px;
+    padding: 10px;
+  }
+
+  .feature-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature-image-container {
+    width: 100%;
+    height: 250px;
+  }
+
+  .learn-more-button {
+    font-size: 12px;
+  }
+
+  .culture-cards {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 32px;
+  }
+
+  .small-heading {
+    font-size: 12px;
+    letter-spacing: 8px;
+  }
+
+  .about-image {
+    width: 90%;
+  }
+
+  .features-section {
+    padding: 30px 15px;
+  }
+
+  .feature-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature-image-container {
+    width: 100%;
+    height: 220px;
+  }
+
+  .feature-content h3 {
+    font-size: 18px;
+  }
+
+  .learn-more-button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .our-culture h2 {
+    width: 50%;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 1em;
+  }
 }

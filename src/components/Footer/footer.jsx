@@ -87,7 +87,7 @@ export const Footer = () => {
             <h4 className="footer-heading">Meet Us</h4>
             <ul className="footer-contact">
               <li>+91 9564251252</li>
-              <li>info@aspireq.com</li>
+              <li>info@aspireq.in</li>
               <li>Address</li>
               <li>
                 Aspireq 16 A,

@@ -11,7 +11,12 @@ function Offer() {
           minim veniam, quis nostrud exercitation ullamco laboris nisi.
         </p> */}
         <div className="button-group">
-          <a href="#" className="btn btn-green">
+          <a
+            href="https://forms.gle/Qcw3NSeeAsaxuVGh9"
+            className="btn btn-green"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             APPLY NOW
           </a>
           {/* <a href="#course-section" className="btn btn-blue">

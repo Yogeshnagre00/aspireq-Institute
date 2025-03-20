@@ -15,32 +15,37 @@ const CoursesPage = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
+    // Check if main slider has already run
     const hasMainRun = sessionStorage.getItem("hasMainRun");
+
+    // If it has already run, mark cycle as complete but don't run animation
+    if (hasMainRun === "true") {
+      setIsMainCardCycleComplete(true);
+      return; // Exit early, don't setup intervals
+    }
+
+    // Set up the animation cycle only on first visit
     let interval;
     const video = videoRef.current;
 
-    if (!hasMainRun) {
-      const playNextSlide = () => {
-        setCurrentIndex((prevIndex) => {
-          const nextIndex = prevIndex + 1;
-          if (nextIndex >= sliderItems.length) {
-            setIsMainCardCycleComplete(true);
-            sessionStorage.setItem("hasMainRun", "true");
-            return prevIndex;
-          }
-          return nextIndex;
-        });
-      };
+    const playNextSlide = () => {
+      setCurrentIndex((prevIndex) => {
+        const nextIndex = prevIndex + 1;
+        if (nextIndex >= sliderItems.length) {
+          setIsMainCardCycleComplete(true);
+          sessionStorage.setItem("hasMainRun", "true");
+          return prevIndex;
+        }
+        return nextIndex;
+      });
+    };
 
-      if (sliderItems[currentIndex]?.type === "video" && video) {
-        video.onended = playNextSlide;
-        video.play().catch((err) => console.log("Video play error:", err));
-        interval = setTimeout(playNextSlide, 15000); 
-      } else {
-        interval = setTimeout(playNextSlide, 5000); 
-      }
+    if (sliderItems[currentIndex]?.type === "video" && video) {
+      video.onended = playNextSlide;
+      video.play().catch((err) => console.log("Video play error:", err));
+      interval = setTimeout(playNextSlide, 15000); // Safety timeout
     } else {
-      setIsMainCardCycleComplete(true);
+      interval = setTimeout(playNextSlide, 5000);
     }
 
     return () => {
@@ -61,7 +66,7 @@ const CoursesPage = () => {
       <Navbar />
       <section className="qa-section">
         <div className="qa-section">
-          {/* Main Slider (Runs first, only once) */}
+          {/* Main Slider - Always visible but only animates once */}
           <div className="main-card">
             {sliderItems[currentIndex]?.type === "image" ? (
               <img
@@ -75,7 +80,7 @@ const CoursesPage = () => {
                 className="main-video"
                 src={sliderItems[currentIndex]?.src}
                 controls
-                autoPlay
+                autoPlay={!isMainCardCycleComplete}
                 muted={isMuted}
               />
             )}
@@ -99,8 +104,8 @@ const CoursesPage = () => {
             </div>
           </div>
 
-          {/* Thumbnail Stack (Runs only after main slider completes, stops after one cycle) */}
-          <div className="thumbnail-stack ">
+          {/* Thumbnail Stack - Only starts after main slider completes once */}
+          <div className="thumbnail-stack">
             <ThumbnailSlider start={isMainCardCycleComplete} />
           </div>
         </div>
@@ -175,10 +180,7 @@ const CoursesPage = () => {
         <h2>Certificate</h2>
         <div className="certificate-container">
           <div className="certificate-image">
-            <img
-              src="./Images/ux design certificate.webp"
-              alt="Sample Certificate"
-            />
+            <img src="/Images/certificate 10.jpg" alt="Sample Certificate" />
           </div>
           <div className="certificate-details">
             <h3>Gain Industry-Recognized Certificates</h3>
