@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 100px;
-  margin: 9% auto;
+  margin-top: 9%;
   padding: 40px 20px;
 }
 
@@ -255,7 +255,7 @@
 .culture-cards {
   display: flex;
   justify-content: center;
-  gap: 2em;
+  gap: 5em;
 }
 
 .card {
@@ -271,7 +271,15 @@
   font-size: 1rem;
   color: #3b82f6;
 }
-
+.dot-text {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.word {
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: 2px;
+}
 .card h3 {
   margin: 1em 0 0.5em;
 }

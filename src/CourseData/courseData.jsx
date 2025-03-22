@@ -1162,7 +1162,7 @@ export const courses = [
 export const certificateData = [
   {
     title: "Gain Industry-Recognized Certificates",
-    image: "/Images/ux design certificate.webp",
+    image: "/Images/certificate course.jpg",
     benefits: [
       "Use your certificates to make a life-changing shift",
       "Use your certificates to make a life-changing shift",
@@ -1173,7 +1173,7 @@ export const certificateData = [
   },
   {
     title: "Industry-Leading Certification",
-    image: "/Images/ux design certificate.webp",
+    image: "/Images/certificate internship.jpg",
     benefits: [
       "Boost your career prospects with a top-tier certificate",
       "Gain practical skills recognized by employers",

@@ -1,13 +1,22 @@
-import { Footer } from "../../components/Footer/footer";
-import Navbar from "../../components/Header/header";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectCoverflow } from "swiper/modules";
-import "swiper/css/effect-fade";
 import "swiper/css";
 import "swiper/css/autoplay";
+import "swiper/css/effect-fade";
+import { Autoplay, EffectCoverflow } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Footer } from "../../components/Footer/footer";
+import Navbar from "../../components/Header/header";
 import "./aboutUs.css";
 
 const AboutUs = () => {
+  // Function to format text by adding a dot before each point
+  const formatText = (text) => {
+    const words = text.split(", ");
+    return words.map((word, index) => (
+      <span key={index} className="word">
+        •&nbsp;{word} {/* Bullet stays attached to word */}
+      </span>
+    ));
+  };
   return (
     <>
       <Navbar />
@@ -86,34 +95,10 @@ const AboutUs = () => {
         <div className="vision-container">
           <div>
             <img
-              src="/Images/ourvison.webp"
+              src="/Images/ourVision.png"
               alt="ASPIREQ Logo"
               className="circleimage"
             />
-          </div>
-
-          <div className="box top-left">
-            <h3>Reach the Goal</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet.
-            </p>
-          </div>
-
-          <div className="box top-right">
-            <h3>Best Performance</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet.
-            </p>
-          </div>
-
-          <div className="box bottom-center">
-            <h3>Save Time and Efforts</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet.
-            </p>
           </div>
         </div>
       </section>
@@ -166,31 +151,33 @@ const AboutUs = () => {
         <div className="culture-cards">
           <div className="card">
             <div className="icon">🌐</div>
-            <h3>Good to Great Culture</h3>
+            <h3>VALUES</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit amet.
+              {formatText(
+                "Integrity, Respect, Empathy, Resilience, Collaboration, Diversity and Inclusion"
+              )}
             </p>
           </div>
           <div className="card">
             <div className="icon">🌱</div>
             <h3>Growing</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit amet.
+              {formatText(
+                "Purpose, Skill Development, Vision Expansion, Team Building"
+              )}
             </p>
           </div>
           <div className="card">
             <div className="icon">⚖️</div>
             <h3>Well Balanced</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit amet.
+              {formatText(
+                "Open-Communication, Work-Life Balance, Continuous Learning, Recognition and Reward"
+              )}
             </p>
           </div>
         </div>
       </section>
-
       <Footer />
     </>
   );
