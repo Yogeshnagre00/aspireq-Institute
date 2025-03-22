@@ -10,10 +10,10 @@ import "./aboutUs.css";
 const AboutUs = () => {
   // Function to format text by adding a dot before each point
   const formatText = (text) => {
-    const words = text.split(", ");
+    const words = text.split(",");
     return words.map((word, index) => (
       <span key={index} className="word">
-        •&nbsp;{word} {/* Bullet stays attached to word */}
+        <b>•</b> {word} {/* Bullet stays attached to word */}
       </span>
     ));
   };

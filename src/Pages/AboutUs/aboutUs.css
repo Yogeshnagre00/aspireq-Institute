@@ -278,7 +278,7 @@
 .word {
   white-space: nowrap;
   display: inline-block;
-  margin-right: 2px;
+  margin-right: 6px;
 }
 .card h3 {
   margin: 1em 0 0.5em;
