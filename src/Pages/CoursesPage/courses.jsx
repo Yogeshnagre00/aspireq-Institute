@@ -181,7 +181,7 @@ const CoursesPage = () => {
         <div className="certificate-container">
           <div className="certificate-image">
             <img
-              src="/Images/certificate internship.jpg"
+              src="/Images/certificate course.jpg"
               alt="Sample Certificate"
             />
           </div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { certificateData, courses } from "../../CourseData/courseData";
+import { courses } from "../../CourseData/courseData";
 import { Footer } from "../../components/Footer/footer";
 import Navbar from "../../components/Header/header";
 import Loader from "../../components/loader";
@@ -13,6 +13,10 @@ const CourseDetailsPage = () => {
   const [loading, setLoading] = useState(true);
   const [activeModule, setActiveModule] = useState(1);
 
+  // Find the selected course
+  const selectedCourse = courses.find(
+    (course) => course.id === Number(courseId)
+  );
   const handleDownload = () => {
     if (!course || !course.name) {
       console.error("Course not selected");
@@ -289,31 +293,43 @@ const CourseDetailsPage = () => {
         </div>
       </section>
       <section className="certificate-section">
-        <h2>Certificate</h2>
-        {certificateData.map((certificate, index) => (
-          <div
-            className={`certificate-container ${
-              index % 2 === 0 ? "left-align" : "right-align"
-            }`}
-            key={index}
-          >
-            <div className="certificate-image">
-              <img
-                src={certificate.image}
-                alt={`Certificate - ${certificate.title}`}
-              />
-            </div>
-            <div className="certificate-details">
-              <h3>{certificate.title}</h3>
-              <ul>
-                {certificate.benefits.map((benefit, idx) => (
-                  <li key={idx}>{benefit}</li>
-                ))}
-              </ul>
-            </div>
+        <h2>Certificates</h2>
+        {selectedCourse ? (
+          <div className="course-certificates">
+            {selectedCourse.certificates &&
+            selectedCourse.certificates.length > 0 ? (
+              selectedCourse.certificates.map((certificate, certIndex) => (
+                <div
+                  className={`certificate-container ${
+                    certIndex % 2 === 0 ? "left-align" : "right-align"
+                  }`}
+                  key={certIndex}
+                >
+                  <div className="certificate-image">
+                    <img
+                      src={certificate.image}
+                      alt={`Certificate - ${certificate.title}`}
+                    />
+                  </div>
+                  <div className="certificate-details">
+                    <h3>{certificate.title}</h3>
+                    <ul>
+                      {certificate.benefits.map((benefit, idx) => (
+                        <li key={idx}>{benefit}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <p>No certificates available.</p>
+            )}
           </div>
-        ))}
+        ) : (
+          <p>Course not found.</p>
+        )}
       </section>
+
       <Offer />
       <Footer />
     </>

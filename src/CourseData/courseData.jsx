@@ -13,15 +13,41 @@ export const courses = [
     ),
     category: "Software Development",
     imageUrl: "/Images/Full stack developer.webp",
-    certificate: {
-      title: "Gain Industry-Recognized Certificates",
-      image: "/Images/ux design certificate.webp",
-      benefits: [
-        "Use your certificates to make a life-changing shift",
-        "Use your certificates to make a life-changing shift",
-        "Use your certificates to make a life-changing shift",
-      ],
-    },
+    certificates: [
+      {
+        title: "Course Completion Certificate",
+        image: "/Images/Full_Stack_Development_course_Certificate.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+      {
+        title: "Certificate of Internship Completion",
+        image: "/Images/certificate internships.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+      {
+        title: "Job Offerletter",
+        image: "/Images/certificate internships.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+    ],
     rating: "5.0",
     lessons: "7 Modules",
     students: 25,
@@ -252,6 +278,41 @@ export const courses = [
     description: "Learn manual, automation and  API Testing",
     category: "Software Testing",
     imageUrl: "/Images/SDET.webp",
+    certificates: [
+      {
+        title: "Course Completion Certificate",
+        image: "/Images/SDET_course_Certifiacte.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+      {
+        title: "Certificate of Internship Completion",
+        image: "/Images/certificate internships.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+      {
+        title: "Job Offerletter",
+        image: "/Images/certificate internships.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+    ],
     rating: "5.0",
     lessons: "6 Modules",
     students: 25,
@@ -643,6 +704,41 @@ export const courses = [
       "Master CI/CD, Docker, Kubernetes, cloud platforms, and automation.",
     category: "DevOps",
     imageUrl: "/Images/Devops engineer.webp",
+    certificates: [
+      {
+        title: "Course Completion Certificate",
+        image: "/Images/Devops_course_Certificate.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+      {
+        title: "Certificate of Internship Completion",
+        image: "/Images/certificate internships.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+      {
+        title: "Job Offerletter",
+        image: "/Images/certificate internships.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+    ],
     rating: "5.0",
     lessons: "5 Modules",
     students: 5,
@@ -829,6 +925,41 @@ export const courses = [
       "Learn Business Analyst from fundamentals to advanced concepts.",
     category: "Business Analyst",
     imageUrl: "/Images/Business analyst.webp",
+    certificates: [
+      {
+        title: "Course Completion Certificate",
+        image: "/Images/Business_Analyst_course_Certificate.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+      {
+        title: "Certificate of Internship Completion",
+        image: "/Images/certificate internships.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+      {
+        title: "Job Offerletter",
+        image: "/Images/certificate internships.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+    ],
     rating: "5.0",
     lessons: "5 Modules",
     students: 5,
@@ -1012,6 +1143,41 @@ export const courses = [
     description: "Learn Scrum framework, roles, events, and Agile principles.",
     category: "Scrum Master",
     imageUrl: "/Images/Scrum master.webp",
+    certificates: [
+      {
+        title: "Course Completion Certificate",
+        image: "/Images/Scrum_Master_coursecertificate.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+      {
+        title: "Certificate of Internship Completion",
+        image: "/Images/certificate internships.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+      {
+        title: "Job Offerletter",
+        image: "/Images/certificate internships.jpg",
+        benefits: [
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+          "Use your certificates to make a life-changing shift",
+        ],
+      },
+    ],
     rating: "5.0",
     lessons: "4 Modules",
     students: 5,
@@ -1155,42 +1321,6 @@ export const courses = [
           },
         ],
       },
-    ],
-  },
-];
-
-export const certificateData = [
-  {
-    title: "Gain Industry-Recognized Certificates",
-    image: "/Images/certificate course.jpg",
-    benefits: [
-      "Use your certificates to make a life-changing shift",
-      "Use your certificates to make a life-changing shift",
-      "Use your certificates to make a life-changing shift",
-      "Use your certificates to make a life-changing shift",
-      "Use your certificates to make a life-changing shift",
-    ],
-  },
-  {
-    title: "Industry-Leading Certification",
-    image: "/Images/certificate internship.jpg",
-    benefits: [
-      "Boost your career prospects with a top-tier certificate",
-      "Gain practical skills recognized by employers",
-      "Access to exclusive job opportunities",
-      "Learn from industry experts",
-      "Earn while you learn with our certification program",
-    ],
-  },
-  {
-    title: "Advanced UX Design Certificate",
-    image: "/Images/ux design certificate.webp",
-    benefits: [
-      "Master the latest UX design trends and tools",
-      "Improve your problem-solving and creativity skills",
-      "Build a portfolio with real-world projects",
-      "Stand out in the competitive job market",
-      "Learn the fundamentals of user-centered design",
     ],
   },
 ];
