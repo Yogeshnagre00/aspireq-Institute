@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Footer } from "../../components/Footer/footer";
 import Navbar from "../../components/Header/header";
 import Offer from "../../components/offerSection/offer";
-import ThumbnailSlider from "../../components/thambnailImages/thumbnailSlider";
+import ThumbnailSlider from "../../components/thumbnailsImages/thumbnailSlider";
 import data from "../../CourseData/data.json"; // Adjust the path as necessary
 import "./courses.css";
 
@@ -181,7 +181,7 @@ const CoursesPage = () => {
         <div className="certificate-container">
           <div className="certificate-image">
             <img
-              src="/Images/certificate course.jpg"
+              src="/Images/Business_Analyst_course_Certificate.jpg"
               alt="Sample Certificate"
             />
           </div>
