@@ -172,7 +172,7 @@ const AboutUs = () => {
             <h3>Well Balanced</h3>
             <p>
               {formatText(
-                "Open-Communication, Work-Life Balance, Continuous Learning, Recognition and Reward"
+                "Open-Communication, Work-Life Balance, Learning, Recognition and Reward"
               )}
             </p>
           </div>
