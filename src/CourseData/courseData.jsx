@@ -27,7 +27,7 @@ export const courses = [
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/certificate internships.jpg",
+        image: "/Images/full_Stack_Devloper internship.jpg",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
@@ -292,7 +292,7 @@ export const courses = [
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/certificate internships.jpg",
+        image: "/Images/SDET internship.jpg",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
@@ -718,7 +718,7 @@ export const courses = [
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/certificate internships.jpg",
+        image: "/Images/Devops internship.jpg",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
@@ -939,7 +939,7 @@ export const courses = [
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/certificate internships.jpg",
+        image: "/Images/Business Analyst internship.jpg",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
@@ -1157,7 +1157,7 @@ export const courses = [
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/certificate internships.jpg",
+        image: "/Images/SDET internship.jpg",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
