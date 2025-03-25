@@ -16,18 +16,20 @@ export const courses = [
     certificates: [
       {
         title: "Course Completion Certificate",
-        image: "/Images/Full_Stack_Development_course_Certificate.jpg",
+        image: "/Images/Full-Stack-Development-course-certificate.png",
         benefits: [
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
+          "Skill Enhancement",
+          "Improved Communication and Collaboration Skills",
+          "Confidence Boost",
+          "Accreditation and Recognition",
+          "Professional Recognition",
+          "Entrepreneurial Opportunities",
+          "Access to Better Pay",
         ],
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/full_Stack_Devloper internship.jpg",
+        image: "/Images/Full Stack Development internship.jpg",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
@@ -281,13 +283,15 @@ export const courses = [
     certificates: [
       {
         title: "Course Completion Certificate",
-        image: "/Images/SDET_course_Certifiacte.jpg",
+        image: "/Images/SDET-course-certificate.jpg",
         benefits: [
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
+          "Skill Enhancement",
+          "Improved Communication and Collaboration Skills",
+          "Confidence Boost",
+          "Accreditation and Recognition",
+          "Professional Recognition",
+          "Entrepreneurial Opportunities",
+          "Access to Better Pay",
         ],
       },
       {
@@ -707,18 +711,20 @@ export const courses = [
     certificates: [
       {
         title: "Course Completion Certificate",
-        image: "/Images/Devops_course_Certificate.jpg",
+        image: "/Images/Devops-course-certificate.jpg",
         benefits: [
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
+          "Skill Enhancement",
+          "Improved Communication and Collaboration Skills",
+          "Confidence Boost",
+          "Accreditation and Recognition",
+          "Professional Recognition",
+          "Entrepreneurial Opportunities",
+          "Access to Better Pay",
         ],
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/Devops internship.jpg",
+        image: "/Images/Devops-internship.jpg",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
@@ -729,7 +735,7 @@ export const courses = [
       },
       {
         title: "Job Offerletter",
-        image: "/Images/certificate internships.jpg",
+        image: "/Images/certificate internships.jpg.jpg",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
@@ -928,18 +934,20 @@ export const courses = [
     certificates: [
       {
         title: "Course Completion Certificate",
-        image: "/Images/Business_Analyst_course_Certificate.jpg",
+        image: "/Images/Business-Analyst-course-certificate.jpg",
         benefits: [
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
+          "Skill Enhancement",
+          "Improved Communication and Collaboration Skills",
+          "Confidence Boost",
+          "Accreditation and Recognition",
+          "Professional Recognition",
+          "Entrepreneurial Opportunities",
+          "Access to Better Pay",
         ],
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/Business Analyst internship.jpg",
+        image: "/Images/Business Analyst-internship.jpg",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
@@ -1146,18 +1154,20 @@ export const courses = [
     certificates: [
       {
         title: "Course Completion Certificate",
-        image: "/Images/Scrum_Master_coursecertificate.jpg",
+        image: "/Images/Scrum-Master-course certificate.jpg",
         benefits: [
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
-          "Use your certificates to make a life-changing shift",
+          "Skill Enhancement",
+          "Improved Communication and Collaboration Skills",
+          "Confidence Boost",
+          "Accreditation and Recognition",
+          "Professional Recognition",
+          "Entrepreneurial Opportunities",
+          "Access to Better Pay",
         ],
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/SDET internship.jpg",
+        image: "/Scrum Master-internship.jpg",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",

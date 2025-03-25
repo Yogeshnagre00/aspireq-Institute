@@ -375,6 +375,7 @@
 
 .certificate-details {
   text-align: left;
+  margin-top: -2%;
   margin-left: 6%;
   flex-basis: 40%;
 }

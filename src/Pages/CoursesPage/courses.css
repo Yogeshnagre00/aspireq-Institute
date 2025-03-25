@@ -374,7 +374,7 @@
 /* Certificate Image Styling */
 .certificate-image {
   flex: 1;
-  max-width: 40%;
+  max-width: 36%;
 }
 
 .certificate-image img {

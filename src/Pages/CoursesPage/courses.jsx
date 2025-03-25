@@ -181,23 +181,39 @@ const CoursesPage = () => {
         <div className="certificate-container">
           <div className="certificate-image">
             <img
-              src="/Images/Business_Analyst_course_Certificate.jpg"
+              src="/Images/Full-Stack-Development-course-certificate.png"
               alt="Sample Certificate"
             />
           </div>
           <div className="certificate-details">
             <h3>Gain Industry-Recognized Certificates</h3>
             <ul>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
-              <li>Use your certificates to make a life-changing shift</li>
+              <li>Skill Enhancement</li>
+              <li>Improved Communication and Collaboration Skills</li>
+              <li>Confidence Boost</li>
+              <li>Accreditation and Recognition</li>
+              <li>Professional Recognition</li>
+              <li>Entrepreneurial Opportunities</li>
+              <li>Access to Better Pay</li>
             </ul>
           </div>
         </div>
       </section>
-
+      <section className="DemoClass-section">
+        <div className="container">
+          <h2>Join your live class with your instructor</h2>
+          <div className="live-class-image">
+            <img src="/Images/classRoom.jpg" alt="Live Class Example" />
+          </div>
+          <div className="class-container">
+            <div className="button">Manual Testing</div>
+            <div className="button">Automation Testing</div>
+            <div className="button">Integration Testing</div>
+            <div className="button">UI Testing</div>
+            <div className="button">Integration Testing</div>
+          </div>
+        </div>
+      </section>
       <Offer />
       <Footer />
     </>

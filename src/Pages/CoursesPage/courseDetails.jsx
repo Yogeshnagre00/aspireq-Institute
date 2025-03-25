@@ -13,44 +13,6 @@ const CourseDetailsPage = () => {
   const [loading, setLoading] = useState(true);
   const [activeModule, setActiveModule] = useState(1);
 
-  // Find the selected course
-  const selectedCourse = courses.find(
-    (course) => course.id === Number(courseId)
-  );
-  const handleDownload = () => {
-    if (!course || !course.name) {
-      console.error("Course not selected");
-      return;
-    }
-
-    // Define PDF mapping based on course names
-    const pdfFiles = {
-      "Full Stack Development":
-        "/Pdf/Full_Stack_Development_Complete_Syllabus.pdf",
-      "Software Development Engineer in Testing":
-        "/Pdf/SDET_Complete_Course.pdf1.pdf",
-      "DevOps Engineer": "/Pdf/DevOps Engineering _Complete_Syllabus.pdf",
-      "Business Analyst": "/Pdf/Business Analyst_Complete_Syllabus.pdf",
-      "Scrum Master": "/Pdf/Scrum Master _Complete_Syllabus.pdf",
-    };
-
-    // Get the correct PDF file for the course
-    const pdfFilePath = pdfFiles[course.name];
-
-    if (!pdfFilePath) {
-      console.error("PDF file not found for this course");
-      return;
-    }
-
-    // Create a download link
-    const link = document.createElement("a");
-    link.href = pdfFilePath;
-    link.download = `${course.name.replace(/\s+/g, "_")}_Complete_Syllabus.pdf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   useEffect(() => {
     if (!courseId) return;
 
@@ -76,12 +38,44 @@ const CourseDetailsPage = () => {
     setLoading(false);
   }, [courseId]);
 
-  // Show a loading message while fetching data
+  const handleDownload = () => {
+    if (!course || !course.name) {
+      console.error("Course not selected");
+      return;
+    }
+
+    // Define PDF mapping based on course names
+    const pdfFiles = {
+      "Full Stack Development":
+        "/Pdf/Full_Stack_Development_Complete_Syllabus.pdf",
+      "Software Development Engineer in Testing":
+        "/Pdf/SDET_Complete_Course.pdf",
+      "DevOps Engineer": "/Pdf/DevOps_Engineering_Complete_Syllabus.pdf",
+      "Business Analyst": "/Pdf/Business_Analyst_Complete_Syllabus.pdf",
+      "Scrum Master": "/Pdf/Scrum_Master_Complete_Syllabus.pdf",
+    };
+
+    // Get the correct PDF file for the course
+    const pdfFilePath = pdfFiles[course.name];
+
+    if (!pdfFilePath) {
+      console.error("PDF file not found for this course");
+      return;
+    }
+
+    // Create a download link
+    const link = document.createElement("a");
+    link.href = pdfFilePath;
+    link.download = `${course.name.replace(/\s+/g, "_")}_Complete_Syllabus.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   if (loading) {
     return <Loader />;
   }
 
-  // Show "Coming Soon" only when course is definitely not found
   if (!course) {
     return (
       <div className="coming-soon">
@@ -90,7 +84,6 @@ const CourseDetailsPage = () => {
       </div>
     );
   }
-
   return (
     <>
       <Navbar />
@@ -285,7 +278,7 @@ const CourseDetailsPage = () => {
           <div className="year-schedule-container">
             <h3 className="year-schedule"> Year Schedule</h3>
             <img
-              src="/Images/year Schedule.webp"
+              src="/Images/year Schedule.png"
               alt="year Schedule"
               loading="lazy"
             />
@@ -294,39 +287,32 @@ const CourseDetailsPage = () => {
       </section>
       <section className="certificate-section">
         <h2>Certificates</h2>
-        {selectedCourse ? (
-          <div className="course-certificates">
-            {selectedCourse.certificates &&
-            selectedCourse.certificates.length > 0 ? (
-              selectedCourse.certificates.map((certificate, certIndex) => (
-                <div
-                  className={`certificate-container ${
-                    certIndex % 2 === 0 ? "left-align" : "right-align"
-                  }`}
-                  key={certIndex}
-                >
-                  <div className="certificate-image">
-                    <img
-                      src={certificate.image}
-                      alt={`Certificate - ${certificate.title}`}
-                    />
-                  </div>
-                  <div className="certificate-details">
-                    <h3>{certificate.title}</h3>
-                    <ul>
-                      {certificate.benefits.map((benefit, idx) => (
-                        <li key={idx}>{benefit}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))
-            ) : (
-              <p>No certificates available.</p>
-            )}
-          </div>
+        {course.certificates && course.certificates.length > 0 ? (
+          course.certificates.map((certificate, certIndex) => (
+            <div
+              className={`certificate-container ${
+                certIndex % 2 === 0 ? "left-align" : "right-align"
+              }`}
+              key={certIndex}
+            >
+              <div className="certificate-image">
+                <img
+                  src={certificate.image}
+                  alt={`Certificate - ${certificate.title}`}
+                />
+              </div>
+              <div className="certificate-details">
+                <h3>{certificate.title}</h3>
+                <ul>
+                  {certificate.benefits.map((benefit, idx) => (
+                    <li key={idx}>{benefit}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))
         ) : (
-          <p>Course not found.</p>
+          <p>No certificates available.</p>
         )}
       </section>
 
