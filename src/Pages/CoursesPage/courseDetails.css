@@ -364,7 +364,7 @@
 }
 
 .certificate-image {
-  flex-basis: 48%;
+  flex-basis: 45%;
   margin-left: 1%;
 }
 
@@ -375,6 +375,7 @@
 
 .certificate-details {
   text-align: left;
+  line-height: 2;
   margin-top: -2%;
   margin-left: 6%;
   flex-basis: 40%;
