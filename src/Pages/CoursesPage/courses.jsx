@@ -206,11 +206,11 @@ const CoursesPage = () => {
             <img src="/Images/classRoom.jpg" alt="Live Class Example" />
           </div>
           <div className="class-container">
-            <div className="button">Manual Testing</div>
-            <div className="button">Automation Testing</div>
-            <div className="button">Integration Testing</div>
-            <div className="button">UI Testing</div>
-            <div className="button">Integration Testing</div>
+            <div className="button">Full Stack developer</div>
+            <div className="button">SDET</div>
+            <div className="button">DevOps</div>
+            <div className="button">Business Analyst</div>
+            <div className="button">Scrum Master</div>
           </div>
         </div>
       </section>
