@@ -1167,7 +1167,7 @@ export const courses = [
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Scrum Master-internship.jpg",
+        image: "/Images/Scrum-Master-internship.jpg",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
