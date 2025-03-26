@@ -236,6 +236,7 @@ const CourseDetailsPage = () => {
           </button>
         </div>
       </section>
+      {/* Tools Container */}
       <section className="Tools-section">
         <div className="Tools-container">
           <h1 className="SDET-Tools">Software / Tools Covered</h1>
@@ -263,14 +264,14 @@ const CourseDetailsPage = () => {
           </div>
         </div>
       </section>
-
+      {/* schedule section */}
       <section className="schedule-section">
         <div className="schedule-container">
           <h2>Schedule</h2>
           <div>
             <h3 className="day-schedule"> Day Schedule</h3>
             <img
-              src="/Images/day schedule.webp"
+              src="/Images/day schedule.png"
               alt="day Schedule"
               loading="lazy"
             />
@@ -285,6 +286,7 @@ const CourseDetailsPage = () => {
           </div>
         </div>
       </section>
+      {/* certificate container */}
       <section className="certificate-section">
         <h2>Certificates</h2>
         {course.certificates && course.certificates.length > 0 ? (
@@ -305,7 +307,13 @@ const CourseDetailsPage = () => {
                 <h3>{certificate.title}</h3>
                 <ul>
                   {certificate.benefits.map((benefit, idx) => (
-                    <li key={idx}>{benefit}</li>
+                    <li key={idx}>
+                      <span
+                        className={certIndex === 1 ? "highlight-benefit" : ""}
+                      >
+                        {benefit}
+                      </span>
+                    </li>
                   ))}
                 </ul>
               </div>
