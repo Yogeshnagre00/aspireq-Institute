@@ -2,7 +2,7 @@ import "./heroSection.css";
 
 const HeroSection = () => {
   const handleGetStartedClick = () => {
-    alert("Get Started clicked!");
+    window.open("https://forms.gle/Qcw3NSeeAsaxuVGh9", "_blank");
   };
 
   return (
@@ -27,7 +27,14 @@ const HeroSection = () => {
         <div className="hero-icons">
           <div className="icon">💡 Creative Thinking</div>
           <div className="icon">🎓 Career-Oriented</div>
-          <div className="icon">&#128220; Offer-Letter In Hand</div>
+          <div className="icon">
+            <img
+              src="/Images/graduation-diploma.png"
+              alt="Offer Letter"
+              className="offer-icon"
+            />{" "}
+            Offer-Letter In Hand
+          </div>
         </div>
       </div>
       <div className="hero-image-section">

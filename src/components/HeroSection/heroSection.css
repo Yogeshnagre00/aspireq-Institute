@@ -74,7 +74,11 @@
   gap: 20px;
   margin-top: 20px;
 }
-
+.offer-icon {
+  width: 18px; /* Match emoji size */
+  height: 18px; /* Maintain proportion */
+  object-fit: contain; /* Ensure it scales properly */
+}
 .hero-icons .icon {
   font-size: 0.9rem;
   color: #666;
