@@ -5,34 +5,29 @@ const HeroSection = () => {
     alert("Get Started clicked!");
   };
 
-  const handleWatchDemoClick = () => {
-    alert("Watch Demo clicked!");
-  };
-
   return (
     <div className="hero-section">
       <div className="hero-text-content">
         <h1>
-          Deliver Better Experiences Your
-          <br />
-          Users Depend On It.
+          Building Tomorrow&apos;s Experts By Elevating Careers with
+          Industry-Leading Programs
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Eleifend nec morbi tellus
-          vitae leo nunc.
+          Driven by Innovation, Powered by Knowledge <br /> Your Future Starts
+          Here!
         </p>
         <div className="hero-buttons">
           <button className="btn-primary" onClick={handleGetStartedClick}>
             Get Started &rarr;
           </button>
-          <button className="btn-secondary" onClick={handleWatchDemoClick}>
+          {/* <button className="btn-secondary" onClick={handleWatchDemoClick}>
             Watch Demo
-          </button>
+          </button> */}
         </div>
         <div className="hero-icons">
-          <div className="icon">&#128483; Public Speaking</div>
-          <div className="icon">🎓 Career-Oriented</div>
           <div className="icon">💡 Creative Thinking</div>
+          <div className="icon">🎓 Career-Oriented</div>
+          <div className="icon">&#128220; Offer-Letter In Hand</div>
         </div>
       </div>
       <div className="hero-image-section">
