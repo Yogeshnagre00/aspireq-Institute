@@ -26,10 +26,11 @@ const AboutUs = () => {
           <h3 className="small-heading">Who We Are</h3>
           <h2 className="main-heading">Who We Are</h2>
           <p className="description">
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-            dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-            dolor sit amet.
+            At ASPIREQ, we are passionate about shaping the next generation with
+            the vision of empowering individuals through knowledge and practical
+            skills. Our mission is to bridge the gap between academic learning
+            and industry demands by providing hands-on training in cutting-edge
+            technologies.
           </p>
 
           {/* Replace static image with Swiper slider */}

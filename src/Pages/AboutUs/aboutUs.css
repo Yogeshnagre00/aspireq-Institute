@@ -33,8 +33,9 @@
 }
 
 .description {
-  max-width: 300px;
-  font-size: 12px;
+  max-width: 450px;
+  line-height: 1.6;
+  font-size: 14px;
   color: #666;
   margin-bottom: 20px;
 }

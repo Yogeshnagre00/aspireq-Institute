@@ -186,7 +186,7 @@ const CoursesPage = () => {
             />
           </div>
           <div className="certificate-details">
-            <h3>Gain Industry-Recognized Certificates</h3>
+            <h3>Industry-Recognized Certificate</h3>
             <ul>
               <li>Skill Enhancement</li>
               <li>Improved Communication and Collaboration Skills</li>
@@ -207,7 +207,7 @@ const CoursesPage = () => {
           </div>
           <div className="class-container">
             <div className="button">Full Stack developer</div>
-            <div className="button">SDET</div>
+            <div className="button">Software Testing</div>
             <div className="button">DevOps</div>
             <div className="button">Business Analyst</div>
             <div className="button">Scrum Master</div>

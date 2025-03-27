@@ -271,7 +271,7 @@ const CourseDetailsPage = () => {
           <div>
             <h3 className="day-schedule"> Day Schedule</h3>
             <img
-              src="/Images/day schedule.png"
+              src="/Images/day schedule.webp"
               alt="day Schedule"
               loading="lazy"
             />
@@ -279,7 +279,7 @@ const CourseDetailsPage = () => {
           <div className="year-schedule-container">
             <h3 className="year-schedule"> Year Schedule</h3>
             <img
-              src="/Images/year Schedule.png"
+              src="/Images/year Schedule.webp"
               alt="year Schedule"
               loading="lazy"
             />
