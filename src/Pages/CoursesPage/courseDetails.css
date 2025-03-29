@@ -134,16 +134,14 @@
 .Brochure-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 2%;
+  justify-content: right;
+  margin: 2% auto;
   position: relative;
   width: 100%;
 }
-
 .syllabus-container {
-  margin-right: 0;
+  margin-top: 0;
 }
-
 /* Title Styling */
 .certificate-section h2,
 .schedule-section h2,
@@ -183,10 +181,10 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  text-align: right;
   gap: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
-  margin: 10px auto;
 }
 
 .download-button:hover {
@@ -294,13 +292,13 @@
 
 .module-details h2 {
   margin-bottom: 0.4rem;
-  color: #1e293b;
+  color: #00d09c;
   font-size: clamp(1.1rem, 2vw, 1.3rem);
 }
 
 .module-item p {
   font-size: clamp(0.7rem, 1.5vw, 0.8rem);
-  color: #4b5563;
+  color: rgb(75, 79, 83);
   margin-left: 6px;
   line-height: 1;
 }
@@ -356,105 +354,98 @@
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
-
-/* Tools Section */
-.tools {
-  max-width: 90%;
-  margin: 20px auto 60px;
-  height: auto !important;
-  min-height: 50vh;
-}
-
-.Tools-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.Tools-container img {
-  max-width: 150px;
-  height: auto;
-  object-fit: contain;
-  margin: 10px;
-}
-
-.SDET-Tools,
-.day-schedule,
-.year-schedule {
-  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
-  margin: 30px auto 15px;
-  text-align: center;
-  padding-bottom: 8px;
-  width: 100%;
-}
-
-/* Schedule */
-.schedule-section {
-  padding: 30px 20px;
-  text-align: center;
-  width: 100%;
-}
-
-.day-schedule,
-.year-schedule {
-  font-size: clamp(1rem, 1.8vw, 1.2rem);
-}
-
-.year-schedule-container img,
-.schedule-container img {
-  max-width: 100%;
-  margin: 14px auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
 .topic-item.blank {
   visibility: hidden;
-  display: none;
 }
 
 .topic-item.force-new-column {
   break-before: column;
 }
-
 .topic-item.single-column {
   break-inside: avoid-column;
 }
-
-/* Certification */
-.certificate-section {
-  padding: 30px 20px;
-  text-align: center;
-  width: 100%;
+/* Tools Section */
+.tools {
+  max-width: 75%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-left: 10%;
+  height: 70vh !important;
+}
+.Tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.Tools-container img {
+  max-width: 85%;
+  height: 120px;
+  margin: 0 auto;
+  margin-left: 8%;
+  margin-top: 25px;
+  height: auto;
+  object-fit: cover;
+}
+.SDET-Tools,
+.day-schedule,
+.year-schedule {
+  font-size: 1rem;
+  margin-left: 9%;
+  margin-top: 8%;
+  text-align: left;
+  padding-bottom: 8px;
 }
 
+/* Schedule */
+.schedule-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.day-schedule {
+  font-size: 1.2rem;
+}
+.year-schedule {
+  font-size: 1.2rem;
+}
+.year-schedule-container img {
+  width: 92%;
+}
+.schedule-container img {
+  max-width: 90%;
+  margin-top: 14px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Certificate */
+.certificate-section {
+  padding: 40px;
+  text-align: center;
+}
 .certificate-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5rem;
-  gap: 30px;
+  margin-bottom: 7rem;
+  gap: 10px;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .certificate-image {
-  flex: 1;
-  min-width: 280px;
-  text-align: center;
+  flex-basis: 45%;
+  margin-left: 1%;
 }
 
 .certificate-image img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
 .certificate-details {
   text-align: left;
-  line-height: 1.8;
-  flex: 1;
-  min-width: 280px;
+  line-height: 2;
+  margin-top: -2%;
+  margin-left: 6%;
+  flex-basis: 40%;
 }
 
 .certificate-container.left-align {
@@ -466,7 +457,7 @@
 }
 
 .certificate-details h3 {
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
@@ -477,9 +468,9 @@
 
 .certificate-details li {
   margin-bottom: 10px;
-  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-size: 1rem;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .certificate-details li::before {
@@ -487,7 +478,6 @@
   color: #28a745;
   font-size: 1.2rem;
   margin-right: 10px;
-  flex-shrink: 0;
 }
 
 /* Media Queries */
@@ -576,6 +566,7 @@
 
   .Tools-container img {
     max-width: 350px;
+    margin: 0 auto;
   }
 
   .module-item p {

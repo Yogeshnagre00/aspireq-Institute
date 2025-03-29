@@ -309,12 +309,11 @@ const CourseDetailsPage = () => {
               })()}
             </div>
           )}
-        </div>
-
-        <div className="syllabus-container">
-          <button className="download-button" onClick={handleDownload}>
-            <span className="download-icon">⬇️</span> Download Syllabus
-          </button>
+          <div className="syllabus-container">
+            <button className="download-button" onClick={handleDownload}>
+              <span className="download-icon">⬇️</span> Download Syllabus
+            </button>
+          </div>
         </div>
       </section>
       {/* Tools Container */}
