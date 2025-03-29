@@ -174,44 +174,23 @@
 .slick-slider {
   position: relative;
 }
-
-/* Custom styles for arrows */
-.course-section .slick-prev,
-.course-section .slick-next {
-  color: #fff !important;
-  background: transparent !important;
-  border-radius: 50%;
-  width: 40px; /* Adjust size */
+.courses-section .slick-prev,
+.slick-next {
+  z-index: 10;
+  width: 40px;
   height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 999;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-/* Fix position for previous and next buttons */
-.course-section .slick-prev {
-  left: -50px; /* Adjust as needed */
+.courses-section .slick-prev {
+  left: -39px;
 }
-
-.course-section .slick-next {
-  right: -50px; /* Adjust as needed */
+.courses-section .slick-next {
+  right: -39px;
 }
-
-/* Change icon size */
-.course-section .slick-prev:before,
-.course-section .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   font-size: 20px;
-  color: #00d09c !important;
-}
-
-/* Hover effect */
-.slick-prev:hover,
-.slick-next:hover {
-  background: none !important; /* No extra background */
+  color: #00d09c;
 }
 
 /* Resoponsive Design  */

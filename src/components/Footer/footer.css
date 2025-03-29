@@ -37,6 +37,26 @@
   align-items: center;
   margin-top: 30px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+.map-container {
+  width: 100%;
+  max-width: 515px;
+  height: 200px; /* Fixed height */
+  position: relative;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 /* Added: Ensure logo is centered in its column */
 .footer-logo img {
@@ -81,22 +101,6 @@
   color: #333;
   font-weight: 400;
 }
-.map-container {
-  width: 100%;
-  max-width: 515px;
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
-}
-
-.map-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 65%;
-  border: none;
-}
 
 /* Adjusted text alignment for social media icons */
 .footer-bottom {
@@ -117,7 +121,9 @@
 .footer-social a:hover {
   color: #00d09c;
 }
-
+.footer-social a i {
+  pointer-events: auto;
+}
 /* Separator line between footer content and copyright section */
 .footer-separator {
   border-top: 1px solid #786d6d;
