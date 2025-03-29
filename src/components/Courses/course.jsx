@@ -99,7 +99,7 @@ const CourseCards = () => {
     navigate("/courses");
   };
   return (
-    <section id="courses" className="course-section">
+    <section id="courses" className="courses-section">
       <h2>Courses we provide</h2>
       <div className="slider-container">
         <Slider {...settings}>

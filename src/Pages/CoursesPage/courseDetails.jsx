@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { courses } from "../../CourseData/courseData";
 import { Footer } from "../../components/Footer/footer";
@@ -12,7 +12,17 @@ const CourseDetailsPage = () => {
   const [course, setCourse] = useState(null);
   const [loading, setLoading] = useState(true);
   const [activeModule, setActiveModule] = useState(1);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
+  // Add event listener for window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   useEffect(() => {
     if (!courseId) return;
 
@@ -134,102 +144,173 @@ const CourseDetailsPage = () => {
           {/* Sidebar */}
           <div className="module-sidebar">
             {course?.modules?.map((module) => (
-              <div
-                key={module.id}
-                className={`module-item ${
-                  activeModule === module.id ? "active" : ""
-                }`}
-                onClick={() => setActiveModule(module.id)}
-                style={module.id === 2 ? module.style : {}}
-              >
-                <h4
-                  style={{
-                    color: module.id === 2 ? "white" : "black",
-                    backgroundColor:
-                      module.id === 2 ? "#00d09c" : "transparent",
-                    padding: "5px",
-                    display: "inline-block",
-                    borderRadius: "5px",
-                  }}
+              <React.Fragment key={module.id}>
+                <div
+                  className={`module-item ${
+                    activeModule === module.id ? "active" : ""
+                  }`}
+                  onClick={() => setActiveModule(module.id)}
+                  style={module.id === 2 ? module.style : {}}
                 >
-                  {module.title}
-                  {module.id === 2 && (
-                    <span style={{ color: "white" }}> &#x2A; </span>
+                  <h4
+                    style={{
+                      color: module.id === 2 ? "white" : "black",
+                      backgroundColor:
+                        module.id === 2 ? "#00d09c" : "transparent",
+                      padding: "5px",
+                      display: "inline-block",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    {module.title}
+                    {module.id === 2 && (
+                      <span style={{ color: "white" }}> &#x2A; </span>
+                    )}
+                  </h4>
+                  <p>{module.subtitle}</p>
+
+                  {/* For mobile: show/hide toggle */}
+                  {isMobile && (
+                    <div className="module-toggle">
+                      {activeModule === module.id ? "▲" : "▼"}
+                    </div>
                   )}
-                </h4>
-                <p>{module.subtitle}</p>
-              </div>
+                </div>
+
+                {/* On mobile only: show module details below each card when active */}
+                {isMobile && activeModule === module.id && (
+                  <div className="module-details-mobile">
+                    <p>{module.description}</p>
+
+                    {module.id === 1 && <h3>Topics Covered:</h3>}
+
+                    <ul className="topics-list mobile-topics-list">
+                      {module.topics.map((topic, index) => (
+                        <li key={index} className="topic-item">
+                          <strong className="topic-title">{topic.title}</strong>
+                          {Array.isArray(topic.subtopics) &&
+                            topic.subtopics.length > 0 && (
+                              <ul className="subtopics-list">
+                                {topic.subtopics.map((subtopic, subIndex) => (
+                                  <li key={subIndex} className="subtopic-item">
+                                    {typeof subtopic === "string" ? (
+                                      subtopic
+                                    ) : (
+                                      <>
+                                        {/* Apply fontWeight dynamically */}
+                                        <strong
+                                          style={{
+                                            fontWeight:
+                                              subtopic.fontWeight || "bold",
+                                          }}
+                                        >
+                                          {subtopic.title}
+                                        </strong>
+                                        {Array.isArray(subtopic.subtopics) &&
+                                          subtopic.subtopics.length > 0 && (
+                                            <ul>
+                                              {subtopic.subtopics.map(
+                                                (
+                                                  nestedSubtopic,
+                                                  nestedIndex
+                                                ) => (
+                                                  <li key={nestedIndex}>
+                                                    {nestedSubtopic}
+                                                  </li>
+                                                )
+                                              )}
+                                            </ul>
+                                          )}
+                                      </>
+                                    )}
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </React.Fragment>
             ))}
           </div>
-          {/* Module Details */}
-          <div className="module-details">
-            {(() => {
-              const activeModuleData = course?.modules?.find(
-                (mod) => mod.id === activeModule
-              );
-              if (!activeModuleData) return null;
 
-              return (
-                <div
-                  key={activeModuleData.id}
-                  style={
-                    activeModuleData.id === 2 ? activeModuleData.style : {}
-                  }
-                >
-                  <h3>{activeModuleData.subtitle}</h3>
-                  <hr className="divider" />
-                  <p>{activeModuleData.description}</p>
+          {/* Module Details - only visible on desktop */}
+          {!isMobile && (
+            <div className="module-details">
+              {(() => {
+                const activeModuleData = course?.modules?.find(
+                  (mod) => mod.id === activeModule
+                );
+                if (!activeModuleData) return null;
 
-                  {activeModuleData.id === 1 && <h3>Topics Covered:</h3>}
+                return (
+                  <div
+                    key={activeModuleData.id}
+                    style={
+                      activeModuleData.id === 2 ? activeModuleData.style : {}
+                    }
+                  >
+                    <h3>{activeModuleData.subtitle}</h3>
+                    <hr className="divider" />
+                    <p>{activeModuleData.description}</p>
 
-                  <ul className="topics-list">
-                    {activeModuleData.topics.map((topic, index) => (
-                      <li key={index} className="topic-item">
-                        <strong className="topic-title">{topic.title}</strong>
-                        {Array.isArray(topic.subtopics) &&
-                          topic.subtopics.length > 0 && (
-                            <ul className="subtopics-list">
-                              {topic.subtopics.map((subtopic, subIndex) => (
-                                <li key={subIndex} className="subtopic-item">
-                                  {typeof subtopic === "string" ? (
-                                    subtopic
-                                  ) : (
-                                    <>
-                                      {/* Apply fontWeight dynamically */}
-                                      <strong
-                                        style={{
-                                          fontWeight:
-                                            subtopic.fontWeight || "bold",
-                                        }}
-                                      >
-                                        {subtopic.title}
-                                      </strong>
-                                      {Array.isArray(subtopic.subtopics) &&
-                                        subtopic.subtopics.length > 0 && (
-                                          <ul>
-                                            {subtopic.subtopics.map(
-                                              (nestedSubtopic, nestedIndex) => (
-                                                <li key={nestedIndex}>
-                                                  {nestedSubtopic}
-                                                </li>
-                                              )
-                                            )}
-                                          </ul>
-                                        )}
-                                    </>
-                                  )}
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              );
-            })()}
-          </div>
+                    {activeModuleData.id === 1 && <h3>Topics Covered:</h3>}
+
+                    <ul className="topics-list">
+                      {activeModuleData.topics.map((topic, index) => (
+                        <li key={index} className="topic-item">
+                          <strong className="topic-title">{topic.title}</strong>
+                          {Array.isArray(topic.subtopics) &&
+                            topic.subtopics.length > 0 && (
+                              <ul className="subtopics-list">
+                                {topic.subtopics.map((subtopic, subIndex) => (
+                                  <li key={subIndex} className="subtopic-item">
+                                    {typeof subtopic === "string" ? (
+                                      subtopic
+                                    ) : (
+                                      <>
+                                        {/* Apply fontWeight dynamically */}
+                                        <strong
+                                          style={{
+                                            fontWeight:
+                                              subtopic.fontWeight || "bold",
+                                          }}
+                                        >
+                                          {subtopic.title}
+                                        </strong>
+                                        {Array.isArray(subtopic.subtopics) &&
+                                          subtopic.subtopics.length > 0 && (
+                                            <ul>
+                                              {subtopic.subtopics.map(
+                                                (
+                                                  nestedSubtopic,
+                                                  nestedIndex
+                                                ) => (
+                                                  <li key={nestedIndex}>
+                                                    {nestedSubtopic}
+                                                  </li>
+                                                )
+                                              )}
+                                            </ul>
+                                          )}
+                                      </>
+                                    )}
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })()}
+            </div>
+          )}
         </div>
+
         <div className="syllabus-container">
           <button className="download-button" onClick={handleDownload}>
             <span className="download-icon">⬇️</span> Download Syllabus

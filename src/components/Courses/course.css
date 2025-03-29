@@ -1,11 +1,11 @@
-.course-section {
+.courses-section {
   max-width: 100%;
   margin-top: 2%;
   padding: 30px;
   text-align: center;
 }
 
-.course-section h2 {
+.courses-section h2 {
   font-size: 1.5rem;
   margin-bottom: 70px;
   display: inline-block;
