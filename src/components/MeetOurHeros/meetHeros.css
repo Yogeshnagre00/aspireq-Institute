@@ -10,12 +10,7 @@
   margin-bottom: 70px;
   display: inline-block;
   border-bottom: 2px solid transparent;
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(19, 122, 226, 0.438),
-    transparent
-  );
+  background: linear-gradient(to right, transparent, #00d09c, transparent);
   background-position: bottom;
   background-size: 70% 2px;
   background-repeat: no-repeat;

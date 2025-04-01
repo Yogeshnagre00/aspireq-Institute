@@ -72,6 +72,20 @@ const testimonials = [
     profession: "Product Management",
     image: "./Images/boy1.webp",
   },
+  {
+    rating: "5.0",
+    text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
+    name: "Emma Stone",
+    profession: "Marketing",
+    image: "./Images/girl3.webp",
+  },
+  {
+    rating: "5.0",
+    text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
+    name: "Emma Stone",
+    profession: "Marketing",
+    image: "./Images/girl3.webp",
+  },
 ];
 
 const TestimonialSection = () => {

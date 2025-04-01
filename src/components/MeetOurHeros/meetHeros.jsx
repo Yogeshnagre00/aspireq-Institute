@@ -87,6 +87,24 @@ const heroesData = [
     linkedinUrl: "#",
     image: "./Images/girl3.webp",
   },
+  {
+    name: "Ekta Dhote",
+    position: "Application Support Analyst Lead",
+    description:
+      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    image: "./Images/girl3.webp",
+  },
+  {
+    name: "Shivani Dhole",
+    position: "Application Support Analyst Lead",
+    description:
+      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+    image: "./Images/girl3.webp",
+  },
   // Add more heroes if needed
 ];
 

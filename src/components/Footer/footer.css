@@ -163,7 +163,8 @@
     width: 300px;
   }
   .map-container {
-    padding-top: 75%; /* Adjust aspect ratio for smaller screens */
+    padding-top: 75%;
+    height: 110px;
   }
   .col-md-3 {
     flex: 1 0 100%;

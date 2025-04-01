@@ -48,6 +48,23 @@ header {
   font-size: 0.9rem;
   font-weight: bold;
 }
+.active-link {
+  color: var(--btn-bg-color);
+  font-weight: bold;
+  position: relative;
+}
+
+.active-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.5px;
+  background: linear-gradient(90deg, #00d09c, rgb(117, 213, 189));
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  border-radius: 2px;
+}
 
 /* Hamburger Icon for mobile */
 .hamburger {
@@ -80,7 +97,17 @@ header {
   color: var(--btn-bg-color);
   font-weight: bold;
 }
-
+.active-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.5px;
+  background: linear-gradient(90deg, #00d09c, rgb(117, 213, 189));
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  border-radius: 2px;
+}
 .hidden {
   visibility: hidden;
 }

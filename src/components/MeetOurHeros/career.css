@@ -66,8 +66,8 @@
   left: 80%;
 }
 .profile-image:nth-child(8) {
-  top: 220px;
-  left: 60%;
+  top: 277px;
+  left: 51%;
 }
 .profile-image:nth-child(9) {
   top: 230px;
@@ -77,7 +77,14 @@
   top: 22px;
   left: 70%;
 }
-
+.profile-image:nth-child(11) {
+  top: -8px;
+  left: 45%;
+}
+.profile-image:nth-child(12) {
+  top: 195px;
+  left: 67%;
+}
 /* ✨ Floating Animation for a Dynamic Look */
 @keyframes floatEffect {
   0% {
@@ -265,6 +272,14 @@
     left: 4%;
   }
   .profile-image:nth-child(10) {
+    top: 20px;
+    left: 65%;
+  }
+  .profile-image:nth-child(11) {
+    top: 10px;
+    left: 20%;
+  }
+  .profile-image:nth-child(12) {
     top: 20px;
     left: 65%;
   }
