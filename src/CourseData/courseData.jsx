@@ -42,7 +42,7 @@ export const courses = [
       },
       {
         title: "Job Offerletter",
-        image: "/Images/certificate internships.jpg",
+        image: "/Images/offerLetter.png",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
@@ -311,7 +311,7 @@ export const courses = [
       },
       {
         title: "Job Offerletter",
-        image: "/Images/certificate internships.jpg",
+        image: "/Images/offerLetter.png",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
@@ -741,7 +741,7 @@ export const courses = [
       },
       {
         title: "Job Offerletter",
-        image: "/Images/certificate internships.jpg.jpg",
+        image: "/Images/offerLetter.png",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
@@ -966,7 +966,7 @@ export const courses = [
       },
       {
         title: "Job Offerletter",
-        image: "/Images/certificate internships.jpg",
+        image: "/Images/offerLetter.png",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",
@@ -1188,7 +1188,7 @@ export const courses = [
       },
       {
         title: "Job Offerletter",
-        image: "/Images/certificate internships.jpg",
+        image: "/Images/offerLetter.png",
         benefits: [
           "Use your certificates to make a life-changing shift",
           "Use your certificates to make a life-changing shift",

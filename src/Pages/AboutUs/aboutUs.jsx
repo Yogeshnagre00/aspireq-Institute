@@ -103,50 +103,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className="features-section">
-        <h2>Features</h2>
-        <div className="feature-card">
-          <div className="feature-image-container">
-            <img
-              src="/Images/Rectangle 15.webp"
-              alt="Feature"
-              className="feature-image"
-            />
-          </div>
-          <div className="feature-content">
-            <h3>
-              We are always working to provide you the best of the features in
-              all aspects.
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur.
-            </p>
-            <button className="learn-more-button">Learn more →</button>
-          </div>
-        </div>
-
-        <div className="feature-card reverse">
-          <div className="feature-image-container">
-            <img
-              src="/Images/Rectangle 15.webp"
-              alt="Feature"
-              className="feature-image"
-            />
-          </div>
-          <div className="feature-content">
-            <h3>
-              We are always working to provide you the best of the features in
-              all aspects.
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur.
-            </p>
-            <button className="learn-more-button">Learn more →</button>
-          </div>
-        </div>
-      </section>
       <section className="our-culture">
         <h2>Our Culture</h2>
         <div className="culture-cards">
@@ -185,3 +141,50 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
+{
+  /* <section className="features-section">
+  <h2>Features</h2>
+  <div className="feature-card">
+    <div className="feature-image-container">
+      <img
+        src="/Images/Rectangle 15.webp"
+        alt="Feature"
+        className="feature-image"
+      />
+    </div>
+    <div className="feature-content">
+      <h3>
+        We are always working to provide you the best of the features in
+        all aspects.
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+        ipsum dolor sit amet, consectetur.
+      </p>
+      <button className="learn-more-button">Learn more →</button>
+    </div>
+  </div>
+
+  <div className="feature-card reverse">
+    <div className="feature-image-container">
+      <img
+        src="/Images/Rectangle 15.webp"
+        alt="Feature"
+        className="feature-image"
+      />
+    </div>
+    <div className="feature-content">
+      <h3>
+        We are always working to provide you the best of the features in
+        all aspects.
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+        ipsum dolor sit amet, consectetur.
+      </p>
+      <button className="learn-more-button">Learn more →</button>
+    </div>
+  </div>
+</section> */
+}

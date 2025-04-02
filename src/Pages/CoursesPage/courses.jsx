@@ -199,7 +199,7 @@ const CoursesPage = () => {
           </div>
         </div>
       </section>
-      {/* <section className="DemoClass-section">
+      <section className="DemoClass-section">
         <div className="container">
           <h2>Join your live class with your instructor</h2>
           <div className="live-class-image">
@@ -213,7 +213,7 @@ const CoursesPage = () => {
             <div className="button">Scrum Master</div>
           </div>
         </div>
-      </section> */}
+      </section>
       <Offer />
       <Footer />
     </>
