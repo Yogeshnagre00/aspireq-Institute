@@ -84,11 +84,7 @@ const AboutUs = () => {
             amet Lorem ipsum doller fit amet Lorem ipsum doller fit amet Lorem
             ipsum doller fit amet Lorem ipsum doller fit
           </p>
-          <img
-            src="./Images/Rectangle 15.png"
-            alt="Why Us"
-            className="about-image"
-          />
+          <img src="/Images/whyUs.png" alt="Why Us" className="about-image2" />
         </div>
       </section>
       <section className="our-vision">

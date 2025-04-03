@@ -5,7 +5,6 @@ const HeroCard = ({
   name,
   position,
   description,
-  twitterUrl = "#",
   linkedinUrl = "#",
   image,
 }) => {
@@ -18,11 +17,6 @@ const HeroCard = ({
       <p className="position">{position}</p>
       <p className="description">{description}</p>
       <div className="social-icons">
-        {twitterUrl && (
-          <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-twitter"></i>
-          </a>
-        )}
         {linkedinUrl && (
           <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i>

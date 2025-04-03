@@ -179,7 +179,7 @@ const CoursesPage = () => {
       <section className="certificate-section">
         <h2>Certificate</h2>
         <div className="certificate-container">
-          <div className="certificate-image">
+          <div className="certificates-image">
             <img
               src="/Images/Full-Stack-Development-course-certificate.png"
               alt="Sample Certificate"
@@ -201,12 +201,12 @@ const CoursesPage = () => {
       </section>
       <section className="DemoClass-section">
         <div className="container">
-          <h2>Join your live class with your instructor</h2>
+          <h2>Join your class with your instructor</h2>
           <div className="live-class-image">
             <img src="/Images/classRoom.jpg" alt="Live Class Example" />
           </div>
           <div className="class-container">
-            <div className="button">Full Stack developer</div>
+            <div className="button">Full Stack Developer</div>
             <div className="button">Software Testing</div>
             <div className="button">DevOps</div>
             <div className="button">Business Analyst</div>

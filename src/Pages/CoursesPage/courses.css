@@ -372,12 +372,12 @@
 }
 
 /* Certificate Image Styling */
-.certificate-image {
+.certificates-image {
   flex: 1;
-  max-width: 36%;
+  max-width: 44%;
 }
 
-.certificate-image img {
+.certificates-image img {
   width: 100%;
   height: auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -430,9 +430,10 @@
 }
 
 .DemoClass-section h2 {
-  width: 50% !important;
+  width: 50%;
   margin-bottom: 250px;
 }
+
 .live-class-image img {
   position: absolute;
   border-radius: 50px;
@@ -468,6 +469,88 @@
   font-size: 14px;
   font-weight: bold;
   border: none;
+}
+
+/* Add media queries only for smaller screens */
+@media (max-width: 992px) {
+  .DemoClass-section h2 {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+  .live-class-image img {
+    width: 80%;
+    height: 55vh;
+  }
+
+  .class-container {
+    height: auto;
+    padding: 30px;
+  }
+
+  .button {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .DemoClass-section h2 {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .live-class-image img {
+    width: 90%;
+    height: 40vh;
+    top: 130px;
+  }
+
+  .class-container {
+    padding: 56px 15px;
+  }
+
+  .button {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .DemoClass-section h2 {
+    width: 100%;
+    font-size: 0.8rem;
+    margin-bottom: 50px;
+  }
+
+  .live-class-image img {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 90%;
+    height: auto;
+    min-height: 150px;
+    border-radius: 20px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .class-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    gap: 8px;
+    background-color: #00d09c;
+    padding: 6px 20px;
+    border-radius: 10px;
+    min-height: 130px;
+  }
+
+  .button {
+    margin: 5px;
+    font-size: 4px;
+    padding: 4px 6px;
+  }
 }
 
 /* Responsive Adjustments */
@@ -586,8 +669,7 @@
     font-size: 1.2rem;
   }
   .how-it-works h2,
-  .certificate-section h2,
-  .DemoClass-section h2 {
+  .certificate-section h2 {
     font-size: 1.3rem;
     width: 90%;
   }
@@ -689,6 +771,6 @@
 
   .live-class-image img {
     top: 120px;
-    width: 95%;
+    width: 80%;
   }
 }
