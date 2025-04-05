@@ -9,11 +9,12 @@
   font-size: 1.5rem;
   margin-bottom: 70px;
   display: inline-block;
+  padding-bottom: 5px;
   border-bottom: 2px solid transparent;
   padding-bottom: 8px;
   background: linear-gradient(to right, transparent, #27cf787d, transparent);
   background-position: bottom;
-  background-size: 70% 2px;
+  background-size: 70% 1.5px;
   background-repeat: no-repeat;
   width: 30%;
 }
@@ -49,8 +50,7 @@
 }
 
 .course-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 8px 8px 8px 6px rgba(91, 91, 91, 0.351);
+  transform: translateY(-0.1px);
 }
 
 .course-image {

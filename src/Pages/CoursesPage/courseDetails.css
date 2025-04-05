@@ -524,10 +524,14 @@
   .coursepage-image {
     max-height: 50vh;
   }
+
   .footerpage-info {
     font-size: 0.5rem;
   }
-
+  .syllabus-container,
+  .Brochure-container {
+    width: 60%;
+  }
   .author-info {
     font-size: 0.5rem;
   }
@@ -581,7 +585,7 @@
   }
 
   .download-button {
-    width: 100%;
+    width: 60%;
     justify-content: center;
   }
 

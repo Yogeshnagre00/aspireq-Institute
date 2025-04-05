@@ -1,20 +1,21 @@
 .faq-section {
   max-width: 680px;
   margin: 0 auto;
+  text-align: center;
   padding: 20px;
 }
 
-.courses-section h2 {
+.faq-section h2 {
   font-size: 1.5rem;
+  margin-top: 10%;
   margin-bottom: 70px;
   display: inline-block;
+  padding-bottom: 10px;
   border-bottom: 2px solid transparent;
-  padding-bottom: 8px;
-  background: linear-gradient(to right, transparent, #27cf787d, transparent);
+  background: linear-gradient(to right, transparent, #00d09c, transparent);
   background-position: bottom;
-  background-size: 70% 2px;
+  background-size: 70% 1.5px;
   background-repeat: no-repeat;
-  width: 30%;
 }
 
 .faq-item {

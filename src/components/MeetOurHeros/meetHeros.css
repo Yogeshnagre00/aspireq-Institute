@@ -9,10 +9,11 @@
   font-size: 1.5rem;
   margin-bottom: 70px;
   display: inline-block;
+  padding-bottom: 5px;
   border-bottom: 2px solid transparent;
   background: linear-gradient(to right, transparent, #00d09c, transparent);
   background-position: bottom;
-  background-size: 70% 2px;
+  background-size: 70% 1.5px;
   background-repeat: no-repeat;
   width: 30%;
 }
@@ -28,7 +29,8 @@
   display: unset !important;
 }
 .meet-the-heroes .slick-dots {
-  position: relative !important;
+  position: relative;
+  margin-top: 2%;
 }
 slick-dots li button .meet-the-heroes .slick-dots li button:before {
   font-size: 8px;
@@ -45,6 +47,24 @@ slick-dots li button .meet-the-heroes .slick-dots li button:before {
   border-radius: 20px;
   background-color: #00d09c;
   display: block;
+}
+@media (max-width: 1024px) {
+  .meet-the-heroes .slick-dots {
+    bottom: -10px;
+  }
+
+  /* Smaller, subtle dots */
+  .meet-the-heroes .slick-dots li button:before {
+    font-size: 8px;
+    color: #999; /* Light gray */
+    opacity: 0.8;
+  }
+
+  /* Active dot */
+  .meet-the-heroes .slick-dots li.slick-active button:before {
+    color: #00d09c; /* Brand color */
+    opacity: 1;
+  }
 }
 
 /* Responsive Styles */
@@ -65,6 +85,36 @@ slick-dots li button .meet-the-heroes .slick-dots li button:before {
     padding: 0 20px;
     margin-bottom: 30px;
   }
+  .meet-the-heroes {
+    padding: 0 30px 30px 30px;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .meet-the-heroes h2 {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    width: 50%;
+  }
+
+  .hero-cards {
+    padding: 0 15px;
+    margin-bottom: 25px;
+  }
+
+  .meet-the-heroes .slick-dots {
+    margin-top: 10px;
+  }
+
+  .meet-the-heroes .slick-dots li {
+    width: 6px;
+    height: 6px;
+  }
+
+  .meet-the-heroes .slick-dots li button:before {
+    width: 6px;
+    height: 6px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -81,5 +131,63 @@ slick-dots li button .meet-the-heroes .slick-dots li button:before {
   .hero-cards {
     padding: 0 10px;
     margin-bottom: 20px;
+  }
+
+  .meet-the-heroes .slick-dots-container {
+    background-color: #000;
+    padding: 10px 0;
+    border-radius: 3px;
+  }
+  /* Reset the default dot styles for mobile */
+  .meet-the-heroes .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 0;
+  }
+
+  .meet-the-heroes .slick-dots li {
+    width: 6px;
+    height: 6px;
+    margin: 0;
+  }
+
+  /* Reset active dot to be round instead of rectangular */
+  .meet-the-heroes .slick-dots li.slick-active button {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #00d09c;
+  }
+
+  /* All dots should be round and light gray */
+  .meet-the-heroes .slick-dots li button {
+    width: 6px;
+    height: 6px;
+    padding: 0;
+  }
+
+  .meet-the-heroes .slick-dots li button:before {
+    font-size: 0;
+    line-height: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.3;
+    content: "";
+  }
+
+
+  .meet-the-heroes .slick-dots li.slick-active button:before {
+    background-color: : #00d09c;
+    opacity: 1;
+  }
+
+  /* Show only a maximum of 7 dots at once */
+  .meet-the-heroes .slick-dots li:nth-child(n + 6) {
+    display: none;
   }
 }

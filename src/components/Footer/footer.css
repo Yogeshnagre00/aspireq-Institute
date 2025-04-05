@@ -58,23 +58,6 @@
   height: 100%;
   border: none;
 }
-/* Added: Ensure logo is centered in its column */
-.footer-logo img {
-  max-width: 100%;
-  height: auto;
-}
-
-.footer-text {
-  width: 30%;
-  /* margin-top: 30px; */
-}
-
-/* Footer Heading styles */
-.footer-heading {
-  font-size: 1.2em;
-  margin-bottom: 15px;
-}
-
 .footer-links,
 .footer-contact {
   list-style: none;

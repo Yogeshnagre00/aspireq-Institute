@@ -79,10 +79,12 @@ const AboutUs = () => {
           <h3 className="small-heading">Why Us</h3>
           <h2 className="main-heading">Why Us</h2>
           <p className="description">
-            lorem ipsum doller fit amet Lorem ipsum doller fit emet Lorem ipsum
-            doller fit amet Lorem ipsum Woller fit amet Lorem ipsum doller fit
-            amet Lorem ipsum doller fit amet Lorem ipsum doller fit amet Lorem
-            ipsum doller fit amet Lorem ipsum doller fit
+            At ASPIREQ, we turn aspirations into achievements and dreams into
+            reality. With confidence as our cornerstone, we offer students a
+            unique opportunity—a job offers upon admission. Dive into an
+            immersive learning experience where you&apos;ll work in a
+            professional office environment, collaborating on real-time product
+            development.
           </p>
           <img src="/Images/whyUs.png" alt="Why Us" className="about-image2" />
         </div>

@@ -11,7 +11,6 @@ const heroesData = [
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-    twitterUrl: "#",
     linkedinUrl: "#",
     image: "./Images/Avatar (1).webp",
   },
@@ -20,8 +19,7 @@ const heroesData = [
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/pankajpampatwar/",
     image: "./Images/girl2.webp",
   },
   {
@@ -29,8 +27,7 @@ const heroesData = [
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/mayuryambal/",
     image: "./Images/girl1.webp",
   },
   {
@@ -38,8 +35,7 @@ const heroesData = [
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/mahesh-yambal-b18152227/",
     image: "./Images/girl3.webp",
   },
   {
@@ -47,8 +43,7 @@ const heroesData = [
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/baslingappa-sonagi-33520780/",
     image: "./Images/girl3.webp",
   },
   {
@@ -56,7 +51,6 @@ const heroesData = [
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-    twitterUrl: "#",
     linkedinUrl: "#",
     image: "./Images/girl3.webp",
   },
@@ -65,8 +59,7 @@ const heroesData = [
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/parmeshwar-nagre-856a4a117/",
     image: "./Images/girl3.webp",
   },
   {
@@ -83,7 +76,6 @@ const heroesData = [
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-    twitterUrl: "#",
     linkedinUrl: "#",
     image: "./Images/girl3.webp",
   },
@@ -92,8 +84,7 @@ const heroesData = [
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/ekta-dhote-652760255/",
     image: "./Images/girl3.webp",
   },
   {
@@ -101,8 +92,7 @@ const heroesData = [
     position: "Application Support Analyst Lead",
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/shivani-dhole-027a00200/",
     image: "./Images/girl3.webp",
   },
   // Add more heroes if needed

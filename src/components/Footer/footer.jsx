@@ -121,12 +121,8 @@ export const Footer = () => {
               href="https://www.linkedin.com/company/aspireqlearning/"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => console.log("LinkedIn Clicked")}
             >
-              <i
-                className="fab fa-linkedin"
-                style={{ color: "#1159d4", fontSize: "24px" }}
-              ></i>
+              <i className="fab fa-linkedin" style={{ color: "#1159d4" }}></i>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
               <i
