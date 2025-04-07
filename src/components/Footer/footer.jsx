@@ -90,7 +90,7 @@ export const Footer = () => {
               <li>info@aspireq.in</li>
               <li>Address</li>
               <li>
-                Aspireq 16 B,
+                Office no. B-04
                 <br /> Karle Empire 2, Nanded City, <br />
                 Sinhgad Road, Pune - 411041
               </li>

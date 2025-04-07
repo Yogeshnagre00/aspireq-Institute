@@ -21,7 +21,11 @@
   margin-top: 10%;
   max-width: 600px;
 }
-
+.about-image {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
 .small-heading {
   font-size: 14px;
   color: #00d09c;
@@ -44,7 +48,6 @@
   margin-bottom: 20px;
 }
 
-.about-image,
 .about-image2 {
   width: 100%;
   height: auto;

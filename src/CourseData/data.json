@@ -3,16 +3,12 @@
     {
       "id": 1,
       "type": "video",
-      "src": "/Videos/demo.webm",
-      "title": "Video Demo",
-      "description": "A demonstration video about QA services."
+      "src": "/Videos/demo.webm"
     },
     {
       "id": 2,
       "type": "video",
-      "src": "/Videos/demo2.webm",
-      "title": "Video Demo 2",
-      "description": "A demonstration video about QA services."
+      "src": "/Videos/demo2.webm"
     }
   ],
   "courses": [

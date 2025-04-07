@@ -85,7 +85,7 @@ const heroesData = [
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     linkedinUrl: "https://www.linkedin.com/in/ekta-dhote-652760255/",
-    image: "./Images/girl3.webp",
+    image: "/Images/ekata profile.jpg",
   },
   {
     name: "Shivani Dhole",

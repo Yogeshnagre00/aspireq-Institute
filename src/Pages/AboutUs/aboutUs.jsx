@@ -81,7 +81,7 @@ const AboutUs = () => {
           <p className="description">
             At ASPIREQ, we turn aspirations into achievements and dreams into
             reality. With confidence as our cornerstone, we offer students a
-            unique opportunity—a job offers upon admission. Dive into an
+            unique opportunity- a job offers upon admission. Dive into an
             immersive learning experience where you&apos;ll work in a
             professional office environment, collaborating on real-time product
             development.
