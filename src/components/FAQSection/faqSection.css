@@ -1,13 +1,13 @@
 .faq-section {
   max-width: 680px;
   margin: 0 auto;
-  text-align: center;
   padding: 20px;
 }
 
 .faq-section h2 {
   font-size: 1.5rem;
   margin-top: 10%;
+  margin-left: 20%;
   margin-bottom: 70px;
   display: inline-block;
   padding-bottom: 10px;

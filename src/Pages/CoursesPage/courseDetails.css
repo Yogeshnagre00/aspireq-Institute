@@ -439,7 +439,12 @@
   max-width: 80%;
   height: auto;
 }
-
+.certificate-container:nth-last-of-type(1) .certificate-image img {
+  max-width: 60%;
+  height: auto;
+  margin-right: 15%;
+  object-fit: cover;
+}
 .certificate-details {
   text-align: left;
   line-height: 2;

@@ -22,6 +22,24 @@ export const Footer = () => {
               </li>
               <li>
                 <a
+                  href="/course-details/4-BusinessAnalyst"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Business Analyst
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/course-details/3-DevOpsEngineer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  DevOps Engineer
+                </a>
+              </li>
+              <li>
+                <a
                   href="/course-details/1-FullStackDevelopment"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -37,27 +55,6 @@ export const Footer = () => {
                 >
                   SDET
                 </a>
-              </li>
-              <li>
-                <a
-                  href="/course-details/3-DevOpsEngineer"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  DevOps Engineer
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/course-details/4-BusinessAnalyst"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Business Analyst
-                </a>
-              </li>
-              <li>
-                <a href="#">Corporate Training</a>
               </li>
             </ul>
           </div>
@@ -86,7 +83,7 @@ export const Footer = () => {
           <div className="col-md-3 ">
             <h4 className="footer-heading">Meet Us</h4>
             <ul className="footer-contact">
-              <li>+91 9564251252</li>
+              <li>+91 9890694474</li>
               <li>info@aspireq.in</li>
               <li>Address</li>
               <li>
@@ -117,11 +114,7 @@ export const Footer = () => {
             Copyright ©2025 aspireq. All rights reserved.
           </p>
           <div className="footer-social">
-            <a
-              href="https://www.linkedin.com/company/aspireqlearning/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="#" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin" style={{ color: "#1159d4" }}></i>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
