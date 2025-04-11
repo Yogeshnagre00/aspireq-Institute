@@ -530,7 +530,7 @@
   }
   .syllabus-container,
   .Brochure-container {
-    width: 60%;
+    width: 40%;
   }
   .author-info {
     font-size: 0.5rem;
@@ -581,6 +581,7 @@
 @media (max-width: 480px) {
   .coursepage-section {
     padding: 10px;
+    margin: 20px auto;
     margin: 30px auto;
   }
 
@@ -727,6 +728,8 @@
 @media (max-width: 480px) {
   .download-button {
     width: 100%;
+    font-size: 0.8rem;
+    padding: 1px 12px;
     justify-content: center;
   }
 

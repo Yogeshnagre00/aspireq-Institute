@@ -207,7 +207,10 @@
   .our-culture h2 {
     width: 50%;
   }
-
+  .circleimage {
+    width: 100%;
+    max-width: 800px;
+  }
   .culture-cards {
     gap: 1em;
   }
