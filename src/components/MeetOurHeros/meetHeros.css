@@ -19,7 +19,7 @@
 }
 
 .hero-cards {
-  padding: 0 20px;
+  padding: 20px;
   height: 98%;
   flex-wrap: wrap;
   margin-bottom: 50px;
@@ -32,6 +32,26 @@
   position: relative;
   margin-top: 2%;
 }
+.meet-the-heroes .slick-prev,
+.meet-the-heroes .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+}
+
+.meet-the-heroes .slick-prev {
+  left: -15px; 
+}
+
+.meet-the-heroes .slick-next {
+  right: -25px;
+}
+
 slick-dots li button .meet-the-heroes .slick-dots li button:before {
   font-size: 8px;
   color: #ccc;

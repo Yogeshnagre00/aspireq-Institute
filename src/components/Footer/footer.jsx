@@ -83,7 +83,7 @@ export const Footer = () => {
           <div className="col-md-3 ">
             <h4 className="footer-heading">Meet Us</h4>
             <ul className="footer-contact">
-              <li>+91 9890694474</li>
+              <li>+919860310187</li>
               <li>info@aspireq.in</li>
               <li>Address</li>
               <li>
@@ -114,28 +114,28 @@ export const Footer = () => {
             Copyright ©2025 aspireq. All rights reserved.
           </p>
           <div className="footer-social">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="#" rel="noopener noreferrer">
               <i className="fab fa-linkedin" style={{ color: "#1159d4" }}></i>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="#" rel="noopener noreferrer">
               <i
                 className="fa-brands fa-twitter"
                 style={{ color: "#0d61f2" }}
               ></i>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="#" rel="noopener noreferrer">
               <i
                 className="fa-brands fa-facebook"
                 style={{ color: "#0561ff" }}
               ></i>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="#" rel="noopener noreferrer">
               <i
                 className="fa-brands fa-youtube"
                 style={{ color: "#da1010" }}
               ></i>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="#" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
           </div>

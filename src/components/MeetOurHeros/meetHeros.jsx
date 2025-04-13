@@ -20,7 +20,7 @@ const heroesData = [
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     linkedinUrl: "https://www.linkedin.com/in/pankajpampatwar/",
-    image: "./Images/girl2.webp",
+    image: "./Images/pankaj pampatwar profile.webp",
   },
   {
     name: "Mayur Yambal",
@@ -44,7 +44,7 @@ const heroesData = [
     description:
       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     linkedinUrl: "https://www.linkedin.com/in/baslingappa-sonagi-33520780/",
-    image: "./Images/girl3.webp",
+    image: "./Images/Baslingappa Songi.webp",
   },
   {
     name: "Rajesh Patil",
