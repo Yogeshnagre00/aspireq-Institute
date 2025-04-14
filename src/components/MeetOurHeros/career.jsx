@@ -19,7 +19,7 @@ const testimonials = [
   {
     rating: "5.0",
     text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
-    name: "Mayor Yambal",
+    name: "Mayur Yambal",
     profession: "Chief Platform & Delivery Officer at iauro Systems",
     image: "./Images/girl3.webp",
   },
@@ -28,7 +28,7 @@ const testimonials = [
     text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
     name: "Mahesh Yambal",
     profession: "Senior Test Engineer at Josh",
-    image: "./Images/boy2.webp",
+    image: "./Images/Mahesh Yambal.webp",
   },
   {
     rating: "5.0",

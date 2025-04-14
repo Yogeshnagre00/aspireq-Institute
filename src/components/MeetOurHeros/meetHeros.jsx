@@ -28,7 +28,7 @@ const heroesData = [
     name: "Mahesh Yambal",
     position: "Senior Test Engineer at Josh",
     linkedinUrl: "https://www.linkedin.com/in/mahesh-yambal-b18152227/",
-    image: "./Images/girl3.webp",
+    image: "./Images/Mahesh Yambal.webp",
   },
   {
     name: "Baslingappa Songi",
