@@ -2,17 +2,12 @@
   background: #f2f2f28c;
   border-radius: 10px;
   margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
   width: 230px;
+  height: 33vh;
   text-align: center;
   transition: transform 0.3s ease;
 }
-
-.hero-card:hover {
-  transform: translateY(-10px);
-}
-
 .heros-image {
   width: 70px;
   height: 70px;

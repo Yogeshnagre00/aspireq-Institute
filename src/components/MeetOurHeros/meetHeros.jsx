@@ -8,65 +8,49 @@ import "./meetHeros.css";
 const heroesData = [
   {
     name: "Abhijit Pampatwar",
-    position: "Application Support Analyst Lead",
-    description:
-      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-    linkedinUrl: "#",
-    image: "./Images/Avatar (1).webp",
+    position: "Founder & CEO at ASPIREQ",
+    linkedinUrl: "https://www.linkedin.com/in/abhijit-pampatwar-90a649206",
+    image: "./Images/Abhijit pampatware profile.webp",
   },
   {
     name: "Pankaj Pampatwar",
-    position: "Application Support Analyst Lead",
-    description:
-      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    position: "Program Manager at Emerson",
     linkedinUrl: "https://www.linkedin.com/in/pankajpampatwar/",
     image: "./Images/pankaj pampatwar profile.webp",
   },
   {
     name: "Mayur Yambal",
-    position: "Application Support Analyst Lead",
-    description:
-      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    position: "Chief Platform & Delivery Officer at iauro Systems",
     linkedinUrl: "https://www.linkedin.com/in/mayuryambal/",
     image: "./Images/girl1.webp",
   },
   {
     name: "Mahesh Yambal",
-    position: "Application Support Analyst Lead",
-    description:
-      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    position: "Senior Test Engineer at Josh",
     linkedinUrl: "https://www.linkedin.com/in/mahesh-yambal-b18152227/",
     image: "./Images/girl3.webp",
   },
   {
     name: "Baslingappa Songi",
-    position: "Application Support Analyst Lead",
-    description:
-      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    position: "Tecnical Lead at L&T",
     linkedinUrl: "https://www.linkedin.com/in/baslingappa-sonagi-33520780/",
     image: "./Images/Baslingappa Songi.webp",
   },
   {
     name: "Rajesh Patil",
-    position: "Application Support Analyst Lead",
-    description:
-      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    position: "Performace Test Lead at ",
     linkedinUrl: "#",
-    image: "./Images/girl3.webp",
+    image: "./Images/Rajesh Patil Profile.webp",
   },
   {
     name: "Parmeshwar Nagre",
-    position: "Application Support Analyst Lead",
-    description:
-      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    position: "Software Engineer at Commonwealth Bank Of Australia",
     linkedinUrl: "https://www.linkedin.com/in/parmeshwar-nagre-856a4a117/",
-    image: "./Images/girl3.webp",
+    image: "./Images/Parmeshwar Nagre Profile.webp",
   },
   {
     name: "Saroj Bhosle",
     position: "Application Support Analyst Lead",
-    description:
-      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     twitterUrl: "#",
     linkedinUrl: "#",
     image: "./Images/girl3.webp",
@@ -74,26 +58,20 @@ const heroesData = [
   {
     name: "Jagdish Belapure",
     position: "Application Support Analyst Lead",
-    description:
-      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
     linkedinUrl: "#",
     image: "./Images/girl3.webp",
   },
   {
     name: "Ekta Dhote",
-    position: "Application Support Analyst Lead",
-    description:
-      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    position: "QA Automation Engineer at Servian",
     linkedinUrl: "https://www.linkedin.com/in/ekta-dhote-652760255/",
     image: "/Images/ekata profile.jpg",
   },
   {
     name: "Shivani Dhole",
-    position: "Application Support Analyst Lead",
-    description:
-      "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    position: "Associate Lawyer",
     linkedinUrl: "https://www.linkedin.com/in/shivani-dhole-027a00200/",
-    image: "./Images/girl3.webp",
+    image: "./Images/dhole shivani profile.webp",
   },
   // Add more heroes if needed
 ];
@@ -105,7 +83,7 @@ const MeetTheHeroes = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     responsive: [
       {
