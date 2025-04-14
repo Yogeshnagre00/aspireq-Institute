@@ -44,9 +44,12 @@
   border: 1px solid rgba(206, 204, 204, 0.188);
   border-radius: 15px;
   width: 330px !important;
+  height: 44vh;
   padding: 20px 20px 0 20px;
   transition: transform 0.3s ease;
   margin-bottom: 20px;
+  display: flex;
+  position: relative;
 }
 
 .course-card:hover {
@@ -109,11 +112,11 @@
 }
 
 .course-rating {
-  font-size: 1rem;
-  color: #000000;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  right: 0;
+  display: flex;
 }
 
 .rating {
