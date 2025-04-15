@@ -79,8 +79,8 @@
 /* Tablet Devices (Medium screens) */
 @media (max-width: 768px) {
   .hero-card {
-    width: 85%;
-    padding: 20px;
+    width: 80%;
+    padding: 0px;
   }
 
   .hero-card h3 {

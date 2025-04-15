@@ -124,13 +124,17 @@ header {
   .nav-links {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 40px;
     right: 0;
     width: 45%;
     background-color: var(--header-bg-color);
     flex-direction: column;
-    padding: 0;
-    gap: 12px;
+    padding: 7px;
+    padding: 10px 0;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    border-radius: 8px;
   }
 
   .nav-links.active {
@@ -139,6 +143,7 @@ header {
 
   .nav-links a {
     font-size: clamp(0.9rem, 1vw, 1.2rem);
+    margin-left: 10px;
   }
 
   .btn {

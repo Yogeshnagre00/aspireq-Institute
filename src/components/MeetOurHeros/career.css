@@ -26,10 +26,10 @@
 
 /* 🔵 Common Profile Image Styling */
 .profile-image {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  padding: 5px;
+  padding: 7px;
   position: absolute;
   box-shadow: 0px 5px 10px rgba(126, 126, 126, 0.32);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -62,8 +62,8 @@
   left: 40%;
 }
 .profile-image:nth-child(7) {
-  top: 120px;
-  left: 80%;
+  top: 145px;
+  left: 74%;
 }
 .profile-image:nth-child(8) {
   top: 245px;
@@ -218,6 +218,7 @@
 @media screen and (max-width: 768px) {
   .testimonial-section {
     flex-direction: column;
+    width: 80%;
     padding: 25px;
   }
 
@@ -276,8 +277,8 @@
     left: 65%;
   }
   .profile-image:nth-child(11) {
-    top: 10px;
-    left: 20%;
+    top: -2px;
+    left: 47%;
   }
   .profile-image:nth-child(12) {
     top: 20px;
@@ -332,16 +333,16 @@
     left: 25%;
   }
   .profile-image:nth-child(6) {
-    top: 120px;
-    left: 45%;
+    top: 129px;
+    left: 49%;
   }
   .profile-image:nth-child(7) {
     top: 80px;
     left: 75%;
   }
   .profile-image:nth-child(8) {
-    top: 140px;
-    left: 65%;
+    top: 162px;
+    left: 75%;
   }
   .profile-image:nth-child(9) {
     top: 170px;

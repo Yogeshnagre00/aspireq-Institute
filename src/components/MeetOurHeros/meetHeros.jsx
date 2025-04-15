@@ -22,7 +22,7 @@ const heroesData = [
     name: "Mayur Yambal",
     position: "Chief Platform & Delivery Officer at iauro Systems",
     linkedinUrl: "https://www.linkedin.com/in/mayuryambal/",
-    image: "./Images/girl1.webp",
+    image: "./Images/Mayur Yambal profile.webp",
   },
   {
     name: "Mahesh Yambal",
@@ -38,7 +38,7 @@ const heroesData = [
   },
   {
     name: "Rajesh Patil",
-    position: "Performace Test Lead at ",
+    position: "Performace Test Lead at IDeaS ",
     linkedinUrl: "#",
     image: "./Images/Rajesh Patil Profile.webp",
   },
@@ -71,7 +71,7 @@ const heroesData = [
     name: "Shivani Dhole",
     position: "Associate Lawyer",
     linkedinUrl: "https://www.linkedin.com/in/shivani-dhole-027a00200/",
-    image: "./Images/dhole shivani profile.webp",
+    image: "./Images/Shivani Dhole Profile.webp",
   },
   // Add more heroes if needed
 ];
