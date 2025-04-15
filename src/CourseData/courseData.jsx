@@ -33,7 +33,7 @@ export const courses = [
         benefits: [
           "Real-Time Work Experience",
           "Expert Guidance",
-          "End-To-End Project Understanding",
+          "End-To-End Project Implementation",
           "Certification",
           "Industry Standards and Processes",
           "Team Collaboration",
