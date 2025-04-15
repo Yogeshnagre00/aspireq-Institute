@@ -359,7 +359,7 @@ const CourseDetailsPage = () => {
           <div className="year-schedule-container">
             <h3 className="year-schedule"> Year Schedule</h3>
             <img
-              src="./Images/year Schedule.jpg"
+              src="/Images/year Schedule.webp"
               alt="year Schedule"
               loading="lazy"
             />
