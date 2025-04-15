@@ -100,7 +100,7 @@ const CourseCards = () => {
   };
   return (
     <section id="courses" className="courses-section">
-      <h2>Courses we provide</h2>
+      <h2>Courses We Provide</h2>
       <div className="slider-container">
         <Slider {...settings}>
           {courses.map((course, index) => (

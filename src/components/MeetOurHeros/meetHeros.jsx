@@ -105,7 +105,7 @@ const MeetTheHeroes = () => {
 
   return (
     <section className="meet-the-heroes">
-      <h2>Meet the heroes</h2>
+      <h2>Meet The Heroes</h2>
       <Slider {...settings} className="hero-cards">
         {heroesData.map((hero, index) => (
           <HeroCard
