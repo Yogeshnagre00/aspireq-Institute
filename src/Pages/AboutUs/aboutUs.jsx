@@ -52,8 +52,8 @@ const AboutUs = () => {
           >
             <SwiperSlide>
               <img
-                src="./Images/office_3.jpg"
-                alt="Who We Are - Image 1"
+                src="./Images/AQ.webp"
+                alt="Office image reception"
                 className="about-image"
               />
             </SwiperSlide>
@@ -66,7 +66,7 @@ const AboutUs = () => {
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="/Images/office_3.jpg"
+                src="./Images/AQ.webp"
                 alt="Who We Are - Image 3"
                 className="about-image"
               />
