@@ -166,6 +166,7 @@
 @media (max-width: 992px) {
   .about-section {
     flex-direction: column;
+    width: 92%;
     align-items: center;
     gap: 40px;
   }
