@@ -185,6 +185,7 @@
   gap: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .download-button:hover {
@@ -535,7 +536,7 @@
   }
   .syllabus-container,
   .Brochure-container {
-    width: 40%;
+    width: 60%;
   }
   .author-info {
     font-size: 0.5rem;
@@ -549,7 +550,10 @@
     text-align: left;
     justify-content: flex-start;
   }
-
+  .certificate-details h3 {
+    font-size: 0.9rem;
+    margin: 40px 0 40px 0;
+    text-align: center;
   .Tools-container {
     justify-content: center;
   }
@@ -570,7 +574,8 @@
 
   .coursepage-badge,
   .coursepage-rating {
-    font-size: 0.5rem;
+    font-size: 0.3rem;
+    padding: 4px 6px;
   }
 
   .Tools-container img {

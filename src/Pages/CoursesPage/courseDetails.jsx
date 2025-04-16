@@ -132,9 +132,13 @@ const CourseDetailsPage = () => {
           </div>
         </div>
         <div className="Brochure-container">
-          <button className="download-button" onClick={handleDownload}>
+          <a
+            href="/Pdf/Brochur.pdf"
+            download="Brochur.pdf"
+            className="download-button"
+          >
             <span className="download-icon">⬇️</span> Download Brochure
-          </button>
+          </a>
         </div>
       </section>
       {/* this is for our syllabus section */}

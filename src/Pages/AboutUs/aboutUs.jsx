@@ -36,18 +36,18 @@ const AboutUs = () => {
           {/* Replace static image with Swiper slider */}
           <Swiper
             modules={[Autoplay, EffectCoverflow]}
-            effect="coverflow" // Enables the coverflow effect
+            effect="coverflow"
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={1}
             coverflowEffect={{
-              rotate: 50, // Rotation of slides
-              stretch: 0, // Space between slides
-              depth: 100, // Depth for 3D effect
+              rotate: 50, 
+              stretch: 0, 
+              depth: 100,
               modifier: 1,
-              slideShadows: true, // Adds shadows for better effect
+              slideShadows: true, 
             }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
             loop={true}
           >
             <SwiperSlide>
