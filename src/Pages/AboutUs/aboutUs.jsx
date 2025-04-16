@@ -52,7 +52,7 @@ const AboutUs = () => {
           >
             <SwiperSlide>
               <img
-                src="./Images/Rectangle 15.png"
+                src="./Images/office_3.jpg"
                 alt="Who We Are - Image 1"
                 className="about-image"
               />
@@ -66,7 +66,7 @@ const AboutUs = () => {
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="./Images/Rectangle 4402@3x.png"
+                src="/Images/office_3.jpg"
                 alt="Who We Are - Image 3"
                 className="about-image"
               />
