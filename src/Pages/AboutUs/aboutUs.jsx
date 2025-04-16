@@ -67,7 +67,7 @@ const AboutUs = () => {
             <SwiperSlide>
               <img
                 src="./Images/AQ.webp"
-                alt="Who We Are - Image 3"
+                alt="Who We Are - Office image "
                 className="about-image"
               />
             </SwiperSlide>
