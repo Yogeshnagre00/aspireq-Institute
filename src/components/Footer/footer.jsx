@@ -62,21 +62,11 @@ export const Footer = () => {
           <div className="col-md-3">
             <h4 className="footer-heading">Training in Domains</h4>
             <ul className="footer-links">
-              <li>
-                <a href="#">Healthcare</a>
-              </li>
-              <li>
-                <a href="#">Finance</a>
-              </li>
-              <li>
-                <a href="#">Banking</a>
-              </li>
-              <li>
-                <a href="#">Insurance</a>
-              </li>
-              <li>
-                <a href="#">E-commerce</a>
-              </li>
+              <li>Healthcare</li>
+              <li>Finance</li>
+              <li>Banking</li>
+              <li>Insurance</li>
+              <li>E-commerce</li>
             </ul>
           </div>
           {/* Address */}
