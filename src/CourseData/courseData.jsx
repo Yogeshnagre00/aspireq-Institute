@@ -1187,7 +1187,7 @@ export const courses = [
         ],
       },
       {
-        title: "Job Offerletter",
+        title: "Job Offeretter",
         image: "/Images/offerLetter.png",
         benefits: [
           "Use your certificates to make a life-changing shift",
