@@ -52,21 +52,21 @@ const AboutUs = () => {
           >
             <SwiperSlide>
               <img
-                src="./Images/AQ.webp"
+                src="./Images/reception.webp"
                 alt="Office image reception"
                 className="about-image"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="./Images/Rectangle 4402.png"
+                src="./Images/Rectangle 15.webp"
                 alt="Who We Are - Image 2"
                 className="about-image"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="./Images/AQ.webp"
+                src="./Images/reception.webp"
                 alt="Who We Are - Office image "
                 className="about-image"
               />
