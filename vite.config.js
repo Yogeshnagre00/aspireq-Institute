@@ -5,15 +5,16 @@ export default defineConfig({
   base: "/",
   plugins: [react()],
   build: {
-    minify: "terser", // Use Terser for better minification
+    // comment this out to test:
+    // minify: "terser",
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes("node_modules")) {
             if (id.includes("react-router-dom")) {
-              return "react-router-dom"; // Separate react-router-dom chunk
+              return "react-router-dom";
             }
-            return "vendor"; // General vendor chunk
+            return "vendor";
           }
         },
       },
