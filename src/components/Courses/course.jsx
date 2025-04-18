@@ -107,8 +107,9 @@ const CourseCards = () => {
             <div
               key={index}
               className="course-card"
-              onClick={(event) => handleCardClick(event, course.id)}
+              // onClick={(event) => handleCardClick(event, course.id)}
             >
+              {/* course image */}
               <div className="course-image">
                 <img src={course.image} alt={course.title} loading="lazy" />
                 {course.bestseller && course.discount && (
@@ -118,6 +119,7 @@ const CourseCards = () => {
                   </div>
                 )}
               </div>
+              {/* course content */}
               <div className="course-content">
                 <h3>{course.title}</h3>
                 <p>{course.description}</p>
