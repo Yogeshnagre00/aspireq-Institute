@@ -50,21 +50,23 @@ const ThumbnailSlider = ({ start }) => {
   ];
 
   return (
-    <div className="image-slider">
-      <Slider key={start ? "autoplay-on" : "autoplay-off"} {...settings}>
-        {images.map((image, index) => (
-          <div key={index} className="slider-item">
-            <img
-              src={image}
-              alt={`Thumbnail ${index + 1}`}
-              loading="lazy"
-              onError={(e) => {
-                e.target.src = "./Images/fallback-image.webp"; // Fallback image
-              }}
-            />
-          </div>
-        ))}
-      </Slider>
+    <div className="thumbnail-slider-container">
+      <div className="image-slider">
+        <Slider key={start ? "autoplay-on" : "autoplay-off"} {...settings}>
+          {images.map((image, index) => (
+            <div key={index} className="slider-item">
+              <img
+                src={image}
+                alt={`Thumbnail ${index + 1}`}
+                loading="lazy"
+                onError={(e) => {
+                  e.target.src = "./Images/fallback-image.webp";
+                }}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };
