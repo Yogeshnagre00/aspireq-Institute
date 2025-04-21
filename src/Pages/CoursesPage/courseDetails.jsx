@@ -328,16 +328,16 @@ const CourseDetailsPage = () => {
               <img
                 src={
                   course.name === "Full Stack Development"
-                    ? "/Images/Full-Stack-Developer Tools.webp"
+                    ? "/Images/tools/Full-Stack-Developer Tools.webp"
                     : course.name === "Software Development Engineer in Testing"
-                    ? "/Images/SDET Tools.webp"
+                    ? "/Images/tools/SDET Tools.webp"
                     : course.name === "DevOps Engineer"
-                    ? "/Images/Devops-Tools.png"
+                    ? "/Images/tools/Devops-Tools.png"
                     : course.name === "Business Analyst"
-                    ? "/Images/Business analyst-Tools.png"
+                    ? "/Images/tools/Business analyst-Tools.png"
                     : course.name === "Scrum Master"
-                    ? "/Images/scrumMaster-tools.png"
-                    : "/Images/default.webp"
+                    ? "/Images/tools/scrumMaster-tools.png"
+                    : "/Images/tools/default.webp"
                 }
                 alt={course.name}
                 className="Tool-image"

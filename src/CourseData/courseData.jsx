@@ -16,7 +16,8 @@ export const courses = [
     certificates: [
       {
         title: "Course Completion Certificate",
-        image: "/Images/Full-Stack-Development-course-certificate.png",
+        image:
+          "/Images/certificates/Full-Stack-Development-course-certificate.png",
         benefits: [
           "Skill Enhancement",
           "Improved Communication and Collaboration Skills",
@@ -29,7 +30,7 @@ export const courses = [
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/Full Stack Development internship.jpg",
+        image: "/Images/certificates/Full Stack Development internship.jpg",
         benefits: [
           "Real-Time Work Experience",
           "Expert Guidance",
@@ -42,7 +43,7 @@ export const courses = [
       },
       {
         title: "Job Offerletter",
-        image: "/Images/offerLetter.png",
+        image: "/Images/certificates/offerLetter.png",
         benefits: [
           "Excitement and Joy",
           "Confidence Boost",
@@ -286,7 +287,7 @@ export const courses = [
     certificates: [
       {
         title: "Course Completion Certificate",
-        image: "/Images/SDET-course-certificate.jpg",
+        image: "/Images/certificates/SDET-course-certificate.jpg",
         benefits: [
           "Skill Enhancement",
           "Improved Communication and Collaboration Skills",
@@ -299,7 +300,7 @@ export const courses = [
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/SDET internship.jpg",
+        image: "/Images/certificates/SDET internship.jpg",
         benefits: [
           "Real-Time Work Experience",
           "Expert Guidance",
@@ -312,7 +313,7 @@ export const courses = [
       },
       {
         title: "Job Offerletter",
-        image: "/Images/offerLetter.png",
+        image: "/Images/certificates/offerLetter.png",
         benefits: [
           "Excitement and Joy",
           "Confidence Boost",
@@ -716,7 +717,7 @@ export const courses = [
     certificates: [
       {
         title: "Course Completion Certificate",
-        image: "/Images/Devops-course-certificate.jpg",
+        image: "/Images/certificates/Devops-course-certificate.jpg",
         benefits: [
           "Skill Enhancement",
           "Improved Communication and Collaboration Skills",
@@ -729,7 +730,7 @@ export const courses = [
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/Devops-internship.jpg",
+        image: "/Images/certificates/Devops-internship.jpg",
         benefits: [
           "Real-Time Work Experience",
           "Expert Guidance",
@@ -742,7 +743,7 @@ export const courses = [
       },
       {
         title: "Job Offerletter",
-        image: "/Images/offerLetter.png",
+        image: "/Images/certificates/offerLetter.png",
         benefits: [
           "Excitement and Joy",
           "Confidence Boost",
@@ -941,7 +942,7 @@ export const courses = [
     certificates: [
       {
         title: "Course Completion Certificate",
-        image: "/Images/Business-Analyst-course-certificate.jpg",
+        image: "/Images/certificates/Business-Analyst-course-certificate.jpg",
         benefits: [
           "Skill Enhancement",
           "Improved Communication and Collaboration Skills",
@@ -954,7 +955,7 @@ export const courses = [
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/Business Analyst-internship.jpg",
+        image: "/Images/certificates/Business Analyst-internship.jpg",
         benefits: [
           "Real-Time Work Experience",
           "Expert Guidance",
@@ -967,7 +968,7 @@ export const courses = [
       },
       {
         title: "Job Offerletter",
-        image: "/Images/offerLetter.png",
+        image: "/Images/certificates/offerLetter.png",
         benefits: [
           "Excitement and Joy",
           "Confidence Boost",
@@ -1152,7 +1153,7 @@ export const courses = [
     certificates: [
       {
         title: "Course Completion Certificate",
-        image: "/Images/Scrum-Master-course certificate.jpg",
+        image: "/Images/certificates/Scrum-Master-course certificate.jpg",
         benefits: [
           "Skill Enhancement",
           "Improved Communication and Collaboration Skills",
@@ -1165,7 +1166,7 @@ export const courses = [
       },
       {
         title: "Certificate of Internship Completion",
-        image: "/Images/Scrum-Master-internship.jpg",
+        image: "/Images/certificates/Scrum-Master-internship.jpg",
         benefits: [
           "Real-Time Work Experience",
           "Expert Guidance",
@@ -1178,7 +1179,7 @@ export const courses = [
       },
       {
         title: "Job Offeretter",
-        image: "/Images/offerLetter.png",
+        image: "/Images/certificates/offerLetter.png",
         benefits: [
           "Excitement and Joy",
           "Confidence Boost",
