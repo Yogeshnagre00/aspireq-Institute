@@ -84,8 +84,7 @@ export const courses = [
       {
         id: 2,
         title: "New AI Module 2",
-        subtitle:
-          "AI tutorials in programming and Prompt engineering in chatgpt:",
+        subtitle: "AI-Driven Full Stack Developer",
         description:
           "How to use AI (ChatGPT, microsoft copilot & deepseek)  to solve business problems",
         topics: [
@@ -413,8 +412,7 @@ export const courses = [
       {
         id: 2,
         title: "New AI Module 2",
-        subtitle:
-          "AI tutorials in programming and Prompt engineering in chatgpt:",
+        subtitle: "AI-Driven Software Testing:",
         description:
           "How to use AI (ChatGPT, microsoft copilot & deepseek)  to solve business problems",
         topics: [
@@ -447,15 +445,14 @@ export const courses = [
             ],
           },
           {
-            title: "For Full Stack Development",
+            title: "For Software Testing",
             subtopics: [
-              "How To Use AI To Learn For Developers",
+              " AI Prompting Practice",
+              "Test case and scenarios generation using AI",
               "AI-Powered Code Generation and Debugging",
-              "AI Prompts for Enhanced User Interfaces (front end Designs)",
-              "Prompts For Learning To Code",
-              "AI Prompting Practice",
-              "AI-Powered Frameworks and Libraries",
-              "AI Prompting CheatSheets",
+              "Test Automation using AI-powered tools",
+              "AI visual testing",
+              "Continuous testing with the help of AI",
             ],
           },
         ],
@@ -802,8 +799,7 @@ export const courses = [
       {
         id: 2,
         title: "New AI Module 2",
-        subtitle:
-          "AI tutorials in programming and Prompt engineering in chatgpt:",
+        subtitle: "AI-Driven DevOps:",
         description:
           "How to use AI (ChatGPT, microsoft copilot & deepseek)  to solve business problems",
         topics: [
@@ -836,15 +832,14 @@ export const courses = [
             ],
           },
           {
-            title: "For Full Stack Development",
+            title: "For Devops",
             subtopics: [
-              "How To Use AI To Learn For Developers",
-              "AI-Powered Code Generation and Debugging",
-              "AI Prompts for Enhanced User Interfaces (front end Designs)",
-              "Prompts For Learning To Code",
-              "AI Prompting Practice",
-              "AI-Powered Frameworks and Libraries",
-              "AI Prompting CheatSheets",
+              " Automating Routine Tasks",
+              "Predictive Analytics",
+              "Continuous Integration and Delivery (CI/CD)",
+              "Real-Time Monitoring",
+              "Enhanced Collaboration",
+              "Security Enhancements",
             ],
           },
         ],
@@ -1027,8 +1022,7 @@ export const courses = [
       {
         id: 2,
         title: "New AI Module 2",
-        subtitle:
-          "AI tutorials in programming and Prompt engineering in chatgpt:",
+        subtitle: "AI-driven Business Analyst",
         description:
           "How to use AI (ChatGPT, microsoft copilot & deepseek)  to solve business problems",
         topics: [
@@ -1058,18 +1052,6 @@ export const courses = [
               "Visual Enhancements",
               "Data Visualization",
               "AI-Powered Presentation Makers",
-            ],
-          },
-          {
-            title: "For Full Stack Development",
-            subtopics: [
-              "How To Use AI To Learn For Developers",
-              "AI-Powered Code Generation and Debugging",
-              "AI Prompts for Enhanced User Interfaces (front end Designs)",
-              "Prompts For Learning To Code",
-              "AI Prompting Practice",
-              "AI-Powered Frameworks and Libraries",
-              "AI Prompting CheatSheets",
             ],
           },
         ],
@@ -1249,8 +1231,7 @@ export const courses = [
       {
         id: 2,
         title: "New AI Module 2",
-        subtitle:
-          "AI tutorials in programming and Prompt engineering in chatgpt:",
+        subtitle: "AI-Driven Scrum Master",
         description:
           "How to use AI (ChatGPT, microsoft copilot & deepseek)  to solve business problems",
         topics: [
@@ -1280,18 +1261,6 @@ export const courses = [
               "Visual Enhancements",
               "Data Visualization",
               "AI-Powered Presentation Makers",
-            ],
-          },
-          {
-            title: "For Full Stack Development",
-            subtopics: [
-              "How To Use AI To Learn For Developers",
-              "AI-Powered Code Generation and Debugging",
-              "AI Prompts for Enhanced User Interfaces (front end Designs)",
-              "Prompts For Learning To Code",
-              "AI Prompting Practice",
-              "AI-Powered Frameworks and Libraries",
-              "AI Prompting CheatSheets",
             ],
           },
         ],
