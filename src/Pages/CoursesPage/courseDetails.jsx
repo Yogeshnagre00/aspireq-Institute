@@ -58,11 +58,10 @@ const CourseDetailsPage = () => {
     const pdfFiles = {
       "Full Stack Development":
         "/Pdf/Full_Stack_Development_Complete_Syllabus.pdf",
-      "Software Development Engineer in Testing":
-        "/Pdf/SDET_Complete_Course.pdf",
-      "DevOps Engineer": "/Pdf/DevOps_Engineering_Complete_Syllabus.pdf",
-      "Business Analyst": "/Pdf/Business_Analyst_Complete_Syllabus.pdf",
-      "Scrum Master": "/Pdf/Scrum_Master_Complete_Syllabus.pdf",
+      "Software Development Engineer in Testing": "/Pdf/SDET Syllabus.pdf",
+      "DevOps Engineer": "/Pdf/DevOps Engineering _Complete_Syllabus.pdf",
+      "Business Analyst": "/Pdf/Business Analyst_Complete_Syllabus.pdf",
+      "Scrum Master": "/Pdf/Scrum Master _Complete_Syllabus.pdf",
     };
 
     // Get the correct PDF file for the course
