@@ -136,6 +136,16 @@ const CoursesPage = () => {
               <div className="course-content">
                 <h3>{course.title}</h3>
                 <p>{course.description}</p>
+                <p className="course-fees">
+                  Fees:{" "}
+                  <span className="original-fee">
+                    ₹{course.fees.toLocaleString()}
+                  </span>{" "}
+                  <span className="discounted-fee">
+                    ₹{Math.floor(course.fees * 0.8).toLocaleString()}
+                  </span>
+                </p>
+
                 <div className="course-rating">
                   <span className="rating">⭐ {course.rating}</span>
                   <button className="course-card__button">→</button>

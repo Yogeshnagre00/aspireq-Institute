@@ -136,7 +136,7 @@
   background: #ffffff;
   border: 1px solid rgba(206, 204, 204, 0.188);
   border-radius: 15px;
-  height: 45vh;
+  height: 49vh;
   width: 330px !important;
   padding: 20px 20px 0 20px;
   transition: transform 0.3s ease;
@@ -196,6 +196,21 @@
   margin-top: -15px;
   margin-bottom: 25px;
   color: #474747;
+}
+.course-fees {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.original-fee {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 8px;
+}
+
+.discounted-fee {
+  color: #e63946; /* red or your brand color */
+  font-weight: bold;
 }
 
 .course-rating {

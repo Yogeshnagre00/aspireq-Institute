@@ -13,6 +13,7 @@ const courses = [
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",
+    fees: 49999,
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const courses = [
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",
+    fees: 49999,
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const courses = [
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",
+    fees: 49999,
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ const courses = [
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",
+    fees: 49999,
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ const courses = [
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",
+    fees: 49999,
   },
   {
     id: 6,
@@ -58,6 +63,7 @@ const courses = [
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",
+    fees: 49999,
   },
 ];
 
@@ -123,6 +129,16 @@ const CourseCards = () => {
               <div className="course-content">
                 <h3>{course.title}</h3>
                 <p>{course.description}</p>
+                <p className="course-fees">
+                  Fees:{" "}
+                  <span className="original-fee">
+                    ₹{course.fees.toLocaleString()}
+                  </span>{" "}
+                  <span className="discounted-fee">
+                    ₹{Math.floor(course.fees * 0.8).toLocaleString()}
+                  </span>
+                </p>
+
                 <div className="course-rating">
                   <span className="rating">⭐ {course.rating}</span>
                   <div className="course-arrow">
