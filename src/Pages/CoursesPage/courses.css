@@ -586,7 +586,7 @@
     flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
-    max-height: 150px;
+    max-height: 230px;
     gap: 10px;
   }
 
@@ -676,7 +676,7 @@
 
   .course-card {
     width: 100% !important;
-    height: 40vh;
+    height: 41vh;
   }
   .course-card__button {
     padding: 6px 25px;
@@ -769,7 +769,7 @@
   .course-card {
     width: 100%;
     padding: 20px;
-    height: 35vh;
+    height: 40vh;
   }
 
   .certificate-container {

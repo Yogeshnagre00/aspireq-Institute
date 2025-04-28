@@ -94,7 +94,7 @@
 }
 
 .hero-image-section img {
-  width: 380px;
+  width: 340px;
   height: auto;
   display: block;
 }
@@ -141,6 +141,9 @@
 
   .hero-text-content h1 {
     font-size: 1.8rem;
+  }
+  .hero-text-content p {
+    font-size: 0.8rem;
   }
 }
 

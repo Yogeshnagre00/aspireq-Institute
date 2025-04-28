@@ -486,7 +486,7 @@
   margin-right: 10px;
 }
 
-/* Media Queries */
+/* 1200px - Desktop Adjustments */
 @media (max-width: 1200px) {
   .coursepage-section {
     margin: 40px auto;
@@ -497,6 +497,7 @@
   }
 }
 
+/* 992px - Tablet Adjustments */
 @media (max-width: 992px) {
   .module-content-container {
     flex-direction: column;
@@ -506,6 +507,7 @@
     max-width: 100%;
     height: auto;
     max-height: 300px;
+    overflow-y: visible;
   }
 
   .module-details {
@@ -526,34 +528,38 @@
   }
 }
 
+/* 768px - Mobile (Landscape) Adjustments */
 @media (max-width: 768px) {
   .coursepage-image {
     max-height: 50vh;
   }
 
-  .footerpage-info {
-    font-size: 0.5rem;
-  }
   .syllabus-container,
   .Brochure-container {
     width: 60%;
   }
+
+  .footerpage-info,
   .author-info {
     font-size: 0.5rem;
   }
+
   .topics-list {
     column-count: 1;
   }
 
   .certificate-details li {
     align-items: flex-start;
-    text-align: left;
     justify-content: flex-start;
+    text-align: left;
   }
+
   .certificate-details h3 {
     font-size: 0.9rem;
-    margin: 40px 0 40px 0;
+    margin: 40px 0;
     text-align: center;
+  }
+
   .Tools-container {
     justify-content: center;
   }
@@ -561,56 +567,8 @@
   .Tools-container img {
     max-width: 400px;
   }
-}
 
-@media (max-width: 576px) {
-  .coursepage-footer {
-    align-items: flex-start;
-  }
-
-  .footerpage-info {
-    gap: 5px;
-  }
-
-  .coursepage-badge,
-  .coursepage-rating {
-    font-size: 0.3rem;
-    padding: 4px 6px;
-  }
-
-  .Tools-container img {
-    max-width: 350px;
-    margin: 0 auto;
-  }
-
-  .module-item p {
-    white-space: normal;
-  }
-}
-
-@media (max-width: 480px) {
-  .coursepage-section {
-    padding: 10px;
-    margin: 20px auto;
-    margin: 30px auto;
-  }
-
-  .download-button {
-    width: 60%;
-    justify-content: center;
-  }
-
-  .certificate-details li {
-    font-size: 0.85rem;
-  }
-
-  .coming-soon {
-    padding: 20px;
-    min-height: 40vh;
-  }
-}
-@media (max-width: 767px) {
-  /* Module container modifications for mobile */
+  /* Module content for mobile */
   .module-content-container {
     flex-direction: column;
   }
@@ -619,19 +577,17 @@
     max-width: 100%;
     height: auto;
     max-height: none;
-    overflow-y: visible;
   }
 
-  /* Card styling for mobile */
   .module-item {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     margin-bottom: 16px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 16px;
     position: relative;
     background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .module-item:hover {
@@ -652,11 +608,10 @@
   }
 
   .module-item p {
-    margin: 8px 0 0 0;
+    margin: 8px 0 0;
     line-height: 1.4;
   }
 
-  /* Toggle button/indicator */
   .module-toggle {
     position: absolute;
     top: 16px;
@@ -665,12 +620,10 @@
     font-size: 14px;
   }
 
-  /* Hide the desktop module details */
   .module-details {
     display: none;
   }
 
-  /* Mobile module details styling */
   .module-details-mobile {
     background-color: #f8f9fa;
     border-radius: 8px;
@@ -682,65 +635,77 @@
     animation: fadeIn 0.3s ease-in;
   }
 
-  /* Topics list on mobile */
   .mobile-topics-list {
     column-count: 1 !important;
     padding-left: 20px;
   }
 
-  /* Animation for showing details */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Download button adjustments */
   .download-button {
     width: 100%;
     justify-content: center;
   }
 }
 
-/* Existing media queries and responsive behavior */
-@media (max-width: 992px) {
-  .module-content-container {
-    flex-direction: column;
+/* Animation for module details */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-
-  .module-sidebar {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .module-details {
-    max-width: 100%;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media (max-width: 768px) {
-  .topics-list {
-    column-count: 1;
-  }
-}
-
+/* 576px - Mobile Portrait Adjustments */
 @media (max-width: 576px) {
+  .coursepage-footer {
+    align-items: flex-start;
+  }
+
+  .footerpage-info {
+    gap: 5px;
+  }
+
+  .download-icon {
+    font-size: 10px;
+  }
+
+  .coursepage-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .coursepage-badge,
+  .coursepage-rating {
+    font-size: 0.3rem;
+    padding: 4px 6px;
+  }
+
+  .Tools-container img {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
   .module-item p {
     white-space: normal;
   }
 }
 
+/* 480px - Small Devices Adjustments */
 @media (max-width: 480px) {
+  .coursepage-section {
+    padding: 10px;
+    margin: 20px auto;
+  }
+
   .download-button {
-    width: 100%;
-    font-size: 0.8rem;
-    padding: 1px 12px;
+    width: 75%;
     justify-content: center;
+  }
+
+  .certificate-details li {
+    font-size: 0.85rem;
   }
 
   .coming-soon {

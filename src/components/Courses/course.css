@@ -220,7 +220,9 @@
     width: 280px !important;
     padding: 15px 15px 0 15px;
   }
-
+  .course-content p {
+    line-height: 2;
+  }
   .course-content h3 {
     font-size: 1rem;
   }
@@ -269,6 +271,7 @@
 
   .course-card {
     width: 250px !important;
+    height: auto;
     padding: 12px;
   }
 
