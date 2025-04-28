@@ -6,10 +6,10 @@
   --nav-link-color: #000000;
   --nav-link-hover-color: #00d09c;
   --btn-bg-color: #00d09c;
-  --btn-hover-bg-color: #5fa6e8;
+  --btn-hover-bg-color: #00d09c;
 }
 
-/* Default mobile header styles */
+/* Default header styles */
 header {
   background-color: var(--header-bg-color);
   box-shadow: var(--header-box-shadow);
@@ -18,6 +18,13 @@ header {
   top: 0;
   width: 100%;
   z-index: 999;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+/* Hide header when scrolling down */
+header.hide {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
 }
 /* Navbar */
 .navbar {
@@ -27,6 +34,7 @@ header {
   padding: var(--navbar-padding);
 }
 
+/* Logo */
 .logo img {
   height: 45px;
   width: auto;
@@ -48,31 +56,6 @@ header {
   font-size: 0.9rem;
   font-weight: bold;
 }
-.active-link {
-  color: var(--btn-bg-color);
-  font-weight: bold;
-  position: relative;
-}
-
-.active-link::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 0.5px;
-  background: linear-gradient(90deg, #00d09c, rgb(117, 213, 189));
-  position: absolute;
-  bottom: 7px;
-  left: 0;
-  border-radius: 2px;
-}
-
-/* Hamburger Icon for mobile */
-.hamburger {
-  display: none;
-  font-size: 25px;
-  margin-right: 15px;
-  cursor: pointer;
-}
 
 /* Navbar links */
 .nav-links {
@@ -93,25 +76,40 @@ header {
 .nav-links a:hover {
   color: var(--nav-link-hover-color);
 }
+
+/* Active Link */
 .active-link {
   color: var(--btn-bg-color);
   font-weight: 600;
+  position: relative;
 }
+
 .active-link::after {
   content: "";
   display: block;
   width: 100%;
-  height: 0.3px;
+  height: 0.5px;
   background: linear-gradient(90deg, #00d09c, rgb(117, 213, 189));
   position: absolute;
   bottom: 7px;
   left: 0;
+  border-radius: 2px;
 }
+
+/* Hamburger Icon for Mobile */
+.hamburger {
+  display: none;
+  font-size: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Hide utility class */
 .hidden {
   visibility: hidden;
 }
 
-/* Mobile-Specific Styles */
+/* Mobile Styles */
 @media (max-width: 768px) {
   .navbar {
     padding: 0 0.3rem;
@@ -122,23 +120,26 @@ header {
   }
 
   .nav-links {
-    display: none;
     position: absolute;
     top: 40px;
     right: 0;
     width: 45%;
     background-color: var(--header-bg-color);
     flex-direction: column;
-    padding: 7px;
     padding: 10px 0;
     gap: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
     border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
   }
 
   .nav-links.active {
     display: flex;
+    opacity: 1;
+    visibility: visible;
   }
 
   .nav-links a {
@@ -146,7 +147,7 @@ header {
     margin-left: 10px;
   }
 
-  .btn {
+  .navbar .btn {
     margin-left: 80px;
     padding: 7px 20px;
     margin-top: 8px;
@@ -159,15 +160,16 @@ header {
   }
 }
 
+/* Extra Small Devices (Mobile < 480px) */
 @media (max-width: 480px) {
   .nav-links a {
     font-size: 16px;
   }
 
-  .btn {
-    font-size: 12px !important;
+  .navbar .btn {
+    font-size: 12px;
     margin-left: 80px;
-    padding: 6px 10px !important;
+    padding: 6px 10px;
   }
 
   .logo img {
