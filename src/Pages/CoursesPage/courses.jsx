@@ -64,9 +64,9 @@ const CoursesPage = () => {
   return (
     <>
       <Navbar />
+      {/* main slider and thumbnails */}
       <section className="qa-section">
         <div className="qa-section">
-          {/* Main Slider - Always visible but only animates once */}
           <div className="main-card">
             {sliderItems[currentIndex]?.type === "image" ? (
               <img
@@ -111,7 +111,7 @@ const CoursesPage = () => {
         </div>
       </section>
 
-      {/* Rest of the code remains unchanged */}
+      {/*Course name and details*/}
       <section id="course-section" className="course-section">
         <h2>Courses</h2>
         <div className="course-section__grid">
@@ -126,24 +126,36 @@ const CoursesPage = () => {
             >
               <div className="course-image">
                 <img src={course.image} alt={course.title} loading="lazy" />
-                {course.bestseller && course.discount && (
-                  <div className="custom-label">
-                    <span className="label-bestseller">Bestseller</span>
-                    <span className="label-discount">{course.discount}</span>
-                  </div>
-                )}
+                {course.bestseller &&
+                  course.discount &&
+                  course.title !== "Business Analyst(BA)" &&
+                  course.title !== "Scrum Master" && (
+                    <div className="custom-label">
+                      <span className="label-bestseller">Bestseller</span>
+                      <span className="label-discount">{course.discount}</span>
+                    </div>
+                  )}
               </div>
               <div className="course-content">
                 <h3>{course.title}</h3>
                 <p>{course.description}</p>
                 <p className="course-fees">
                   Fees:{" "}
-                  <span className="original-fee">
-                    ₹{course.fees.toLocaleString()}
-                  </span>{" "}
-                  <span className="discounted-fee">
-                    ₹{Math.floor(course.fees * 0.8).toLocaleString()}
-                  </span>
+                  {course.title !== "Business Analyst(BA)" &&
+                  course.title !== "Scrum Master" ? (
+                    <>
+                      <span className="original-fee">
+                        ₹{course.fees.toLocaleString()}
+                      </span>{" "}
+                      <span className="discounted-fee">
+                        ₹{Math.floor(course.fees * 0.8).toLocaleString()}
+                      </span>
+                    </>
+                  ) : (
+                    <span className="discounted-fee">
+                      ₹{course.fees.toLocaleString()}
+                    </span>
+                  )}
                 </p>
 
                 <div className="course-rating">
@@ -155,7 +167,7 @@ const CoursesPage = () => {
           ))}
         </div>
       </section>
-
+      {/* How it work section  */}
       <section className="how-it-work">
         <div className="how-it-works">
           <h2>How it works</h2>
@@ -186,12 +198,13 @@ const CoursesPage = () => {
           </div>
         </div>
       </section>
+      {/* Certificate Section  */}
       <section className="certificate-section">
         <h2>Certificate</h2>
         <div className="certificate-container">
           <div className="certificates-image">
             <img
-              src="/Images/Full-Stack-Development-course-certificate.png"
+              src="/Images/certificates/Full-Stack-Development-course-certificate.png"
               alt="Sample Certificate"
             />
           </div>
@@ -209,6 +222,7 @@ const CoursesPage = () => {
           </div>
         </div>
       </section>
+      {/* Demo class  */}
       <section className="DemoClass-section">
         <div className="container">
           <h2>Join your class with your instructor</h2>

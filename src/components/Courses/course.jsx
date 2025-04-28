@@ -43,7 +43,7 @@ const courses = [
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",
-    fees: 49999,
+    fees: 51000,
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const courses = [
     bestseller: true,
     discount: "20% Off",
     rating: "5.0",
-    fees: 49999,
+    fees: 51000,
   },
   {
     id: 6,
@@ -118,12 +118,15 @@ const CourseCards = () => {
               {/* course image */}
               <div className="course-image">
                 <img src={course.image} alt={course.title} loading="lazy" />
-                {course.bestseller && course.discount && (
-                  <div className="custom-label">
-                    <span className="label-bestseller">Bestseller</span>
-                    <span className="label-discount">{course.discount}</span>
-                  </div>
-                )}
+                {course.bestseller &&
+                  course.discount &&
+                  course.title !== "Business Analyst(BA)" &&
+                  course.title !== "Scrum Master" && (
+                    <div className="custom-label">
+                      <span className="label-bestseller">Bestseller</span>
+                      <span className="label-discount">{course.discount}</span>
+                    </div>
+                  )}
               </div>
               {/* course content */}
               <div className="course-content">
@@ -131,12 +134,21 @@ const CourseCards = () => {
                 <p>{course.description}</p>
                 <p className="course-fees">
                   Fees:{" "}
-                  <span className="original-fee">
-                    ₹{course.fees.toLocaleString()}
-                  </span>{" "}
-                  <span className="discounted-fee">
-                    ₹{Math.floor(course.fees * 0.8).toLocaleString()}
-                  </span>
+                  {course.title !== "Business Analyst(BA)" &&
+                  course.title !== "Scrum Master" ? (
+                    <>
+                      <span className="original-fee">
+                        ₹{course.fees.toLocaleString()}
+                      </span>{" "}
+                      <span className="discounted-fee">
+                        ₹{Math.floor(course.fees * 0.8).toLocaleString()}
+                      </span>
+                    </>
+                  ) : (
+                    <span className="discounted-fee">
+                      ₹{course.fees.toLocaleString()}
+                    </span>
+                  )}
                 </p>
 
                 <div className="course-rating">

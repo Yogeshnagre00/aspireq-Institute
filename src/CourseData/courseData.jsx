@@ -85,7 +85,7 @@ export const courses = [
       {
         id: 2,
         title: "New AI Module 2",
-        subtitle: "AI-Driven Full Stack Developer",
+        subtitle: "AI-Driven Full Stack Development",
         description:
           "How to use AI (ChatGPT, microsoft copilot & deepseek)  to solve business problems",
         topics: [
@@ -413,7 +413,7 @@ export const courses = [
       {
         id: 2,
         title: "New AI Module 2",
-        subtitle: "AI-Driven Software Testing:",
+        subtitle: "AI-Driven Software Testing",
         description:
           "How to use AI (ChatGPT, microsoft copilot & deepseek)  to solve business problems",
         topics: [
@@ -800,7 +800,7 @@ export const courses = [
       {
         id: 2,
         title: "New AI Module 2",
-        subtitle: "AI-Driven DevOps:",
+        subtitle: "AI-Driven DevOps",
         description:
           "How to use AI (ChatGPT, microsoft copilot & deepseek)  to solve business problems",
         topics: [

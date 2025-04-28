@@ -75,9 +75,9 @@
   margin-top: 20px;
 }
 .offer-icon {
-  width: 18px; /* Match emoji size */
-  height: 18px; /* Maintain proportion */
-  object-fit: contain; /* Ensure it scales properly */
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
 }
 .hero-icons .icon {
   font-size: 0.9rem;
@@ -94,7 +94,7 @@
 }
 
 .hero-image-section img {
-  width: 680px;
+  width: 380px;
   height: auto;
   display: block;
 }

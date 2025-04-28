@@ -20,9 +20,6 @@ const HeroSection = () => {
           <button className="btn-primary" onClick={handleGetStartedClick}>
             Get Started &rarr;
           </button>
-          {/* <button className="btn-secondary" onClick={handleWatchDemoClick}>
-            Watch Demo
-          </button> */}
         </div>
         <div className="hero-icons">
           <div className="icon">💡 Creative Thinking</div>
