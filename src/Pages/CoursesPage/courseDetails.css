@@ -701,6 +701,7 @@
 
   .download-button {
     width: 75%;
+    font-size: 0.7rem;
     justify-content: center;
   }
 
