@@ -94,7 +94,7 @@
 }
 
 .hero-image-section img {
-  width: 340px;
+  width: 680px;
   height: auto;
   display: block;
 }
@@ -122,13 +122,16 @@
   .hero-text-content,
   .hero-image-section {
     max-width: 100%;
+    width: 680px;
     padding: 3% 0;
   }
 
   .hero-text-content {
     text-align: center;
   }
-
+  .hero-image-section img {
+    width: 100%;
+  }
   .hero-buttons {
     justify-content: center;
   }
