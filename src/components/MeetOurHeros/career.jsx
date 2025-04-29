@@ -65,20 +65,7 @@ const testimonials = [
     profession: "Associate Lawyer",
     image: "./Images/heroes/Shivani Dhole Profile.webp",
   },
-  {
-    rating: "5.0",
-    text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
-    name: "Jagdish Belapure",
-    profession: "Product Management",
-    image: "../Images/heroes/boy1.webp",
-  },
-  {
-    rating: "5.0",
-    text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
-    name: "Saroj Bhosle",
-    profession: "Marketing",
-    image: "./Images/heroes/girl3.webp",
-  },
+
 ];
 
 const TestimonialSection = () => {

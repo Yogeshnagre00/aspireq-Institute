@@ -38,53 +38,42 @@
 
 /* ✨ Random Positions for a Natural Effect */
 .profile-image:nth-child(1) {
-  top: 20px;
+  top: 2.5dvh; /* 20px */
   left: 10%;
 }
 .profile-image:nth-child(2) {
-  top: 60px;
-  left: 30%;
+  top: 3.75dvh; /* 30px */
+  left: 35%;
 }
 .profile-image:nth-child(3) {
-  top: 150px;
-  left: 15%;
-}
-.profile-image:nth-child(4) {
-  top: 90px;
-  left: 50%;
-}
-.profile-image:nth-child(5) {
-  top: 250px;
+  top: 18.75dvh; /* 150px */
   left: 25%;
 }
+.profile-image:nth-child(4) {
+  top: 4.125dvh; /* 33px */
+  left: 60%;
+}
+.profile-image:nth-child(5) {
+  top: 35dvh; /* 280px */
+  left: 30%;
+}
 .profile-image:nth-child(6) {
-  top: 180px;
-  left: 40%;
+  top: 16.875dvh; /* 135px */
+  left: 46%;
 }
 .profile-image:nth-child(7) {
-  top: 145px;
+  top: 18.125dvh; /* 145px */
   left: 74%;
 }
 .profile-image:nth-child(8) {
-  top: 245px;
+  top: 30.625dvh; /* 245px */
   left: 60%;
 }
 .profile-image:nth-child(9) {
-  top: 230px;
+  top: 28.75dvh; /* 230px */
   left: 5%;
 }
-.profile-image:nth-child(10) {
-  top: 22px;
-  left: 70%;
-}
-.profile-image:nth-child(11) {
-  top: -8px;
-  left: 45%;
-}
-.profile-image:nth-child(12) {
-  top: 195px;
-  left: 67%;
-}
+
 /* ✨ Floating Animation for a Dynamic Look */
 @keyframes floatEffect {
   0% {
@@ -237,54 +226,42 @@
 
   /* Adjust profile images positions for tablet view */
   .profile-image:nth-child(1) {
-    top: 15px;
+    top: 1.875dvh;   
     left: 5%;
   }
   .profile-image:nth-child(2) {
-    top: 50px;
+    top: 6.25dvh;    
     left: 25%;
   }
   .profile-image:nth-child(3) {
-    top: 130px;
+    top: 16.25dvh;   
     left: 12%;
   }
   .profile-image:nth-child(4) {
-    top: 70px;
+    top: 8.75dvh;   
     left: 45%;
   }
   .profile-image:nth-child(5) {
-    top: 200px;
+    top: 25dvh;      
     left: 22%;
   }
   .profile-image:nth-child(6) {
-    top: 150px;
+    top: 18.75dvh;   
     left: 35%;
   }
   .profile-image:nth-child(7) {
-    top: 100px;
+    top: 12.5dvh;    
     left: 70%;
   }
   .profile-image:nth-child(8) {
-    top: 180px;
+    top: 22.5dvh;    
     left: 55%;
   }
   .profile-image:nth-child(9) {
-    top: 200px;
+    top: 25dvh;     
     left: 4%;
   }
-  .profile-image:nth-child(10) {
-    top: 20px;
-    left: 65%;
-  }
-  .profile-image:nth-child(11) {
-    top: -2px;
-    left: 47%;
-  }
-  .profile-image:nth-child(12) {
-    top: 20px;
-    left: 65%;
-  }
-}
+  
 
 /* Mobile (576px and below) */
 @media screen and (max-width: 576px) {
@@ -313,50 +290,42 @@
 
   /* Adjust profile images positions for mobile view */
   .profile-image:nth-child(1) {
-    top: 6px;
+    top: 0.75dvh;   /* 6px */
     left: 4%;
   }
   .profile-image:nth-child(2) {
-    top: 70px;
-    left: 28%;
+    top: 4.125dvh;  /* 33px */
+    left: 35%;
   }
   .profile-image:nth-child(3) {
-    top: 100px;
-    left: 1%;
+    top: 10.625dvh; /* 85px */
+    left: 7%;
   }
   .profile-image:nth-child(4) {
-    top: 50px;
-    left: 55%;
+    top: 2.5dvh;    /* 20px */
+    left: 63%;
   }
   .profile-image:nth-child(5) {
-    top: 190px;
+    top: 21.25dvh;  /* 170px */
     left: 29%;
   }
   .profile-image:nth-child(6) {
-    top: 129px;
+    top: 13.75dvh;  /* 110px */
     left: 49%;
   }
   .profile-image:nth-child(7) {
-    top: 90px;
+    top: 11.25dvh;  /* 90px */
     left: 80%;
   }
   .profile-image:nth-child(8) {
-    top: 182px;
+    top: 22.75dvh;  /* 182px */
     left: 75%;
   }
   .profile-image:nth-child(9) {
-    top: 190px;
-    left: -2%;
+    top: 21.875dvh; /* 175px */
+    left: 1%;
   }
-  .profile-image:nth-child(10) {
-    top: -4px;
-    left: 77%;
-  }
-  .profile-image:nth-child(11) {
-    top: -11px;
-    left: 38%;
-  }
-}
+  
 
 /* Small Mobile (400px and below) */
 @media screen and (max-width: 400px) {

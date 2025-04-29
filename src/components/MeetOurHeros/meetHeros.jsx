@@ -49,19 +49,6 @@ const heroesData = [
     image: "./Images/heroes/Parmeshwar Nagre Profile.webp",
   },
   {
-    name: "Saroj Bhosle",
-    position: "Application Support Analyst Lead",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-    image: "./Images/heroes/girl3.webp",
-  },
-  {
-    name: "Jagdish Belapure",
-    position: "Application Support Analyst Lead",
-    linkedinUrl: "#",
-    image: "./Images/heroes/girl3.webp",
-  },
-  {
     name: "Ekta Dhote",
     position: "QA Automation Engineer at Servian",
     linkedinUrl: "https://www.linkedin.com/in/ekta-dhote-652760255/",

@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
-import { Footer } from "../components/Footer/footer";
+import ErrorBoundary from "../components/ErrorBoundary";
+import Footer from "../components/Footer/footer";
 import Navbar from "../components/Header/header";
 import HeroSection from "../components/HeroSection/heroSection";
 import Loader from "../components/loader";
@@ -21,12 +22,20 @@ function Home() {
       <Navbar />
       <main>
         <HeroSection />
-        <Suspense fallback={<Loader />}>
-          <CourseCards />
-          <MeetHeroes />
-          <TestimonialPage />
-          <FAQSection />
-        </Suspense>
+        <ErrorBoundary>
+          <Suspense fallback={<Loader />}>
+            <CourseCards />
+          </Suspense>
+          <Suspense fallback={<Loader />}>
+            <MeetHeroes />
+          </Suspense>
+          <Suspense fallback={<Loader />}>
+            <TestimonialPage />
+          </Suspense>
+          <Suspense fallback={<Loader />}>
+            <FAQSection />
+          </Suspense>
+        </ErrorBoundary>
       </main>
       <Footer />
     </div>
