@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Footer } from "../../components/Footer/footer";
+import Footer  from "../../components/Footer/footer";
 import Navbar from "../../components/Header/header";
 import Offer from "../../components/offerSection/offer";
 import ThumbnailSlider from "../../components/thambnailImages/thumbnailSlider";
