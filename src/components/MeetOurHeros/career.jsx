@@ -6,7 +6,7 @@ const testimonials = [
     rating: "5.0",
     text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
     name: "Abhijit Pampatwar",
-    profession: "Founder & CEO At ASPIREQ",
+    profession: "Former Engineering Manager at Thinkitive" ,
     image: "./Images/heroes/Abhijit pampatware profile.webp",
   },
   {
@@ -56,7 +56,7 @@ const testimonials = [
     text: "As an industrial, securing capacity and ensuring safety in the production process. This is a critical role.",
     name: "Ekta Dhote",
     profession: "QA Automation Engineer at Servian",
-    image: "./Images/heroes/ekata profile.jpg",
+    image: "./Images/heroes/ekata profile.webp",
   },
   {
     rating: "5.0",
@@ -65,7 +65,6 @@ const testimonials = [
     profession: "Associate Lawyer",
     image: "./Images/heroes/Shivani Dhole Profile.webp",
   },
-
 ];
 
 const TestimonialSection = () => {

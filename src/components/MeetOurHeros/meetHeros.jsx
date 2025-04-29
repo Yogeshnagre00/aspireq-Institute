@@ -8,7 +8,7 @@ import "./meetHeros.css";
 const heroesData = [
   {
     name: "Abhijit Pampatwar",
-    position: "Founder & CEO at ASPIREQ",
+    position: "Former Engineering Manager at Thinkitive ",
     linkedinUrl: "https://www.linkedin.com/in/abhijit-pampatwar-90a649206",
     image: "./Images/heroes/Abhijit pampatware profile.webp",
   },
@@ -52,7 +52,7 @@ const heroesData = [
     name: "Ekta Dhote",
     position: "QA Automation Engineer at Servian",
     linkedinUrl: "https://www.linkedin.com/in/ekta-dhote-652760255/",
-    image: "./Images/heroes/ekata profile.jpg",
+    image: "./Images/heroes/ekata profile.webp",
   },
   {
     name: "Shivani Dhole",
@@ -60,7 +60,6 @@ const heroesData = [
     linkedinUrl: "https://www.linkedin.com/in/shivani-dhole-027a00200/",
     image: "./Images/heroes/Shivani Dhole Profile.webp",
   },
-  // Add more heroes if needed
 ];
 
 const MeetTheHeroes = () => {
