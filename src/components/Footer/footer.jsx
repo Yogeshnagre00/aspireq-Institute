@@ -2,7 +2,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import "./footer.css";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -135,4 +135,4 @@ const Footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
