@@ -45,9 +45,11 @@ const Navbar = () => {
   return (
     <header className={!isScrollingUp ? "hide" : ""}>
       <nav className="navbar">
-        <div className="logo">
-          <img src="/Images/logo.webp" alt="Logo" />
-        </div>
+        <a href="https://aspireqlearning.co.in/" rel="noopener noreferrer">
+          <div className="logo">
+            <img src="/Images/logo.webp" alt="Logo" />
+          </div>
+        </a>
 
         <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
           <li>
