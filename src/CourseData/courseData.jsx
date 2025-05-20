@@ -205,7 +205,7 @@ export const courses = [
       {
         id: 5,
         title: "Module 5",
-        subtitle: "Master Object-Oriented Programming concepts:",
+        subtitle: "Master Object-Oriented Programming concepts & Databases:",
         description:
           "Learn OOP concepts like inheritance, polymorphism, and abstraction.",
         topics: [
@@ -222,6 +222,20 @@ export const courses = [
               "Abstract classes",
               "Inner classes",
               "Packages and access modifiers",
+            ],
+          },
+          {
+            title: "Databases",
+            subtopics: [
+              "Introduction to databases",
+              "SQL vs NoSQL databases",
+              "MongoDB Basics and Data Model",
+              "CRUD operations in MongoDB",
+              "Mongoose ODM and Schema Design",
+              "Connecting React with MongoDB",
+              "Database Design Principles",
+              "Indexing and Performance Optimization",
+              "Security Basics in Databases",
             ],
           },
         ],
