@@ -104,7 +104,11 @@ export const Footer = () => {
             Copyright ©2025 aspireq. All rights reserved.
           </p>
           <div className="footer-social">
-            <a href="#" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/company/aspireq/?viewAsMember=true"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <i className="fab fa-linkedin" style={{ color: "#1159d4" }}></i>
             </a>
             <a href="#" rel="noopener noreferrer">
