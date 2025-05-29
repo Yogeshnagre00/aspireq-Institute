@@ -21,7 +21,7 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/TermsOfService"
+                <a href="/termsOfService"
                 target="_blank"
                 rel="noopener noreferrer">Terms of Service</a>
               </li>
