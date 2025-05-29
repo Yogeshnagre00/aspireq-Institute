@@ -38,6 +38,7 @@ function App() {
           <Route path="/termsOfService" element={<TermsOfService />} />
         </Routes>
       </Suspense>
+
     </Router>
   );
 }

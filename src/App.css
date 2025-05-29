@@ -7,8 +7,12 @@ body {
 p {
   font-size: 1rem;
   color: #333;
-  margin: 20px 0;
+  margin: 20px 0 ;
 }
-html {
+html, body {
+  margin: 0;
   scroll-behavior: smooth;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
