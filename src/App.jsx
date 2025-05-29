@@ -3,7 +3,7 @@ import React, { Suspense } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Loader from "./components/loader";
-import TermsOfService from "./components/TermsOfService/TermsOfService";
+
 
 const CoursesPage = React.lazy(() => import("./Pages/CoursesPage/courses"));
 const CourseDetails = React.lazy(() =>
@@ -14,6 +14,9 @@ const PrivacyPolicy = React.lazy(() =>
 );
 const CookiesPolicy = React.lazy(() =>
   import("./components/CookiesPolicy/cookiesPolicy")
+);
+const TermsOfService = React.lazy(() =>
+  import("/components/TermsOfService/termsOfService.jsx") 
 );
 const ContactForm = React.lazy(() => import("./Pages/ContactUs/contactUs"));
 const AboutUs = React.lazy(() => import("./Pages/AboutUs/aboutUs"));
