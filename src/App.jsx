@@ -4,7 +4,6 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Loader from "./components/loader";
 
-
 const CoursesPage = React.lazy(() => import("./Pages/CoursesPage/courses"));
 const CourseDetails = React.lazy(() =>
   import("./Pages/CoursesPage/courseDetails")
@@ -35,12 +34,12 @@ function App() {
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/course-details/:courseId" element={<CourseDetails />} />
           <Route path="/cookiespolicy" element={<CookiesPolicy />} />
-           <Route path="privacypolicy" element={<PrivacyPolicy />} />
-         <Route path="/termsOfService" element={<TermsOfService />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} /> 
+          <Route path="/termsOfService" element={<TermsOfService />} />
         </Routes>
       </Suspense>
     </Router>
   );
 }
 
-export default App;
+export default App;  // Removed duplicate export
