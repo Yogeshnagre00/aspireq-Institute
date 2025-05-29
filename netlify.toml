@@ -4,5 +4,3 @@
 
 [build.environment]
   NODE_VERSION = "18"
-  # Force native module resolution
-  NODE_OPTIONS = "--no-experimental-fetch"
