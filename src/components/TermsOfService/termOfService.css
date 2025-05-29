@@ -1,0 +1,97 @@
+
+.terms-container {
+  font-family: "Montserrat", sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #2e2d2d;
+}
+
+.terms-container h1 {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 2.2em;
+}
+
+.terms-container h2,
+.terms-container h3 {
+  color: #333;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.terms-container p {
+  margin-bottom: 20px;
+  color: #2e2d2d;
+}
+
+.terms-container ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #2e2d2d;
+}
+
+.terms-container ul li {
+  margin-bottom: 8px;
+}
+
+/* Links inside the terms */
+.terms-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.terms-container a:hover {
+  text-decoration: underline;
+}
+
+/* Button styling */
+.back-to-home-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-home-button.top-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.back-to-home-button:hover {
+  background-color: #0056b3;
+}
+
+/* Body & background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .back-to-home-button.top-button {
+    top: 10px;
+    right: 10px;
+  }
+}
