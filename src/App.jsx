@@ -8,13 +8,13 @@ const CoursesPage = React.lazy(() => import("./Pages/CoursesPage/courses"));
 const CourseDetails = React.lazy(() =>
   import("./Pages/CoursesPage/courseDetails")
 );
-const PrivacyPolicy = React.lazy(() =>
-  import("./components/PrivacyPolicy/privacyPolicy")
-);
+// const PrivacyPolicy = React.lazy(() =>
+//   import("./components/PrivacyPolicy/privacyPolicy")
+// );
 
-const CookiesPolicy = React.lazy(() =>
-  import("./components/CookiesPolicy/cookiesPolicy")
-);
+// const CookiesPolicy = React.lazy(() =>
+//   import("./components/CookiesPolicy/cookiesPolicy")
+// );
 const ContactForm = React.lazy(() => import("./Pages/ContactUs/contactUs"));
 const AboutUs = React.lazy(() => import("./Pages/AboutUs/aboutUs"));
 const Home = React.lazy(() => import("./Pages/home"));
@@ -29,8 +29,8 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/course-details/:courseId" element={<CourseDetails />} />
-          <Route path="/cookiespolicy" element={<CookiesPolicy />} />
-                    <Route path="privacypolicy" element={<PrivacyPolicy />} />
+          {/* <Route path="/cookiespolicy" element={<CookiesPolicy />} />
+           <Route path="privacypolicy" element={<PrivacyPolicy />} /> */}
         </Routes>
       </Suspense>
     </Router>
