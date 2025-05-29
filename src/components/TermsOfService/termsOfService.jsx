@@ -1,5 +1,5 @@
 import "./termOfService.css"; // Assuming you have a CSS file for styles
-const TermsOfServicePage = () => {
+const TermsOfService = () => {
   return (
     <div
       style={{
@@ -554,4 +554,4 @@ const TermsOfServicePage = () => {
   );
 };
 
-export default TermsOfServicePage;
+export default TermsOfService;
