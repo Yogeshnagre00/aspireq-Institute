@@ -1,0 +1,76 @@
+/* CookiesPolicy.css */
+
+.cookies-policy-container {
+  font-family: "Montserrat", sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cookies-policy-container h1 {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 2em;
+}
+
+.cookies-policy-container h2,
+.cookies-policy-container h3 {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.cookies-policy-container p {
+  margin-bottom: 20px;
+  color: #2e2d2d;
+}
+
+/* Button styling */
+.back-to-home-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-home-button.top-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.back-to-home-button:hover {
+  background-color: #0056b3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cookies-policy-container {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .back-to-home-button.top-button {
+    top: 10px;
+    right: 10px;
+  }
+}

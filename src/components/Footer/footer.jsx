@@ -8,6 +8,32 @@ export const Footer = () => {
       <div className="footer-container">
         <div className="row">
           {/* Courses */}
+           <div className="col-md-3">
+            <h4 className="footer-heading">Company Policy </h4>
+            <ul className="footer-links">
+              <li>
+                <a
+                  href="/privacypolicy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#">Terms of Service</a>
+              </li>
+              <li>
+                <a
+                  href="/cookiespolicy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Cookies
+                </a>
+              </li>
+            </ul>
+          </div>
           <div className="col-md-3">
             <h3 className="footer-heading">Courses</h3>
             <ul className="footer-links">
@@ -59,16 +85,7 @@ export const Footer = () => {
             </ul>
           </div>
           {/* Domains */}
-          <div className="col-md-3">
-            <h4 className="footer-heading">Training in Domains</h4>
-            <ul className="footer-links">
-              <li>Healthcare</li>
-              <li>Finance</li>
-              <li>Banking</li>
-              <li>Insurance</li>
-              <li>E-commerce</li>
-            </ul>
-          </div>
+         
           {/* Address */}
           <div className="col-md-3 ">
             <h4 className="footer-heading">Meet Us</h4>
