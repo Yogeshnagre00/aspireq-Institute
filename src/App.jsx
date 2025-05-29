@@ -33,7 +33,7 @@ function App() {
           <Route path="/course-details/:courseId" element={<CourseDetails />} />
           <Route path="/cookiespolicy" element={<CookiesPolicy />} />
            <Route path="privacypolicy" element={<PrivacyPolicy />} />
-          <Route path="/TermsOfService" element={<TermsOfService />} />
+          <Route path="/termsOfService" element={<TermsOfService />} />
         </Routes>
       </Suspense>
     </Router>
