@@ -27,7 +27,6 @@ const ContactForm = () => {
     });
   };
 
-  // Function to check if all required fields are filled
   const isFormValid = () => {
     return (
       formData.firstName.trim() !== "" &&
@@ -54,10 +53,9 @@ const ContactForm = () => {
       const response = await fetch(
         "https://script.google.com/macros/s/AKfycbwmakg-xSlMoRiW-n_10BChKkHvsWBVLDnfxaJjPVE5QPfuIEat2YsQxR5YZORYG2k-rw/exec?action=writecontactdetails",
         {
-          redirect: "follow",
           method: "POST",
           headers: {
-            "Content-Type": "text/plain; charset-utf-8",
+            "Content-Type": "text/plain; charset=utf-8", // fixed typo here too
           },
           body: JSON.stringify(dataToSend),
         }
