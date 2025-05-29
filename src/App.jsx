@@ -16,7 +16,7 @@ const CookiesPolicy = React.lazy(() =>
   import("./components/CookiesPolicy/cookiesPolicy")
 );
 const TermsOfService = React.lazy(() =>
-  import("/components/TermsOfService/termsOfService.jsx") 
+  import("./components/TermsOfService/TermsOfService") 
 );
 const ContactForm = React.lazy(() => import("./Pages/ContactUs/contactUs"));
 const AboutUs = React.lazy(() => import("./Pages/AboutUs/aboutUs"));
@@ -34,7 +34,7 @@ function App() {
           <Route path="/course-details/:courseId" element={<CourseDetails />} />
           <Route path="/cookiespolicy" element={<CookiesPolicy />} />
            <Route path="privacypolicy" element={<PrivacyPolicy />} />
-          <Route path="/termsOfService" element={<TermsOfService />} />
+          <Route path="/TermsOfService" element={<TermsOfService />} />
         </Routes>
       </Suspense>
     </Router>
