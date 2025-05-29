@@ -2,23 +2,21 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import React, { Suspense } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
-import Loader from "./components/loader";
+import Loader from "./utils/loader";
 
 const CoursesPage = React.lazy(() => import("./Pages/CoursesPage/courses"));
 const CourseDetails = React.lazy(() =>
   import("./Pages/CoursesPage/courseDetails")
 );
 const PrivacyPolicy = React.lazy(() =>
-  import("./components/PrivacyPolicy/privacyPolicy")
+  import("./Pages/PrivacyPolicy/privacyPolicy")
 );
 const TermsOfService = React.lazy(() =>
-  import("./components/termOfService/termOfService") 
+  import("./Pages/termOfService/termOfService") 
 );
-
 const CookiesPolicy = React.lazy(() =>
-  import("./components/CookiesPolicy/cookiesPolicy")
+  import("./Pages/CookiesPolicy/cookiesPolicy")
 );
-
 const ContactForm = React.lazy(() => import("./Pages/ContactUs/contactUs"));
 const AboutUs = React.lazy(() => import("./Pages/AboutUs/aboutUs"));
 const Home = React.lazy(() => import("./Pages/home"));

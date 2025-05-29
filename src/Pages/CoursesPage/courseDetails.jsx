@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 import { courses } from "../../CourseData/courseData";
 import { Footer } from "../../components/Footer/footer";
 import Navbar from "../../components/Header/header";
-import Loader from "../../components/loader";
-import Offer from "../../components/offerSection/offer";
+import Loader from "../../utils/loader";
+import Offer from "../../section/offerSection/offer";
 import "./courseDetails.css";
 
 const CourseDetailsPage = () => {

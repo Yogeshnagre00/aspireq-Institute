@@ -1,19 +1,19 @@
 import React, { Suspense } from "react";
-import ErrorBoundary from "../components/ErrorBoundary";
 import Footer from "../components/Footer/footer";
 import Navbar from "../components/Header/header";
-import HeroSection from "../components/HeroSection/heroSection";
-import Loader from "../components/loader";
+import HeroSection from "../section/HeroSection/heroSection";
+import Loader from "../utils/loader";
+import ErrorBoundary from "../utils/errorBoundary";
 
-const CourseCards = React.lazy(() => import("../components/Courses/course"));
+const CourseCards = React.lazy(() => import("../section/Courses/course"));
 const FAQSection = React.lazy(() =>
   import("../components/FAQSection/faqSection")
 );
 const MeetHeroes = React.lazy(() =>
-  import("../components/MeetOurHeros/meetHeros")
+  import("../section/MeetOurHeros/meetHeros")
 );
 const TestimonialPage = React.lazy(() =>
-  import("../components/MeetOurHeros/career")
+  import("../section/MeetOurHeros/career")
 );
 
 function Home() {
