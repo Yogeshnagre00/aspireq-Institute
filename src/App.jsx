@@ -13,7 +13,8 @@ const PrivacyPolicy = React.lazy(() =>
   import("./components/PrivacyPolicy/privacyPolicy")
 );
 const TermsOfService = React.lazy(() =>
-  import("./components/termsOfService/termsOfService"));
+  import("./components/termOfService/termOfService") 
+);
 
 const CookiesPolicy = React.lazy(() =>
   import("./components/CookiesPolicy/cookiesPolicy")
