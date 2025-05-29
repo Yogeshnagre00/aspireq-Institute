@@ -15,11 +15,11 @@ const PrivacyPolicy = () => {
           {"\u25CF"} Visit our website at{" "}
           <a
             style={{ color: "rgb(78, 115, 246)" }}
-            href="http://www.aspireq.com"
+            href="https://aspireqlearning.co.in/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            http://www.aspireq.com
+            https://aspireqlearning.co.in/
           </a>
           . or any website of ours that links to this Privacy Notice <br />
           {"\u25CF"} Engage with us in other related ways, including any sales,
@@ -29,7 +29,7 @@ const PrivacyPolicy = () => {
           making decisions about how your personal information is processed. If
           you do not agree with our policies and practices, please do not use
           our Services. If you still have any questions or concerns, please
-          contact us at privacy@aspireq.com
+          contact us at privacy@aspireqlearning.co.in
         </p>
         <h3>SUMMARY OF KEY POINTS</h3>
         <p>
@@ -387,7 +387,7 @@ const PrivacyPolicy = () => {
           has been collected, we will deactivate the account and take reasonable
           measures to promptly delete such data from our records. If you become
           aware of any data we may have collected from children under age 18,
-          please contact us at privacy@aspireq.com.
+          please contact us at privacy@aspireqlearning.co.in
         </p>
         <h3>9. WHAT ARE YOUR PRIVACY RIGHTS?</h3>
         <p>
@@ -458,7 +458,7 @@ const PrivacyPolicy = () => {
           this could affect certain features or services of our Services. <br />
           <br />
           If you have questions or comments about your privacy rights, you may
-          email us at privacy@aspireq.com.
+          email us at privacy@aspireqlearning.co.in.
         </p>
         <h3>10. CONTROLS FOR DO-NOT-TRACK FEATURES</h3>
         <p>
@@ -615,7 +615,7 @@ const PrivacyPolicy = () => {
           <span className="Link">
             data subject access request, INFORMATION?&quot;
           </span>{" "}
-          by emailing us at privacy@aspireq.com, or by referring to the contact
+          by emailing us at privacy@aspireqlearning.co.in, or by referring to the contact
           details at the bottom of this document. <br />
           <br />
           We will honor your opt-out preferences if you enact the{" "}
@@ -649,7 +649,7 @@ const PrivacyPolicy = () => {
           <br />
           Under certain US state data protection laws, if we decline to take
           action regarding your request, you may appeal our decision by emailing
-          us at privacy@aspireq.com. We will Inform you in writing of any action
+          us at privacy@aspireqlearning.co.in. We will Inform you in writing of any action
           taken or not taken in response to the appeal, including a written
           explanation of the reasons for the decisions. If your appeal is
           denied, you may submit a complaint to your state attorney general.{" "}
@@ -761,7 +761,7 @@ const PrivacyPolicy = () => {
         <h3>14. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h3>
         <p>
           If you have questions or comments about this notice, you may email us
-          at privacy@aspireq.com or contact us by post at: <br />
+          at privacy@aspireqlearning.co.in or contact us by post at: <br />
           <br />
           aspireq <br />
           Karle Chowk, Nanded City <br />
